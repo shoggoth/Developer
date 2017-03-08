@@ -16,7 +16,7 @@ class Animal {
 
     init() { name = "Dunno" }
 
-    func eat() { println("Om nom") }
+    func eat() { print("Om nom") }
 }
 
 class Dog : Animal {
@@ -27,19 +27,19 @@ class Dog : Animal {
         name = "Chuppa Chup"
     }
 
-    override func eat() { println("Snarf") }
+    override func eat() { print("Snarf") }
 }
 
-func asTest(animal: Animal?) {
+func asTest(_ animal: Animal?) {
 
-    if let a = animal as? Dog { println("Woof") }
+    if let a = animal as? Dog { print("Woof") }
 }
 
-func asTest2(animal: Animal) {
+func asTest2(_ animal: Animal) {
 
     let dog = animal as! Dog
 
-    println("Hasn't crashed")
+    print("Hasn't crashed")
 
     dog.eat()
 }
@@ -53,4 +53,4 @@ asTest(nil)
 
 asTest2(dog)
 asTest2(cat)
-println("Hasn't crashed")
+print("Hasn't crashed")

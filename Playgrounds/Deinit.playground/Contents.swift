@@ -22,3 +22,5 @@ foo?.counter = 23
 
 foo = DeinitTest(counter: 42)
 foo = nil
+
+var bar:DeinitTest = DeinitTest(counter: 1488)
