@@ -15,6 +15,7 @@
 		FF2AB5BA1E794FD100BCA69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B81E794FD100BCA69D /* Main.storyboard */; };
 		FF2AB5BC1E794FD100BCA69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */; };
 		FF2AB5BF1E794FD100BCA69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BD1E794FD100BCA69D /* LaunchScreen.storyboard */; };
+		FF2AB5C71E79522100BCA69D /* vortexSprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2AB5BE1E794FD100BCA69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2AB5C01E794FD100BCA69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vortexSprite.fsh; path = ../../../Shaders/Sprite/vortexSprite.fsh; sourceTree = "<group>"; };
+		FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			children = (
 				FF2AB5AD1E794FD100BCA69D /* ShaderSprite */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
+				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,11 +70,20 @@
 				FF2AB5B41E794FD100BCA69D /* GameScene.swift */,
 				FF2AB5B61E794FD100BCA69D /* GameViewController.swift */,
 				FF2AB5B81E794FD100BCA69D /* Main.storyboard */,
+				FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */,
 				FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */,
 				FF2AB5BD1E794FD100BCA69D /* LaunchScreen.storyboard */,
 				FF2AB5C01E794FD100BCA69D /* Info.plist */,
 			);
 			path = ShaderSprite;
+			sourceTree = "<group>";
+		};
+		FF2AB5C81E797B0200BCA69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +148,7 @@
 			files = (
 				FF2AB5BA1E794FD100BCA69D /* Main.storyboard in Resources */,
 				FF2AB5B11E794FD100BCA69D /* GameScene.sks in Resources */,
+				FF2AB5C71E79522100BCA69D /* vortexSprite.fsh in Resources */,
 				FF2AB5BC1E794FD100BCA69D /* Assets.xcassets in Resources */,
 				FF2AB5BF1E794FD100BCA69D /* LaunchScreen.storyboard in Resources */,
 				FF2AB5B31E794FD100BCA69D /* Actions.sks in Resources */,
@@ -275,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = ShaderSprite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.ShaderSprite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = ShaderSprite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.ShaderSprite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +330,7 @@
 				FF2AB5C51E794FD100BCA69D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
