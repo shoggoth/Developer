@@ -7,7 +7,4 @@
    <FileRef
       location = "group:Projects/ShaderSprite/ShaderSprite.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Projects/ShaderSprite/../../Playgrounds/EnumTrees.playground">
-   </FileRef>
 </Workspace>
