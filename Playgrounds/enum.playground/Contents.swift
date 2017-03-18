@@ -75,3 +75,25 @@ let crd = crv?.simpleDescription()
 let tos = Card(rank: .Three, suit: .Spades)
 
 tos.simpleDescription()
+
+enum Bird : CustomStringConvertible {
+    
+    case Sparrow
+    case Starling
+    case Blackbird
+    // case Other
+    
+    var description: String {
+        
+        switch self {
+            
+        case .Sparrow: return "Sparrow"
+        case .Starling: return "Starling"
+        case .Blackbird: return "Blackbird"
+            // case let .Other(name): return name
+        }
+    }
+}
+
+print(Bird.Sparrow)
+

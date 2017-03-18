@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FF167D651E7BF483009D90D8 /* InvaderClonePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF167D641E7BF483009D90D8 /* InvaderClonePlayScene.swift */; };
+		FF167D671E7C1B7C009D90D8 /* InvaderCloneAttractScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF167D661E7C1B7C009D90D8 /* InvaderCloneAttractScreen.swift */; };
+		FF167D691E7D4620009D90D8 /* InvaderCloneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF167D681E7D4620009D90D8 /* InvaderCloneScene.swift */; };
 		FF2AB5D81E7BDD1000BCA69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB5D71E7BDD1000BCA69D /* AppDelegate.swift */; };
 		FF2AB5DA1E7BDD1000BCA69D /* InvaderCloneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB5D91E7BDD1000BCA69D /* InvaderCloneViewController.swift */; };
 		FF2AB5DD1E7BDD1000BCA69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5DB1E7BDD1000BCA69D /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		FF167D641E7BF483009D90D8 /* InvaderClonePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderClonePlayScene.swift; sourceTree = "<group>"; };
+		FF167D661E7C1B7C009D90D8 /* InvaderCloneAttractScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderCloneAttractScreen.swift; sourceTree = "<group>"; };
+		FF167D681E7D4620009D90D8 /* InvaderCloneScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderCloneScene.swift; sourceTree = "<group>"; };
 		FF2AB5D41E7BDD1000BCA69D /* InvaderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvaderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2AB5D71E7BDD1000BCA69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2AB5D91E7BDD1000BCA69D /* InvaderCloneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderCloneViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +64,9 @@
 		FF2AB5D61E7BDD1000BCA69D /* InvaderClone */ = {
 			isa = PBXGroup;
 			children = (
+				FF167D681E7D4620009D90D8 /* InvaderCloneScene.swift */,
 				FF167D641E7BF483009D90D8 /* InvaderClonePlayScene.swift */,
+				FF167D661E7C1B7C009D90D8 /* InvaderCloneAttractScreen.swift */,
 				FF2AB5D71E7BDD1000BCA69D /* AppDelegate.swift */,
 				FF2AB5D91E7BDD1000BCA69D /* InvaderCloneViewController.swift */,
 				FF2AB5DE1E7BDD1000BCA69D /* Assets.xcassets */,
@@ -154,7 +160,9 @@
 			files = (
 				FF2AB5DA1E7BDD1000BCA69D /* InvaderCloneViewController.swift in Sources */,
 				FF2AB5D81E7BDD1000BCA69D /* AppDelegate.swift in Sources */,
+				FF167D691E7D4620009D90D8 /* InvaderCloneScene.swift in Sources */,
 				FF167D651E7BF483009D90D8 /* InvaderClonePlayScene.swift in Sources */,
+				FF167D671E7C1B7C009D90D8 /* InvaderCloneAttractScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ class InvaderCloneViewController: UIViewController {
         spriteKitView.ignoresSiblingOrder = true
         
         // Create and do initial drawing of the game scene.
-        let scene = InvaderClonePlayScene(size: spriteKitView.frame.size)
+        let scene = InvaderCloneAttractScene(size: spriteKitView.frame.size)
         spriteKitView.presentScene(scene)
         
         // Notification handlers for pause toggling on app state changes.
