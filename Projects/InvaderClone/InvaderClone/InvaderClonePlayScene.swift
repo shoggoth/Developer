@@ -8,16 +8,9 @@
 
 import SpriteKit
 import CoreMotion
+import GameControls
 
 class InvaderClonePlayScene : InvaderCloneScene {
-    
-    private var invaderMovementDirection: InvaderMovementDirection = .right
-    private var timeOfLastMove: CFTimeInterval = 0.0
-    private let timePerMove: CFTimeInterval = 1.0
-    
-    private let kInvaderGridSpacing = CGSize(width: 12, height: 12)
-    private let kInvaderRowCount = 6
-    private let kInvaderColCount = 6
     
     private let kShipSize = CGSize(width: 30, height: 16)
     private let kShipName = "ship"
@@ -26,8 +19,9 @@ class InvaderClonePlayScene : InvaderCloneScene {
     private let kHealthHudName = "healthHud"
     
     private let motionManager = CMMotionManager()
+    private var tapQueue = [Int]()
     
-    // MARK: Invaders
+    // MARK: Game entities
 
     enum InvaderType {
         
@@ -47,6 +41,25 @@ class InvaderClonePlayScene : InvaderCloneScene {
         case downThenLeft
         case none
     }
+    
+    private var invaderMovementDirection: InvaderMovementDirection = .right
+    private var timeOfLastMove: CFTimeInterval = 0.0
+    private let timePerMove: CFTimeInterval = 1.0
+    
+    private let kInvaderGridSpacing = CGSize(width: 12, height: 12)
+    private let kInvaderRowCount = 6
+    private let kInvaderColCount = 6
+    
+    enum BulletType {
+        
+        case shipFired
+        case invaderFired
+    }
+    
+    // TODO: Can't these be part of the enum if we use a string for each of the cases?
+    let kShipFiredBulletName = "shipFiredBullet"
+    let kInvaderFiredBulletName = "invaderFiredBullet"
+    let kBulletSize = CGSize(width:4, height: 8)
     
     // MARK: Setup
 
@@ -83,6 +96,84 @@ class InvaderClonePlayScene : InvaderCloneScene {
         return ship
     }
 
+    func makeBullet(ofType bulletType: BulletType) -> SKNode {
+        
+        var bullet: SKNode
+        
+        switch bulletType {
+        
+        case .shipFired:
+            bullet = SKSpriteNode(color: SKColor.green, size: kBulletSize)
+            bullet.name = kShipFiredBulletName
+        
+        case .invaderFired:
+            bullet = SKSpriteNode(color: SKColor.magenta, size: kBulletSize)
+            bullet.name = kInvaderFiredBulletName
+            break
+        }
+        
+        return bullet
+    }
+    
+    func fireBullet(bullet: SKNode, toDestination destination: CGPoint, withDuration duration: CFTimeInterval, andSoundFileName soundName: String) {
+
+        let bulletAction = SKAction.sequence([
+            SKAction.move(to: destination, duration: duration),
+            SKAction.wait(forDuration: 3.0 / 60.0),
+            SKAction.removeFromParent()
+            ])
+        
+        let soundAction = SKAction.playSoundFileNamed(soundName, waitForCompletion: true)
+        
+        bullet.run(SKAction.group([bulletAction, soundAction]))
+        
+        addChild(bullet)
+    }
+    
+    func fireInvaderBullets(forUpdate currentTime: CFTimeInterval) {
+        
+        let existingBullet = childNode(withName: kInvaderFiredBulletName)
+        
+        if existingBullet == nil {
+            
+            var allInvaders = [SKNode]()
+            
+            enumerateChildNodes(withName: InvaderType.name) { node, stop in allInvaders.append(node) }
+            
+            if allInvaders.count > 0 {
+
+                let allInvadersIndex = Int(arc4random_uniform(UInt32(allInvaders.count)))
+                
+                let invader = allInvaders[allInvadersIndex]
+                
+                let bullet = makeBullet(ofType: .invaderFired)
+                bullet.position = CGPoint(x: invader.position.x, y: invader.position.y - invader.frame.size.height / 2 + bullet.frame.size.height / 2)
+                
+                let bulletDestination = CGPoint(x: invader.position.x, y: -(bullet.frame.size.height / 2))
+                
+                fireBullet(bullet: bullet, toDestination: bulletDestination, withDuration: 2.0, andSoundFileName: "Sound Effects/InvaderBullet.wav")
+            }
+        }
+    }
+    
+    func fireShipBullets() {
+        
+        let existingBullet = childNode(withName: kShipFiredBulletName)
+        
+        if existingBullet == nil {
+            if let ship = childNode(withName: kShipName) {
+                
+                let bullet = makeBullet(ofType: .shipFired)
+
+                bullet.position = CGPoint(x: ship.position.x, y: ship.position.y + ship.frame.size.height - bullet.frame.size.height / 2)
+
+                let bulletDestination = CGPoint(x: ship.position.x, y: frame.size.height + bullet.frame.size.height / 2)
+
+                fireBullet(bullet: bullet, toDestination: bulletDestination, withDuration: 1.0, andSoundFileName: "Sound Effects/ShipBullet.wav")
+            }
+        }
+    }
+    
     func setupInvaders() {
 
         let baseOrigin = CGPoint(x: size.width / 3, y: size.height / 2)
@@ -152,6 +243,7 @@ class InvaderClonePlayScene : InvaderCloneScene {
     func moveInvaders(forUpdate currentTime: CFTimeInterval) {
         
         // TODO: Parent the invaders to some empty node and move that node rather than iterating all the invaders.
+        // NOTE: This will be an SKNode and not an SKSpriteNode https://forums.raywenderlich.com/t/use-skspritenode-or-sknode/5762
         if (currentTime - timeOfLastMove < timePerMove) { return }
         
         determineInvaderMovementDirection()
@@ -213,6 +305,16 @@ class InvaderClonePlayScene : InvaderCloneScene {
         if (proposedMovementDirection != invaderMovementDirection) { invaderMovementDirection = proposedMovementDirection }
     }
     
+    func processUserTaps(forUpdate currentTime: CFTimeInterval) {
+
+        for tapCount in tapQueue {
+            
+            if tapCount == 1 { fireShipBullets() }
+
+            tapQueue.remove(at: 0)
+        }
+    }
+    
     func processUserMotion(forUpdate currentTime: CFTimeInterval) {
 
         if let ship = childNode(withName: kShipName) as? SKSpriteNode, let physics = ship.physicsBody {
@@ -229,9 +331,11 @@ class InvaderClonePlayScene : InvaderCloneScene {
     
     override func update(_ currentTime: TimeInterval) {
         
+        processUserTaps(forUpdate: currentTime)
         processUserMotion(forUpdate: currentTime)
         
         moveInvaders(forUpdate: currentTime)
+        fireInvaderBullets(forUpdate: currentTime)
     }
     
     // MARK: Lifecycle
@@ -261,20 +365,21 @@ class InvaderClonePlayScene : InvaderCloneScene {
         self.setupShip()
         self.setupHud()
 
-        // Tap gesture recogniser
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(InvaderClonePlayScene.handleTapGesture(_:))))
+        let tc1 = TiltController()
+        let tc2 = TouchStickController(handlingTouchesFrom: view)
         
         // Motion manager
         motionManager.startAccelerometerUpdates()
     }
     
-    // MARK: Gesture handling
+    // MARK: Touch handling
     
-    func handleTapGesture(_ sender: UIGestureRecognizer) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let nextScene = InvaderCloneAttractScene(size: self.size)
-        
-        self.view?.presentScene(nextScene, transition: SKTransition.doorsCloseVertical(withDuration: 0.23))
+        // NOTE: This wasn't working because I had added a GR to the view in a previous scene.
+        // Solution was to remove all GRs from the view in willMove(from view: SKView)
+
+        if let touch = touches.first, touch.tapCount == 1 { tapQueue.append(1) }
     }
 }
 
