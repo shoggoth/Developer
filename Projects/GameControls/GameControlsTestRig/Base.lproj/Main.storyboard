@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-aV-Txc" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
-                                <rect key="frame" x="256" y="28" width="256" height="256"/>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-aV-Txc" userLabel="Multi Control" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
+                                <rect key="frame" x="20" y="504" width="256" height="256"/>
                                 <color key="backgroundColor" red="1" green="0.2725169905" blue="0.25113538130000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="bSm-qU-Wop"/>
@@ -32,8 +33,8 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="Mutiple Red"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-fc-17B" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
-                                <rect key="frame" x="256" y="292" width="256" height="256"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-fc-17B" userLabel="Single Control" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
+                                <rect key="frame" x="748" y="504" width="256" height="256"/>
                                 <color key="backgroundColor" red="0.40995043889999999" green="1" blue="0.4811921958" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="Single Green"/>
@@ -42,12 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uJH-aV-Txc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MGY-va-MQD"/>
-                            <constraint firstItem="6v1-fc-17B" firstAttribute="height" secondItem="uJH-aV-Txc" secondAttribute="height" id="TXb-9c-yHY"/>
-                            <constraint firstItem="6v1-fc-17B" firstAttribute="centerX" secondItem="uJH-aV-Txc" secondAttribute="centerX" id="cUC-yO-nmJ"/>
-                            <constraint firstItem="6v1-fc-17B" firstAttribute="width" secondItem="uJH-aV-Txc" secondAttribute="width" id="gph-wZ-lbk"/>
-                            <constraint firstItem="6v1-fc-17B" firstAttribute="top" secondItem="uJH-aV-Txc" secondAttribute="bottom" constant="8" id="qFc-S0-DTn"/>
-                            <constraint firstItem="uJH-aV-Txc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="trm-K4-dsE"/>
+                            <constraint firstItem="6v1-fc-17B" firstAttribute="centerY" secondItem="uJH-aV-Txc" secondAttribute="centerY" id="3Np-cr-6Rj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6v1-fc-17B" secondAttribute="trailing" id="FDZ-4H-FZm"/>
+                            <constraint firstItem="6v1-fc-17B" firstAttribute="height" secondItem="uJH-aV-Txc" secondAttribute="height" id="TXb-9c-yHY" userLabel="Equal W"/>
+                            <constraint firstItem="6v1-fc-17B" firstAttribute="width" secondItem="uJH-aV-Txc" secondAttribute="width" id="gph-wZ-lbk" userLabel="Equal H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uJH-aV-Txc" secondAttribute="bottom" constant="8" id="rxx-Se-WX9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uJH-aV-Txc" secondAttribute="leading" id="xiW-W7-z2i"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -8,26 +8,7 @@
 
 import UIKit
 
-private extension Array where Element: Equatable {
-    
-    // Remove first collection element that is equal to the given `object`:
-    mutating func remove(object: Element) {
-        
-        if let index = index(of: object) { remove(at: index) }
-    }
-}
-
-private extension UITouch {
-    
-    var index: Int { return 1 }
-}
-
-typealias TouchFunction = (_ touch: UITouch) -> Void
-
-class JoystickTouch : UITouch {
-    
-    var touchFunc: TouchFunction!
-}
+typealias TouchFunction = (_ touch: UITouch) -> Int
 
 class TouchTestView: UIView {
     
@@ -40,32 +21,40 @@ class TouchTestView: UIView {
     }
     
     private var joyFuncs: [TouchFunction] = []
-    private var joyTouches: [(touch: UITouch, func: TouchFunction)] = []
+    private var joyTouches: [UITouch : TouchFunction] = [:]
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+        
+        joyFuncs = [{ touch in print("Move \(touch.hash) \(self.viewName)"); return 0 }, { touch in print("Fire \(touch.hash)"); return 1 }, { touch in print("Smartie \(touch.hash)"); return 1 }]
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        print("Began touch \(touches.count) - \(joyTouches.count) in view \(viewName) (multi \(isMultipleTouchEnabled))")
-        
-        for t in touches {
+        if joyFuncs.count > 0 {
             
-            if joyTouches.contains(where: { $0.touch == t }) { print("already there") } else { joyTouches.append(t) }
-            //if joyTouches.contains(t) { print("already there") } else { joyTouches.append(t) }
+            for t in touches { if !joyFuncs.isEmpty { joyTouches[t] = joyFuncs.removeFirst() }}
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        print("Moved touch \(touches.count) in view \(viewName)")
+        for t in touches { if let touchFunc = joyTouches[t] { _ = touchFunc(t) } }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        for t in touches { joyTouches.remove(object: t) }
-        
-        print("Ended touch \(touches.count) in view \(viewName)")
+        for t in touches {
+            
+            if let touchFunc = joyTouches[t] { joyFuncs.insert(touchFunc, at: min(touchFunc(t), joyFuncs.count)) }
+            
+            joyTouches.removeValue(forKey: t)
+        }
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        print("Cancelled touch \(touches.count) in view \(viewName)")    }
+        touchesEnded(touches, with: event)
+    }
 }
