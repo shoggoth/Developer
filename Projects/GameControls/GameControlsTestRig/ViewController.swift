@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import GameControls
 
 class ViewController: UIViewController {
 
+    @IBOutlet var multiTouchView: TouchTestView!
+    @IBOutlet var singleTouchView: TouchTestView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let joyFuncs: [TouchFunction] = [
+            { touch in print("Move \(touch.hash)") },
+            { touch in print("Fire \(touch.hash)") },
+            { touch in print("Smar \(touch.hash)") }
+        ]
+
+        singleTouchView.joyFunctions = joyFuncs
+        multiTouchView.joyFunctions = joyFuncs
     }
 }
 
