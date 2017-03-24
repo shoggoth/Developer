@@ -24,7 +24,19 @@ class TouchTestView: UIView {
             
             // Use the first slot in the array where we find a nil value. If there are no nil slots, append to the array
             // as long as there aren't more touches than there are functions to be called on that touch.
-            if let i = joyTouches.index(where: { $0 == nil }) { joyTouches[i] = t } else { if joyTouches.count < joyFunctions.count { joyTouches.append(t) } }
+            if let i = joyTouches.index(where: { $0 == nil }) {
+                
+                joyTouches[i] = t
+                joyFunctions[i](t)
+            
+            } else {
+                
+                if joyTouches.count < joyFunctions.count {
+                    
+                    joyFunctions[joyTouches.count](t)
+                    joyTouches.append(t)
+                }
+            }
         }
     }
     
@@ -42,7 +54,11 @@ class TouchTestView: UIView {
         for t in touches {
             
             // Set the appropriate slot in the array to nil so that it can be re-used.
-            if let i = joyTouches.index(where: { $0 == t }) { joyTouches[i] = nil }
+            if let i = joyTouches.index(where: { $0 == t }) {
+                
+                joyFunctions[i](t)
+                joyTouches[i] = nil
+            }
         }
     }
     

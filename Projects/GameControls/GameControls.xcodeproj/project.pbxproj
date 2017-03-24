@@ -18,10 +18,22 @@
 		FF29BBB01E813BFA006A08E7 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; };
 		FF29BBB11E813BFA006A08E7 /* GameControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF29BBB61E813C6B006A08E7 /* TouchTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBB51E813C6B006A08E7 /* TouchTestView.swift */; };
+		FF29BBBE1E828E12006A08E7 /* GameControlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBBD1E828E12006A08E7 /* GameControlsTests.swift */; };
+		FF29BBC01E828E12006A08E7 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; };
+		FF29BBC81E82D025006A08E7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BBC71E82D025006A08E7 /* SpriteKit.framework */; };
+		FF29BBCA1E82D11C006A08E7 /* JoystickScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF29BBC91E82D11C006A08E7 /* JoystickScene.sks */; };
+		FF29BBCC1E82D1EF006A08E7 /* JoystickScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBCB1E82D1EF006A08E7 /* JoystickScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FF29BBB21E813BFA006A08E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF29BB7A1E800C9C006A08E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF29BB821E800C9C006A08E7;
+			remoteInfo = GameControls;
+		};
+		FF29BBC11E828E12006A08E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF29BB7A1E800C9C006A08E7 /* Project object */;
 			proxyType = 1;
@@ -58,6 +70,12 @@
 		FF29BBAA1E813BC7006A08E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF29BBAC1E813BC7006A08E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF29BBB51E813C6B006A08E7 /* TouchTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTestView.swift; sourceTree = "<group>"; };
+		FF29BBBB1E828E12006A08E7 /* GameControlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControlsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF29BBBD1E828E12006A08E7 /* GameControlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlsTests.swift; sourceTree = "<group>"; };
+		FF29BBBF1E828E12006A08E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF29BBC71E82D025006A08E7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		FF29BBC91E82D11C006A08E7 /* JoystickScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JoystickScene.sks; sourceTree = "<group>"; };
+		FF29BBCB1E82D1EF006A08E7 /* JoystickScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +90,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF29BBC81E82D025006A08E7 /* SpriteKit.framework in Frameworks */,
 				FF29BBB01E813BFA006A08E7 /* GameControls.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF29BBB81E828E12006A08E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF29BBC01E828E12006A08E7 /* GameControls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +111,9 @@
 			children = (
 				FF29BB851E800C9C006A08E7 /* GameControls */,
 				FF29BB9F1E813BC7006A08E7 /* GameControlsTestRig */,
+				FF29BBBC1E828E12006A08E7 /* GameControlsUnitTests */,
 				FF29BB841E800C9C006A08E7 /* Products */,
+				FF29BBC61E82D025006A08E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +122,7 @@
 			children = (
 				FF29BB831E800C9C006A08E7 /* GameControls.framework */,
 				FF29BB9E1E813BC7006A08E7 /* GameControlsTestRig.app */,
+				FF29BBBB1E828E12006A08E7 /* GameControlsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,11 +145,31 @@
 				FF29BBA21E813BC7006A08E7 /* ViewController.swift */,
 				FF29BBB51E813C6B006A08E7 /* TouchTestView.swift */,
 				FF29BBA41E813BC7006A08E7 /* Main.storyboard */,
+				FF29BBC91E82D11C006A08E7 /* JoystickScene.sks */,
+				FF29BBCB1E82D1EF006A08E7 /* JoystickScene.swift */,
 				FF29BBA71E813BC7006A08E7 /* Assets.xcassets */,
 				FF29BBA91E813BC7006A08E7 /* LaunchScreen.storyboard */,
 				FF29BBAC1E813BC7006A08E7 /* Info.plist */,
 			);
 			path = GameControlsTestRig;
+			sourceTree = "<group>";
+		};
+		FF29BBBC1E828E12006A08E7 /* GameControlsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF29BBBD1E828E12006A08E7 /* GameControlsTests.swift */,
+				FF29BBBF1E828E12006A08E7 /* Info.plist */,
+			);
+			name = GameControlsUnitTests;
+			path = GameControlsTests;
+			sourceTree = "<group>";
+		};
+		FF29BBC61E82D025006A08E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF29BBC71E82D025006A08E7 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +223,24 @@
 			productReference = FF29BB9E1E813BC7006A08E7 /* GameControlsTestRig.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FF29BBBA1E828E12006A08E7 /* GameControlsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF29BBC31E828E12006A08E7 /* Build configuration list for PBXNativeTarget "GameControlsTests" */;
+			buildPhases = (
+				FF29BBB71E828E12006A08E7 /* Sources */,
+				FF29BBB81E828E12006A08E7 /* Frameworks */,
+				FF29BBB91E828E12006A08E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF29BBC21E828E12006A08E7 /* PBXTargetDependency */,
+			);
+			name = GameControlsTests;
+			productName = GameControlsTests;
+			productReference = FF29BBBB1E828E12006A08E7 /* GameControlsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +262,11 @@
 						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 					};
+					FF29BBBA1E828E12006A08E7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5F9CYF5K3F;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FF29BB7D1E800C9C006A08E7 /* Build configuration list for PBXProject "GameControls" */;
@@ -211,6 +284,7 @@
 			targets = (
 				FF29BB821E800C9C006A08E7 /* GameControls */,
 				FF29BB9D1E813BC7006A08E7 /* GameControlsTestRig */,
+				FF29BBBA1E828E12006A08E7 /* GameControlsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +303,15 @@
 			files = (
 				FF29BBAB1E813BC7006A08E7 /* LaunchScreen.storyboard in Resources */,
 				FF29BBA81E813BC7006A08E7 /* Assets.xcassets in Resources */,
+				FF29BBCA1E82D11C006A08E7 /* JoystickScene.sks in Resources */,
 				FF29BBA61E813BC7006A08E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF29BBB91E828E12006A08E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF29BBCC1E82D1EF006A08E7 /* JoystickScene.swift in Sources */,
 				FF29BBA31E813BC7006A08E7 /* ViewController.swift in Sources */,
 				FF29BBA11E813BC7006A08E7 /* AppDelegate.swift in Sources */,
 				FF29BBB61E813C6B006A08E7 /* TouchTestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF29BBB71E828E12006A08E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF29BBBE1E828E12006A08E7 /* GameControlsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +353,11 @@
 			isa = PBXTargetDependency;
 			target = FF29BB821E800C9C006A08E7 /* GameControls */;
 			targetProxy = FF29BBB21E813BFA006A08E7 /* PBXContainerItemProxy */;
+		};
+		FF29BBC21E828E12006A08E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF29BB821E800C9C006A08E7 /* GameControls */;
+			targetProxy = FF29BBC11E828E12006A08E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -457,6 +553,30 @@
 			};
 			name = Release;
 		};
+		FF29BBC41E828E12006A08E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = GameControlsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.GameControlsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF29BBC51E828E12006A08E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = GameControlsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.GameControlsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +602,14 @@
 			buildConfigurations = (
 				FF29BBAE1E813BC7006A08E7 /* Debug */,
 				FF29BBAF1E813BC7006A08E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF29BBC31E828E12006A08E7 /* Build configuration list for PBXNativeTarget "GameControlsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF29BBC41E828E12006A08E7 /* Debug */,
+				FF29BBC51E828E12006A08E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
