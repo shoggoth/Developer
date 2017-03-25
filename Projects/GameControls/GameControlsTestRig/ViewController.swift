@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var spriteView: SKView!
     
     private var moveSprite: SKSpriteNode!
+    private var fireSprite: SKSpriteNode!
     
     override func viewDidLoad() {
         
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
             scene.scaleMode = .aspectFill
             
             moveSprite = scene.childNode(withName: "//moveSprite") as! SKSpriteNode
+            fireSprite = scene.childNode(withName: "//fireSprite") as! SKSpriteNode
 
             // Present the scene
             spriteView.presentScene(scene)
@@ -51,7 +53,7 @@ class ViewController: UIViewController {
     
     func prepareMoveFunction() -> TouchFunction {
         
-        let windowFunction = WindowFunction(windowSize: CGSize(width: 44, height: 44))
+        let windowFunction = WindowFunction(windowSize: CGSize(width: 20, height: 20))
 
         return { touch in
             
@@ -63,7 +65,14 @@ class ViewController: UIViewController {
     
     func prepareFireFunction() -> TouchFunction {
         
-        return { touch in print("Fire (from func) \(touch.hash)") }
+        let windowFunction = WindowFunction(windowSize: CGSize(width: 10, height: 10))
+        
+        return { touch in
+            
+            windowFunction.handleTouch(touch: touch)
+            
+            self.fireSprite.position = windowFunction.vector
+        }
     }
     
     func prepareBlahFunction() -> TouchFunction {
@@ -94,16 +103,18 @@ public class WindowFunction {
             origin = touchPoint
             vector = CGPoint()
             
-            print("Move began at (\(touchPoint))")
-            
         case .moved:
             vector = CGPoint(x:  touchPoint.x - origin.x, y: -(touchPoint.y - origin.y))
             
-            print("Move moved at (\(vector)) \(hypotf(Float(vector.x), Float(vector.y)))")
+            // Clip that vector
+            if vector.x > size.width { origin.x += vector.x - size.width; vector.x = size.width }
+            else if vector.x < -size.width { origin.x += vector.x + size.width; vector.x = -size.width }
+            
+            if vector.y > size.height { origin.y -= vector.y - size.height; vector.y = size.height }
+            else if vector.y < -size.height { origin.y -= vector.y + size.height; vector.y = -size.height }
             
         case .ended, .cancelled:
             vector = CGPoint()
-            print("Move ended at (\(touchPoint))")
             
         default:break
         }
