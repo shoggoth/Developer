@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-aV-Txc" userLabel="Multi Control" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-aV-Txc" userLabel="Multi Control" customClass="TouchControllerView" customModule="GameControls">
                                 <rect key="frame" x="20" y="504" width="256" height="256"/>
                                 <color key="backgroundColor" red="1" green="0.2725169905" blue="0.25113538130000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -33,7 +33,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="Mutiple touch"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-fc-17B" userLabel="Single Control" customClass="TouchTestView" customModule="GameControlsTestRig" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-fc-17B" userLabel="Single Control" customClass="TouchControllerView" customModule="GameControls">
                                 <rect key="frame" x="748" y="504" width="256" height="256"/>
                                 <color key="backgroundColor" red="0.40995043889999999" green="1" blue="0.4811921958" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>

@@ -1,5 +1,5 @@
 //
-//  TouchStickController.swift
+//  TouchController.swift
 //  GameControls
 //
 //  Created by Richard Henry on 20/03/2017.
@@ -10,7 +10,7 @@ import UIKit
 
 public typealias TouchFunction = (_ touch: UITouch) -> Void
 
-public class TouchStickView: UIView {
+public class TouchControllerView: UIView {
     
     @IBInspectable public var viewName: String = "Unnamed"
     
@@ -110,6 +110,8 @@ public class WindowFunction {
         self.size = size
         self.deadZoneRadiusSquared = dzr2 * dzr2
     }
+    
+    static public lazy var foo = {}
     
     deinit {
         

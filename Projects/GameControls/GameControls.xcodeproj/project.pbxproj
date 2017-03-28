@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF29BB881E800C9C006A08E7 /* GameControls.h in Headers */ = {isa = PBXBuildFile; fileRef = FF29BB861E800C9C006A08E7 /* GameControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF29BB931E801D95006A08E7 /* TiltController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BB921E801D95006A08E7 /* TiltController.swift */; };
-		FF29BB951E801FE8006A08E7 /* TouchStickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BB941E801FE8006A08E7 /* TouchStickController.swift */; };
+		FF29BB951E801FE8006A08E7 /* TouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BB941E801FE8006A08E7 /* TouchController.swift */; };
 		FF29BBA11E813BC7006A08E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBA01E813BC7006A08E7 /* AppDelegate.swift */; };
 		FF29BBA31E813BC7006A08E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBA21E813BC7006A08E7 /* ViewController.swift */; };
 		FF29BBA61E813BC7006A08E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF29BBA41E813BC7006A08E7 /* Main.storyboard */; };
@@ -17,7 +17,6 @@
 		FF29BBAB1E813BC7006A08E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF29BBA91E813BC7006A08E7 /* LaunchScreen.storyboard */; };
 		FF29BBB01E813BFA006A08E7 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; };
 		FF29BBB11E813BFA006A08E7 /* GameControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF29BBB61E813C6B006A08E7 /* TouchTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBB51E813C6B006A08E7 /* TouchTestView.swift */; };
 		FF29BBBE1E828E12006A08E7 /* GameControlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF29BBBD1E828E12006A08E7 /* GameControlsTests.swift */; };
 		FF29BBC01E828E12006A08E7 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BB831E800C9C006A08E7 /* GameControls.framework */; };
 		FF29BBC81E82D025006A08E7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF29BBC71E82D025006A08E7 /* SpriteKit.framework */; };
@@ -61,7 +60,7 @@
 		FF29BB861E800C9C006A08E7 /* GameControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameControls.h; sourceTree = "<group>"; };
 		FF29BB871E800C9C006A08E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF29BB921E801D95006A08E7 /* TiltController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltController.swift; sourceTree = "<group>"; };
-		FF29BB941E801FE8006A08E7 /* TouchStickController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchStickController.swift; sourceTree = "<group>"; };
+		FF29BB941E801FE8006A08E7 /* TouchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchController.swift; sourceTree = "<group>"; };
 		FF29BB9E1E813BC7006A08E7 /* GameControlsTestRig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControlsTestRig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF29BBA01E813BC7006A08E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF29BBA21E813BC7006A08E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FF29BB921E801D95006A08E7 /* TiltController.swift */,
-				FF29BB941E801FE8006A08E7 /* TouchStickController.swift */,
+				FF29BB941E801FE8006A08E7 /* TouchController.swift */,
 				FF29BB861E800C9C006A08E7 /* GameControls.h */,
 				FF29BB871E800C9C006A08E7 /* Info.plist */,
 			);
@@ -322,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF29BB951E801FE8006A08E7 /* TouchStickController.swift in Sources */,
+				FF29BB951E801FE8006A08E7 /* TouchController.swift in Sources */,
 				FF29BB931E801D95006A08E7 /* TiltController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +333,6 @@
 				FF29BBCC1E82D1EF006A08E7 /* JoystickScene.swift in Sources */,
 				FF29BBA31E813BC7006A08E7 /* ViewController.swift in Sources */,
 				FF29BBA11E813BC7006A08E7 /* AppDelegate.swift in Sources */,
-				FF29BBB61E813C6B006A08E7 /* TouchTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +594,7 @@
 				FF29BB8D1E800C9C006A08E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF29BBAD1E813BC7006A08E7 /* Build configuration list for PBXNativeTarget "GameControlsTestRig" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +603,7 @@
 				FF29BBAF1E813BC7006A08E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF29BBC31E828E12006A08E7 /* Build configuration list for PBXNativeTarget "GameControlsTests" */ = {
 			isa = XCConfigurationList;
@@ -612,6 +612,7 @@
 				FF29BBC51E828E12006A08E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
