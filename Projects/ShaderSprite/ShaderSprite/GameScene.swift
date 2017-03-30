@@ -29,7 +29,7 @@ class GameScene: SKScene {
         // Do the same for the vortex node
         self.vortex = self.childNode(withName: "//vortexSprite") as? SKSpriteNode
         
-        print("Hello, debug tab \(self.vortex)")
+        print("Hello, debug tab \(String(describing: self.vortex))")
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -39,7 +39,7 @@ class GameScene: SKScene {
             
             spinnyNode.lineWidth = 2.5
             
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)))
+            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: .pi, duration: 1)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
@@ -48,6 +48,7 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
+        
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.green
@@ -56,6 +57,7 @@ class GameScene: SKScene {
     }
     
     func touchMoved(toPoint pos : CGPoint) {
+        
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.blue
@@ -64,6 +66,7 @@ class GameScene: SKScene {
     }
     
     func touchUp(atPoint pos : CGPoint) {
+        
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.red

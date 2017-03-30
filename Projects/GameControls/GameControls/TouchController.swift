@@ -111,7 +111,7 @@ public class WindowFunction {
         self.deadZoneRadiusSquared = dzr2 * dzr2
     }
     
-    static public lazy var foo = {}
+    static public var foo = {}
     
     deinit {
         
