@@ -77,23 +77,28 @@ let tos = Card(rank: .Three, suit: .Spades)
 tos.simpleDescription()
 
 enum Bird : CustomStringConvertible {
-    
+
     case Sparrow
     case Starling
     case Blackbird
-    // case Other
-    
+    // Swft enums can have associated values
+    case RacingPigeon(id: Int, name: String)
+    case Other(name: String)
+
     var description: String {
-        
+
         switch self {
-            
+
         case .Sparrow: return "Sparrow"
         case .Starling: return "Starling"
         case .Blackbird: return "Blackbird"
-            // case let .Other(name): return name
+        case let .RacingPigeon(id, name): return "Pigeon #\(id) called \(name)"
+        case let .Other(name): return name
         }
     }
 }
 
-print(Bird.Sparrow)
-
+Bird.Sparrow
+Bird.Other(name: "Emu")
+Bird.RacingPigeon(id: 31337, name: "Boris")
+Bird.RacingPigeon
