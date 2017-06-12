@@ -17,13 +17,17 @@ class PixelViewController: UIViewController {
 
         super.viewDidLoad()
 
-        let pixelGridScene = PixelGridScene(size: spriteKitView.frame.size)
+        let pixelGridScene = PixelGridScene(size: view.frame.size)
 
         pixelGridScene.scaleMode = .aspectFill
-        
+
         spriteKitView.ignoresSiblingOrder = true
-        spriteKitView.showsFPS = true
-        spriteKitView.showsNodeCount = true
+        #if DEBUG
+            spriteKitView.showsFPS = true
+            spriteKitView.showsNodeCount = true
+        #endif
+
+        spriteKitView.backgroundColor = UIColor.red
 
         spriteKitView.presentScene(pixelGridScene)
     }

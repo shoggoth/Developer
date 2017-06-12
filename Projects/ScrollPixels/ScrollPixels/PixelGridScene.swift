@@ -10,30 +10,47 @@ import SpriteKit
 
 class PixelGridScene: SKScene {
 
-    private var pixelNode: SKShapeNode?
-
-    override func didMove(to view: SKView) {
-
-        addChild(pixelNode!)
-        addChild(pixelNode?.copy() as! SKNode)
-    }
+    private var shapeNodes: [SKShapeNode] = []
 
     override func sceneDidLoad() {
 
-        // Create shape node.
-        pixelNode = SKShapeNode.init(rectOf: CGSize(width: 16, height: 16))
-        pixelNode?.position = CGPoint(x: 100, y: 100)
-        pixelNode?.fillColor = SKColor.red
+        // Create shape nodes.
+        let rowLength = 16
+
+        let w = size.width / 16
+        let h = size.height / 9
+        let s = min(w, h) * 0.9
+
+        for i in 0..<144 {
+
+            let shapeNode = SKShapeNode.init(rectOf: CGSize(width: s, height: s))
+            shapeNode.position = CGPoint(x: (CGFloat(i % rowLength) + 0.5) * w, y: (CGFloat(i / rowLength) + 0.5) * h)
+            shapeNode.fillColor = SKColor.red
+            shapeNode.lineWidth = 0
+
+            shapeNodes.append(shapeNode)
+            addChild(shapeNode)
+        }
     }
 
+    override func update(_ currentTime: TimeInterval) {
+
+        for node in shapeNodes {
+
+            node.fillColor = UIColor(white: CGFloat(arc4random() % 1000) * 0.001, alpha: 1)
+        }
+    }
+    
     func touchDown(atPoint pos : CGPoint) {
 
-        if let n = self.pixelNode?.copy() as! SKShapeNode? {
+        if let n = self.shapeNodes[0].copy() as? SKShapeNode {
+
             n.position = pos
-            //n.strokeColor = SKColor.green
+            n.strokeColor = SKColor.green
             self.addChild(n)
         }
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
