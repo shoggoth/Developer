@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73231EFA8E3200467808 /* AppDelegate.swift */; };
+		9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73251EFA8E3200467808 /* GameScene.sks */; };
+		9BFF73281EFA8E3200467808 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73271EFA8E3200467808 /* Actions.sks */; };
+		9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73291EFA8E3200467808 /* GameScene.swift */; };
+		9BFF732C1EFA8E3200467808 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF732B1EFA8E3200467808 /* GameViewController.swift */; };
+		9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF732D1EFA8E3200467808 /* Main.storyboard */; };
+		9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73301EFA8E3200467808 /* Assets.xcassets */; };
+		9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */; };
+		9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */; };
 		FF2AB5AF1E794FD100BCA69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB5AE1E794FD100BCA69D /* AppDelegate.swift */; };
 		FF2AB5B11E794FD100BCA69D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B01E794FD100BCA69D /* GameScene.sks */; };
 		FF2AB5B31E794FD100BCA69D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B21E794FD100BCA69D /* Actions.sks */; };
@@ -19,6 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BFF73211EFA8E3200467808 /* Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFF73231EFA8E3200467808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BFF73251EFA8E3200467808 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9BFF73271EFA8E3200467808 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		9BFF73291EFA8E3200467808 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9BFF732B1EFA8E3200467808 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9BFF732E1EFA8E3200467808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BFF73301EFA8E3200467808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BFF73331EFA8E3200467808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BFF73351EFA8E3200467808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2AB5AB1E794FD100BCA69D /* ShaderSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2AB5AE1E794FD100BCA69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2AB5B01E794FD100BCA69D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -29,11 +48,18 @@
 		FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2AB5BE1E794FD100BCA69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2AB5C01E794FD100BCA69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vortexSprite.fsh; path = ../../../Shaders/Sprite/vortexSprite.fsh; sourceTree = "<group>"; };
+		FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vortexSprite.fsh; path = ../../Shaders/Sprite/vortexSprite.fsh; sourceTree = SOURCE_ROOT; };
 		FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9BFF731E1EFA8E3200467808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF2AB5A81E794FD100BCA69D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +70,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BFF73221EFA8E3200467808 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				9BFF73231EFA8E3200467808 /* AppDelegate.swift */,
+				9BFF73251EFA8E3200467808 /* GameScene.sks */,
+				9BFF73271EFA8E3200467808 /* Actions.sks */,
+				9BFF73291EFA8E3200467808 /* GameScene.swift */,
+				9BFF732B1EFA8E3200467808 /* GameViewController.swift */,
+				9BFF732D1EFA8E3200467808 /* Main.storyboard */,
+				9BFF73301EFA8E3200467808 /* Assets.xcassets */,
+				9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */,
+				9BFF73351EFA8E3200467808 /* Info.plist */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		9BFF73391EFA8EFF00467808 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */,
+			);
+			name = Shaders;
+			path = ShaderSprite;
+			sourceTree = "<group>";
+		};
 		FF2AB5A21E794FD100BCA69D = {
 			isa = PBXGroup;
 			children = (
 				FF2AB5AD1E794FD100BCA69D /* ShaderSprite */,
+				9BFF73221EFA8E3200467808 /* Grid */,
+				9BFF73391EFA8EFF00467808 /* Shaders */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
 				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
@@ -57,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				FF2AB5AB1E794FD100BCA69D /* ShaderSprite.app */,
+				9BFF73211EFA8E3200467808 /* Grid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +124,6 @@
 				FF2AB5B41E794FD100BCA69D /* GameScene.swift */,
 				FF2AB5B61E794FD100BCA69D /* GameViewController.swift */,
 				FF2AB5B81E794FD100BCA69D /* Main.storyboard */,
-				FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */,
 				FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */,
 				FF2AB5BD1E794FD100BCA69D /* LaunchScreen.storyboard */,
 				FF2AB5C01E794FD100BCA69D /* Info.plist */,
@@ -89,6 +142,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9BFF73201EFA8E3200467808 /* Grid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BFF73381EFA8E3200467808 /* Build configuration list for PBXNativeTarget "Grid" */;
+			buildPhases = (
+				9BFF731D1EFA8E3200467808 /* Sources */,
+				9BFF731E1EFA8E3200467808 /* Frameworks */,
+				9BFF731F1EFA8E3200467808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grid;
+			productName = Grid;
+			productReference = 9BFF73211EFA8E3200467808 /* Grid.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FF2AB5AA1E794FD100BCA69D /* ShaderSprite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF2AB5C31E794FD100BCA69D /* Build configuration list for PBXNativeTarget "ShaderSprite" */;
@@ -112,13 +182,18 @@
 		FF2AB5A31E794FD100BCA69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dogstar Industries";
 				TargetAttributes = {
+					9BFF73201EFA8E3200467808 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JY879M2DG7;
+						ProvisioningStyle = Automatic;
+					};
 					FF2AB5AA1E794FD100BCA69D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5F9CYF5K3F;
+						DevelopmentTeam = JY879M2DG7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,11 +212,25 @@
 			projectRoot = "";
 			targets = (
 				FF2AB5AA1E794FD100BCA69D /* ShaderSprite */,
+				9BFF73201EFA8E3200467808 /* Grid */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9BFF731F1EFA8E3200467808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */,
+				9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */,
+				9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */,
+				9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */,
+				9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */,
+				9BFF73281EFA8E3200467808 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF2AB5A91E794FD100BCA69D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +247,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9BFF731D1EFA8E3200467808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */,
+				9BFF732C1EFA8E3200467808 /* GameViewController.swift in Sources */,
+				9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF2AB5A71E794FD100BCA69D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +270,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9BFF732D1EFA8E3200467808 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BFF732E1EFA8E3200467808 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BFF73331EFA8E3200467808 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		FF2AB5B81E794FD100BCA69D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -190,6 +305,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9BFF73361EFA8E3200467808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = JY879M2DG7;
+				INFOPLIST_FILE = Grid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easysoft.Grid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BFF73371EFA8E3200467808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = JY879M2DG7;
+				INFOPLIST_FILE = Grid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easysoft.Grid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FF2AB5C11E794FD100BCA69D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,7 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DEVELOPMENT_TEAM = JY879M2DG7;
 				INFOPLIST_FILE = ShaderSprite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -301,7 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DEVELOPMENT_TEAM = JY879M2DG7;
 				INFOPLIST_FILE = ShaderSprite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -314,6 +461,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9BFF73381EFA8E3200467808 /* Build configuration list for PBXNativeTarget "Grid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFF73361EFA8E3200467808 /* Debug */,
+				9BFF73371EFA8E3200467808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FF2AB5A61E794FD100BCA69D /* Build configuration list for PBXProject "ShaderSprite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
