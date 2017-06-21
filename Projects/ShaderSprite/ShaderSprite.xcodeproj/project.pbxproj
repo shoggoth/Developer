@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73231EFA8E3200467808 /* AppDelegate.swift */; };
 		9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73251EFA8E3200467808 /* GameScene.sks */; };
-		9BFF73281EFA8E3200467808 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73271EFA8E3200467808 /* Actions.sks */; };
 		9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73291EFA8E3200467808 /* GameScene.swift */; };
 		9BFF732C1EFA8E3200467808 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF732B1EFA8E3200467808 /* GameViewController.swift */; };
 		9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF732D1EFA8E3200467808 /* Main.storyboard */; };
 		9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73301EFA8E3200467808 /* Assets.xcassets */; };
 		9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */; };
 		9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */; };
+		9BFF73441EFABF8600467808 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73431EFABF8600467808 /* StarField.sks */; };
 		FF2AB5AF1E794FD100BCA69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB5AE1E794FD100BCA69D /* AppDelegate.swift */; };
 		FF2AB5B11E794FD100BCA69D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B01E794FD100BCA69D /* GameScene.sks */; };
 		FF2AB5B31E794FD100BCA69D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B21E794FD100BCA69D /* Actions.sks */; };
@@ -31,13 +31,13 @@
 		9BFF73211EFA8E3200467808 /* Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF73231EFA8E3200467808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFF73251EFA8E3200467808 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		9BFF73271EFA8E3200467808 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		9BFF73291EFA8E3200467808 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9BFF732B1EFA8E3200467808 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9BFF732E1EFA8E3200467808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BFF73301EFA8E3200467808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BFF73331EFA8E3200467808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BFF73351EFA8E3200467808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFF73431EFABF8600467808 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		FF2AB5AB1E794FD100BCA69D /* ShaderSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2AB5AE1E794FD100BCA69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2AB5B01E794FD100BCA69D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			children = (
 				9BFF73231EFA8E3200467808 /* AppDelegate.swift */,
 				9BFF73251EFA8E3200467808 /* GameScene.sks */,
-				9BFF73271EFA8E3200467808 /* Actions.sks */,
+				9BFF73431EFABF8600467808 /* StarField.sks */,
 				9BFF73291EFA8E3200467808 /* GameScene.swift */,
 				9BFF732B1EFA8E3200467808 /* GameViewController.swift */,
 				9BFF732D1EFA8E3200467808 /* Main.storyboard */,
@@ -222,12 +222,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFF73441EFABF8600467808 /* StarField.sks in Resources */,
 				9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */,
 				9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */,
 				9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */,
 				9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */,
 				9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */,
-				9BFF73281EFA8E3200467808 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +468,7 @@
 				9BFF73371EFA8E3200467808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF2AB5A61E794FD100BCA69D /* Build configuration list for PBXProject "ShaderSprite" */ = {
 			isa = XCConfigurationList;

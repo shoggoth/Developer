@@ -22,9 +22,16 @@ class GameScene: SKScene {
             vortex.size = self.frame.size.applying(CGAffineTransform(scaleX: 0.7, y: 0.7))
 
             //print("VN = \(String(describing: vortex.userData))")
+            enumerateChildNodes(withName: "VortexNode") { node, stop in node.removeFromParent() }
         }
 
-        enumerateChildNodes(withName: "VortexNode") { node, stop in node.removeFromParent() }
+        if let starField = SKEmitterNode(fileNamed: "StarField") {
+
+            //starField.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+            starField.zPosition = -1
+
+            addChild(starField)
+        }
     }
 
     override func update(_ currentTime: TimeInterval) {
@@ -79,8 +86,8 @@ class GameScene: SKScene {
             shape.name = gridName
             
             shape.strokeColor = SKColor.blue
-            shape.fillColor = SKColor.red
-            shape.lineWidth = 2
+            shape.lineWidth = 3
+            shape.zPosition = -0.9
             
             addChild(shape)
         }
