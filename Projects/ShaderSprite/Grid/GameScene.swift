@@ -27,7 +27,6 @@ class GameScene: SKScene {
 
         if let starField = SKEmitterNode(fileNamed: "StarField") {
 
-            //starField.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
             starField.zPosition = -1
 
             addChild(starField)
