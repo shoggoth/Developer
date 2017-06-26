@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 import GameControls
 
-class ViewController: UIViewController {
+class ViewController : UIViewController {
 
     @IBOutlet var multiTouchView: TouchControllerView!
     @IBOutlet var singleTouchView: TouchControllerView!

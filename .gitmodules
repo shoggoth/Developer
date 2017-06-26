@@ -1,0 +1,3 @@
+[submodule "Frameworks/SKTUtils"]
+	path = Frameworks/SKTUtils
+	url = https://github.com/raywenderlich/SKTUtils.git

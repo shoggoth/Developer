@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import Cocoa
+import SpriteKit
 
 struct Vec2 {
 
@@ -22,7 +23,7 @@ struct Vec2 {
     }
 }
 
-let vec = Vec2(x: 0, y: 1)
+let vec = Vec2(x: 0.707, y: 0.707)
 let xAxis = Vec2(x: 1, y: 0)
 let yAxis = Vec2(x: 0, y: 1)
 let dAxis = Vec2(x: 1, y: 1).norm
@@ -31,4 +32,5 @@ let xProj = xAxis.dot(vec)
 let yProj = yAxis.dot(vec)
 let dProj = dAxis.dot(vec)
 
-let a = dAxis.y
+
+let skv = Vector2(
