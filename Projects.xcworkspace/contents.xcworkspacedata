@@ -5,7 +5,7 @@
       location = "group:Projects/InvaderClone/InvaderClone.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Projects/ShaderSprite/ShaderSprite.xcodeproj">
+      location = "group:/Users/fritx/Documents/Developer/Projects/ShaderSprite/Experiments.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Projects/GameControls/GameControls.xcodeproj">
