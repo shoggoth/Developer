@@ -12,10 +12,10 @@ class RootCollectionViewController: UICollectionViewController {
 
     private let dataItems = [(string: "String 1", type:"StringCell", value: 0, hi: false, sel: false),
                              (string: "String 2", type:"SizingCell", value: 0, hi: false, sel: false),
-                             (string: "String 3", type:"StringCell", value: 0, hi: false, sel: false),
-                             (string: "String 4", type:"StringCell", value: 0, hi: false, sel: false),
-                             (string: "String 5", type:"StringCell", value: 0, hi: false, sel: false),
-                             (string: "String 6", type:"StringCell", value: 0, hi: false, sel: false)]
+                             (string: "String 3", type:"Segue1Cell", value: 0, hi: true , sel: false),
+                             (string: "String 4", type:"Segue2Cell", value: 0, hi: false, sel: false),
+                             (string: "String 5", type:"SelectCell", value: 0, hi: true,  sel: true ),
+                             (string: "String 6", type:"StringCell", value: 0, hi: true,  sel: false)]
 
     override func viewDidLoad() {
 
@@ -49,7 +49,6 @@ class RootCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int { return 1 }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { return dataItems.count }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,7 +56,7 @@ class RootCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dataItems[indexPath.row].type, for: indexPath)
     
         // Configure the cell
-        (cell as? StringCell)?.configure(content: dataItems[indexPath.row].string)
+        (cell as? StringCell)?.configure(dataItems[indexPath.row].string)
 
         return cell
     }
@@ -67,23 +66,23 @@ class RootCollectionViewController: UICollectionViewController {
     // Specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool { return dataItems[indexPath.row].hi }
 
+    // Do the highlighting
+    override func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        cell?.contentView.backgroundColor = UIColor.blue
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        cell?.contentView.backgroundColor = nil
+    }
+
     // Specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool { return dataItems[indexPath.row].sel }
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 }
 
 // MARK: - Model
@@ -99,7 +98,7 @@ class StringCell : UICollectionViewCell {
 
     @IBOutlet private var label: UILabel!
 
-    func configure(content: String) {
+    func configure(_ content: String) {
 
         label.text = content
 
@@ -109,5 +108,24 @@ class StringCell : UICollectionViewCell {
 
         // Appearance
         label.font = UIFont.preferredFont(forTextStyle: .headline)
+    }
+}
+
+class SizingCell : StringCell {
+
+    @IBOutlet private var subLabel: UILabel!
+
+    override func configure(_ content: String) {
+
+        super.configure("sup" + content)
+
+        subLabel.text = "sub" + content
+
+        // Accessibility
+        subLabel.accessibilityLabel = "Sub"
+        subLabel.accessibilityValue = content
+
+        // Appearance
+        subLabel.font = UIFont.preferredFont(forTextStyle: .body)
     }
 }
