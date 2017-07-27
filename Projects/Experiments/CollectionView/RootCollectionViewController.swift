@@ -10,12 +10,13 @@ import UIKit
 
 class RootCollectionViewController: UICollectionViewController {
 
-    private let dataItems = [(string: "String 1", type:"StringCell", value: 0, hi: false, sel: false),
+    private let dataItems = [(string: "String 1", type:"SelectCell", value: 0, hi: true,  sel: true ),
                              (string: "String 2", type:"SizingCell", value: 0, hi: false, sel: false),
                              (string: "String 3", type:"Segue1Cell", value: 0, hi: true , sel: false),
                              (string: "String 4", type:"Segue2Cell", value: 0, hi: false, sel: false),
-                             (string: "String 5", type:"SelectCell", value: 0, hi: true,  sel: true ),
-                             (string: "String 6", type:"StringCell", value: 0, hi: true,  sel: false)]
+                             (string: "String 5", type:"Segue3Cell", value: 0, hi: false, sel: false),
+                             (string: "String 6", type:"Segue4Cell", value: 0, hi: false, sel: false),
+                             (string: "String 7", type:"StringCell", value: 0, hi: true,  sel: false)]
 
     override func viewDidLoad() {
 

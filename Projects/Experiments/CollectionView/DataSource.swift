@@ -12,9 +12,13 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
 
     @IBInspectable var sectionCount: Int = 0
     @IBInspectable var contentCount: Int = 0
-    @IBInspectable var cellType: String = "DefaultCell"
+
+    @IBInspectable var cellIdentifier: String = "DefaultCell"
     @IBInspectable var canHighlight: Bool = false
     @IBInspectable var canSelect: Bool = false
+
+    @IBInspectable var headerIdentifier: String = "DefaultHeader"
+    @IBInspectable var footerIdentifier: String = "DefaultFooter"
 
     private typealias DataType = (string: String, type: String, value: Int, hi: Bool, sel: Bool)
 
@@ -35,7 +39,7 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
 
         for cellIndex in 0..<contentCount {
 
-            content.append(DataType(string: "Sec \(sectionIndex) Cell \(cellIndex)", type: cellType, value: 0, hi: canHighlight, sel: canSelect))
+            content.append(DataType(string: "Sec \(sectionIndex) Cell \(cellIndex)", type: cellIdentifier, value: 0, hi: canHighlight, sel: canSelect))
         }
 
         return content
@@ -55,6 +59,15 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
         (cell as? StringCell)?.configure(data[indexPath.section][indexPath.row].string)
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        let reuseIdentifier = kind == UICollectionElementKindSectionHeader ? headerIdentifier : footerIdentifier
+
+        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reuseIdentifier, for: indexPath)
+
+        return view
     }
 
     // MARK: UICollectionViewDelegate
