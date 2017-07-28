@@ -48,14 +48,25 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
 
     // MARK: Functionality
 
-    func deleteSelectedItems(in collectionView: UICollectionView, completion: ((Bool) -> Void)?) {
+    func createNewItem(in collectionView: UICollectionView) {
+
+        let sectionIndex = 0
+        let cellIndex = data[sectionIndex].count
+
+        data[0].append(DataType(string: "Add \(sectionIndex) Cell \(cellIndex)", type: cellIdentifier, value: 0, hi: canHighlight, sel: canSelect))
+
+        collectionView.insertItems(at: [IndexPath(item: cellIndex, section: sectionIndex)])
+    }
+
+    func deleteSelectedItems(in collectionView: UICollectionView, completion: ((Bool) -> Void)? = nil) {
 
         collectionView.performBatchUpdates({
 
             if let itemPaths = collectionView.indexPathsForSelectedItems {
 
-                // Delete the items from the data array
-                for path in itemPaths {
+                // Delete the items from the data array.
+                // Sort them first so that we don't get an array out of range error.
+                for path in itemPaths.sorted(by: { $0.section == $1.section ? $0.item > $1.item : $0.section > $1.section }) {
 
                     self.data[path.section].remove(at: path.row)
                 }

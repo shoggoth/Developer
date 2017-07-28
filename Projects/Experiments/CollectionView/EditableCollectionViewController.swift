@@ -29,13 +29,14 @@ class EditableCollectionViewController: UICollectionViewController {
     
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
 
+        dataSource.createNewItem(in: collectionView!)
+
         //collectionView?.performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-        print("Bell Rang")
     }
 
     @IBAction func trashButtonTapped(_ sender: UIBarButtonItem) {
 
-        dataSource.deleteSelectedItems(in: collectionView!, completion: { _ in print("Deleted") })
+        dataSource.deleteSelectedItems(in: collectionView!)
     }
 }
 
