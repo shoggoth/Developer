@@ -38,3 +38,11 @@ class EditableCollectionViewController: UICollectionViewController {
         dataSource.deleteSelectedItems(in: collectionView!, completion: { _ in print("Deleted") })
     }
 }
+
+class EditableViewCell : StringCell {
+
+    override func awakeFromNib() {
+
+        Bundle.main.loadNibNamed("CellViews", owner: self, options: nil)
+    }
+}

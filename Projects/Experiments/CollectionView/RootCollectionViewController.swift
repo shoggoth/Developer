@@ -94,7 +94,7 @@ class RootCollectionViewController: UICollectionViewController {
 
         let cell = collectionView.cellForItem(at: indexPath)
 
-        print("Selected \(cell)")
+        print("Selected \(String(describing: cell))")
 
         //super.collectionView(collectionView, didSelectItemAt: indexPath)
     }
@@ -103,7 +103,7 @@ class RootCollectionViewController: UICollectionViewController {
 
         let cell = collectionView.cellForItem(at: indexPath)
 
-        print("Deselected \(cell)")
+        print("Deselected \(String(describing: cell))")
 
         //super.collectionView(collectionView, didDeselectItemAt: indexPath)
     }

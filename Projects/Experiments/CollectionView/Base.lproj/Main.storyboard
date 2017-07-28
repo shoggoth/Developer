@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +16,7 @@
         <scene sceneID="GVN-Sb-g2T">
             <objects>
                 <collectionViewController id="T4j-Fq-ZBk" customClass="RootCollectionViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="D2S-q1-rhJ">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="D2S-q1-rhJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -473,7 +474,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="vPQ-vV-TTO" customClass="StringCell" customModule="CollectionView" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="vPQ-vV-TTO" customClass="EditableViewCell" customModule="CollectionView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="123" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -499,6 +500,9 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="pa3-cs-rDv" id="s1H-Tn-dBj"/>
                             <outlet property="delegate" destination="pa3-cs-rDv" id="mVf-pu-Jjk"/>
@@ -539,7 +543,7 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="contentCount">
-                            <integer key="value" value="10"/>
+                            <integer key="value" value="100"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="YES"/>
@@ -589,6 +593,7 @@
                                     <constraint firstItem="RRj-el-asL" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="1SK-yR-cI5"/>
                                     <constraint firstItem="PmJ-Ds-oFi" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="7m3-1L-vgF"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="PmJ-Ds-oFi" secondAttribute="bottom" constant="12" id="YHP-Z3-S2y"/>
+                                    <constraint firstItem="RRj-el-asL" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="cIb-Bg-baL"/>
                                     <constraint firstItem="RRj-el-asL" firstAttribute="top" secondItem="ZuY-Qp-1j6" secondAttribute="topMargin" constant="12" id="qep-b4-O5e"/>
                                 </constraints>
                                 <variation key="default">
