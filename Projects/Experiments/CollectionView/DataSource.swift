@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Dogstar
 
 class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
 
@@ -45,6 +46,27 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
         return content
     }
 
+    // MARK: Functionality
+
+    func deleteSelectedItems(in collectionView: UICollectionView, completion: ((Bool) -> Void)?) {
+
+        collectionView.performBatchUpdates({
+
+            if let itemPaths = collectionView.indexPathsForSelectedItems {
+
+                // Delete the items from the data array
+                for path in itemPaths {
+
+                    self.data[path.section].remove(at: path.row)
+                }
+
+                // Delete the items from the collection view.
+                collectionView.deleteItems(at: itemPaths)
+            }
+            
+        }, completion: completion)
+    }
+
     // MARK: UICollectionViewDataSource
 
     func numberOfSections(in collectionView: UICollectionView) -> Int { return data.count }
@@ -78,55 +100,22 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
     // Do the highlighting
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
 
-        collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = UIColor.blue
+        UIView.animateKeyframes(withDuration: 0.23, delay: 0, options: .allowUserInteraction, animations: {
+
+            collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = UIColor.blue
+
+        }, completion: nil)
     }
 
     func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
 
-        collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = nil
+        UIView.animateKeyframes(withDuration: 0.23, delay: 0, options: .allowUserInteraction, animations: {
+
+            collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = nil
+
+        }, completion: nil)
     }
-    
 
     // Specify if the specified item should be selected
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool { return data[indexPath.section][indexPath.row].sel }
-}
-
-// MARK: - Random name generation
-
-private extension Collection where Index == Int {
-
-    func randomElement() -> Iterator.Element? {
-
-        return isEmpty ? nil : self[Int(arc4random_uniform(UInt32(endIndex)))]
-    }
-}
-
-private func randomName() -> String {
-
-    let title = ["Mr.", "Mrs.", "Miss", "Dr.", "Reverend"]
-
-    let firstNameSyllableOne = ["Rich", "Ant", "St", "Jas", "Mart", "Bor", "Alfr", "Alb", "Barr", "Cam", "Ham", "T", "Br"]
-    let firstNameSyllableTwo = ["ard", "ony", "er", "on", "in", "an", "is", "ed", "ert", "y", "ie", "eron", "ish", "ington"]
-
-    let surNameSyllableOne = ["Bim", "Bum", "Chur", "Cum", "McFer", "Pup", "Ro", "Tram"]
-    let surNameSyllableTwo = ["kin", "son", "ley", "lish", "ple", "mont"]
-
-    return ("\(title.randomElement()!) \(firstNameSyllableOne.randomElement()!)\(firstNameSyllableTwo.randomElement()!) \(surNameSyllableOne.randomElement()!)\(surNameSyllableTwo.randomElement()!)")
-}
-
-private func randomString(length: Int) -> String {
-
-    let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    let len = UInt32(letters.length)
-
-    var randomString = ""
-
-    for _ in 0 ..< length {
-
-        let rand = arc4random_uniform(len)
-        var nextChar = letters.character(at: Int(rand))
-        randomString += NSString(characters: &nextChar, length: 1) as String
-    }
-    
-    return randomString
 }

@@ -1,0 +1,40 @@
+//
+//  EditableCollectionViewController.swift
+//  Experiments
+//
+//  Created by Rich Henry on 27/07/2017.
+//  Copyright © 2017 Dogstar Industries. All rights reserved.
+//
+
+import UIKit
+
+class EditableCollectionViewController: UICollectionViewController {
+
+    @IBOutlet var dataSource: DataSource!
+
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
+        // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
+        // Do any additional setup after loading the view.
+    }
+
+    // MARK: Actions
+    
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+
+        //collectionView?.performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+        print("Bell Rang")
+    }
+
+    @IBAction func trashButtonTapped(_ sender: UIBarButtonItem) {
+
+        dataSource.deleteSelectedItems(in: collectionView!, completion: { _ in print("Deleted") })
+    }
+}

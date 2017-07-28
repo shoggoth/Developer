@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Projects/InvaderClone/InvaderClone.xcodeproj">
+      location = "group:Frameworks/Frameworks.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/fritx/Documents/Developer/Projects/ShaderSprite/Experiments.xcodeproj">
+      location = "group:Projects/Experiments/Experiments.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Projects/GameControls/GameControls.xcodeproj">

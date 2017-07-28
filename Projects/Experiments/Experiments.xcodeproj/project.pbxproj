@@ -17,6 +17,9 @@
 		9BA406611F20F503005F1271 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406601F20F503005F1271 /* DataSource.swift */; };
 		9BA406651F289F0A005F1271 /* FitToWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */; };
 		9BA406671F28CC3A005F1271 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */; };
+		9BA406691F2A07EF005F1271 /* EditableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406681F2A07EF005F1271 /* EditableCollectionViewController.swift */; };
+		9BA4069A1F2B3323005F1271 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; };
+		9BA4069B1F2B3323005F1271 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73231EFA8E3200467808 /* AppDelegate.swift */; };
 		9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73251EFA8E3200467808 /* GameScene.sks */; };
 		9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73291EFA8E3200467808 /* GameScene.swift */; };
@@ -66,6 +69,20 @@
 			remoteGlobalIDString = FF29BB821E800C9C006A08E7;
 			remoteInfo = GameControls;
 		};
+		9BA406931F2B32DE005F1271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BA406851F2B3024005F1271;
+			remoteInfo = Dogstar;
+		};
+		9BA4069C1F2B3323005F1271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA406841F2B3024005F1271;
+			remoteInfo = Dogstar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +93,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9B2043391EFD529100B33C95 /* GameControls.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA4069E1F2B3324005F1271 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BA4069B1F2B3323005F1271 /* Dogstar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +122,8 @@
 		9BA406601F20F503005F1271 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitToWidthViewController.swift; sourceTree = "<group>"; };
 		9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		9BA406681F2A07EF005F1271 /* EditableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditableCollectionViewController.swift; sourceTree = "<group>"; };
+		9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Frameworks.xcodeproj; path = ../../Frameworks/Frameworks.xcodeproj; sourceTree = "<group>"; };
 		9BFF73211EFA8E3200467808 /* Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF73231EFA8E3200467808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFF73251EFA8E3200467808 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -123,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA4069A1F2B3323005F1271 /* Dogstar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +190,7 @@
 			children = (
 				9BA4064E1F209CCB005F1271 /* AppDelegate.swift */,
 				9BA406601F20F503005F1271 /* DataSource.swift */,
+				9BA406681F2A07EF005F1271 /* EditableCollectionViewController.swift */,
 				9BA4065E1F209E34005F1271 /* RootCollectionViewController.swift */,
 				9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */,
 				9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */,
@@ -168,6 +200,14 @@
 				9BA4065A1F209CCB005F1271 /* Info.plist */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9BA406901F2B32DE005F1271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA406941F2B32DE005F1271 /* Dogstar.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9BFF73221EFA8E3200467808 /* Grid */ = {
@@ -236,6 +276,7 @@
 		FF2AB5C81E797B0200BCA69D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */,
 				9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */,
 				FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */,
 			);
@@ -252,10 +293,12 @@
 				9BA406481F209CCB005F1271 /* Sources */,
 				9BA406491F209CCB005F1271 /* Frameworks */,
 				9BA4064A1F209CCB005F1271 /* Resources */,
+				9BA4069E1F2B3324005F1271 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9BA4069D1F2B3323005F1271 /* PBXTargetDependency */,
 			);
 			name = CollectionView;
 			productName = CollectionView;
@@ -315,7 +358,7 @@
 					};
 					9BFF73201EFA8E3200467808 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5F9CYF5K3F;
+						DevelopmentTeam = QL2HV855H2;
 						ProvisioningStyle = Automatic;
 					};
 					FF2AB5AA1E794FD100BCA69D = {
@@ -337,6 +380,10 @@
 			productRefGroup = FF2AB5AC1E794FD100BCA69D /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 9BA406901F2B32DE005F1271 /* Products */;
+					ProjectRef = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
+				},
 				{
 					ProductGroup = 9B20432D1EFD528100B33C95 /* Products */;
 					ProjectRef = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
@@ -371,6 +418,13 @@
 			fileType = wrapper.cfbundle;
 			path = GameControlsTests.xctest;
 			remoteRef = 9B2043361EFD528100B33C95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9BA406941F2B32DE005F1271 /* Dogstar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dogstar.framework;
+			remoteRef = 9BA406931F2B32DE005F1271 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -421,6 +475,7 @@
 			files = (
 				9BA406611F20F503005F1271 /* DataSource.swift in Sources */,
 				9BA4065F1F209E34005F1271 /* RootCollectionViewController.swift in Sources */,
+				9BA406691F2A07EF005F1271 /* EditableCollectionViewController.swift in Sources */,
 				9BA406651F289F0A005F1271 /* FitToWidthViewController.swift in Sources */,
 				9BA4064F1F209CCB005F1271 /* AppDelegate.swift in Sources */,
 				9BA406671F28CC3A005F1271 /* AutoLayoutViewController.swift in Sources */,
@@ -454,6 +509,11 @@
 			isa = PBXTargetDependency;
 			name = GameControls;
 			targetProxy = 9B20433A1EFD529100B33C95 /* PBXContainerItemProxy */;
+		};
+		9BA4069D1F2B3323005F1271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dogstar;
+			targetProxy = 9BA4069C1F2B3323005F1271 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,6 +572,7 @@
 		9BA4065C1F209CCB005F1271 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = QL2HV855H2;
@@ -527,6 +588,7 @@
 		9BA4065D1F209CCB005F1271 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = QL2HV855H2;
@@ -545,7 +607,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DEVELOPMENT_TEAM = QL2HV855H2;
 				INFOPLIST_FILE = Grid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -562,7 +624,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DEVELOPMENT_TEAM = QL2HV855H2;
 				INFOPLIST_FILE = Grid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -704,6 +766,7 @@
 				9BA4065D1F209CCB005F1271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BFF73381EFA8E3200467808 /* Build configuration list for PBXNativeTarget "Grid" */ = {
 			isa = XCConfigurationList;

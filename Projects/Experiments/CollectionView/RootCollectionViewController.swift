@@ -10,12 +10,18 @@ import UIKit
 
 class RootCollectionViewController: UICollectionViewController {
 
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet var selectedBackgroundView: UIView!
+
     private let dataItems = [(string: "String 1", type:"SelectCell", value: 0, hi: true,  sel: true ),
                              (string: "String 2", type:"SizingCell", value: 0, hi: false, sel: false),
                              (string: "String 3", type:"Segue1Cell", value: 0, hi: true , sel: false),
                              (string: "String 4", type:"Segue2Cell", value: 0, hi: false, sel: false),
                              (string: "String 5", type:"Segue3Cell", value: 0, hi: false, sel: false),
                              (string: "String 6", type:"Segue4Cell", value: 0, hi: false, sel: false),
+                             (string: "String a", type:"Segue5Cell", value: 0, hi: false, sel: false),
+                             (string: "String b", type:"SelectCell", value: 0, hi: true,  sel: true ),
+                             (string: "String c", type:"SelectCell", value: 0, hi: false, sel: true ),
                              (string: "String 7", type:"StringCell", value: 0, hi: true,  sel: false)]
 
     override func viewDidLoad() {
@@ -59,6 +65,8 @@ class RootCollectionViewController: UICollectionViewController {
         // Configure the cell
         (cell as? StringCell)?.configure(dataItems[indexPath.row].string)
 
+        cell.backgroundView = backgroundView
+
         return cell
     }
 
@@ -80,6 +88,24 @@ class RootCollectionViewController: UICollectionViewController {
         let cell = collectionView.cellForItem(at: indexPath)
 
         cell?.contentView.backgroundColor = nil
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        print("Selected \(cell)")
+
+        //super.collectionView(collectionView, didSelectItemAt: indexPath)
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        print("Deselected \(cell)")
+
+        //super.collectionView(collectionView, didDeselectItemAt: indexPath)
     }
 
     // Specify if the specified item should be selected
