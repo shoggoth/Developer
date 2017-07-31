@@ -17,10 +17,10 @@ public func randomName() -> String {
     let firstNameSyllableOne = ["Rich", "Ant", "St", "Jas", "Mart", "Bor", "Alfr", "Alb", "Barr", "Cam", "Ham", "T", "Br"]
     let firstNameSyllableTwo = ["ard", "ony", "er", "on", "in", "an", "is", "ed", "ert", "y", "ie", "eron", "ish", "ington"]
 
-    let surnamePrefix = ["Mc.", "O'", "Le"]
+    //let surnamePrefix = ["Mc.", "O'", "Le"]
     let surNameSyllableOne = ["Bim", "Bum", "Chur", "Cum", "Fer", "Pup", "Ro", "Tram"]
     let surNameSyllableTwo = ["kin", "son", "ley", "lish", "ple", "mont"]
-    let surnamePostfix = ["Esq.", "Jr.'", "Le"]
+    //let surnamePostfix = ["Esq.", "Jr.'", "Le"]
 
     return ("\(title.randomElement()!) \(firstNameSyllableOne.randomElement()!)\(firstNameSyllableTwo.randomElement()!) \(surNameSyllableOne.randomElement()!)\(surNameSyllableTwo.randomElement()!)")
 }
