@@ -487,12 +487,30 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qi-M4-7gA">
+                                            <rect key="frame" x="90" y="41" width="12" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="9Qi-M4-7gA" firstAttribute="leading" secondItem="rm0-T1-Z2X" secondAttribute="trailing" constant="8" id="21d-cM-SZ6"/>
                                     <constraint firstItem="rm0-T1-Z2X" firstAttribute="centerX" secondItem="vPQ-vV-TTO" secondAttribute="centerX" id="CFx-7G-L4b"/>
+                                    <constraint firstItem="9Qi-M4-7gA" firstAttribute="centerY" secondItem="rm0-T1-Z2X" secondAttribute="centerY" id="N7C-vK-Oum"/>
                                     <constraint firstItem="rm0-T1-Z2X" firstAttribute="centerY" secondItem="vPQ-vV-TTO" secondAttribute="centerY" id="qeo-24-GLv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="9Qi-M4-7gA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="9Qi-M4-7gA"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="backgroundView" destination="z9m-Q6-sbT" id="vgg-5A-MD7"/>
                                     <outlet property="label" destination="rm0-T1-Z2X" id="xmE-tw-Qfd"/>
@@ -537,7 +555,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <customObject id="pa3-cs-rDv" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="pa3-cs-rDv" customClass="WidthFitDataSource" customModule="CollectionView" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="5"/>
@@ -547,10 +565,13 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellHeight">
+                            <real key="value" value="128"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2622" y="819"/>
+            <point key="canvasLocation" x="2621.5999999999999" y="818.14092953523243"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="wfL-eN-AQb">
@@ -590,10 +611,9 @@
                                 </view>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="RRj-el-asL" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="1SK-yR-cI5"/>
                                     <constraint firstItem="PmJ-Ds-oFi" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="7m3-1L-vgF"/>
+                                    <constraint firstItem="RRj-el-asL" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="ACK-5H-ZIe"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="PmJ-Ds-oFi" secondAttribute="bottom" constant="12" id="YHP-Z3-S2y"/>
-                                    <constraint firstItem="RRj-el-asL" firstAttribute="centerX" secondItem="ZuY-Qp-1j6" secondAttribute="centerX" id="cIb-Bg-baL"/>
                                     <constraint firstItem="RRj-el-asL" firstAttribute="top" secondItem="ZuY-Qp-1j6" secondAttribute="topMargin" constant="12" id="qep-b4-O5e"/>
                                 </constraints>
                                 <variation key="default">

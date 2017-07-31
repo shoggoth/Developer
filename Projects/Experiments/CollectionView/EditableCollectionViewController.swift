@@ -38,6 +38,13 @@ class EditableCollectionViewController: UICollectionViewController {
 
         dataSource.deleteSelectedItems(in: collectionView!)
     }
+
+    // MARK: Resizing
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+
+        collectionView?.collectionViewLayout.invalidateLayout()
+    }
 }
 
 class EditableViewCell : StringCell {

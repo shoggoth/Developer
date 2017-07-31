@@ -130,3 +130,19 @@ class DataSource : NSObject, UICollectionViewDataSource, UICollectionViewDelegat
     // Specify if the specified item should be selected
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool { return data[indexPath.section][indexPath.row].sel }
 }
+
+// MARK: - Width Fitting data source
+
+class WidthFitDataSource : DataSource, UICollectionViewDelegateFlowLayout {
+
+    @IBInspectable var cellHeight: CGFloat = 44
+
+    // MARK: Sizing
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let sz = collectionView.frame.size
+
+        return CGSize(width: sz.width, height: cellHeight)
+    }
+}
