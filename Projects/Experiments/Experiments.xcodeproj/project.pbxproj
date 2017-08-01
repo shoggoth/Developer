@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B2043381EFD529100B33C95 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2043331EFD528100B33C95 /* GameControls.framework */; };
 		9B2043391EFD529100B33C95 /* GameControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2043331EFD528100B33C95 /* GameControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B7AA5701F307FF400C898D9 /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7AA5721F307FF400C898D9 /* Gesture.storyboard */; };
 		9BA4064F1F209CCB005F1271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4064E1F209CCB005F1271 /* AppDelegate.swift */; };
 		9BA406541F209CCB005F1271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406521F209CCB005F1271 /* Main.storyboard */; };
 		9BA406561F209CCB005F1271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406551F209CCB005F1271 /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 
 /* Begin PBXFileReference section */
 		9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameControls.xcodeproj; path = ../GameControls/GameControls.xcodeproj; sourceTree = "<group>"; };
+		9B7AA5711F307FF400C898D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gesture.storyboard; sourceTree = "<group>"; };
 		9BA4064C1F209CCB005F1271 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA4064E1F209CCB005F1271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA406531F209CCB005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		9BA406B11F2F7164005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AutoLayout.storyboard; sourceTree = "<group>"; };
 		9BA406B31F2F718A005F1271 /* Editing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Editing.storyboard; sourceTree = "<group>"; };
 		9BA406B61F2F71AA005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sections.storyboard; sourceTree = "<group>"; };
+		9BCE3C701F3082F800B3A5D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Gesture.strings; sourceTree = "<group>"; };
 		9BFF73211EFA8E3200467808 /* Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF73231EFA8E3200467808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFF73251EFA8E3200467808 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -205,10 +208,11 @@
 				9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */,
 				9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */,
 				9BA406521F209CCB005F1271 /* Main.storyboard */,
-				9BA406B51F2F71AA005F1271 /* Sections.storyboard */,
-				9BA406B31F2F718A005F1271 /* Editing.storyboard */,
-				9BA406B01F2F7164005F1271 /* AutoLayout.storyboard */,
 				9BA406AD1F2F70D3005F1271 /* DataSource.storyboard */,
+				9BA406B01F2F7164005F1271 /* AutoLayout.storyboard */,
+				9BA406B51F2F71AA005F1271 /* Sections.storyboard */,
+				9B7AA5721F307FF400C898D9 /* Gesture.storyboard */,
+				9BA406B31F2F718A005F1271 /* Editing.storyboard */,
 				9BA406A91F2B52AA005F1271 /* CellViews.xib */,
 				9BA406551F209CCB005F1271 /* Assets.xcassets */,
 				9BA406571F209CCB005F1271 /* LaunchScreen.storyboard */,
@@ -450,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA406AA1F2B52AA005F1271 /* CellViews.xib in Resources */,
+				9B7AA5701F307FF400C898D9 /* Gesture.storyboard in Resources */,
 				9BA406B21F2F7164005F1271 /* AutoLayout.storyboard in Resources */,
 				9BA406B71F2F71AA005F1271 /* Sections.storyboard in Resources */,
 				9BA406AF1F2F70D3005F1271 /* DataSource.storyboard in Resources */,
@@ -538,6 +543,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9B7AA5721F307FF400C898D9 /* Gesture.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7AA5711F307FF400C898D9 /* Base */,
+				9BCE3C701F3082F800B3A5D1 /* en */,
+			);
+			name = Gesture.storyboard;
+			sourceTree = "<group>";
+		};
 		9BA406521F209CCB005F1271 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

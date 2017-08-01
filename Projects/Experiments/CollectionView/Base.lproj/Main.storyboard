@@ -288,8 +288,54 @@
                                     <constraint firstItem="htd-s3-NKK" firstAttribute="top" secondItem="LF9-IT-zCW" secondAttribute="top" id="tUF-Jy-gFT"/>
                                 </constraints>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectCell" id="0XP-KR-CBN">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Segue6Cell" id="3cS-H6-4tZ">
                                 <rect key="frame" x="0.0" y="309" width="150" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UU-eM-Z4I">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rjc-Hc-Ypi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesturing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wux-Ae-y0G">
+                                                            <rect key="frame" x="37.5" y="0.0" width="75" height="38"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-5X-1Kx">
+                                                            <rect key="frame" x="56" y="38" width="38" height="55"/>
+                                                            <state key="normal" title="Show"/>
+                                                            <connections>
+                                                                <segue destination="yK9-f1-B0a" kind="show" id="r4p-P8-NJp"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Rjc-Hc-Ypi" firstAttribute="leading" secondItem="4UU-eM-Z4I" secondAttribute="leading" id="15R-8t-7zk"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rjc-Hc-Ypi" secondAttribute="bottom" id="IB7-0q-4Q2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rjc-Hc-Ypi" secondAttribute="trailing" id="cDP-U6-WIj"/>
+                                                <constraint firstItem="Rjc-Hc-Ypi" firstAttribute="top" secondItem="4UU-eM-Z4I" secondAttribute="top" id="wQw-A2-qFN"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4UU-eM-Z4I" secondAttribute="bottom" id="T1o-uT-COu"/>
+                                    <constraint firstItem="4UU-eM-Z4I" firstAttribute="leading" secondItem="3cS-H6-4tZ" secondAttribute="leading" id="aca-4b-BKY"/>
+                                    <constraint firstItem="4UU-eM-Z4I" firstAttribute="top" secondItem="3cS-H6-4tZ" secondAttribute="top" id="fJE-gF-hcM"/>
+                                    <constraint firstAttribute="trailing" secondItem="4UU-eM-Z4I" secondAttribute="trailing" id="lnp-yz-PkN"/>
+                                </constraints>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectCell" id="0XP-KR-CBN">
+                                <rect key="frame" x="225" y="309" width="150" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
@@ -314,7 +360,7 @@
                                 </userDefinedRuntimeAttributes>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StringCell" id="g1d-Vm-CC2" customClass="StringCell" customModule="CollectionView" customModuleProvider="target">
-                                <rect key="frame" x="225" y="309" width="150" height="93"/>
+                                <rect key="frame" x="0.0" y="412" width="150" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
@@ -391,7 +437,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC3-67-oGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="136"/>
+            <point key="canvasLocation" x="479" y="135"/>
         </scene>
         <!--DataSource-->
         <scene sceneID="S90-bu-fV2">
@@ -399,7 +445,7 @@
                 <viewControllerPlaceholder storyboardName="DataSource" id="chW-tB-nke" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irJ-aL-Umk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898" y="-9"/>
+            <point key="canvasLocation" x="1910" y="-152"/>
         </scene>
         <!--AutoLayoutFitToWidth-->
         <scene sceneID="mmd-q6-2cA">
@@ -407,7 +453,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="AutoLayoutFitToWidth" storyboardName="AutoLayout" referencedIdentifier="AutoLayoutFitToWidth" id="NCl-jp-swP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5v-Kz-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="64"/>
+            <point key="canvasLocation" x="1961" y="-85"/>
         </scene>
         <!--AutoLayoutCentring-->
         <scene sceneID="XfP-L4-663">
@@ -415,7 +461,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="AutoLayoutCentring" storyboardName="AutoLayout" referencedIdentifier="AutoLayoutCentring" id="Vkw-u8-zZx" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcd-V3-bY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="136"/>
+            <point key="canvasLocation" x="1950" y="-16"/>
         </scene>
         <!--Editing-->
         <scene sceneID="yC0-jY-6be">
@@ -423,7 +469,7 @@
                 <viewControllerPlaceholder storyboardName="Editing" id="Ncw-k9-U1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeV-69-zvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="268"/>
+            <point key="canvasLocation" x="1887" y="175"/>
         </scene>
         <!--Sections-->
         <scene sceneID="Ahe-aV-ztQ">
@@ -431,7 +477,15 @@
                 <viewControllerPlaceholder storyboardName="Sections" id="GaD-6v-0Pg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pN-PR-Mlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="201"/>
+            <point key="canvasLocation" x="1895" y="42"/>
+        </scene>
+        <!--Gesture-->
+        <scene sceneID="Nd7-KB-udA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gesture" id="yK9-f1-B0a" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmX-oF-0Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="107"/>
         </scene>
     </scenes>
 </document>

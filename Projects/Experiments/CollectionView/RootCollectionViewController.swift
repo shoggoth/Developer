@@ -20,6 +20,7 @@ class RootCollectionViewController: UICollectionViewController {
                              (string: "String 5", type:"Segue3Cell", value: 0, hi: false, sel: false),
                              (string: "String 6", type:"Segue4Cell", value: 0, hi: false, sel: false),
                              (string: "String a", type:"Segue5Cell", value: 0, hi: false, sel: false),
+                             (string: "String d", type:"Segue6Cell", value: 0, hi: false, sel: false),
                              (string: "String b", type:"SelectCell", value: 0, hi: true,  sel: true ),
                              (string: "String c", type:"SelectCell", value: 0, hi: false, sel: true ),
                              (string: "String 7", type:"StringCell", value: 0, hi: true,  sel: false)]
