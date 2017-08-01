@@ -136,7 +136,6 @@
 		9BA406B11F2F7164005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AutoLayout.storyboard; sourceTree = "<group>"; };
 		9BA406B31F2F718A005F1271 /* Editing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Editing.storyboard; sourceTree = "<group>"; };
 		9BA406B61F2F71AA005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sections.storyboard; sourceTree = "<group>"; };
-		9BCE3C701F3082F800B3A5D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Gesture.strings; sourceTree = "<group>"; };
 		9BFF73211EFA8E3200467808 /* Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF73231EFA8E3200467808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFF73251EFA8E3200467808 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -547,7 +546,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B7AA5711F307FF400C898D9 /* Base */,
-				9BCE3C701F3082F800B3A5D1 /* en */,
 			);
 			name = Gesture.storyboard;
 			sourceTree = "<group>";

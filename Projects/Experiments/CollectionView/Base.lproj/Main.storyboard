@@ -445,7 +445,7 @@
                 <viewControllerPlaceholder storyboardName="DataSource" id="chW-tB-nke" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irJ-aL-Umk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="-152"/>
+            <point key="canvasLocation" x="1908" y="-152"/>
         </scene>
         <!--AutoLayoutFitToWidth-->
         <scene sceneID="mmd-q6-2cA">
@@ -453,7 +453,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="AutoLayoutFitToWidth" storyboardName="AutoLayout" referencedIdentifier="AutoLayoutFitToWidth" id="NCl-jp-swP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5v-Kz-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="-85"/>
+            <point key="canvasLocation" x="1959" y="-85"/>
         </scene>
         <!--AutoLayoutCentring-->
         <scene sceneID="XfP-L4-663">
@@ -469,7 +469,7 @@
                 <viewControllerPlaceholder storyboardName="Editing" id="Ncw-k9-U1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeV-69-zvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="175"/>
+            <point key="canvasLocation" x="1886" y="167"/>
         </scene>
         <!--Sections-->
         <scene sceneID="Ahe-aV-ztQ">
