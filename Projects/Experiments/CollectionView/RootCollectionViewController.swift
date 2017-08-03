@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Dogstar
 
 class RootCollectionViewController: UICollectionViewController {
 
@@ -21,6 +22,7 @@ class RootCollectionViewController: UICollectionViewController {
                              (string: "String 6", type:"Segue4Cell", value: 0, hi: false, sel: false),
                              (string: "String a", type:"Segue5Cell", value: 0, hi: false, sel: false),
                              (string: "String d", type:"Segue6Cell", value: 0, hi: false, sel: false),
+                             (string: "String e", type:"Segue7Cell", value: 0, hi: false, sel: false),
                              (string: "String b", type:"SelectCell", value: 0, hi: true,  sel: true ),
                              (string: "String c", type:"SelectCell", value: 0, hi: false, sel: true ),
                              (string: "String 7", type:"StringCell", value: 0, hi: true,  sel: false)]
@@ -53,6 +55,11 @@ class RootCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
 
+    @IBAction func unwindToRoot(sender: UIStoryboardSegue) {
+
+        print("And relax")
+    }
+
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int { return 1 }
@@ -64,7 +71,7 @@ class RootCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dataItems[indexPath.row].type, for: indexPath)
     
         // Configure the cell
-        (cell as? StringCell)?.configure(dataItems[indexPath.row].string)
+        (cell as? StringCollectionViewCell)?.configure(dataItems[indexPath.row].string)
 
         cell.backgroundView = backgroundView
 
@@ -120,26 +127,7 @@ struct StringCellContent {
     var text: String?
 }
 
-// MARK: - View
-
-class StringCell : UICollectionViewCell {
-
-    @IBOutlet private var label: UILabel!
-
-    func configure(_ content: String) {
-
-        label.text = content
-
-        // Accessibility
-        label.accessibilityLabel = "Title"
-        label.accessibilityValue = content
-
-        // Appearance
-        label.font = UIFont.preferredFont(forTextStyle: .headline)
-    }
-}
-
-class SizingCell : StringCell {
+class SizingCollectionViewCell : StringCollectionViewCell {
 
     @IBOutlet private var subLabel: UILabel!
 

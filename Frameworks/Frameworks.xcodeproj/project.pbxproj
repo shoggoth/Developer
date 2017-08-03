@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9BA406891F2B3024005F1271 /* Dogstar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA406871F2B3024005F1271 /* Dogstar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BA4068E1F2B3185005F1271 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4068D1F2B3185005F1271 /* Random.swift */; };
+		9BCE3CAB1F3325D000B3A5D1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE3CAA1F3325D000B3A5D1 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		9BA406871F2B3024005F1271 /* Dogstar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dogstar.h; sourceTree = "<group>"; };
 		9BA406881F2B3024005F1271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BA4068D1F2B3185005F1271 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		9BCE3CAA1F3325D000B3A5D1 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		9BA406861F2B3024005F1271 /* Dogstar */ = {
 			isa = PBXGroup;
 			children = (
+				9BCE3CAA1F3325D000B3A5D1 /* DataSource.swift */,
 				9BA4068D1F2B3185005F1271 /* Random.swift */,
 				9BA406871F2B3024005F1271 /* Dogstar.h */,
 				9BA406881F2B3024005F1271 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCE3CAB1F3325D000B3A5D1 /* DataSource.swift in Sources */,
 				9BA4068E1F2B3185005F1271 /* Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				9BA4068C1F2B3024005F1271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

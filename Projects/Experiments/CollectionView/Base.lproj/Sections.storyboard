@@ -128,7 +128,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0f-8B-ey3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="ZsD-rP-adE" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="ZsD-rP-adE" customClass="DataSource" customModule="Dogstar">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="2"/>

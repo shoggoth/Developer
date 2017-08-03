@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Dogstar
 
 class EditableCollectionViewController: UICollectionViewController {
 
@@ -36,7 +37,7 @@ class EditableCollectionViewController: UICollectionViewController {
 
     @IBAction func trashButtonTapped(_ sender: UIBarButtonItem) {
 
-        dataSource.deleteSelectedItems(in: collectionView!)
+        dataSource.deleteSelectedItems(from: collectionView!)
     }
 
     // MARK: Resizing
@@ -47,7 +48,7 @@ class EditableCollectionViewController: UICollectionViewController {
     }
 }
 
-class EditableViewCell : StringCell {
+class EditableViewCell : StringCollectionViewCell {
 
     override func awakeFromNib() {
 

@@ -80,7 +80,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyj-2r-lsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Lwo-Wg-KsR" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="Lwo-Wg-KsR" customClass="DataSource" customModule="Dogstar">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="7"/>
@@ -91,7 +91,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2622" y="102"/>
+            <point key="canvasLocation" x="2689" y="-314"/>
         </scene>
         <!--Auto Layout-->
         <scene sceneID="0sr-7Q-InF">
@@ -141,7 +141,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaU-eV-pxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="7bw-As-nUu" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="7bw-As-nUu" customClass="DataSource" customModule="Dogstar">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="7"/>

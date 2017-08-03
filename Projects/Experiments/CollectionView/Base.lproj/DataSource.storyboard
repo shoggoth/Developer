@@ -38,7 +38,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="v8A-2l-IJn" customClass="StringCell" customModule="CollectionView" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="v8A-2l-IJn" customClass="StringCollectionViewCell" customModule="Dogstar">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -85,7 +85,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="2EJ-S7-Kyq" customClass="StringCell" customModule="CollectionView" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="2EJ-S7-Kyq" customClass="StringCollectionViewCell" customModule="Dogstar">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -136,7 +136,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6px-3u-xUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="EOT-lK-51J" userLabel="Data Source (Upper)" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="EOT-lK-51J" userLabel="Data Source (Upper)" customClass="DataSource" customModule="Dogstar">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="7"/>
@@ -146,7 +146,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="J5N-5y-lhZ" userLabel="Data Source (Lower)" customClass="DataSource" customModule="CollectionView" customModuleProvider="target">
+                <customObject id="J5N-5y-lhZ" userLabel="Data Source (Lower)" customClass="DataSource" customModule="Dogstar">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
                             <integer key="value" value="15"/>
