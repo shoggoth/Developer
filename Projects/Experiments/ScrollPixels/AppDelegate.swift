@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ScrollPixels
 //
-//  Created by Rich Henry on 19/05/2017.
-//  Copyright © 2017 Easysoft Ltd. All rights reserved.
+//  Created by Rich Henry on 03/08/2017.
+//  Copyright © 2017 Dogstar Industries. All rights reserved.
 //
 
 import UIKit

@@ -366,7 +366,7 @@ class InvaderClonePlayScene : InvaderCloneScene {
         self.setupHud()
 
         let tc1 = TiltController()
-        let tc2 = TouchStickController(handlingTouchesFrom: view)
+        //let tc2 = TouchStickController(handlingTouchesFrom: view)
         
         // Motion manager
         motionManager.startAccelerometerUpdates()

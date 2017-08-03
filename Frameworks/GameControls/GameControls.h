@@ -2,8 +2,8 @@
 //  GameControls.h
 //  GameControls
 //
-//  Created by Richard Henry on 20/03/2017.
-//  Copyright © 2017 Dogstar Industries. All rights reserved.
+//  Created by Rich Henry on 03/08/2017.
+//  Copyright © 2017 Easysoft Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

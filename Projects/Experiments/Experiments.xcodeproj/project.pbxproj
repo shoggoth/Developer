@@ -7,8 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B2043381EFD529100B33C95 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2043331EFD528100B33C95 /* GameControls.framework */; };
-		9B2043391EFD529100B33C95 /* GameControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2043331EFD528100B33C95 /* GameControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B4164811F33606B00485937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164801F33606B00485937 /* AppDelegate.swift */; };
+		9B4164831F33606B00485937 /* JoystickScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164821F33606B00485937 /* JoystickScene.sks */; };
+		9B4164871F33606B00485937 /* JoystickScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164861F33606B00485937 /* JoystickScene.swift */; };
+		9B4164891F33606B00485937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164881F33606B00485937 /* ViewController.swift */; };
+		9B41648C1F33606B00485937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B41648A1F33606B00485937 /* Main.storyboard */; };
+		9B41648E1F33606B00485937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B41648D1F33606B00485937 /* Assets.xcassets */; };
+		9B4164911F33606B00485937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B41648F1F33606B00485937 /* LaunchScreen.storyboard */; };
+		9B41649C1F33616F00485937 /* TouchTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41649B1F33616F00485937 /* TouchTestView.swift */; };
+		9B4164A91F33639200485937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164A81F33639200485937 /* AppDelegate.swift */; };
+		9B4164AB1F33639200485937 /* InvaderCloneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164AA1F33639200485937 /* InvaderCloneViewController.swift */; };
+		9B4164AE1F33639200485937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164AC1F33639200485937 /* Main.storyboard */; };
+		9B4164B01F33639200485937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164AF1F33639200485937 /* Assets.xcassets */; };
+		9B4164B31F33639200485937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164B11F33639200485937 /* LaunchScreen.storyboard */; };
+		9B4164BF1F3363D700485937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164BE1F3363D700485937 /* AppDelegate.swift */; };
+		9B4164C11F3363D800485937 /* PixelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164C01F3363D800485937 /* PixelViewController.swift */; };
+		9B4164C41F3363D800485937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164C21F3363D800485937 /* Main.storyboard */; };
+		9B4164C61F3363D800485937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164C51F3363D800485937 /* Assets.xcassets */; };
+		9B4164C91F3363D800485937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164C71F3363D800485937 /* LaunchScreen.storyboard */; };
+		9B4164D11F33653C00485937 /* InvaderCloneAttractScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164CE1F33653C00485937 /* InvaderCloneAttractScreen.swift */; };
+		9B4164D21F33653C00485937 /* InvaderClonePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164CF1F33653C00485937 /* InvaderClonePlayScene.swift */; };
+		9B4164D31F33653C00485937 /* InvaderCloneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164D01F33653C00485937 /* InvaderCloneScene.swift */; };
+		9B4164D91F33654800485937 /* InvaderBullet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164D51F33654800485937 /* InvaderBullet.wav */; };
+		9B4164DA1F33654800485937 /* InvaderHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164D61F33654800485937 /* InvaderHit.wav */; };
+		9B4164DB1F33654800485937 /* ShipBullet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164D71F33654800485937 /* ShipBullet.wav */; };
+		9B4164DC1F33654800485937 /* ShipHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164D81F33654800485937 /* ShipHit.wav */; };
+		9B4164E41F33664A00485937 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164E21F33664A00485937 /* GameScene.swift */; };
+		9B4164E51F33664A00485937 /* PixelGridScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4164E31F33664A00485937 /* PixelGridScene.swift */; };
+		9B4164E81F33665E00485937 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164E61F33665E00485937 /* Actions.sks */; };
+		9B4164E91F33665E00485937 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9B4164E71F33665E00485937 /* GameScene.sks */; };
+		9B4164F71F3368D800485937 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; };
+		9B4164F81F3368D800485937 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B4164F91F33691100485937 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; };
+		9B4164FA1F33691100485937 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B4164FB1F33692300485937 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; };
+		9B4164FC1F33692300485937 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164F61F3368D800485937 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B4164FE1F33692B00485937 /* GameControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164FD1F33692B00485937 /* GameControls.framework */; };
+		9B4164FF1F33692B00485937 /* GameControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4164FD1F33692B00485937 /* GameControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B7AA5701F307FF400C898D9 /* Gesture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7AA5721F307FF400C898D9 /* Gesture.storyboard */; };
 		9BA4064F1F209CCB005F1271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4064E1F209CCB005F1271 /* AppDelegate.swift */; };
 		9BA406541F209CCB005F1271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406521F209CCB005F1271 /* Main.storyboard */; };
@@ -18,8 +53,6 @@
 		9BA406651F289F0A005F1271 /* FitToWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */; };
 		9BA406671F28CC3A005F1271 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */; };
 		9BA406691F2A07EF005F1271 /* EditableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA406681F2A07EF005F1271 /* EditableCollectionViewController.swift */; };
-		9BA4069A1F2B3323005F1271 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; };
-		9BA4069B1F2B3323005F1271 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BA406AA1F2B52AA005F1271 /* CellViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406A91F2B52AA005F1271 /* CellViews.xib */; };
 		9BA406AF1F2F70D3005F1271 /* DataSource.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406AD1F2F70D3005F1271 /* DataSource.storyboard */; };
 		9BA406B21F2F7164005F1271 /* AutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA406B01F2F7164005F1271 /* AutoLayout.storyboard */; };
@@ -30,15 +63,11 @@
 		9BCE3C7D1F33161100B3A5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C7B1F33161100B3A5D1 /* Main.storyboard */; };
 		9BCE3C7F1F33161100B3A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C7E1F33161100B3A5D1 /* Assets.xcassets */; };
 		9BCE3C821F33161100B3A5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C801F33161100B3A5D1 /* LaunchScreen.storyboard */; };
-		9BCE3C871F33162B00B3A5D1 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; };
-		9BCE3C881F33162B00B3A5D1 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BCE3C941F33250200B3A5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE3C931F33250200B3A5D1 /* AppDelegate.swift */; };
 		9BCE3C961F33250200B3A5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE3C951F33250200B3A5D1 /* ViewController.swift */; };
 		9BCE3C991F33250200B3A5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C971F33250200B3A5D1 /* Main.storyboard */; };
 		9BCE3C9B1F33250200B3A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C9A1F33250200B3A5D1 /* Assets.xcassets */; };
 		9BCE3C9E1F33250200B3A5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE3C9C1F33250200B3A5D1 /* LaunchScreen.storyboard */; };
-		9BCE3CA31F33252900B3A5D1 /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; };
-		9BCE3CA41F33252900B3A5D1 /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA406941F2B32DE005F1271 /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73231EFA8E3200467808 /* AppDelegate.swift */; };
 		9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73251EFA8E3200467808 /* GameScene.sks */; };
 		9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF73291EFA8E3200467808 /* GameScene.swift */; };
@@ -46,7 +75,6 @@
 		9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF732D1EFA8E3200467808 /* Main.storyboard */; };
 		9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73301EFA8E3200467808 /* Assets.xcassets */; };
 		9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */; };
-		9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */; };
 		9BFF73441EFABF8600467808 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73431EFABF8600467808 /* StarField.sks */; };
 		FF2AB5AF1E794FD100BCA69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB5AE1E794FD100BCA69D /* AppDelegate.swift */; };
 		FF2AB5B11E794FD100BCA69D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B01E794FD100BCA69D /* GameScene.sks */; };
@@ -56,67 +84,7 @@
 		FF2AB5BA1E794FD100BCA69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B81E794FD100BCA69D /* Main.storyboard */; };
 		FF2AB5BC1E794FD100BCA69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */; };
 		FF2AB5BF1E794FD100BCA69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BD1E794FD100BCA69D /* LaunchScreen.storyboard */; };
-		FF2AB5C71E79522100BCA69D /* vortexSprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9B2043321EFD528100B33C95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FF29BB831E800C9C006A08E7;
-			remoteInfo = GameControls;
-		};
-		9B2043341EFD528100B33C95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FF29BB9E1E813BC7006A08E7;
-			remoteInfo = GameControlsTestRig;
-		};
-		9B2043361EFD528100B33C95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FF29BBBB1E828E12006A08E7;
-			remoteInfo = GameControlsTests;
-		};
-		9B20433A1EFD529100B33C95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FF29BB821E800C9C006A08E7;
-			remoteInfo = GameControls;
-		};
-		9BA406931F2B32DE005F1271 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9BA406851F2B3024005F1271;
-			remoteInfo = Dogstar;
-		};
-		9BA4069C1F2B3323005F1271 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BA406841F2B3024005F1271;
-			remoteInfo = Dogstar;
-		};
-		9BCE3C891F33162B00B3A5D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BA406841F2B3024005F1271;
-			remoteInfo = Dogstar;
-		};
-		9BCE3CA51F33252900B3A5D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BA406841F2B3024005F1271;
-			remoteInfo = Dogstar;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9B20433C1EFD529100B33C95 /* Embed Frameworks */ = {
@@ -125,7 +93,27 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9B2043391EFD529100B33C95 /* GameControls.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164A11F33619C00485937 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B4164FF1F33692B00485937 /* GameControls.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164E11F33657A00485937 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +124,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9BA4069B1F2B3323005F1271 /* Dogstar.framework in Embed Frameworks */,
+				9B4164F81F3368D800485937 /* Dogstar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +135,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9BCE3C881F33162B00B3A5D1 /* Dogstar.framework in Embed Frameworks */,
+				9B4164FA1F33691100485937 /* Dogstar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,7 +146,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9BCE3CA41F33252900B3A5D1 /* Dogstar.framework in Embed Frameworks */,
+				9B4164FC1F33692300485937 /* Dogstar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +154,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameControls.xcodeproj; path = ../GameControls/GameControls.xcodeproj; sourceTree = "<group>"; };
+		9B41647E1F33606B00485937 /* GameControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4164801F33606B00485937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B4164821F33606B00485937 /* JoystickScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JoystickScene.sks; sourceTree = "<group>"; };
+		9B4164861F33606B00485937 /* JoystickScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickScene.swift; sourceTree = "<group>"; };
+		9B4164881F33606B00485937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B41648B1F33606B00485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B41648D1F33606B00485937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B4164901F33606B00485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B4164921F33606B00485937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B41649B1F33616F00485937 /* TouchTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTestView.swift; sourceTree = "<group>"; };
+		9B4164A61F33639200485937 /* InvaderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvaderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4164A81F33639200485937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B4164AA1F33639200485937 /* InvaderCloneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderCloneViewController.swift; sourceTree = "<group>"; };
+		9B4164AD1F33639200485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B4164AF1F33639200485937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B4164B21F33639200485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B4164B41F33639200485937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4164BC1F3363D700485937 /* ScrollPixels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollPixels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4164BE1F3363D700485937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B4164C01F3363D800485937 /* PixelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelViewController.swift; sourceTree = "<group>"; };
+		9B4164C31F3363D800485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B4164C51F3363D800485937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B4164C81F3363D800485937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B4164CA1F3363D800485937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4164CE1F33653C00485937 /* InvaderCloneAttractScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderCloneAttractScreen.swift; sourceTree = "<group>"; };
+		9B4164CF1F33653C00485937 /* InvaderClonePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderClonePlayScene.swift; sourceTree = "<group>"; };
+		9B4164D01F33653C00485937 /* InvaderCloneScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvaderCloneScene.swift; sourceTree = "<group>"; };
+		9B4164D51F33654800485937 /* InvaderBullet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = InvaderBullet.wav; sourceTree = "<group>"; };
+		9B4164D61F33654800485937 /* InvaderHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = InvaderHit.wav; sourceTree = "<group>"; };
+		9B4164D71F33654800485937 /* ShipBullet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShipBullet.wav; sourceTree = "<group>"; };
+		9B4164D81F33654800485937 /* ShipHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShipHit.wav; sourceTree = "<group>"; };
+		9B4164E21F33664A00485937 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9B4164E31F33664A00485937 /* PixelGridScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelGridScene.swift; sourceTree = "<group>"; };
+		9B4164E61F33665E00485937 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		9B4164E71F33665E00485937 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9B4164F61F3368D800485937 /* Dogstar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dogstar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4164FD1F33692B00485937 /* GameControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GameControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7AA5711F307FF400C898D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gesture.storyboard; sourceTree = "<group>"; };
 		9BA4064C1F209CCB005F1271 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA4064E1F209CCB005F1271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,7 +202,6 @@
 		9BA406641F289F0A005F1271 /* FitToWidthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitToWidthViewController.swift; sourceTree = "<group>"; };
 		9BA406661F28CC3A005F1271 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		9BA406681F2A07EF005F1271 /* EditableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditableCollectionViewController.swift; sourceTree = "<group>"; };
-		9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Frameworks.xcodeproj; path = ../../Frameworks/Frameworks.xcodeproj; sourceTree = "<group>"; };
 		9BA406A91F2B52AA005F1271 /* CellViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellViews.xib; sourceTree = "<group>"; };
 		9BA406AE1F2F70D3005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DataSource.storyboard; sourceTree = "<group>"; };
 		9BA406B11F2F7164005F1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AutoLayout.storyboard; sourceTree = "<group>"; };
@@ -218,16 +241,36 @@
 		FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2AB5BE1E794FD100BCA69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2AB5C01E794FD100BCA69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vortexSprite.fsh; path = ../../Shaders/Sprite/vortexSprite.fsh; sourceTree = SOURCE_ROOT; };
-		FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9B41647B1F33606B00485937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4164FE1F33692B00485937 /* GameControls.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164A31F33639200485937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164B91F3363D700485937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BA406491F209CCB005F1271 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA4069A1F2B3323005F1271 /* Dogstar.framework in Frameworks */,
+				9B4164F71F3368D800485937 /* Dogstar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCE3C871F33162B00B3A5D1 /* Dogstar.framework in Frameworks */,
+				9B4164F91F33691100485937 /* Dogstar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCE3CA31F33252900B3A5D1 /* Dogstar.framework in Frameworks */,
+				9B4164FB1F33692300485937 /* Dogstar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +294,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B2043381EFD529100B33C95 /* GameControls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +307,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B20432D1EFD528100B33C95 /* Products */ = {
+		9B41647F1F33606B00485937 /* GameControls */ = {
 			isa = PBXGroup;
 			children = (
-				9B2043331EFD528100B33C95 /* GameControls.framework */,
-				9B2043351EFD528100B33C95 /* GameControlsTestRig.app */,
-				9B2043371EFD528100B33C95 /* GameControlsTests.xctest */,
+				9B4164801F33606B00485937 /* AppDelegate.swift */,
+				9B4164881F33606B00485937 /* ViewController.swift */,
+				9B4164861F33606B00485937 /* JoystickScene.swift */,
+				9B4164821F33606B00485937 /* JoystickScene.sks */,
+				9B41649B1F33616F00485937 /* TouchTestView.swift */,
+				9B41648A1F33606B00485937 /* Main.storyboard */,
+				9B41648D1F33606B00485937 /* Assets.xcassets */,
+				9B41648F1F33606B00485937 /* LaunchScreen.storyboard */,
+				9B4164921F33606B00485937 /* Info.plist */,
 			);
-			name = Products;
+			path = GameControls;
+			sourceTree = "<group>";
+		};
+		9B4164A71F33639200485937 /* InvaderClone */ = {
+			isa = PBXGroup;
+			children = (
+				9B4164CE1F33653C00485937 /* InvaderCloneAttractScreen.swift */,
+				9B4164CF1F33653C00485937 /* InvaderClonePlayScene.swift */,
+				9B4164D01F33653C00485937 /* InvaderCloneScene.swift */,
+				9B4164A81F33639200485937 /* AppDelegate.swift */,
+				9B4164AA1F33639200485937 /* InvaderCloneViewController.swift */,
+				9B4164AC1F33639200485937 /* Main.storyboard */,
+				9B4164AF1F33639200485937 /* Assets.xcassets */,
+				9B4164D41F33654800485937 /* Sound Effects */,
+				9B4164B11F33639200485937 /* LaunchScreen.storyboard */,
+				9B4164B41F33639200485937 /* Info.plist */,
+			);
+			path = InvaderClone;
+			sourceTree = "<group>";
+		};
+		9B4164BD1F3363D700485937 /* ScrollPixels */ = {
+			isa = PBXGroup;
+			children = (
+				9B4164BE1F3363D700485937 /* AppDelegate.swift */,
+				9B4164C01F3363D800485937 /* PixelViewController.swift */,
+				9B4164E21F33664A00485937 /* GameScene.swift */,
+				9B4164E31F33664A00485937 /* PixelGridScene.swift */,
+				9B4164C21F3363D800485937 /* Main.storyboard */,
+				9B4164E61F33665E00485937 /* Actions.sks */,
+				9B4164E71F33665E00485937 /* GameScene.sks */,
+				9B4164C51F3363D800485937 /* Assets.xcassets */,
+				9B4164C71F3363D800485937 /* LaunchScreen.storyboard */,
+				9B4164CA1F3363D800485937 /* Info.plist */,
+			);
+			path = ScrollPixels;
+			sourceTree = "<group>";
+		};
+		9B4164D41F33654800485937 /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				9B4164D51F33654800485937 /* InvaderBullet.wav */,
+				9B4164D61F33654800485937 /* InvaderHit.wav */,
+				9B4164D71F33654800485937 /* ShipBullet.wav */,
+				9B4164D81F33654800485937 /* ShipHit.wav */,
+			);
+			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
 		9BA4064D1F209CCB005F1271 /* CollectionView */ = {
@@ -295,14 +388,6 @@
 				9BA4065A1F209CCB005F1271 /* Info.plist */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		9BA406901F2B32DE005F1271 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9BA406941F2B32DE005F1271 /* Dogstar.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9BCE3C761F33161100B3A5D1 /* ColumnView */ = {
@@ -347,15 +432,6 @@
 			path = Grid;
 			sourceTree = "<group>";
 		};
-		9BFF73391EFA8EFF00467808 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				FF2AB5C61E79522100BCA69D /* vortexSprite.fsh */,
-			);
-			name = Shaders;
-			path = ShaderSprite;
-			sourceTree = "<group>";
-		};
 		FF2AB5A21E794FD100BCA69D = {
 			isa = PBXGroup;
 			children = (
@@ -364,7 +440,9 @@
 				9BA4064D1F209CCB005F1271 /* CollectionView */,
 				FF2AB5AD1E794FD100BCA69D /* ShaderSprite */,
 				9BFF73221EFA8E3200467808 /* Grid */,
-				9BFF73391EFA8EFF00467808 /* Shaders */,
+				9B41647F1F33606B00485937 /* GameControls */,
+				9B4164A71F33639200485937 /* InvaderClone */,
+				9B4164BD1F3363D700485937 /* ScrollPixels */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
 				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
@@ -378,6 +456,9 @@
 				9BA4064C1F209CCB005F1271 /* CollectionView.app */,
 				9BCE3C751F33161100B3A5D1 /* ColumnView.app */,
 				9BCE3C911F33250200B3A5D1 /* TableView.app */,
+				9B41647E1F33606B00485937 /* GameControllers.app */,
+				9B4164A61F33639200485937 /* InvaderClone.app */,
+				9B4164BC1F3363D700485937 /* ScrollPixels.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,9 +482,8 @@
 		FF2AB5C81E797B0200BCA69D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */,
-				9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */,
-				FF2AB5C91E797B0200BCA69D /* OpenGLES.framework */,
+				9B4164F61F3368D800485937 /* Dogstar.framework */,
+				9B4164FD1F33692B00485937 /* GameControls.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -411,6 +491,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9B41647D1F33606B00485937 /* GameControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B41649A1F33606B00485937 /* Build configuration list for PBXNativeTarget "GameControllers" */;
+			buildPhases = (
+				9B41647A1F33606B00485937 /* Sources */,
+				9B41647B1F33606B00485937 /* Frameworks */,
+				9B41647C1F33606B00485937 /* Resources */,
+				9B4164A11F33619C00485937 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameControllers;
+			productName = GameControls;
+			productReference = 9B41647E1F33606B00485937 /* GameControllers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B4164A51F33639200485937 /* InvaderClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4164B51F33639200485937 /* Build configuration list for PBXNativeTarget "InvaderClone" */;
+			buildPhases = (
+				9B4164A21F33639200485937 /* Sources */,
+				9B4164A31F33639200485937 /* Frameworks */,
+				9B4164A41F33639200485937 /* Resources */,
+				9B4164E11F33657A00485937 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvaderClone;
+			productName = InvaderClone;
+			productReference = 9B4164A61F33639200485937 /* InvaderClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B4164BB1F3363D700485937 /* ScrollPixels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4164CB1F3363D800485937 /* Build configuration list for PBXNativeTarget "ScrollPixels" */;
+			buildPhases = (
+				9B4164B81F3363D700485937 /* Sources */,
+				9B4164B91F3363D700485937 /* Frameworks */,
+				9B4164BA1F3363D700485937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollPixels;
+			productName = ScrollPixels;
+			productReference = 9B4164BC1F3363D700485937 /* ScrollPixels.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9BA4064B1F209CCB005F1271 /* CollectionView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BA4065B1F209CCB005F1271 /* Build configuration list for PBXNativeTarget "CollectionView" */;
@@ -423,7 +556,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9BA4069D1F2B3323005F1271 /* PBXTargetDependency */,
 			);
 			name = CollectionView;
 			productName = CollectionView;
@@ -442,7 +574,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9BCE3C8A1F33162B00B3A5D1 /* PBXTargetDependency */,
 			);
 			name = ColumnView;
 			productName = ColumnView;
@@ -461,7 +592,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9BCE3CA61F33252900B3A5D1 /* PBXTargetDependency */,
 			);
 			name = TableView;
 			productName = TableView;
@@ -480,7 +610,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9B20433B1EFD529100B33C95 /* PBXTargetDependency */,
 			);
 			name = Grid;
 			productName = Grid;
@@ -514,6 +643,21 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dogstar Industries";
 				TargetAttributes = {
+					9B41647D1F33606B00485937 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
+					9B4164A51F33639200485937 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
+					9B4164BB1F3363D700485937 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
 					9BA4064B1F209CCB005F1271 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = QL2HV855H2;
@@ -552,16 +696,6 @@
 			mainGroup = FF2AB5A21E794FD100BCA69D;
 			productRefGroup = FF2AB5AC1E794FD100BCA69D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9BA406901F2B32DE005F1271 /* Products */;
-					ProjectRef = 9BA4068F1F2B32DE005F1271 /* Frameworks.xcodeproj */;
-				},
-				{
-					ProductGroup = 9B20432D1EFD528100B33C95 /* Products */;
-					ProjectRef = 9B20432C1EFD528100B33C95 /* GameControls.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FF2AB5AA1E794FD100BCA69D /* ShaderSprite */,
@@ -569,42 +703,51 @@
 				9BA4064B1F209CCB005F1271 /* CollectionView */,
 				9BCE3C741F33161100B3A5D1 /* ColumnView */,
 				9BCE3C901F33250200B3A5D1 /* TableView */,
+				9B41647D1F33606B00485937 /* GameControllers */,
+				9B4164A51F33639200485937 /* InvaderClone */,
+				9B4164BB1F3363D700485937 /* ScrollPixels */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		9B2043331EFD528100B33C95 /* GameControls.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GameControls.framework;
-			remoteRef = 9B2043321EFD528100B33C95 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9B2043351EFD528100B33C95 /* GameControlsTestRig.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GameControlsTestRig.app;
-			remoteRef = 9B2043341EFD528100B33C95 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9B2043371EFD528100B33C95 /* GameControlsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GameControlsTests.xctest;
-			remoteRef = 9B2043361EFD528100B33C95 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9BA406941F2B32DE005F1271 /* Dogstar.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Dogstar.framework;
-			remoteRef = 9BA406931F2B32DE005F1271 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		9B41647C1F33606B00485937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B41648C1F33606B00485937 /* Main.storyboard in Resources */,
+				9B4164831F33606B00485937 /* JoystickScene.sks in Resources */,
+				9B41648E1F33606B00485937 /* Assets.xcassets in Resources */,
+				9B4164911F33606B00485937 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164A41F33639200485937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4164B31F33639200485937 /* LaunchScreen.storyboard in Resources */,
+				9B4164B01F33639200485937 /* Assets.xcassets in Resources */,
+				9B4164DB1F33654800485937 /* ShipBullet.wav in Resources */,
+				9B4164DA1F33654800485937 /* InvaderHit.wav in Resources */,
+				9B4164D91F33654800485937 /* InvaderBullet.wav in Resources */,
+				9B4164AE1F33639200485937 /* Main.storyboard in Resources */,
+				9B4164DC1F33654800485937 /* ShipHit.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164BA1F3363D700485937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4164C91F3363D800485937 /* LaunchScreen.storyboard in Resources */,
+				9B4164E91F33665E00485937 /* GameScene.sks in Resources */,
+				9B4164C61F3363D800485937 /* Assets.xcassets in Resources */,
+				9B4164C41F3363D800485937 /* Main.storyboard in Resources */,
+				9B4164E81F33665E00485937 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BA4064A1F209CCB005F1271 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -648,7 +791,6 @@
 				9BFF73441EFABF8600467808 /* StarField.sks in Resources */,
 				9BFF732F1EFA8E3200467808 /* Main.storyboard in Resources */,
 				9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */,
-				9BFF733A1EFA8F0E00467808 /* vortexSprite.fsh in Resources */,
 				9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */,
 				9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -660,7 +802,6 @@
 			files = (
 				FF2AB5BA1E794FD100BCA69D /* Main.storyboard in Resources */,
 				FF2AB5B11E794FD100BCA69D /* GameScene.sks in Resources */,
-				FF2AB5C71E79522100BCA69D /* vortexSprite.fsh in Resources */,
 				FF2AB5BC1E794FD100BCA69D /* Assets.xcassets in Resources */,
 				FF2AB5BF1E794FD100BCA69D /* LaunchScreen.storyboard in Resources */,
 				FF2AB5B31E794FD100BCA69D /* Actions.sks in Resources */,
@@ -670,6 +811,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9B41647A1F33606B00485937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B41649C1F33616F00485937 /* TouchTestView.swift in Sources */,
+				9B4164871F33606B00485937 /* JoystickScene.swift in Sources */,
+				9B4164891F33606B00485937 /* ViewController.swift in Sources */,
+				9B4164811F33606B00485937 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164A21F33639200485937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4164D21F33653C00485937 /* InvaderClonePlayScene.swift in Sources */,
+				9B4164AB1F33639200485937 /* InvaderCloneViewController.swift in Sources */,
+				9B4164D31F33653C00485937 /* InvaderCloneScene.swift in Sources */,
+				9B4164A91F33639200485937 /* AppDelegate.swift in Sources */,
+				9B4164D11F33653C00485937 /* InvaderCloneAttractScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4164B81F3363D700485937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4164E41F33664A00485937 /* GameScene.swift in Sources */,
+				9B4164E51F33664A00485937 /* PixelGridScene.swift in Sources */,
+				9B4164C11F3363D800485937 /* PixelViewController.swift in Sources */,
+				9B4164BF1F3363D700485937 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BA406481F209CCB005F1271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,30 +897,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		9B20433B1EFD529100B33C95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GameControls;
-			targetProxy = 9B20433A1EFD529100B33C95 /* PBXContainerItemProxy */;
-		};
-		9BA4069D1F2B3323005F1271 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Dogstar;
-			targetProxy = 9BA4069C1F2B3323005F1271 /* PBXContainerItemProxy */;
-		};
-		9BCE3C8A1F33162B00B3A5D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Dogstar;
-			targetProxy = 9BCE3C891F33162B00B3A5D1 /* PBXContainerItemProxy */;
-		};
-		9BCE3CA61F33252900B3A5D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Dogstar;
-			targetProxy = 9BCE3CA51F33252900B3A5D1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		9B41648A1F33606B00485937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B41648B1F33606B00485937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B41648F1F33606B00485937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4164901F33606B00485937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4164AC1F33639200485937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4164AD1F33639200485937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4164B11F33639200485937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4164B21F33639200485937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4164C21F3363D800485937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4164C31F3363D800485937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4164C71F3363D800485937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4164C81F3363D800485937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		9B7AA5721F307FF400C898D9 /* Gesture.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -861,6 +1061,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9B4164931F33606B00485937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = GameControls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.GameControllers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B4164941F33606B00485937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = GameControls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.GameControllers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9B4164B61F33639200485937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = InvaderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.InvaderClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B4164B71F33639200485937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = InvaderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.InvaderClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9B4164CC1F3363D800485937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = ScrollPixels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.ScrollPixels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B4164CD1F3363D800485937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = ScrollPixels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.ScrollPixels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		9BA4065C1F209CCB005F1271 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1115,6 +1409,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B41649A1F33606B00485937 /* Build configuration list for PBXNativeTarget "GameControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4164931F33606B00485937 /* Debug */,
+				9B4164941F33606B00485937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9B4164B51F33639200485937 /* Build configuration list for PBXNativeTarget "InvaderClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4164B61F33639200485937 /* Debug */,
+				9B4164B71F33639200485937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9B4164CB1F3363D800485937 /* Build configuration list for PBXNativeTarget "ScrollPixels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4164CC1F3363D800485937 /* Debug */,
+				9B4164CD1F3363D800485937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9BA4065B1F209CCB005F1271 /* Build configuration list for PBXNativeTarget "CollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

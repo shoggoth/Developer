@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Frameworks/Frameworks.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Projects/Experiments/Experiments.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Projects/GameControls/GameControls.xcodeproj">
+      location = "group:Frameworks/Frameworks.xcodeproj">
    </FileRef>
 </Workspace>
