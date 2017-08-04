@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--XIB Header View-->
+        <scene sceneID="kfC-e3-eFU">
+            <objects>
+                <tableViewController id="uL3-zm-hvP" customClass="HeaderTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MjT-Aa-wC5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="rTX-St-oRy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTX-St-oRy" id="bk3-OJ-wqZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WyG-Xx-ahC" id="ZuT-5d-hBa"/>
+                            <outlet property="delegate" destination="WyG-Xx-ahC" id="nXj-Pp-jMl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="XIB Header View" id="N9G-i5-Ddv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="VCA-pK-3de">
+                            <connections>
+                                <segue destination="JbI-hs-tPO" kind="unwind" unwindAction="unwindToRootWithSender:" id="SB9-Nk-yqy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pG8-9r-pvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="WyG-Xx-ahC" customClass="DataSource" customModule="Dogstar">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentCount">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+                <exit id="JbI-hs-tPO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="482"/>
+        </scene>
+        <!--Storyboard Header View-->
+        <scene sceneID="rAL-KI-ITj">
+            <objects>
+                <tableViewController id="HGc-Cy-Yj4" customClass="IBConstructedHeaderTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="poB-Qi-rWq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="qWz-zP-D1w">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3g-lk-YJd">
+                                    <rect key="frame" x="166" y="34" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="p3g-lk-YJd" firstAttribute="centerY" secondItem="qWz-zP-D1w" secondAttribute="centerY" id="SzY-ne-E1D"/>
+                                <constraint firstItem="p3g-lk-YJd" firstAttribute="centerX" secondItem="qWz-zP-D1w" secondAttribute="centerX" id="YTe-Ya-yHX"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="y8r-WQ-bkI">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8r-WQ-bkI" id="CUZ-65-cT7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HGc-Cy-Yj4" id="ldg-4G-23a"/>
+                            <outlet property="delegate" destination="HGc-Cy-Yj4" id="Udt-lX-GxZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Storyboard Header View" id="oQN-qn-zsu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ziv-bM-hCU">
+                            <connections>
+                                <segue destination="7K6-cg-DVO" kind="unwind" unwindAction="unwindToRootWithSender:" id="vgL-bv-uCn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerTitleLabel" destination="p3g-lk-YJd" id="Yl6-dJ-Abk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-ZF-GcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7K6-cg-DVO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="-216"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BMm-m1-3ur">
+            <objects>
+                <navigationController storyboardIdentifier="xibHeaderViewNavigation" automaticallyAdjustsScrollViewInsets="NO" id="jMk-mm-J4m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zsa-ou-lAN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uL3-zm-hvP" kind="relationship" relationship="rootViewController" id="BbZ-fX-bJm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQH-wl-Xq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="482"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fGX-7c-NQs">
+            <objects>
+                <navigationController storyboardIdentifier="storyboardHeaderViewNavigation" automaticallyAdjustsScrollViewInsets="NO" id="kYz-oO-uuA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgC-fx-RRq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HGc-Cy-Yj4" kind="relationship" relationship="rootViewController" id="58s-Kc-xvB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bl-Pv-Tgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="-216"/>
+        </scene>
+    </scenes>
+</document>
