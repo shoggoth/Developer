@@ -40,3 +40,17 @@ class IBConstructedHeaderTableViewController: UITableViewController {
         headerTitleLabel.text = "Hello, World"
     }
 }
+
+class StickyHeaderTableViewController: UIViewController {
+
+    @IBOutlet var headerTitleLabel: UILabel!
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+        headerTitleLabel.text = "Hello, World"
+    }
+}

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableRootViewController: UIViewController {
+class TableRootViewController: UITableViewController {
 
     // MARK: Lifecycle
 
@@ -17,6 +17,13 @@ class TableRootViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    // MARK: Appearance
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+
+        return .default
+        //return .lightContent
+    }
 
     // MARK: Navigation
 
@@ -28,7 +35,7 @@ class TableRootViewController: UIViewController {
 
     @IBAction func unwindToRoot(sender: UIStoryboardSegue) {
 
-        print("And relax \(sender.source)")
+        //print("And relax \(sender.source)")
     }
 }
 
