@@ -14,6 +14,7 @@ public class DataSource : NSObject, UITableViewDataSource, UICollectionViewDataS
     @IBInspectable var contentCount: Int = 0
 
     @IBInspectable var cellIdentifier: String = "DefaultCell"
+    @IBInspectable var imageName: String = ""
     @IBInspectable var canHighlight: Bool = false
     @IBInspectable var canSelect: Bool = false
 
@@ -23,10 +24,13 @@ public class DataSource : NSObject, UITableViewDataSource, UICollectionViewDataS
     private typealias DataType = (string: String, type: String, value: Int, hi: Bool, sel: Bool)
 
     private var data: [[DataType]] = []
+    private var image: UIImage?
 
     // MARK: Lifecycle
 
     override public func awakeFromNib() {
+
+        if !imageName.isEmpty { image = UIImage(named: imageName) }
 
         for section in 0..<sectionCount { data.append(sectionContent(section)) }
     }
@@ -94,6 +98,7 @@ public class DataSource : NSObject, UITableViewDataSource, UICollectionViewDataS
         // Configure the cell
         cell.textLabel?.text = data[indexPath.section][indexPath.row].string
         cell.detailTextLabel?.text = data[indexPath.section][indexPath.row].string + " detail"
+        cell.imageView?.image = image
 
         return cell
     }

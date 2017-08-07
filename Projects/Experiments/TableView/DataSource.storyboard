@@ -139,6 +139,7 @@
                             <integer key="value" value="23"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="cellIdentifier" value="DefaultCell,BasicCell,RightDetailCell,LeftDetailCell,SubtitleCell"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="square"/>
                     </userDefinedRuntimeAttributes>
                 </customObject>
                 <exit id="JXm-ts-H7y" userLabel="Exit" sceneMemberID="exit"/>
