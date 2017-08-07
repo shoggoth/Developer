@@ -153,7 +153,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3g-lk-YJd">
-                                    <rect key="frame" x="166" y="34" width="42" height="21"/>
+                                    <rect key="frame" x="166.5" y="34" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -211,7 +211,7 @@
             <objects>
                 <navigationController storyboardIdentifier="xibHeaderViewNavigation" automaticallyAdjustsScrollViewInsets="NO" id="jMk-mm-J4m" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zsa-ou-lAN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zsa-ou-lAN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -229,7 +229,7 @@
             <objects>
                 <navigationController storyboardIdentifier="storyboardHeaderViewNavigation" automaticallyAdjustsScrollViewInsets="NO" id="kYz-oO-uuA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dgC-fx-RRq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgC-fx-RRq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

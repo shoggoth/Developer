@@ -37,9 +37,13 @@ public class DataSource : NSObject, UITableViewDataSource, UICollectionViewDataS
 
         var content = [DataType]()
 
+        let cellIDs = cellIdentifier.components(separatedBy: ",")
+
         for cellIndex in 0..<contentCount {
 
-            content.append(DataType(string: "Sec \(sectionIndex) Cell \(cellIndex)", type: cellIdentifier, value: 0, hi: canHighlight, sel: canSelect))
+            let cellID = cellIDs[cellIndex % cellIDs.count]
+
+            content.append(DataType(string: "Sec \(sectionIndex) Cell \(cellIndex)", type: cellID, value: 0, hi: canHighlight, sel: canSelect))
         }
 
         return content
@@ -89,10 +93,16 @@ public class DataSource : NSObject, UITableViewDataSource, UICollectionViewDataS
 
         // Configure the cell
         cell.textLabel?.text = data[indexPath.section][indexPath.row].string
+        cell.detailTextLabel?.text = data[indexPath.section][indexPath.row].string + " detail"
 
         return cell
     }
-    
+
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+        return data.count > 1 ? "Section \(section)" : nil
+    }
+
     // MARK: UICollectionViewDataSource
 
     public func numberOfSections(in collectionView: UICollectionView) -> Int { return data.count }
