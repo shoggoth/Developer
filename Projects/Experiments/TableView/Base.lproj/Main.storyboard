@@ -101,13 +101,36 @@
                                             <segue destination="gpV-gX-sZY" kind="show" id="YfO-Ug-wbc"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="JFG-mD-bkp">
+                                        <rect key="frame" x="0.0" y="231.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JFG-mD-bkp" id="Ahg-wW-wxm">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embedding With View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP9-R5-BOp">
+                                                    <rect key="frame" x="8" y="11" width="248" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="tP9-R5-BOp" secondAttribute="leading" id="RkU-Aq-Qur"/>
+                                                <constraint firstItem="tP9-R5-BOp" firstAttribute="centerY" secondItem="Ahg-wW-wxm" secondAttribute="centerY" id="d12-y9-ZyK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="d1a-Kx-qkT" kind="show" id="c6Y-rC-vi0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Headers" id="M4u-RV-6ID">
                                 <string key="footerTitle">These are examples of the ways you can load a header into the top of the table view and how you can manipulate it once you have added it.</string>
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1oK-4D-Qhs">
-                                        <rect key="frame" x="0.0" y="355" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="399" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1oK-4D-Qhs" id="29I-gg-hUf">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -130,7 +153,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hVd-wk-Vyb">
-                                        <rect key="frame" x="0.0" y="399" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="443" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hVd-wk-Vyb" id="HaF-hL-Ksc">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -153,7 +176,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="auN-IS-eD5">
-                                        <rect key="frame" x="0.0" y="443" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="487" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="auN-IS-eD5" id="aDE-lq-fjS">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -180,14 +203,14 @@
                             <tableViewSection headerTitle="Columnar" footerTitle="Table views with their content arranged in columns." id="Ore-kL-mPF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="x6A-Bc-u8j">
-                                        <rect key="frame" x="0.0" y="594.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="638.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6A-Bc-u8j" id="9dB-Qf-ZkC">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columnar Effort With Stack Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-pL-k14">
-                                                    <rect key="frame" x="8" y="11" width="259" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columnar With Stack View Containment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-pL-k14">
+                                                    <rect key="frame" x="8" y="11" width="306" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -202,12 +225,35 @@
                                             <segue destination="sEt-XK-zBT" kind="show" id="nQr-LF-VLd"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="nH6-Yj-H7Z">
+                                        <rect key="frame" x="0.0" y="682.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nH6-Yj-H7Z" id="FAp-a7-lbh">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columnar With Stack View Hiding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woG-nj-31Z">
+                                                    <rect key="frame" x="8" y="11" width="257" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="woG-nj-31Z" secondAttribute="leading" id="Qms-n7-Cax"/>
+                                                <constraint firstItem="woG-nj-31Z" firstAttribute="centerY" secondItem="FAp-a7-lbh" secondAttribute="centerY" id="ian-ay-Hhr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ARL-Dp-N96" kind="show" id="aKz-tF-eRX"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="DataSource" footerTitle="Exercising the data source functionality." id="wpg-Pk-yMp">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1AT-dG-jdA">
-                                        <rect key="frame" x="0.0" y="714" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="802" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1AT-dG-jdA" id="tx4-uc-0jH">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -248,7 +294,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="xibHeaderViewNavigation" storyboardName="Header" referencedIdentifier="xibHeaderViewNavigation" id="4Ng-I1-bcN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEt-rV-vWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="109"/>
+            <point key="canvasLocation" x="738" y="138"/>
         </scene>
         <!--stickyHeaderViewNavigation-->
         <scene sceneID="jaX-Vv-Miw">
@@ -256,7 +302,15 @@
                 <viewControllerPlaceholder storyboardName="Header" referencedIdentifier="stickyHeaderViewNavigation" id="dA4-lx-Sxt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUI-Qv-Bew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="148"/>
+            <point key="canvasLocation" x="754" y="181"/>
+        </scene>
+        <!--layoutEmbeddingViewController-->
+        <scene sceneID="i4j-L1-iRK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Layout" referencedIdentifier="layoutEmbeddingViewController" id="d1a-Kx-qkT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvH-GX-lNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="14"/>
         </scene>
         <!--storyboardHeaderViewNavigation-->
         <scene sceneID="J2X-Ug-hlI">
@@ -264,7 +318,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="storyboardHeaderViewNavigation" storyboardName="Header" referencedIdentifier="storyboardHeaderViewNavigation" id="jz6-Jq-AMT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhb-31-y0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="67"/>
+            <point key="canvasLocation" x="778" y="100"/>
         </scene>
         <!--layoutHiddenNavigation-->
         <scene sceneID="voq-nL-GBN">
@@ -288,7 +342,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="dataSourceStandardNavigation" storyboardName="DataSource" referencedIdentifier="dataSourceStandardNavigation" id="vCe-dP-3ES" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8b-9S-XuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="307"/>
+            <point key="canvasLocation" x="765" y="373"/>
         </scene>
         <!--columnarStackViewNavigation-->
         <scene sceneID="VBT-1e-NNv">
@@ -296,7 +350,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="columnarStackViewNavigation" storyboardName="Columnar" referencedIdentifier="columnarStackViewNavigation" id="sEt-XK-zBT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI5-LE-WeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="238"/>
+            <point key="canvasLocation" x="762" y="271"/>
+        </scene>
+        <!--columnarMultiStackViewNavigation-->
+        <scene sceneID="Dht-5a-lKp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Columnar" referencedIdentifier="columnarMultiStackViewNavigation" id="ARL-Dp-N96" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twJ-lB-o45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="310"/>
         </scene>
     </scenes>
 </document>

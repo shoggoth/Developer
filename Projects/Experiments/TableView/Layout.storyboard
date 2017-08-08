@@ -65,7 +65,77 @@
                 </customObject>
                 <exit id="NBx-UW-Eft" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1437.5999999999999" y="546.47676161919048"/>
+            <point key="canvasLocation" x="1438" y="507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BkV-9T-5m3">
+            <objects>
+                <viewController storyboardIdentifier="layoutEmbeddingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jhj-yb-Xpu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="epp-HP-CwG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ckq-Cj-uwK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1Z-oN-zhH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uX7-5v-MzD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="to8-6J-jtX" kind="embed" id="nYY-RI-PUo"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uX7-5v-MzD" firstAttribute="leading" secondItem="k1Z-oN-zhH" secondAttribute="leading" id="6AY-P9-JAD"/>
+                            <constraint firstItem="uX7-5v-MzD" firstAttribute="top" secondItem="epp-HP-CwG" secondAttribute="bottom" id="8Sk-ky-1XN"/>
+                            <constraint firstItem="Ckq-Cj-uwK" firstAttribute="top" secondItem="uX7-5v-MzD" secondAttribute="bottom" id="CBW-ns-MiP"/>
+                            <constraint firstAttribute="trailing" secondItem="uX7-5v-MzD" secondAttribute="trailing" id="Crt-YP-nFx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ux6-Tr-h6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="1194"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TRp-zR-EwG">
+            <objects>
+                <tableViewController id="to8-6J-jtX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="epP-fA-qL3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="POC-1p-Gov">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POC-1p-Gov" id="6z3-0X-VvK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LVv-Ru-6nO" id="WMz-R4-sBK"/>
+                            <outlet property="delegate" destination="LVv-Ru-6nO" id="PZv-ZP-O89"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzO-Xa-PYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="LVv-Ru-6nO" customClass="DataSource" customModule="Dogstar">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentCount">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2233" y="1193"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PJz-ai-XUb">

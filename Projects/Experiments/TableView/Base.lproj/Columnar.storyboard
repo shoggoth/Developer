@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Columnar Table View Controller-->
+        <!--Stack Containment-->
         <scene sceneID="jIX-ka-WhG">
             <objects>
                 <tableViewController id="lWX-0z-RmS" customClass="ColumnarTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,35 +30,35 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="3wC-3j-3tx"/>
                                             </constraints>
-                                            <state key="normal" title="Field 1"/>
+                                            <state key="normal" title="Stack 1-1"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPb-Yf-Zyr">
                                             <rect key="frame" x="113" y="0.0" width="75" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="6qg-14-et2"/>
                                             </constraints>
-                                            <state key="normal" title="Field 1"/>
+                                            <state key="normal" title="Stack 1-2"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXv-Nl-khZ">
                                             <rect key="frame" x="226" y="0.0" width="75" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="FZr-N8-X2O"/>
                                             </constraints>
-                                            <state key="normal" title="Field 1"/>
+                                            <state key="normal" title="Stack 1-3"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag7-6v-bPN">
                                             <rect key="frame" x="339" y="0.0" width="75" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="iei-Xx-lyM"/>
                                             </constraints>
-                                            <state key="normal" title="Field 1"/>
+                                            <state key="normal" title="Stack 1-4"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-cf-Zuw">
                                             <rect key="frame" x="661" y="0.0" width="75" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="ZNG-6f-leY"/>
                                             </constraints>
-                                            <state key="normal" title="Field 1"/>
+                                            <state key="normal" title="Stack 1-5"/>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="ZNG-6f-leY"/>
@@ -188,7 +189,7 @@
                             <outlet property="delegate" destination="lWX-0z-RmS" id="Axw-uh-WKM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3sl-Nd-QC7">
+                    <navigationItem key="navigationItem" title="Stack Containment" id="3sl-Nd-QC7">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Rsf-wD-Y9B">
                             <connections>
                                 <segue destination="qaZ-dc-a1U" kind="unwind" unwindAction="unwindToRootWithSender:" id="2aN-7D-i2u"/>
@@ -200,6 +201,128 @@
                 <exit id="qaZ-dc-a1U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3215.1999999999998" y="310.79460269865069"/>
+        </scene>
+        <!--Stack Hiding-->
+        <scene sceneID="JVK-Qu-Jcp">
+            <objects>
+                <tableViewController id="szl-6F-oVc" customClass="ColumnarTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CEP-wT-L4L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="L1f-bQ-3ZN" userLabel="Header View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jNl-9Z-NWg" userLabel="Compact Stack">
+                                    <rect key="frame" x="0.0" y="29" width="414" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekn-w5-8To">
+                                            <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="30"/>
+                                            <state key="normal" title="Stack 1 - 1"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-SF-0Pg">
+                                            <rect key="frame" x="88.666666666666686" y="0.0" width="81.333333333333314" height="30"/>
+                                            <state key="normal" title="Stack 1-2"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-g0-Cwl">
+                                            <rect key="frame" x="170" y="0.0" width="81.333333333333343" height="30"/>
+                                            <state key="normal" title="Stack 1-3"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-DA-rMz">
+                                            <rect key="frame" x="251.33333333333331" y="0.0" width="81.333333333333314" height="30"/>
+                                            <state key="normal" title="Stack 1-4"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efT-h0-xIE">
+                                            <rect key="frame" x="332.66666666666674" y="0.0" width="81.333333333333314" height="30"/>
+                                            <state key="normal" title="Stack 1-5"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-ZO-lrH" userLabel="Regular Stack">
+                                    <rect key="frame" x="460" y="29" width="276" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS7-eE-slV">
+                                            <rect key="frame" x="0.0" y="0.0" width="90.333333333333371" height="30"/>
+                                            <state key="normal" title="Stack 2-1"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCZ-2t-IzC">
+                                            <rect key="frame" x="90.333333333333371" y="0.0" width="92.666666666666629" height="30"/>
+                                            <state key="normal" title="Stack 2-2"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-w3-HAM">
+                                            <rect key="frame" x="183" y="0.0" width="93" height="30"/>
+                                            <state key="normal" title="Stack 2-3"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="jNl-9Z-NWg" firstAttribute="leading" secondItem="L1f-bQ-3ZN" secondAttribute="leading" id="4GF-ZE-t8a"/>
+                                <constraint firstItem="jNl-9Z-NWg" firstAttribute="trailing" secondItem="L1f-bQ-3ZN" secondAttribute="trailing" id="7Kr-6x-CZ8"/>
+                                <constraint firstItem="l3T-ZO-lrH" firstAttribute="width" secondItem="jNl-9Z-NWg" secondAttribute="width" multiplier="0.6" id="Qc3-9g-5V3"/>
+                                <constraint firstItem="jNl-9Z-NWg" firstAttribute="centerY" secondItem="L1f-bQ-3ZN" secondAttribute="centerY" id="dse-jI-FMy"/>
+                                <constraint firstItem="l3T-ZO-lrH" firstAttribute="leading" secondItem="jNl-9Z-NWg" secondAttribute="trailing" id="fwM-gJ-Ryt"/>
+                                <constraint firstItem="l3T-ZO-lrH" firstAttribute="trailing" secondItem="L1f-bQ-3ZN" secondAttribute="trailing" id="jEW-Gq-rUC"/>
+                                <constraint firstItem="l3T-ZO-lrH" firstAttribute="centerY" secondItem="jNl-9Z-NWg" secondAttribute="centerY" id="von-Jw-8VZ"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="l3T-ZO-lrH"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="7Kr-6x-CZ8"/>
+                                    <exclude reference="Qc3-9g-5V3"/>
+                                    <exclude reference="fwM-gJ-Ryt"/>
+                                    <exclude reference="jEW-Gq-rUC"/>
+                                    <exclude reference="von-Jw-8VZ"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="7Kr-6x-CZ8"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=regular">
+                                <mask key="subviews">
+                                    <include reference="l3T-ZO-lrH"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="Qc3-9g-5V3"/>
+                                    <include reference="fwM-gJ-Ryt"/>
+                                    <include reference="jEW-Gq-rUC"/>
+                                    <include reference="von-Jw-8VZ"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="r8E-HS-Aht">
+                                <rect key="frame" x="0.0" y="116" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8E-HS-Aht" id="T9M-hD-MyN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="szl-6F-oVc" id="8VT-11-Coa"/>
+                            <outlet property="delegate" destination="szl-6F-oVc" id="Pil-xl-7kx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Stack Hiding" id="PaG-sh-2Qg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3WF-cn-rUr">
+                            <connections>
+                                <segue destination="edH-iK-AVi" kind="unwind" unwindAction="unwindToRootWithSender:" id="zBM-gr-waC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeN-Bt-Bvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="edH-iK-AVi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3214" y="999"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WcP-Kb-GTm">
@@ -218,6 +341,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQX-5r-9WC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2444" y="310.79460269865069"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="enU-Ru-40e">
+            <objects>
+                <navigationController storyboardIdentifier="columnarMultiStackViewNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VtB-Wj-TIn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7On-Ij-nZk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="szl-6F-oVc" kind="relationship" relationship="rootViewController" id="2VH-yl-MC2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1x-nx-woQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="999"/>
         </scene>
     </scenes>
 </document>
