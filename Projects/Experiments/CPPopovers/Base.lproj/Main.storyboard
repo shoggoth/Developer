@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CPPopovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1U-SU-txa">
+                                <rect key="frame" x="70" y="28" width="234" height="30"/>
+                                <state key="normal" title="Popover on iPad, Modal on iPhone"/>
+                                <connections>
+                                    <segue destination="KFe-ef-5PE" kind="popoverPresentation" popoverAnchorView="p1U-SU-txa" id="KCz-qt-mMd">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p1U-SU-txa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="keh-eE-fAW"/>
+                            <constraint firstItem="p1U-SU-txa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qb7-L2-G4H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m4K-ig-KKq">
+            <objects>
+                <viewController id="2At-If-x70" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EOD-Jo-ewy"/>
+                        <viewControllerLayoutGuide type="bottom" id="JC0-Ae-yyc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gGh-h7-77s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This one pops over and it has a navigation controller containing it." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IVX-09-mUX">
+                                <rect key="frame" x="16" y="233.5" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IVX-09-mUX" firstAttribute="centerY" secondItem="gGh-h7-77s" secondAttribute="centerY" id="W0s-2g-PKe"/>
+                            <constraint firstItem="IVX-09-mUX" firstAttribute="centerX" secondItem="gGh-h7-77s" secondAttribute="centerX" id="j5h-0l-RmV"/>
+                            <constraint firstItem="IVX-09-mUX" firstAttribute="height" secondItem="gGh-h7-77s" secondAttribute="height" multiplier="0.3" id="rYE-cE-XU4"/>
+                            <constraint firstItem="IVX-09-mUX" firstAttribute="leading" secondItem="gGh-h7-77s" secondAttribute="leadingMargin" id="wXn-Aa-xrE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IVX-09-mUX" secondAttribute="trailing" id="ySJ-8c-hXb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hsY-eA-ebv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kS7-lF-Q8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LRh-2n-ah6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KFe-ef-5PE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MpW-5h-9P1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2At-If-x70" kind="relationship" relationship="rootViewController" id="Dac-ZZ-aIt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbI-3R-PLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="136"/>
+        </scene>
+    </scenes>
+</document>

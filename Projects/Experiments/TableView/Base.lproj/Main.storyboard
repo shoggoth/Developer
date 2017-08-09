@@ -221,12 +221,35 @@
                                             <segue destination="dA4-lx-Sxt" kind="show" id="Eqx-3f-3Pf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="fUs-Gs-l1a">
+                                        <rect key="frame" x="0.0" y="575" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUs-Gs-l1a" id="bWF-kf-mvw">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header On Single Section View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csd-xp-X78">
+                                                    <rect key="frame" x="8" y="11" width="238" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="csd-xp-X78" secondAttribute="leading" id="UX8-he-L3Y"/>
+                                                <constraint firstItem="csd-xp-X78" firstAttribute="centerY" secondItem="bWF-kf-mvw" secondAttribute="centerY" id="kyy-6l-Dtf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="N5L-QH-8H6" kind="show" id="t4u-lI-3mP"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Columnar" footerTitle="Table views with their content arranged in columns." id="Ore-kL-mPF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="x6A-Bc-u8j">
-                                        <rect key="frame" x="0.0" y="682.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="726.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6A-Bc-u8j" id="9dB-Qf-ZkC">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -249,7 +272,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="nH6-Yj-H7Z">
-                                        <rect key="frame" x="0.0" y="726.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="770.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nH6-Yj-H7Z" id="FAp-a7-lbh">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -276,7 +299,7 @@
                             <tableViewSection headerTitle="DataSource" footerTitle="Exercising the data source functionality." id="wpg-Pk-yMp">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1AT-dG-jdA">
-                                        <rect key="frame" x="0.0" y="846" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="890" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1AT-dG-jdA" id="tx4-uc-0jH">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -317,7 +340,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="xibHeaderViewNavigation" storyboardName="Header" referencedIdentifier="xibHeaderViewNavigation" id="4Ng-I1-bcN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEt-rV-vWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="137"/>
+            <point key="canvasLocation" x="780" y="121"/>
         </scene>
         <!--stickyHeaderViewNavigation-->
         <scene sceneID="jaX-Vv-Miw">
@@ -325,7 +348,15 @@
                 <viewControllerPlaceholder storyboardName="Header" referencedIdentifier="stickyHeaderViewNavigation" id="dA4-lx-Sxt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUI-Qv-Bew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="179"/>
+            <point key="canvasLocation" x="794" y="164"/>
+        </scene>
+        <!--singleSectionHeaderNavigation-->
+        <scene sceneID="v6n-iG-l09">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Header" referencedIdentifier="singleSectionHeaderNavigation" id="N5L-QH-8H6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgG-TV-Iqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="205"/>
         </scene>
         <!--layoutEmbeddingViewController-->
         <scene sceneID="i4j-L1-iRK">
@@ -349,7 +380,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="storyboardHeaderViewNavigation" storyboardName="Header" referencedIdentifier="storyboardHeaderViewNavigation" id="jz6-Jq-AMT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhb-31-y0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="94"/>
+            <point key="canvasLocation" x="818" y="79"/>
         </scene>
         <!--layoutHiddenNavigation-->
         <scene sceneID="voq-nL-GBN">
@@ -381,7 +412,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="columnarStackViewNavigation" storyboardName="Columnar" referencedIdentifier="columnarStackViewNavigation" id="sEt-XK-zBT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI5-LE-WeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="288"/>
+            <point key="canvasLocation" x="772" y="305"/>
         </scene>
         <!--columnarMultiStackViewNavigation-->
         <scene sceneID="Dht-5a-lKp">
@@ -389,7 +420,7 @@
                 <viewControllerPlaceholder storyboardName="Columnar" referencedIdentifier="columnarMultiStackViewNavigation" id="ARL-Dp-N96" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twJ-lB-o45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="325"/>
+            <point key="canvasLocation" x="797" y="343"/>
         </scene>
     </scenes>
 </document>
