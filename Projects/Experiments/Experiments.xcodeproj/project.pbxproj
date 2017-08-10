@@ -491,8 +491,8 @@
 		FF2AB5A21E794FD100BCA69D = {
 			isa = PBXGroup;
 			children = (
-				9B51A52E1F3B0D9C006CA6E0 /* CPPopovers */,
 				9BCE3C921F33250200B3A5D1 /* TableView */,
+				9B51A52E1F3B0D9C006CA6E0 /* CPPopovers */,
 				9BCE3C761F33161100B3A5D1 /* ColumnView */,
 				9BA4064D1F209CCB005F1271 /* CollectionView */,
 				FF2AB5AD1E794FD100BCA69D /* ShaderSprite */,
@@ -1613,6 +1613,7 @@
 				9B51A53E1F3B0D9C006CA6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA4065B1F209CCB005F1271 /* Build configuration list for PBXNativeTarget "CollectionView" */ = {
 			isa = XCConfigurationList;
