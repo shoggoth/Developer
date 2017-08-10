@@ -472,18 +472,18 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="oSq-Ol-cRu" userLabel="Regular Stack">
-                                            <rect key="frame" x="414" y="0.0" width="0.0" height="30"/>
+                                            <rect key="frame" x="256.33333333333326" y="0.0" width="157.66666666666669" height="30"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mao-jK-cou">
-                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="51.333333333333371" height="30"/>
                                                     <state key="normal" title="Stack 2-1"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-7m-LyB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                    <rect key="frame" x="51.333333333333371" y="0.0" width="53.333333333333314" height="30"/>
                                                     <state key="normal" title="Stack 2-2"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-fb-Zj8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                    <rect key="frame" x="104.66666666666669" y="0.0" width="53" height="30"/>
                                                     <state key="normal" title="Stack 2-3"/>
                                                 </button>
                                             </subviews>
@@ -506,11 +506,17 @@
                                         <constraint firstItem="oSq-Ol-cRu" firstAttribute="width" secondItem="nQu-uj-mTq" secondAttribute="width" multiplier="0.6" id="tas-k2-yfG"/>
                                     </constraints>
                                     <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="oSq-Ol-cRu"/>
+                                        </mask>
                                         <mask key="constraints">
                                             <exclude reference="tas-k2-yfG"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="oSq-Ol-cRu"/>
+                                        </mask>
                                         <mask key="constraints">
                                             <include reference="tas-k2-yfG"/>
                                         </mask>
