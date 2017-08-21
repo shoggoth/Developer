@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2ss-jm-xKE">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editing-->
+        <scene sceneID="sEw-ds-w40">
+            <objects>
+                <collectionViewController id="2ss-jm-xKE" customClass="EditableCollectionViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="j4S-U9-lu8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iEG-zH-tuy">
+                            <size key="itemSize" width="123" height="103"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DefaultCell" id="vPQ-vV-TTO" customClass="EditableViewCell" customModule="CollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="123" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="103"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm0-T1-Z2X">
+                                            <rect key="frame" x="40" y="41" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qi-M4-7gA">
+                                            <rect key="frame" x="90" y="41" width="12" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="9Qi-M4-7gA" firstAttribute="leading" secondItem="rm0-T1-Z2X" secondAttribute="trailing" constant="8" id="21d-cM-SZ6"/>
+                                    <constraint firstItem="rm0-T1-Z2X" firstAttribute="centerX" secondItem="vPQ-vV-TTO" secondAttribute="centerX" id="CFx-7G-L4b"/>
+                                    <constraint firstItem="9Qi-M4-7gA" firstAttribute="centerY" secondItem="rm0-T1-Z2X" secondAttribute="centerY" id="N7C-vK-Oum"/>
+                                    <constraint firstItem="rm0-T1-Z2X" firstAttribute="centerY" secondItem="vPQ-vV-TTO" secondAttribute="centerY" id="qeo-24-GLv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="9Qi-M4-7gA"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="21d-cM-SZ6"/>
+                                        <exclude reference="N7C-vK-Oum"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="9Qi-M4-7gA"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="21d-cM-SZ6"/>
+                                        <include reference="N7C-vK-Oum"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="backgroundView" destination="z9m-Q6-sbT" id="vgg-5A-MD7"/>
+                                    <outlet property="label" destination="rm0-T1-Z2X" id="xmE-tw-Qfd"/>
+                                    <outlet property="selectedBackgroundView" destination="SMb-dQ-SVm" id="Tpd-f4-c5i"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="pa3-cs-rDv" id="s1H-Tn-dBj"/>
+                            <outlet property="delegate" destination="pa3-cs-rDv" id="mVf-pu-Jjk"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Editing" id="UM0-kP-XPE">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="snD-79-W2N">
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="2ss-jm-xKE" id="uAP-Op-khM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="Rwr-P5-NOh">
+                                <connections>
+                                    <action selector="trashButtonTapped:" destination="2ss-jm-xKE" id="14D-Fx-477"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="dataSource" destination="pa3-cs-rDv" id="bCP-re-AH1"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zr-Hg-yYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="z9m-Q6-sbT">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="SMb-dQ-SVm">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <customObject id="pa3-cs-rDv" customClass="WidthFitDataSource" customModule="Dogstar">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentCount">
+                            <integer key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellHeight">
+                            <real key="value" value="128"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2621.5999999999999" y="818.14092953523243"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Dogstar
 
 class RootCollectionViewController: UICollectionViewController {
 
-    private let dataItems = [(string: "String 1", type:"StringCell", value: 0, hi: false, sel: false),
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet var selectedBackgroundView: UIView!
+
+    private let dataItems = [(string: "String 1", type:"SelectCell", value: 0, hi: true,  sel: true ),
                              (string: "String 2", type:"SizingCell", value: 0, hi: false, sel: false),
                              (string: "String 3", type:"Segue1Cell", value: 0, hi: true , sel: false),
                              (string: "String 4", type:"Segue2Cell", value: 0, hi: false, sel: false),
-                             (string: "String 5", type:"SelectCell", value: 0, hi: true,  sel: true ),
-                             (string: "String 6", type:"StringCell", value: 0, hi: true,  sel: false)]
+                             (string: "String 5", type:"Segue3Cell", value: 0, hi: false, sel: false),
+                             (string: "String 6", type:"Segue4Cell", value: 0, hi: false, sel: false),
+                             (string: "String a", type:"Segue5Cell", value: 0, hi: false, sel: false),
+                             (string: "String d", type:"Segue6Cell", value: 0, hi: false, sel: false),
+                             (string: "String e", type:"Segue7Cell", value: 0, hi: false, sel: false),
+                             (string: "String b", type:"SelectCell", value: 0, hi: true,  sel: true ),
+                             (string: "String c", type:"SelectCell", value: 0, hi: false, sel: true ),
+                             (string: "String 7", type:"StringCell", value: 0, hi: true,  sel: false)]
 
     override func viewDidLoad() {
 
@@ -45,6 +55,11 @@ class RootCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
 
+    @IBAction func unwindToRoot(sender: UIStoryboardSegue) {
+
+        print("And relax")
+    }
+
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int { return 1 }
@@ -56,7 +71,9 @@ class RootCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dataItems[indexPath.row].type, for: indexPath)
     
         // Configure the cell
-        (cell as? StringCell)?.configure(dataItems[indexPath.row].string)
+        (cell as? StringCollectionViewCell)?.configure(dataItems[indexPath.row].string)
+
+        cell.backgroundView = backgroundView
 
         return cell
     }
@@ -81,6 +98,24 @@ class RootCollectionViewController: UICollectionViewController {
         cell?.contentView.backgroundColor = nil
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        print("Selected \(String(describing: cell))")
+
+        //super.collectionView(collectionView, didSelectItemAt: indexPath)
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+
+        let cell = collectionView.cellForItem(at: indexPath)
+
+        print("Deselected \(String(describing: cell))")
+
+        //super.collectionView(collectionView, didDeselectItemAt: indexPath)
+    }
+
     // Specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool { return dataItems[indexPath.row].sel }
 }
@@ -92,26 +127,7 @@ struct StringCellContent {
     var text: String?
 }
 
-// MARK: - View
-
-class StringCell : UICollectionViewCell {
-
-    @IBOutlet private var label: UILabel!
-
-    func configure(_ content: String) {
-
-        label.text = content
-
-        // Accessibility
-        label.accessibilityLabel = "Title"
-        label.accessibilityValue = content
-
-        // Appearance
-        label.font = UIFont.preferredFont(forTextStyle: .headline)
-    }
-}
-
-class SizingCell : StringCell {
+class SizingCollectionViewCell : StringCollectionViewCell {
 
     @IBOutlet private var subLabel: UILabel!
 
