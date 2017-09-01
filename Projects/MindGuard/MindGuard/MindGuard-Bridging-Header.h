@@ -9,6 +9,6 @@
 #ifndef MindGuard_Bridging_Header_h
 #define MindGuard_Bridging_Header_h
 
-#import "ZapatopiLib.h"
+//#import "ZapatopiLib.h"
 
 #endif /* MindGuard_Bridging_Header_h */

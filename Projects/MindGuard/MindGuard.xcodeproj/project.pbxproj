@@ -14,9 +14,10 @@
 		9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD01F58308D00227681 /* Assets.xcassets */; };
 		9B68FBD41F58308D00227681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */; };
 		9B68FBDF1F58308D00227681 /* MindGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBDE1F58308D00227681 /* MindGuardTests.swift */; };
-		9B68FBF21F583CE000227681 /* ZapatopiLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B68FBEF1F583CE000227681 /* ZapatopiLib.h */; };
-		9B68FBF61F583D3800227681 /* libZapatopiLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68FBED1F583CE000227681 /* libZapatopiLib.a */; };
-		9B68FBF81F58486700227681 /* ZapatopiLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBF71F58486700227681 /* ZapatopiLib.c */; };
+		9B68FC191F5955B900227681 /* zapatopilib.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBF71F58486700227681 /* zapatopilib.c */; };
+		9B68FC1A1F5955C400227681 /* zapatopilib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B68FBEF1F583CE000227681 /* zapatopilib.h */; };
+		9B68FC251F595C4400227681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FC241F595C4400227681 /* main.m */; };
+		9B68FC2B1F595C8000227681 /* libzapatopi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68FC151F59559600227681 /* libzapatopi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,25 +28,24 @@
 			remoteGlobalIDString = 9B68FBC31F58308D00227681;
 			remoteInfo = MindGuard;
 		};
-		9B68FBF91F5848B000227681 /* PBXContainerItemProxy */ = {
+		9B68FC291F595C7400227681 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B68FBBC1F58308D00227681 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B68FBEC1F583CE000227681;
-			remoteInfo = ZapatopiLib;
+			remoteGlobalIDString = 9B68FC141F59559600227681;
+			remoteInfo = zapatopi;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9B68FBEB1F583CE000227681 /* CopyFiles */ = {
+		9B68FC201F595C4400227681 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
 			files = (
-				9B68FBF21F583CE000227681 /* ZapatopiLib.h in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -61,10 +61,22 @@
 		9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B68FBDE1F58308D00227681 /* MindGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuardTests.swift; sourceTree = "<group>"; };
 		9B68FBE01F58308D00227681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B68FBED1F583CE000227681 /* libZapatopiLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZapatopiLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B68FBEF1F583CE000227681 /* ZapatopiLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZapatopiLib.h; sourceTree = "<group>"; };
-		9B68FBF71F58486700227681 /* ZapatopiLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZapatopiLib.c; sourceTree = "<group>"; };
+		9B68FBEF1F583CE000227681 /* zapatopilib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapatopilib.h; sourceTree = "<group>"; };
+		9B68FBF71F58486700227681 /* zapatopilib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zapatopilib.c; sourceTree = "<group>"; };
 		9B68FBFB1F5854EC00227681 /* MindGuard-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MindGuard-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B68FC151F59559600227681 /* libzapatopi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzapatopi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FC221F595C4400227681 /* mgcarriertool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mgcarriertool; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FC241F595C4400227681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B68FC451F595FF000227681 /* antarctic.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = antarctic.carrier; sourceTree = "<group>"; };
+		9B68FC461F595FF000227681 /* belgian.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = belgian.carrier; sourceTree = "<group>"; };
+		9B68FC471F595FF000227681 /* beta.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = beta.carrier; sourceTree = "<group>"; };
+		9B68FC481F595FF000227681 /* brother.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = brother.carrier; sourceTree = "<group>"; };
+		9B68FC491F595FF000227681 /* kpsi.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = kpsi.carrier; sourceTree = "<group>"; };
+		9B68FC4A1F595FF000227681 /* liberati.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = liberati.carrier; sourceTree = "<group>"; };
+		9B68FC4B1F595FF000227681 /* reticulian.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = reticulian.carrier; sourceTree = "<group>"; };
+		9B68FC4C1F595FF000227681 /* russel.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = russel.carrier; sourceTree = "<group>"; };
+		9B68FC4D1F595FF000227681 /* tz8.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = tz8.carrier; sourceTree = "<group>"; };
+		9B68FC4E1F595FF000227681 /* unmetric.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = unmetric.carrier; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B68FBF61F583D3800227681 /* libZapatopiLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +94,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B68FBEA1F583CE000227681 /* Frameworks */ = {
+		9B68FC121F59559600227681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC1F1F595C4400227681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC2B1F595C8000227681 /* libzapatopi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				9B68FBC61F58308D00227681 /* MindGuard */,
-				9B68FBEE1F583CE000227681 /* ZapatopiLib */,
+				9B68FC231F595C4400227681 /* mgcarriertool */,
+				9B68FBEE1F583CE000227681 /* zapatopilib */,
 				9B68FBDD1F58308D00227681 /* MindGuardTests */,
 				9B68FBC51F58308D00227681 /* Products */,
 			);
@@ -108,7 +128,8 @@
 			children = (
 				9B68FBC41F58308D00227681 /* MindGuard.app */,
 				9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */,
-				9B68FBED1F583CE000227681 /* libZapatopiLib.a */,
+				9B68FC151F59559600227681 /* libzapatopi.a */,
+				9B68FC221F595C4400227681 /* mgcarriertool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,16 +158,54 @@
 			path = MindGuardTests;
 			sourceTree = "<group>";
 		};
-		9B68FBEE1F583CE000227681 /* ZapatopiLib */ = {
+		9B68FBEE1F583CE000227681 /* zapatopilib */ = {
 			isa = PBXGroup;
 			children = (
-				9B68FBEF1F583CE000227681 /* ZapatopiLib.h */,
-				9B68FBF71F58486700227681 /* ZapatopiLib.c */,
+				9B68FBEF1F583CE000227681 /* zapatopilib.h */,
+				9B68FBF71F58486700227681 /* zapatopilib.c */,
 			);
+			name = zapatopilib;
 			path = ZapatopiLib;
 			sourceTree = "<group>";
 		};
+		9B68FC231F595C4400227681 /* mgcarriertool */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FC241F595C4400227681 /* main.m */,
+				9B68FC441F595FF000227681 /* carriers */,
+			);
+			path = mgcarriertool;
+			sourceTree = "<group>";
+		};
+		9B68FC441F595FF000227681 /* carriers */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FC451F595FF000227681 /* antarctic.carrier */,
+				9B68FC461F595FF000227681 /* belgian.carrier */,
+				9B68FC471F595FF000227681 /* beta.carrier */,
+				9B68FC481F595FF000227681 /* brother.carrier */,
+				9B68FC491F595FF000227681 /* kpsi.carrier */,
+				9B68FC4A1F595FF000227681 /* liberati.carrier */,
+				9B68FC4B1F595FF000227681 /* reticulian.carrier */,
+				9B68FC4C1F595FF000227681 /* russel.carrier */,
+				9B68FC4D1F595FF000227681 /* tz8.carrier */,
+				9B68FC4E1F595FF000227681 /* unmetric.carrier */,
+			);
+			path = carriers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B68FC131F59559600227681 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC1A1F5955C400227681 /* zapatopilib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9B68FBC31F58308D00227681 /* MindGuard */ = {
@@ -160,7 +219,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9B68FBFA1F5848B000227681 /* PBXTargetDependency */,
 			);
 			name = MindGuard;
 			productName = MindGuard;
@@ -185,22 +243,40 @@
 			productReference = 9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9B68FBEC1F583CE000227681 /* ZapatopiLib */ = {
+		9B68FC141F59559600227681 /* zapatopi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B68FBF31F583CE000227681 /* Build configuration list for PBXNativeTarget "ZapatopiLib" */;
+			buildConfigurationList = 9B68FC161F59559600227681 /* Build configuration list for PBXNativeTarget "zapatopi" */;
 			buildPhases = (
-				9B68FBE91F583CE000227681 /* Sources */,
-				9B68FBEA1F583CE000227681 /* Frameworks */,
-				9B68FBEB1F583CE000227681 /* CopyFiles */,
+				9B68FC111F59559600227681 /* Sources */,
+				9B68FC121F59559600227681 /* Frameworks */,
+				9B68FC131F59559600227681 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZapatopiLib;
-			productName = ZapatopiLib;
-			productReference = 9B68FBED1F583CE000227681 /* libZapatopiLib.a */;
+			name = zapatopi;
+			productName = zapatopi;
+			productReference = 9B68FC151F59559600227681 /* libzapatopi.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		9B68FC211F595C4400227681 /* mgcarriertool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B68FC261F595C4400227681 /* Build configuration list for PBXNativeTarget "mgcarriertool" */;
+			buildPhases = (
+				9B68FC1E1F595C4400227681 /* Sources */,
+				9B68FC1F1F595C4400227681 /* Frameworks */,
+				9B68FC201F595C4400227681 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B68FC2A1F595C7400227681 /* PBXTargetDependency */,
+			);
+			name = mgcarriertool;
+			productName = mgcarriertool;
+			productReference = 9B68FC221F595C4400227681 /* mgcarriertool */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -223,7 +299,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9B68FBC31F58308D00227681;
 					};
-					9B68FBEC1F583CE000227681 = {
+					9B68FC141F59559600227681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
+					9B68FC211F595C4400227681 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = QL2HV855H2;
 						ProvisioningStyle = Automatic;
@@ -244,8 +325,9 @@
 			projectRoot = "";
 			targets = (
 				9B68FBC31F58308D00227681 /* MindGuard */,
-				9B68FBEC1F583CE000227681 /* ZapatopiLib */,
 				9B68FBD91F58308D00227681 /* MindGuardTests */,
+				9B68FC211F595C4400227681 /* mgcarriertool */,
+				9B68FC141F59559600227681 /* zapatopi */,
 			);
 		};
 /* End PBXProject section */
@@ -289,11 +371,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B68FBE91F583CE000227681 /* Sources */ = {
+		9B68FC111F59559600227681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B68FBF81F58486700227681 /* ZapatopiLib.c in Sources */,
+				9B68FC191F5955B900227681 /* zapatopilib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC1E1F595C4400227681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC251F595C4400227681 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +395,10 @@
 			target = 9B68FBC31F58308D00227681 /* MindGuard */;
 			targetProxy = 9B68FBDB1F58308D00227681 /* PBXContainerItemProxy */;
 		};
-		9B68FBFA1F5848B000227681 /* PBXTargetDependency */ = {
+		9B68FC2A1F595C7400227681 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9B68FBEC1F583CE000227681 /* ZapatopiLib */;
-			targetProxy = 9B68FBF91F5848B000227681 /* PBXContainerItemProxy */;
+			target = 9B68FC141F59559600227681 /* zapatopi */;
+			targetProxy = 9B68FC291F595C7400227681 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,23 +575,49 @@
 			};
 			name = Release;
 		};
-		9B68FBF41F583CE000227681 /* Debug */ = {
+		9B68FC171F59559600227681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = QL2HV855H2;
-				OTHER_LDFLAGS = "-ObjC";
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		9B68FBF51F583CE000227681 /* Release */ = {
+		9B68FC181F59559600227681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = QL2HV855H2;
-				OTHER_LDFLAGS = "-ObjC";
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B68FC271F595C4400227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B68FC281F595C4400227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -533,11 +649,19 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		9B68FBF31F583CE000227681 /* Build configuration list for PBXNativeTarget "ZapatopiLib" */ = {
+		9B68FC161F59559600227681 /* Build configuration list for PBXNativeTarget "zapatopi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B68FBF41F583CE000227681 /* Debug */,
-				9B68FBF51F583CE000227681 /* Release */,
+				9B68FC171F59559600227681 /* Debug */,
+				9B68FC181F59559600227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9B68FC261F595C4400227681 /* Build configuration list for PBXNativeTarget "mgcarriertool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FC271F595C4400227681 /* Debug */,
+				9B68FC281F595C4400227681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

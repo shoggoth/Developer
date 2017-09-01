@@ -13,17 +13,7 @@ import UIKit
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        mind_guard_init(0, nil)
-        
         // Override point for customization after application launch.
-        let tx = "Text".cString(using: .utf8)
-        let ok = "OK".cString(using: .utf8)
-        let ca = "Cancel".cString(using: .utf8)
-
-        popup_dialog(tx, ok, ca, nil, nil, 0)
-        //reload_mods()
-
         return true
     }
 

@@ -33,7 +33,7 @@
  *   http://zapatopi.net/mgpl.html
  */
 
-#include "ZapatopiLib.h"
+#include "zapatopilib.h"
 
 char mg_version[] = "0.0.0.4";
 char mg_year[] = "2003";
@@ -57,6 +57,8 @@ int to_jam = false;
 int to_depsych = false;
 int to_monitor = false;
 int gcar, gmode;
+
+static void (*pcheck) (unsigned int);
 
 /*GdkGC *bio_gc[3];
 GdkGC *depsych_gc[16];
@@ -181,12 +183,12 @@ char car_path[256];
 
 
 /**** MAIN AND QUIT ****/
-int mind_guard_init(int argc, char *argv[])
+int mind_guard_main(int argc, const char *argv[])
 {
 	int i, quit = false;
 
 	/* DEFAULTS */
-	strcpy(car_path, "./carriers/");
+    sprintf(car_path, "%s/carriers/", getenv("PROJECT_DIR"));
 	strcpy(user_name_data, "");
 	bday = 1; bmonth = 1; byear = 1900;
 	algo = 0; scan_mode = 0; scan_depth = 50;
@@ -358,23 +360,23 @@ void parse_decipher(int car, int mode)
 	char text[256], infotext[256];
 
 	context = rs(4);
-	switch (context)
-		{
-		case 0:
-			index = rs(module[car].layer);
-			break;
-		case 1:
-			index = rs(module[car].encrypt);
-			break;
-		case 2:
-			index = rs(module[car].syntax);
-			break;
-		case 3:
-			index = rs(module[car].phase);
-			break;
-            default:
-                index = -31337;
-		}
+    switch (context)
+    {
+        case 0:
+            index = rs(module[car].layer);
+            break;
+        case 1:
+            index = rs(module[car].encrypt);
+            break;
+        case 2:
+            index = rs(module[car].syntax);
+            break;
+        case 3:
+            index = rs(module[car].phase);
+            break;
+        default:
+            index = -31337;
+    }
 	source = rs(5);
 
 	diag_display_clear(NULL);
@@ -1115,7 +1117,7 @@ void check_for_mg_home_dir()
 	DIR *dp;
 	char path[256];
 	sprintf(path, "%s/MindGuard/", getenv("HOME"));
-	if (dp = opendir(path))
+	if ((dp = opendir(path)))
 		closedir(dp);
 	else
 		{
@@ -1161,7 +1163,7 @@ void flush_log()
 	char log_path[256];
 
 	sprintf(log_path, "%s/MindGuard/mindguard.log", getenv("HOME"));
-	if (log = fopen(log_path, "w"))
+	if ((log = fopen(log_path, "w")))
 		{
 		fprintf(log, "");
 		fclose(log);
@@ -1178,13 +1180,13 @@ void append_log(char *text, int car, int context, int source, char *infotext,
 	check_for_mg_home_dir();
 
 	sprintf(log_path, "%s/MindGuard/mindguard.log", getenv("HOME"));
-	if (log = fopen(log_path, "a"))
+	if ((log = fopen(log_path, "a")))
 		{
 		time_string (buffer);
 		fprintf(log, "---------------------------\nTime:     %s\n", buffer);
 		strcpy (buffer, module[car].name);
 		fprintf(log, "Carrier:  %s\n", buffer);
-		if (((mode == 1 | mode == 2) & state_auto) | mode == 3)
+		if (((mode == 1 || mode == 2) & state_auto) || mode == 3)
 			{
 			if (deciphered)
 				{
@@ -1340,6 +1342,7 @@ int load_mods()
 
 	while (try < 4)
 		{
+            printf("looking in %s\n", car_path);
 		if ((dp = opendir(car_path)))
 			{
 			while ((dirp = readdir(dp)) != NULL)
@@ -1493,7 +1496,7 @@ int parse_mod(char *path, int num)
 			fclose(file);
 			return result;
 			}
-		if ( (int *)strcmp(word, "FORM") != NULL)
+		if (strcmp(word, "FORM"))
 			{
 			fclose(file);
 			return result;
@@ -1501,7 +1504,7 @@ int parse_mod(char *path, int num)
 
 		fgets(word, 5, file);
 		fgets(word, 5, file);
-		if ( (int *)strcmp(word, "PSYC") != NULL)
+		if (strcmp(word, "PSYC"))
 			{
 			fclose(file);
 			return result;
@@ -1520,7 +1523,7 @@ int parse_mod(char *path, int num)
 		i = 0;
 		while (fgets(word, 5, file) != NULL)
 			{
-			if ( (int *)strcmp(word, "NAME") == NULL)
+			if (!strcmp(word, "NAME"))
 				{
 				fgets(word, 5, file);
 				len = chars_value(word, 4);
@@ -1530,7 +1533,7 @@ int parse_mod(char *path, int num)
 				i++;
 				continue;
 				}
-			if ( (int *)strcmp(word, "(c) ") == NULL)
+			if (!strcmp(word, "(c) "))
 				{
 				fgets(word, 5, file);
 				len = chars_value(word, 4);
@@ -1539,7 +1542,7 @@ int parse_mod(char *path, int num)
 				word_offset(file, len);
 				continue;
 				}
-			if ( (int *)strcmp(word, "VERS") == NULL)
+			if (!strcmp(word, "VERS"))
 				{
 				fgets(word, 5, file);
 				len = chars_value(word, 4);
@@ -1548,35 +1551,35 @@ int parse_mod(char *path, int num)
 				word_offset(file, len);
 				continue;
 				}
-			if ( (int *)strcmp(word, "LNUM") == NULL)
+			if (!strcmp(word, "LNUM"))
 				{
 				fgets(word, 5, file);
 				module[num].layer = chars_value(word, 4);
 				i++;
 				continue;
 				}
-			if ( (int *)strcmp(word, "ENUM") == NULL)
+			if (!strcmp(word, "ENUM"))
 				{
 				fgets(word, 5, file);
 				module[num].encrypt = chars_value(word, 4);
 				i++;
 				continue;
 				}
-			if ( (int *)strcmp(word, "SNUM") == NULL)
+			if (!strcmp(word, "SNUM"))
 				{
 				fgets(word, 5, file);
 				module[num].syntax = chars_value(word, 4);
 				i++;
 				continue;
 				}
-			if ( (int *)strcmp(word, "PNUM") == NULL)
+			if (!strcmp(word, "PNUM"))
 				{
 				fgets(word, 5, file);
 				module[num].phase = chars_value(word, 4);
 				i++;
 				continue;
 				}
-			if ( (int *)strcmp(word, "END ") == NULL)
+			if (!strcmp(word, "END "))
 				break;
 			}
 
@@ -1687,12 +1690,12 @@ int ratadie(int day, int month, int year)
 
 
 /*** MISC USEFUL FUNCTIONS ***/
-int dir_exists (char path[255])
+int dir_exists (const char path[255])
 {
 	DIR *dp;
 	int ret;
 
-	if (dp = opendir(path)) ret = true;
+	if ((dp = opendir(path))) ret = true;
 	else ret = false;
 	closedir(dp);
 	return ret;

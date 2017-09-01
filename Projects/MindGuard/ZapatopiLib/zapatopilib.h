@@ -1,6 +1,6 @@
 //
-//  ZapatopiLib.h
-//  ZapatopiLib
+//  zapatopilib.h
+//  zapatopilib
 //
 //  Created by Rich Henry on 31/08/2017.
 //  Copyright © 2017 Dogstar Industries Ltd. All rights reserved.
@@ -30,7 +30,7 @@ void source_name(char *, int);
 void context_name_label(char *, int);
 void decipher(char *, char *, int, int);
 int rs(int);
-int dir_exists(char *);
+int dir_exists(const char *);
 int quit (void);
 void quit_2 (void);
 //void open_main_window(void);
@@ -55,7 +55,7 @@ void update_eponymolog(void);
 int eponymolog(void);
 int days_since(void);
 int ratadie(int, int, int);
-void (*pcheck) (unsigned int);
+//void (*pcheck) (unsigned int);
 //void create_biorhythm(GtkWidget *);
 //void draw_biorhythm(GtkWidget *, GdkEventExpose *);
 void update_biorhythm(void);
@@ -78,4 +78,4 @@ void update_scan();
 void append_log(char *, int, int, int, char *, int, int);
 //gint jam(gpointer);
 
-int mind_guard_init(int argc, char *argv[]);
+int mind_guard_main(int argc, const char *argv[]);
