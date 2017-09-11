@@ -22,6 +22,8 @@
 		9BC117E61F66C5930077C1CD /* DepsychViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E51F66C5930077C1CD /* DepsychViewController.swift */; };
 		9BC117E81F66C5AA0077C1CD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */; };
 		9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EA1F66CA510077C1CD /* MapKit.framework */; };
+		9BC117ED1F66D6BF0077C1CD /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; };
+		9BC117EE1F66D6BF0077C1CD /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9BC117EF1F66D6BF0077C1CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BC117EE1F66D6BF0077C1CD /* Dogstar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -85,6 +98,7 @@
 		9BC117E51F66C5930077C1CD /* DepsychViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychViewController.swift; sourceTree = "<group>"; };
 		9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BC117EA1F66CA510077C1CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dogstar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */,
+				9BC117ED1F66D6BF0077C1CD /* Dogstar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +139,7 @@
 		9B68FBBB1F58308D00227681 = {
 			isa = PBXGroup;
 			children = (
+				9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */,
 				9B68FBC61F58308D00227681 /* MindGuard */,
 				9B68FC231F595C4400227681 /* mgcarriertool */,
 				9B68FBEE1F583CE000227681 /* zapatopilib */,
@@ -236,6 +252,7 @@
 				9B68FBC01F58308D00227681 /* Sources */,
 				9B68FBC11F58308D00227681 /* Frameworks */,
 				9B68FBC21F58308D00227681 /* Resources */,
+				9BC117EF1F66D6BF0077C1CD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
