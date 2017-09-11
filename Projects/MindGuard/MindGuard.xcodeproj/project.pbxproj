@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B68FBC81F58308D00227681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBC71F58308D00227681 /* AppDelegate.swift */; };
-		9B68FBCA1F58308D00227681 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBC91F58308D00227681 /* FirstViewController.swift */; };
-		9B68FBCC1F58308D00227681 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBCB1F58308D00227681 /* SecondViewController.swift */; };
 		9B68FBCF1F58308D00227681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBCD1F58308D00227681 /* Main.storyboard */; };
 		9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD01F58308D00227681 /* Assets.xcassets */; };
 		9B68FBD41F58308D00227681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */; };
@@ -18,6 +16,12 @@
 		9B68FC1A1F5955C400227681 /* zapatopilib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B68FBEF1F583CE000227681 /* zapatopilib.h */; };
 		9B68FC251F595C4400227681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FC241F595C4400227681 /* main.m */; };
 		9B68FC2B1F595C8000227681 /* libzapatopi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68FC151F59559600227681 /* libzapatopi.a */; };
+		9BC117E01F66C53F0077C1CD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */; };
+		9BC117E21F66C5670077C1CD /* PsidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E11F66C5670077C1CD /* PsidentViewController.swift */; };
+		9BC117E41F66C5790077C1CD /* HitmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E31F66C5790077C1CD /* HitmapViewController.swift */; };
+		9BC117E61F66C5930077C1CD /* DepsychViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E51F66C5930077C1CD /* DepsychViewController.swift */; };
+		9BC117E81F66C5AA0077C1CD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */; };
+		9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EA1F66CA510077C1CD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +56,6 @@
 /* Begin PBXFileReference section */
 		9B68FBC41F58308D00227681 /* MindGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B68FBC71F58308D00227681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B68FBC91F58308D00227681 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9B68FBCB1F58308D00227681 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9B68FBCE1F58308D00227681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B68FBD01F58308D00227681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B68FBD31F58308D00227681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,12 @@
 		9B68FC4C1F595FF000227681 /* russel.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = russel.carrier; sourceTree = "<group>"; };
 		9B68FC4D1F595FF000227681 /* tz8.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = tz8.carrier; sourceTree = "<group>"; };
 		9B68FC4E1F595FF000227681 /* unmetric.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = unmetric.carrier; sourceTree = "<group>"; };
+		9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		9BC117E11F66C5670077C1CD /* PsidentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsidentViewController.swift; sourceTree = "<group>"; };
+		9BC117E31F66C5790077C1CD /* HitmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapViewController.swift; sourceTree = "<group>"; };
+		9BC117E51F66C5930077C1CD /* DepsychViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychViewController.swift; sourceTree = "<group>"; };
+		9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9BC117EA1F66CA510077C1CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,7 @@
 				9B68FBEE1F583CE000227681 /* zapatopilib */,
 				9B68FBDD1F58308D00227681 /* MindGuardTests */,
 				9B68FBC51F58308D00227681 /* Products */,
+				9BC117E91F66CA510077C1CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +148,11 @@
 			isa = PBXGroup;
 			children = (
 				9B68FBC71F58308D00227681 /* AppDelegate.swift */,
-				9B68FBC91F58308D00227681 /* FirstViewController.swift */,
-				9B68FBCB1F58308D00227681 /* SecondViewController.swift */,
+				9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */,
+				9BC117E31F66C5790077C1CD /* HitmapViewController.swift */,
+				9BC117E11F66C5670077C1CD /* PsidentViewController.swift */,
+				9BC117E51F66C5930077C1CD /* DepsychViewController.swift */,
+				9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */,
 				9B68FBCD1F58308D00227681 /* Main.storyboard */,
 				9B68FBD01F58308D00227681 /* Assets.xcassets */,
 				9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */,
@@ -192,6 +205,14 @@
 				9B68FC4E1F595FF000227681 /* unmetric.carrier */,
 			);
 			path = carriers;
+			sourceTree = "<group>";
+		};
+		9BC117E91F66CA510077C1CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC117EA1F66CA510077C1CD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +313,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = QL2HV855H2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9B68FBD91F58308D00227681 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -357,9 +383,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B68FBCC1F58308D00227681 /* SecondViewController.swift in Sources */,
 				9B68FBC81F58308D00227681 /* AppDelegate.swift in Sources */,
-				9B68FBCA1F58308D00227681 /* FirstViewController.swift in Sources */,
+				9BC117E01F66C53F0077C1CD /* ScanViewController.swift in Sources */,
+				9BC117E61F66C5930077C1CD /* DepsychViewController.swift in Sources */,
+				9BC117E21F66C5670077C1CD /* PsidentViewController.swift in Sources */,
+				9BC117E41F66C5790077C1CD /* HitmapViewController.swift in Sources */,
+				9BC117E81F66C5AA0077C1CD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +669,7 @@
 				9B68FBE51F58308D00227681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B68FBE61F58308D00227681 /* Build configuration list for PBXNativeTarget "MindGuardTests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +678,7 @@
 				9B68FBE81F58308D00227681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B68FC161F59559600227681 /* Build configuration list for PBXNativeTarget "zapatopi" */ = {
 			isa = XCConfigurationList;
@@ -656,6 +687,7 @@
 				9B68FC181F59559600227681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B68FC261F595C4400227681 /* Build configuration list for PBXNativeTarget "mgcarriertool" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +696,7 @@
 				9B68FC281F595C4400227681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

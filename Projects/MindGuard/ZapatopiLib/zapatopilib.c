@@ -60,6 +60,8 @@ int gcar, gmode;
 
 static void (*pcheck) (unsigned int);
 
+static int decipher_check(int data);
+
 /*GdkGC *bio_gc[3];
 GdkGC *depsych_gc[16];
 GtkStyle *style_web;
@@ -279,7 +281,7 @@ int mind_guard_main(int argc, const char *argv[])
 			diag_set_clear_to(15);
 		}
 
-	//gtk_main();
+    for (;;) { decipher_check(2); }
 
 	return 0;
 }
@@ -796,13 +798,11 @@ void decipher(char *data, char *mod_path, int context, int index)
         while (fgets(word, 5, mod) != NULL)
         {
             if (!strcmp(word, cword[context]))
-                //              if ((int *)strcmp(word, cword[context]) == NULL)
             {
                 for (i = 0; i <= index; i++)
                 {
                     while (fgets(twobyte, 3, mod) != NULL)
                         if (!strcmp(twobyte, "&&"))
-                            //                      if ( (int *)strcmp(twobyte, "&&") == NULL)
                             break;
                     fgets(twobyte, 3, mod);
                 }
