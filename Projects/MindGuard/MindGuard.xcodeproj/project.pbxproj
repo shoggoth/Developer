@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B68FBC81F58308D00227681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBC71F58308D00227681 /* AppDelegate.swift */; };
+		9B68FBCF1F58308D00227681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBCD1F58308D00227681 /* Main.storyboard */; };
+		9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD01F58308D00227681 /* Assets.xcassets */; };
+		9B68FBD41F58308D00227681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */; };
+		9B68FBDF1F58308D00227681 /* MindGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBDE1F58308D00227681 /* MindGuardTests.swift */; };
+		9B68FC191F5955B900227681 /* zapatopilib.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FBF71F58486700227681 /* zapatopilib.c */; };
+		9B68FC1A1F5955C400227681 /* zapatopilib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B68FBEF1F583CE000227681 /* zapatopilib.h */; };
+		9B68FC251F595C4400227681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68FC241F595C4400227681 /* main.m */; };
+		9B68FC2B1F595C8000227681 /* libzapatopi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B68FC151F59559600227681 /* libzapatopi.a */; };
+		9BC117E01F66C53F0077C1CD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */; };
+		9BC117E21F66C5670077C1CD /* PsidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E11F66C5670077C1CD /* PsidentViewController.swift */; };
+		9BC117E41F66C5790077C1CD /* HitmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E31F66C5790077C1CD /* HitmapViewController.swift */; };
+		9BC117E61F66C5930077C1CD /* DepsychViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E51F66C5930077C1CD /* DepsychViewController.swift */; };
+		9BC117E81F66C5AA0077C1CD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */; };
+		9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EA1F66CA510077C1CD /* MapKit.framework */; };
+		9BC117ED1F66D6BF0077C1CD /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; };
+		9BC117EE1F66D6BF0077C1CD /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BC117F21F66D8340077C1CD /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117F01F66D8340077C1CD /* Scan.storyboard */; };
+		9BC117F71F66D86B0077C1CD /* Psident.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117F51F66D86B0077C1CD /* Psident.storyboard */; };
+		9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */; };
+		9BC118011F66D9970077C1CD /* Depsych.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC118031F66D9970077C1CD /* Depsych.storyboard */; };
+		9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC1180A1F66D9A30077C1CD /* Settings.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B68FBDB1F58308D00227681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B68FBBC1F58308D00227681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B68FBC31F58308D00227681;
+			remoteInfo = MindGuard;
+		};
+		9B68FC291F595C7400227681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B68FBBC1F58308D00227681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B68FC141F59559600227681;
+			remoteInfo = zapatopi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B68FC201F595C4400227681 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9BC117EF1F66D6BF0077C1CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BC117EE1F66D6BF0077C1CD /* Dogstar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B68FBC41F58308D00227681 /* MindGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FBC71F58308D00227681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B68FBCE1F58308D00227681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B68FBD01F58308D00227681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B68FBD31F58308D00227681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B68FBD51F58308D00227681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FBDE1F58308D00227681 /* MindGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuardTests.swift; sourceTree = "<group>"; };
+		9B68FBE01F58308D00227681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B68FBEF1F583CE000227681 /* zapatopilib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapatopilib.h; sourceTree = "<group>"; };
+		9B68FBF71F58486700227681 /* zapatopilib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zapatopilib.c; sourceTree = "<group>"; };
+		9B68FBFB1F5854EC00227681 /* MindGuard-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MindGuard-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B68FC151F59559600227681 /* libzapatopi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzapatopi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FC221F595C4400227681 /* mgcarriertool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mgcarriertool; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B68FC241F595C4400227681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B68FC451F595FF000227681 /* antarctic.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = antarctic.carrier; sourceTree = "<group>"; };
+		9B68FC461F595FF000227681 /* belgian.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = belgian.carrier; sourceTree = "<group>"; };
+		9B68FC471F595FF000227681 /* beta.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = beta.carrier; sourceTree = "<group>"; };
+		9B68FC481F595FF000227681 /* brother.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = brother.carrier; sourceTree = "<group>"; };
+		9B68FC491F595FF000227681 /* kpsi.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = kpsi.carrier; sourceTree = "<group>"; };
+		9B68FC4A1F595FF000227681 /* liberati.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = liberati.carrier; sourceTree = "<group>"; };
+		9B68FC4B1F595FF000227681 /* reticulian.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = reticulian.carrier; sourceTree = "<group>"; };
+		9B68FC4C1F595FF000227681 /* russel.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = russel.carrier; sourceTree = "<group>"; };
+		9B68FC4D1F595FF000227681 /* tz8.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = tz8.carrier; sourceTree = "<group>"; };
+		9B68FC4E1F595FF000227681 /* unmetric.carrier */ = {isa = PBXFileReference; lastKnownFileType = file; path = unmetric.carrier; sourceTree = "<group>"; };
+		9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		9BC117E11F66C5670077C1CD /* PsidentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsidentViewController.swift; sourceTree = "<group>"; };
+		9BC117E31F66C5790077C1CD /* HitmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapViewController.swift; sourceTree = "<group>"; };
+		9BC117E51F66C5930077C1CD /* DepsychViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychViewController.swift; sourceTree = "<group>"; };
+		9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9BC117EA1F66CA510077C1CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dogstar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC117F11F66D8340077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scan.storyboard; sourceTree = "<group>"; };
+		9BC117F61F66D86B0077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Psident.storyboard; sourceTree = "<group>"; };
+		9BC117FB1F66D8A10077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hitmap.storyboard; sourceTree = "<group>"; };
+		9BC117FE1F66D98A0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9BC118001F66D9900077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Hitmap.strings; sourceTree = "<group>"; };
+		9BC118021F66D9970077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Depsych.storyboard; sourceTree = "<group>"; };
+		9BC118051F66D9990077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Depsych.strings; sourceTree = "<group>"; };
+		9BC118071F66D99E0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Psident.strings; sourceTree = "<group>"; };
+		9BC118091F66D9A30077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		9BC1180C1F66D9A40077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
+		9BC1180E1F66D9AA0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Scan.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B68FBC11F58308D00227681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */,
+				9BC117ED1F66D6BF0077C1CD /* Dogstar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FBD71F58308D00227681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC121F59559600227681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC1F1F595C4400227681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC2B1F595C8000227681 /* libzapatopi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B68FBBB1F58308D00227681 = {
+			isa = PBXGroup;
+			children = (
+				9B68FBC61F58308D00227681 /* MindGuard */,
+				9B68FC231F595C4400227681 /* mgcarriertool */,
+				9B68FBEE1F583CE000227681 /* zapatopilib */,
+				9B68FBDD1F58308D00227681 /* MindGuardTests */,
+				9B68FBC51F58308D00227681 /* Products */,
+				9BC117E91F66CA510077C1CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B68FBC51F58308D00227681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FBC41F58308D00227681 /* MindGuard.app */,
+				9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */,
+				9B68FC151F59559600227681 /* libzapatopi.a */,
+				9B68FC221F595C4400227681 /* mgcarriertool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B68FBC61F58308D00227681 /* MindGuard */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FBC71F58308D00227681 /* AppDelegate.swift */,
+				9BC117DF1F66C53F0077C1CD /* ScanViewController.swift */,
+				9BC117E31F66C5790077C1CD /* HitmapViewController.swift */,
+				9BC117E11F66C5670077C1CD /* PsidentViewController.swift */,
+				9BC117E51F66C5930077C1CD /* DepsychViewController.swift */,
+				9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */,
+				9B68FBCD1F58308D00227681 /* Main.storyboard */,
+				9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */,
+				9BC118031F66D9970077C1CD /* Depsych.storyboard */,
+				9BC117F51F66D86B0077C1CD /* Psident.storyboard */,
+				9BC1180A1F66D9A30077C1CD /* Settings.storyboard */,
+				9BC117F01F66D8340077C1CD /* Scan.storyboard */,
+				9B68FBD01F58308D00227681 /* Assets.xcassets */,
+				9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */,
+				9B68FBFB1F5854EC00227681 /* MindGuard-Bridging-Header.h */,
+				9B68FBD51F58308D00227681 /* Info.plist */,
+			);
+			path = MindGuard;
+			sourceTree = "<group>";
+		};
+		9B68FBDD1F58308D00227681 /* MindGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FBDE1F58308D00227681 /* MindGuardTests.swift */,
+				9B68FBE01F58308D00227681 /* Info.plist */,
+			);
+			path = MindGuardTests;
+			sourceTree = "<group>";
+		};
+		9B68FBEE1F583CE000227681 /* zapatopilib */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FBEF1F583CE000227681 /* zapatopilib.h */,
+				9B68FBF71F58486700227681 /* zapatopilib.c */,
+			);
+			name = zapatopilib;
+			path = ZapatopiLib;
+			sourceTree = "<group>";
+		};
+		9B68FC231F595C4400227681 /* mgcarriertool */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FC241F595C4400227681 /* main.m */,
+				9B68FC441F595FF000227681 /* carriers */,
+			);
+			path = mgcarriertool;
+			sourceTree = "<group>";
+		};
+		9B68FC441F595FF000227681 /* carriers */ = {
+			isa = PBXGroup;
+			children = (
+				9B68FC451F595FF000227681 /* antarctic.carrier */,
+				9B68FC461F595FF000227681 /* belgian.carrier */,
+				9B68FC471F595FF000227681 /* beta.carrier */,
+				9B68FC481F595FF000227681 /* brother.carrier */,
+				9B68FC491F595FF000227681 /* kpsi.carrier */,
+				9B68FC4A1F595FF000227681 /* liberati.carrier */,
+				9B68FC4B1F595FF000227681 /* reticulian.carrier */,
+				9B68FC4C1F595FF000227681 /* russel.carrier */,
+				9B68FC4D1F595FF000227681 /* tz8.carrier */,
+				9B68FC4E1F595FF000227681 /* unmetric.carrier */,
+			);
+			path = carriers;
+			sourceTree = "<group>";
+		};
+		9BC117E91F66CA510077C1CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */,
+				9BC117EA1F66CA510077C1CD /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B68FC131F59559600227681 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC1A1F5955C400227681 /* zapatopilib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9B68FBC31F58308D00227681 /* MindGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B68FBE31F58308D00227681 /* Build configuration list for PBXNativeTarget "MindGuard" */;
+			buildPhases = (
+				9B68FBC01F58308D00227681 /* Sources */,
+				9B68FBC11F58308D00227681 /* Frameworks */,
+				9B68FBC21F58308D00227681 /* Resources */,
+				9BC117EF1F66D6BF0077C1CD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindGuard;
+			productName = MindGuard;
+			productReference = 9B68FBC41F58308D00227681 /* MindGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B68FBD91F58308D00227681 /* MindGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B68FBE61F58308D00227681 /* Build configuration list for PBXNativeTarget "MindGuardTests" */;
+			buildPhases = (
+				9B68FBD61F58308D00227681 /* Sources */,
+				9B68FBD71F58308D00227681 /* Frameworks */,
+				9B68FBD81F58308D00227681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B68FBDC1F58308D00227681 /* PBXTargetDependency */,
+			);
+			name = MindGuardTests;
+			productName = MindGuardTests;
+			productReference = 9B68FBDA1F58308D00227681 /* MindGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B68FC141F59559600227681 /* zapatopi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B68FC161F59559600227681 /* Build configuration list for PBXNativeTarget "zapatopi" */;
+			buildPhases = (
+				9B68FC111F59559600227681 /* Sources */,
+				9B68FC121F59559600227681 /* Frameworks */,
+				9B68FC131F59559600227681 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zapatopi;
+			productName = zapatopi;
+			productReference = 9B68FC151F59559600227681 /* libzapatopi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B68FC211F595C4400227681 /* mgcarriertool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B68FC261F595C4400227681 /* Build configuration list for PBXNativeTarget "mgcarriertool" */;
+			buildPhases = (
+				9B68FC1E1F595C4400227681 /* Sources */,
+				9B68FC1F1F595C4400227681 /* Frameworks */,
+				9B68FC201F595C4400227681 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B68FC2A1F595C7400227681 /* PBXTargetDependency */,
+			);
+			name = mgcarriertool;
+			productName = mgcarriertool;
+			productReference = 9B68FC221F595C4400227681 /* mgcarriertool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B68FBBC1F58308D00227681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dogstar Industries Ltd.";
+				TargetAttributes = {
+					9B68FBC31F58308D00227681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9B68FBD91F58308D00227681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9B68FBC31F58308D00227681;
+					};
+					9B68FC141F59559600227681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
+					9B68FC211F595C4400227681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QL2HV855H2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9B68FBBF1F58308D00227681 /* Build configuration list for PBXProject "MindGuard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B68FBBB1F58308D00227681;
+			productRefGroup = 9B68FBC51F58308D00227681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B68FBC31F58308D00227681 /* MindGuard */,
+				9B68FBD91F58308D00227681 /* MindGuardTests */,
+				9B68FC211F595C4400227681 /* mgcarriertool */,
+				9B68FC141F59559600227681 /* zapatopi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B68FBC21F58308D00227681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FBD41F58308D00227681 /* LaunchScreen.storyboard in Resources */,
+				9BC118011F66D9970077C1CD /* Depsych.storyboard in Resources */,
+				9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */,
+				9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */,
+				9B68FBCF1F58308D00227681 /* Main.storyboard in Resources */,
+				9BC117F21F66D8340077C1CD /* Scan.storyboard in Resources */,
+				9BC117F71F66D86B0077C1CD /* Psident.storyboard in Resources */,
+				9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FBD81F58308D00227681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B68FBC01F58308D00227681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FBC81F58308D00227681 /* AppDelegate.swift in Sources */,
+				9BC117E01F66C53F0077C1CD /* ScanViewController.swift in Sources */,
+				9BC117E61F66C5930077C1CD /* DepsychViewController.swift in Sources */,
+				9BC117E21F66C5670077C1CD /* PsidentViewController.swift in Sources */,
+				9BC117E41F66C5790077C1CD /* HitmapViewController.swift in Sources */,
+				9BC117E81F66C5AA0077C1CD /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FBD61F58308D00227681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FBDF1F58308D00227681 /* MindGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC111F59559600227681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC191F5955B900227681 /* zapatopilib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B68FC1E1F595C4400227681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B68FC251F595C4400227681 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B68FBDC1F58308D00227681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B68FBC31F58308D00227681 /* MindGuard */;
+			targetProxy = 9B68FBDB1F58308D00227681 /* PBXContainerItemProxy */;
+		};
+		9B68FC2A1F595C7400227681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B68FC141F59559600227681 /* zapatopi */;
+			targetProxy = 9B68FC291F595C7400227681 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B68FBCD1F58308D00227681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B68FBCE1F58308D00227681 /* Base */,
+				9BC117FE1F66D98A0077C1CD /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B68FBD31F58308D00227681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117F01F66D8340077C1CD /* Scan.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117F11F66D8340077C1CD /* Base */,
+				9BC1180E1F66D9AA0077C1CD /* en */,
+			);
+			name = Scan.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117F51F66D86B0077C1CD /* Psident.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117F61F66D86B0077C1CD /* Base */,
+				9BC118071F66D99E0077C1CD /* en */,
+			);
+			name = Psident.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117FB1F66D8A10077C1CD /* Base */,
+				9BC118001F66D9900077C1CD /* en */,
+			);
+			name = Hitmap.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC118031F66D9970077C1CD /* Depsych.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC118021F66D9970077C1CD /* Base */,
+				9BC118051F66D9990077C1CD /* en */,
+			);
+			name = Depsych.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC1180A1F66D9A30077C1CD /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC118091F66D9A30077C1CD /* Base */,
+				9BC1180C1F66D9A40077C1CD /* en */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B68FBE11F58308D00227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B68FBE21F58308D00227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B68FBE41F58308D00227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = MindGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B68FBE51F58308D00227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = MindGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9B68FBE71F58308D00227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = MindGuardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindGuard.app/MindGuard";
+			};
+			name = Debug;
+		};
+		9B68FBE81F58308D00227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				INFOPLIST_FILE = MindGuardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindGuard.app/MindGuard";
+			};
+			name = Release;
+		};
+		9B68FC171F59559600227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B68FC181F59559600227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B68FC271F595C4400227681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B68FC281F595C4400227681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = QL2HV855H2;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B68FBBF1F58308D00227681 /* Build configuration list for PBXProject "MindGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FBE11F58308D00227681 /* Debug */,
+				9B68FBE21F58308D00227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B68FBE31F58308D00227681 /* Build configuration list for PBXNativeTarget "MindGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FBE41F58308D00227681 /* Debug */,
+				9B68FBE51F58308D00227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B68FBE61F58308D00227681 /* Build configuration list for PBXNativeTarget "MindGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FBE71F58308D00227681 /* Debug */,
+				9B68FBE81F58308D00227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B68FC161F59559600227681 /* Build configuration list for PBXNativeTarget "zapatopi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FC171F59559600227681 /* Debug */,
+				9B68FC181F59559600227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B68FC261F595C4400227681 /* Build configuration list for PBXNativeTarget "mgcarriertool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B68FC271F595C4400227681 /* Debug */,
+				9B68FC281F595C4400227681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B68FBBC1F58308D00227681 /* Project object */;
+}

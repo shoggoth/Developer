@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="6uh-dT-Ruu">
+            <objects>
+                <viewController storyboardIdentifier="scanViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ocr-zx-SiQ" customClass="ScanViewController" customModule="MindGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ZY-X9-BqE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wq7-hd-5V0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4pz-CH-qm6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-ub-bfS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="163-Dg-b0e">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="163-Dg-b0e" id="x4b-MD-Ndp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5ri-qh-rUo" id="4j4-XD-Tiw"/>
+                                    <outlet property="delegate" destination="5ri-qh-rUo" id="VJh-71-Mge"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wq7-hd-5V0" firstAttribute="top" secondItem="pW4-ub-bfS" secondAttribute="bottom" id="Qqe-Yv-1e8"/>
+                            <constraint firstItem="pW4-ub-bfS" firstAttribute="leading" secondItem="4pz-CH-qm6" secondAttribute="leading" id="aM3-bw-Sdg"/>
+                            <constraint firstItem="pW4-ub-bfS" firstAttribute="top" secondItem="9ZY-X9-BqE" secondAttribute="bottom" id="i7O-G1-egZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pW4-ub-bfS" secondAttribute="trailing" id="iol-Po-HPj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xj1-o5-VlW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjf-np-XLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="5ri-qh-rUo" customClass="DataSource" customModule="Dogstar">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sectionCount">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentCount">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1639" y="-66"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="yaw-ca-rmN">
+            <objects>
+                <navigationController storyboardIdentifier="scanNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="evT-dJ-ahQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scan" image="first" badgeValue="23" id="YeH-mI-KdF"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vu3-kv-L64">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ocr-zx-SiQ" kind="relationship" relationship="rootViewController" id="yHP-TP-ZUm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axj-JP-ylz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="-66.11694152923539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
