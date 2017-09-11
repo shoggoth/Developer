@@ -24,6 +24,11 @@
 		9BC117EB1F66CA510077C1CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EA1F66CA510077C1CD /* MapKit.framework */; };
 		9BC117ED1F66D6BF0077C1CD /* Dogstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; };
 		9BC117EE1F66D6BF0077C1CD /* Dogstar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BC117F21F66D8340077C1CD /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117F01F66D8340077C1CD /* Scan.storyboard */; };
+		9BC117F71F66D86B0077C1CD /* Psident.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117F51F66D86B0077C1CD /* Psident.storyboard */; };
+		9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */; };
+		9BC118011F66D9970077C1CD /* Depsych.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC118031F66D9970077C1CD /* Depsych.storyboard */; };
+		9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC1180A1F66D9A30077C1CD /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,17 @@
 		9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BC117EA1F66CA510077C1CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dogstar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC117F11F66D8340077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scan.storyboard; sourceTree = "<group>"; };
+		9BC117F61F66D86B0077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Psident.storyboard; sourceTree = "<group>"; };
+		9BC117FB1F66D8A10077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hitmap.storyboard; sourceTree = "<group>"; };
+		9BC117FE1F66D98A0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9BC118001F66D9900077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Hitmap.strings; sourceTree = "<group>"; };
+		9BC118021F66D9970077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Depsych.storyboard; sourceTree = "<group>"; };
+		9BC118051F66D9990077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Depsych.strings; sourceTree = "<group>"; };
+		9BC118071F66D99E0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Psident.strings; sourceTree = "<group>"; };
+		9BC118091F66D9A30077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		9BC1180C1F66D9A40077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
+		9BC1180E1F66D9AA0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Scan.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +155,6 @@
 		9B68FBBB1F58308D00227681 = {
 			isa = PBXGroup;
 			children = (
-				9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */,
 				9B68FBC61F58308D00227681 /* MindGuard */,
 				9B68FC231F595C4400227681 /* mgcarriertool */,
 				9B68FBEE1F583CE000227681 /* zapatopilib */,
@@ -170,6 +185,11 @@
 				9BC117E51F66C5930077C1CD /* DepsychViewController.swift */,
 				9BC117E71F66C5AA0077C1CD /* SettingsViewController.swift */,
 				9B68FBCD1F58308D00227681 /* Main.storyboard */,
+				9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */,
+				9BC118031F66D9970077C1CD /* Depsych.storyboard */,
+				9BC117F51F66D86B0077C1CD /* Psident.storyboard */,
+				9BC1180A1F66D9A30077C1CD /* Settings.storyboard */,
+				9BC117F01F66D8340077C1CD /* Scan.storyboard */,
 				9B68FBD01F58308D00227681 /* Assets.xcassets */,
 				9B68FBD21F58308D00227681 /* LaunchScreen.storyboard */,
 				9B68FBFB1F5854EC00227681 /* MindGuard-Bridging-Header.h */,
@@ -226,6 +246,7 @@
 		9BC117E91F66CA510077C1CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BC117EC1F66D6BF0077C1CD /* Dogstar.framework */,
 				9BC117EA1F66CA510077C1CD /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -381,8 +402,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B68FBD41F58308D00227681 /* LaunchScreen.storyboard in Resources */,
+				9BC118011F66D9970077C1CD /* Depsych.storyboard in Resources */,
 				9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */,
+				9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */,
 				9B68FBCF1F58308D00227681 /* Main.storyboard in Resources */,
+				9BC117F21F66D8340077C1CD /* Scan.storyboard in Resources */,
+				9BC117F71F66D86B0077C1CD /* Psident.storyboard in Resources */,
+				9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +479,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B68FBCE1F58308D00227681 /* Base */,
+				9BC117FE1F66D98A0077C1CD /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -463,6 +490,51 @@
 				9B68FBD31F58308D00227681 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117F01F66D8340077C1CD /* Scan.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117F11F66D8340077C1CD /* Base */,
+				9BC1180E1F66D9AA0077C1CD /* en */,
+			);
+			name = Scan.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117F51F66D86B0077C1CD /* Psident.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117F61F66D86B0077C1CD /* Base */,
+				9BC118071F66D99E0077C1CD /* en */,
+			);
+			name = Psident.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC117FB1F66D8A10077C1CD /* Base */,
+				9BC118001F66D9900077C1CD /* en */,
+			);
+			name = Hitmap.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC118031F66D9970077C1CD /* Depsych.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC118021F66D9970077C1CD /* Base */,
+				9BC118051F66D9990077C1CD /* en */,
+			);
+			name = Depsych.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC1180A1F66D9A30077C1CD /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC118091F66D9A30077C1CD /* Base */,
+				9BC1180C1F66D9A40077C1CD /* en */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

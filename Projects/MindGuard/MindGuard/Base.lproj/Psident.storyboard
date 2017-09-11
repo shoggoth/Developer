@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Psident-->
+        <scene sceneID="c4M-pr-mwR">
+            <objects>
+                <viewController storyboardIdentifier="psidentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4B-Iz-OUQ" customClass="PsidentViewController" customModule="MindGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9XY-vK-ovg"/>
+                        <viewControllerLayoutGuide type="bottom" id="pcY-md-f8W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rtA-o9-dMx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Psident View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vsn-8i-Fwe">
+                                <rect key="frame" x="85" y="312" width="205" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vsn-8i-Fwe" firstAttribute="centerX" secondItem="rtA-o9-dMx" secondAttribute="centerX" id="PTe-St-Oit"/>
+                            <constraint firstItem="Vsn-8i-Fwe" firstAttribute="centerY" secondItem="rtA-o9-dMx" secondAttribute="centerY" id="jgv-0p-n4g"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Psident" image="second" id="UDL-eA-7w4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTj-Ft-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="-146.17691154422789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
