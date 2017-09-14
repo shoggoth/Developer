@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pcY-md-f8W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rtA-o9-dMx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Psident View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vsn-8i-Fwe">
@@ -24,16 +30,57 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9o-7C-x1G" customClass="InvaderView" customModule="MindGuard" customModuleProvider="target">
+                                <rect key="frame" x="74.5" y="184" width="225" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d9o-7C-x1G" secondAttribute="height" multiplier="15:8" id="8Nj-Lu-WIc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.thickness">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="elY-Us-mm3">
+                                <rect key="frame" x="163" y="363" width="51" height="31"/>
+                                <connections>
+                                    <action selector="borderSwitchValueChanged:" destination="s4B-Iz-OUQ" eventType="valueChanged" id="0kG-oa-4xq"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-na-axn">
+                                <rect key="frame" x="88" y="368" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGV-pR-Fel">
+                                <rect key="frame" x="221" y="368" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ll4-na-axn" firstAttribute="centerY" secondItem="elY-Us-mm3" secondAttribute="centerY" id="0iM-gf-tVv"/>
+                            <constraint firstItem="elY-Us-mm3" firstAttribute="centerX" secondItem="Vsn-8i-Fwe" secondAttribute="centerX" id="10W-Wo-4KQ"/>
+                            <constraint firstItem="d9o-7C-x1G" firstAttribute="width" secondItem="rtA-o9-dMx" secondAttribute="width" multiplier="0.6" id="98O-rB-Fne"/>
+                            <constraint firstItem="Vsn-8i-Fwe" firstAttribute="top" secondItem="d9o-7C-x1G" secondAttribute="bottom" constant="8" id="HRJ-xM-sxL"/>
+                            <constraint firstItem="elY-Us-mm3" firstAttribute="leading" secondItem="ll4-na-axn" secondAttribute="trailing" constant="8" id="Nau-WZ-ZUx"/>
                             <constraint firstItem="Vsn-8i-Fwe" firstAttribute="centerX" secondItem="rtA-o9-dMx" secondAttribute="centerX" id="PTe-St-Oit"/>
+                            <constraint firstItem="elY-Us-mm3" firstAttribute="top" secondItem="Vsn-8i-Fwe" secondAttribute="bottom" constant="8" id="Z1n-Pn-l6N"/>
+                            <constraint firstItem="kGV-pR-Fel" firstAttribute="centerY" secondItem="elY-Us-mm3" secondAttribute="centerY" id="Ztg-An-q3x"/>
+                            <constraint firstItem="kGV-pR-Fel" firstAttribute="leading" secondItem="elY-Us-mm3" secondAttribute="trailing" constant="9" id="gxt-zd-nNh"/>
                             <constraint firstItem="Vsn-8i-Fwe" firstAttribute="centerY" secondItem="rtA-o9-dMx" secondAttribute="centerY" id="jgv-0p-n4g"/>
+                            <constraint firstItem="d9o-7C-x1G" firstAttribute="centerX" secondItem="Vsn-8i-Fwe" secondAttribute="centerX" id="k6C-ct-DX3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Psident" image="second" id="UDL-eA-7w4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="invaderView" destination="d9o-7C-x1G" id="q1a-qr-oJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTj-Ft-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
