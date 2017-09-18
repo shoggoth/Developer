@@ -29,6 +29,7 @@
 		9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC117FA1F66D8A10077C1CD /* Hitmap.storyboard */; };
 		9BC118011F66D9970077C1CD /* Depsych.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC118031F66D9970077C1CD /* Depsych.storyboard */; };
 		9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC1180A1F66D9A30077C1CD /* Settings.storyboard */; };
+		FFFB22D91F6FF02000A88BD5 /* Roadmap.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFFB22D81F6FF02000A88BD5 /* Roadmap.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		9BC118091F66D9A30077C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		9BC1180C1F66D9A40077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
 		9BC1180E1F66D9AA0077C1CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Scan.strings; sourceTree = "<group>"; };
+		FFFB22D81F6FF02000A88BD5 /* Roadmap.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Roadmap.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		9B68FBBB1F58308D00227681 = {
 			isa = PBXGroup;
 			children = (
+				FFFB22D81F6FF02000A88BD5 /* Roadmap.rtf */,
 				9B68FBC61F58308D00227681 /* MindGuard */,
 				9B68FC231F595C4400227681 /* mgcarriertool */,
 				9B68FBEE1F583CE000227681 /* zapatopilib */,
@@ -406,6 +409,7 @@
 				9B68FBD11F58308D00227681 /* Assets.xcassets in Resources */,
 				9BC117FC1F66D8A10077C1CD /* Hitmap.storyboard in Resources */,
 				9B68FBCF1F58308D00227681 /* Main.storyboard in Resources */,
+				FFFB22D91F6FF02000A88BD5 /* Roadmap.rtf in Resources */,
 				9BC117F21F66D8340077C1CD /* Scan.storyboard in Resources */,
 				9BC117F71F66D86B0077C1CD /* Psident.storyboard in Resources */,
 				9BC118081F66D9A30077C1CD /* Settings.storyboard in Resources */,

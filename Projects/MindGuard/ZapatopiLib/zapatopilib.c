@@ -182,7 +182,7 @@ struct carmod module[20];
 int mod_num = 0;
 char car_path[256];
 
-
+static void scan();
 
 /**** MAIN AND QUIT ****/
 int mind_guard_main(int argc, const char *argv[])
@@ -281,7 +281,7 @@ int mind_guard_main(int argc, const char *argv[])
 			diag_set_clear_to(15);
 		}
 
-    for (;;) { decipher_check(2); }
+    scan();
 
 	return 0;
 }
@@ -1065,6 +1065,9 @@ void depsych()
 /**** DIAGNOSTIC BOX ***/
 void diag_display(int n, char *text, int style)
 {
+    
+    printf("Diagnostic message %d: %s style: %d\n", n, text, style);
+    
 //	if (window)
 //		{
 //		gtk_label_set_text(GTK_LABEL(label_diag[n]), text);
