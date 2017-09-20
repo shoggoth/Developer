@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Swift Leak Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwiftLeakTestViewController" customModule="SwiftLeakTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Leaks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coj-tx-fw1">
+                                <rect key="frame" x="248" y="289" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW9-cA-7Ye">
+                                <rect key="frame" x="270" y="318" width="62" height="30"/>
+                                <state key="normal" title="Bakewall">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bakewallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfo-Yu-Kpc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGu-un-y6h">
+                                <rect key="frame" x="283" y="356" width="34" height="30"/>
+                                <state key="normal" title="Yentl">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yentlPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SaH-K1-nhk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Coj-tx-fw1" secondAttribute="centerX" constant="-0.5" id="1OD-rw-nHz"/>
+                            <constraint firstItem="rW9-cA-7Ye" firstAttribute="top" secondItem="Coj-tx-fw1" secondAttribute="bottom" constant="8" symbolic="YES" id="7ot-gD-7am"/>
+                            <constraint firstItem="AGu-un-y6h" firstAttribute="top" secondItem="rW9-cA-7Ye" secondAttribute="bottom" constant="8" id="D6c-1i-5Wx"/>
+                            <constraint firstItem="rW9-cA-7Ye" firstAttribute="leading" secondItem="Coj-tx-fw1" secondAttribute="trailing" id="J7X-UF-ZgE"/>
+                            <constraint firstItem="rW9-cA-7Ye" firstAttribute="centerX" secondItem="AGu-un-y6h" secondAttribute="centerX" constant="1" id="RAD-mE-Vdd"/>
+                            <constraint firstAttribute="centerY" secondItem="Coj-tx-fw1" secondAttribute="centerY" constant="0.5" id="e6r-d6-1G5"/>
+                            <constraint firstItem="rW9-cA-7Ye" firstAttribute="centerX" secondItem="Coj-tx-fw1" secondAttribute="centerX" id="fHo-Cx-a0F"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="J7X-UF-ZgE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="graceLabel" destination="Coj-tx-fw1" id="IdH-gc-rgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA1EA14818B60EE800205632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA14718B60EE800205632 /* Foundation.framework */; };
+		DA1EA14A18B60EE800205632 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA14918B60EE800205632 /* CoreGraphics.framework */; };
+		DA1EA14C18B60EE800205632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA14B18B60EE800205632 /* UIKit.framework */; };
+		DA1EA15218B60EE800205632 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1EA15018B60EE800205632 /* InfoPlist.strings */; };
+		DA1EA15418B60EE800205632 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1EA15318B60EE800205632 /* main.m */; };
+		DA1EA15818B60EE800205632 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1EA15718B60EE800205632 /* MCAppDelegate.m */; };
+		DA1EA15B18B60EE800205632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1EA15918B60EE800205632 /* Main.storyboard */; };
+		DA1EA15E18B60EE800205632 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1EA15D18B60EE800205632 /* MCViewController.m */; };
+		DA1EA16018B60EE800205632 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1EA15F18B60EE800205632 /* Images.xcassets */; };
+		DA1EA16718B60EE800205632 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA16618B60EE800205632 /* XCTest.framework */; };
+		DA1EA16818B60EE800205632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA14718B60EE800205632 /* Foundation.framework */; };
+		DA1EA16918B60EE800205632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EA14B18B60EE800205632 /* UIKit.framework */; };
+		DA1EA17118B60EE800205632 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1EA16F18B60EE800205632 /* InfoPlist.strings */; };
+		DA1EA17318B60EE800205632 /* MultiCompositorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1EA17218B60EE800205632 /* MultiCompositorTests.m */; };
+		DA1EA18618B6111E00205632 /* Boomer720x720.png in Resources */ = {isa = PBXBuildFile; fileRef = DA1EA18518B6111E00205632 /* Boomer720x720.png */; };
+		DA1EA18918B612A800205632 /* IDMugshotCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1EA18818B612A800205632 /* IDMugshotCompositor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA1EA16A18B60EE800205632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1EA13C18B60EE800205632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA1EA14318B60EE800205632;
+			remoteInfo = MultiCompositor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA1EA14418B60EE800205632 /* MultiCompositor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCompositor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1EA14718B60EE800205632 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA1EA14918B60EE800205632 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA1EA14B18B60EE800205632 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA1EA14F18B60EE800205632 /* MultiCompositor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiCompositor-Info.plist"; sourceTree = "<group>"; };
+		DA1EA15118B60EE800205632 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA1EA15318B60EE800205632 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA1EA15518B60EE800205632 /* MultiCompositor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiCompositor-Prefix.pch"; sourceTree = "<group>"; };
+		DA1EA15618B60EE800205632 /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		DA1EA15718B60EE800205632 /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		DA1EA15A18B60EE800205632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA1EA15C18B60EE800205632 /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		DA1EA15D18B60EE800205632 /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		DA1EA15F18B60EE800205632 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA1EA16518B60EE800205632 /* MultiCompositorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiCompositorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1EA16618B60EE800205632 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA1EA16E18B60EE800205632 /* MultiCompositorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiCompositorTests-Info.plist"; sourceTree = "<group>"; };
+		DA1EA17018B60EE800205632 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA1EA17218B60EE800205632 /* MultiCompositorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiCompositorTests.m; sourceTree = "<group>"; };
+		DA1EA18518B6111E00205632 /* Boomer720x720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Boomer720x720.png; path = ../../../../Assets/Images/Boomer720x720.png; sourceTree = "<group>"; };
+		DA1EA18718B612A800205632 /* IDMugshotCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMugshotCompositor.h; path = ../../../iDispense/iDispense/IDMugshotCompositor.h; sourceTree = "<group>"; };
+		DA1EA18818B612A800205632 /* IDMugshotCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMugshotCompositor.m; path = ../../../iDispense/iDispense/IDMugshotCompositor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA1EA14118B60EE800205632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA14A18B60EE800205632 /* CoreGraphics.framework in Frameworks */,
+				DA1EA14C18B60EE800205632 /* UIKit.framework in Frameworks */,
+				DA1EA14818B60EE800205632 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1EA16218B60EE800205632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA16718B60EE800205632 /* XCTest.framework in Frameworks */,
+				DA1EA16918B60EE800205632 /* UIKit.framework in Frameworks */,
+				DA1EA16818B60EE800205632 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1EA13B18B60EE800205632 = {
+			isa = PBXGroup;
+			children = (
+				DA1EA14D18B60EE800205632 /* MultiCompositor */,
+				DA1EA16C18B60EE800205632 /* MultiCompositorTests */,
+				DA1EA14618B60EE800205632 /* Frameworks */,
+				DA1EA14518B60EE800205632 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA1EA14518B60EE800205632 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA14418B60EE800205632 /* MultiCompositor.app */,
+				DA1EA16518B60EE800205632 /* MultiCompositorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA1EA14618B60EE800205632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA14718B60EE800205632 /* Foundation.framework */,
+				DA1EA14918B60EE800205632 /* CoreGraphics.framework */,
+				DA1EA14B18B60EE800205632 /* UIKit.framework */,
+				DA1EA16618B60EE800205632 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA1EA14D18B60EE800205632 /* MultiCompositor */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA15618B60EE800205632 /* MCAppDelegate.h */,
+				DA1EA15718B60EE800205632 /* MCAppDelegate.m */,
+				DA1EA15C18B60EE800205632 /* MCViewController.h */,
+				DA1EA15D18B60EE800205632 /* MCViewController.m */,
+				DA1EA18718B612A800205632 /* IDMugshotCompositor.h */,
+				DA1EA18818B612A800205632 /* IDMugshotCompositor.m */,
+				DA1EA15918B60EE800205632 /* Main.storyboard */,
+				DA1EA18518B6111E00205632 /* Boomer720x720.png */,
+				DA1EA15F18B60EE800205632 /* Images.xcassets */,
+				DA1EA14E18B60EE800205632 /* Supporting Files */,
+			);
+			path = MultiCompositor;
+			sourceTree = "<group>";
+		};
+		DA1EA14E18B60EE800205632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA14F18B60EE800205632 /* MultiCompositor-Info.plist */,
+				DA1EA15018B60EE800205632 /* InfoPlist.strings */,
+				DA1EA15318B60EE800205632 /* main.m */,
+				DA1EA15518B60EE800205632 /* MultiCompositor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA1EA16C18B60EE800205632 /* MultiCompositorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA17218B60EE800205632 /* MultiCompositorTests.m */,
+				DA1EA16D18B60EE800205632 /* Supporting Files */,
+			);
+			path = MultiCompositorTests;
+			sourceTree = "<group>";
+		};
+		DA1EA16D18B60EE800205632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EA16E18B60EE800205632 /* MultiCompositorTests-Info.plist */,
+				DA1EA16F18B60EE800205632 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA1EA14318B60EE800205632 /* MultiCompositor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1EA17618B60EE800205632 /* Build configuration list for PBXNativeTarget "MultiCompositor" */;
+			buildPhases = (
+				DA1EA14018B60EE800205632 /* Sources */,
+				DA1EA14118B60EE800205632 /* Frameworks */,
+				DA1EA14218B60EE800205632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiCompositor;
+			productName = MultiCompositor;
+			productReference = DA1EA14418B60EE800205632 /* MultiCompositor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA1EA16418B60EE800205632 /* MultiCompositorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1EA17918B60EE800205632 /* Build configuration list for PBXNativeTarget "MultiCompositorTests" */;
+			buildPhases = (
+				DA1EA16118B60EE800205632 /* Sources */,
+				DA1EA16218B60EE800205632 /* Frameworks */,
+				DA1EA16318B60EE800205632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA1EA16B18B60EE800205632 /* PBXTargetDependency */,
+			);
+			name = MultiCompositorTests;
+			productName = MultiCompositorTests;
+			productReference = DA1EA16518B60EE800205632 /* MultiCompositorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1EA13C18B60EE800205632 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Optisoft;
+				TargetAttributes = {
+					DA1EA16418B60EE800205632 = {
+						TestTargetID = DA1EA14318B60EE800205632;
+					};
+				};
+			};
+			buildConfigurationList = DA1EA13F18B60EE800205632 /* Build configuration list for PBXProject "MultiCompositor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA1EA13B18B60EE800205632;
+			productRefGroup = DA1EA14518B60EE800205632 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA1EA14318B60EE800205632 /* MultiCompositor */,
+				DA1EA16418B60EE800205632 /* MultiCompositorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA1EA14218B60EE800205632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA16018B60EE800205632 /* Images.xcassets in Resources */,
+				DA1EA15218B60EE800205632 /* InfoPlist.strings in Resources */,
+				DA1EA18618B6111E00205632 /* Boomer720x720.png in Resources */,
+				DA1EA15B18B60EE800205632 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1EA16318B60EE800205632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA17118B60EE800205632 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA1EA14018B60EE800205632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA15818B60EE800205632 /* MCAppDelegate.m in Sources */,
+				DA1EA15E18B60EE800205632 /* MCViewController.m in Sources */,
+				DA1EA15418B60EE800205632 /* main.m in Sources */,
+				DA1EA18918B612A800205632 /* IDMugshotCompositor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1EA16118B60EE800205632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1EA17318B60EE800205632 /* MultiCompositorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA1EA16B18B60EE800205632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA1EA14318B60EE800205632 /* MultiCompositor */;
+			targetProxy = DA1EA16A18B60EE800205632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA1EA15018B60EE800205632 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1EA15118B60EE800205632 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA1EA15918B60EE800205632 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1EA15A18B60EE800205632 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA1EA16F18B60EE800205632 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1EA17018B60EE800205632 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA1EA17418B60EE800205632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DA1EA17518B60EE800205632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA1EA17718B60EE800205632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiCompositor/MultiCompositor-Prefix.pch";
+				INFOPLIST_FILE = "MultiCompositor/MultiCompositor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA1EA17818B60EE800205632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiCompositor/MultiCompositor-Prefix.pch";
+				INFOPLIST_FILE = "MultiCompositor/MultiCompositor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA1EA17A18B60EE800205632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiCompositor.app/MultiCompositor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiCompositor/MultiCompositor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MultiCompositorTests/MultiCompositorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA1EA17B18B60EE800205632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiCompositor.app/MultiCompositor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiCompositor/MultiCompositor-Prefix.pch";
+				INFOPLIST_FILE = "MultiCompositorTests/MultiCompositorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA1EA13F18B60EE800205632 /* Build configuration list for PBXProject "MultiCompositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1EA17418B60EE800205632 /* Debug */,
+				DA1EA17518B60EE800205632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1EA17618B60EE800205632 /* Build configuration list for PBXNativeTarget "MultiCompositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1EA17718B60EE800205632 /* Debug */,
+				DA1EA17818B60EE800205632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1EA17918B60EE800205632 /* Build configuration list for PBXNativeTarget "MultiCompositorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1EA17A18B60EE800205632 /* Debug */,
+				DA1EA17B18B60EE800205632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1EA13C18B60EE800205632 /* Project object */;
+}

@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7F767318915E300016B601 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F767218915E300016B601 /* Cocoa.framework */; };
+		DA7F767D18915E300016B601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7F767B18915E300016B601 /* InfoPlist.strings */; };
+		DA7F767F18915E300016B601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F767E18915E300016B601 /* main.m */; };
+		DA7F768318915E300016B601 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA7F768118915E300016B601 /* Credits.rtf */; };
+		DA7F768618915E300016B601 /* PGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F768518915E300016B601 /* PGAppDelegate.m */; };
+		DA7F768918915E300016B601 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7F768718915E300016B601 /* MainMenu.xib */; };
+		DA7F768B18915E300016B601 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F768A18915E300016B601 /* Images.xcassets */; };
+		DA7F769218915E300016B601 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F769118915E300016B601 /* XCTest.framework */; };
+		DA7F769318915E300016B601 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F767218915E300016B601 /* Cocoa.framework */; };
+		DA7F769B18915E300016B601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7F769918915E300016B601 /* InfoPlist.strings */; };
+		DA7F769D18915E300016B601 /* PaginatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F769C18915E300016B601 /* PaginatorTests.m */; };
+		DA7F76A818915EEA0016B601 /* PGView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F76A718915EEA0016B601 /* PGView.m */; };
+		DA7F76AB18915F9F0016B601 /* DSPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F76AA18915F9F0016B601 /* DSPaginator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7F769418915E300016B601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7F766718915E300016B601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7F766E18915E300016B601;
+			remoteInfo = Paginator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA7F766F18915E300016B601 /* Paginator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paginator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F767218915E300016B601 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA7F767518915E300016B601 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA7F767618915E300016B601 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA7F767718915E300016B601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA7F767A18915E300016B601 /* Paginator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paginator-Info.plist"; sourceTree = "<group>"; };
+		DA7F767C18915E300016B601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA7F767E18915E300016B601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA7F768018915E300016B601 /* Paginator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paginator-Prefix.pch"; sourceTree = "<group>"; };
+		DA7F768218915E300016B601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DA7F768418915E300016B601 /* PGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGAppDelegate.h; sourceTree = "<group>"; };
+		DA7F768518915E300016B601 /* PGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGAppDelegate.m; sourceTree = "<group>"; };
+		DA7F768818915E300016B601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DA7F768A18915E300016B601 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA7F769018915E300016B601 /* PaginatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaginatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7F769118915E300016B601 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA7F769818915E300016B601 /* PaginatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaginatorTests-Info.plist"; sourceTree = "<group>"; };
+		DA7F769A18915E300016B601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA7F769C18915E300016B601 /* PaginatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorTests.m; sourceTree = "<group>"; };
+		DA7F76A618915EEA0016B601 /* PGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGView.h; sourceTree = "<group>"; };
+		DA7F76A718915EEA0016B601 /* PGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGView.m; sourceTree = "<group>"; };
+		DA7F76A918915F9F0016B601 /* DSPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPaginator.h; sourceTree = "<group>"; };
+		DA7F76AA18915F9F0016B601 /* DSPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPaginator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7F766C18915E300016B601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F767318915E300016B601 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F768D18915E300016B601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F769318915E300016B601 /* Cocoa.framework in Frameworks */,
+				DA7F769218915E300016B601 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7F766618915E300016B601 = {
+			isa = PBXGroup;
+			children = (
+				DA7F767818915E300016B601 /* Paginator */,
+				DA7F769618915E300016B601 /* PaginatorTests */,
+				DA7F767118915E300016B601 /* Frameworks */,
+				DA7F767018915E300016B601 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7F767018915E300016B601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F766F18915E300016B601 /* Paginator.app */,
+				DA7F769018915E300016B601 /* PaginatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7F767118915E300016B601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F767218915E300016B601 /* Cocoa.framework */,
+				DA7F769118915E300016B601 /* XCTest.framework */,
+				DA7F767418915E300016B601 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7F767418915E300016B601 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F767518915E300016B601 /* AppKit.framework */,
+				DA7F767618915E300016B601 /* CoreData.framework */,
+				DA7F767718915E300016B601 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DA7F767818915E300016B601 /* Paginator */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F768418915E300016B601 /* PGAppDelegate.h */,
+				DA7F768518915E300016B601 /* PGAppDelegate.m */,
+				DA7F76A918915F9F0016B601 /* DSPaginator.h */,
+				DA7F76AA18915F9F0016B601 /* DSPaginator.m */,
+				DA7F76A618915EEA0016B601 /* PGView.h */,
+				DA7F76A718915EEA0016B601 /* PGView.m */,
+				DA7F768718915E300016B601 /* MainMenu.xib */,
+				DA7F768A18915E300016B601 /* Images.xcassets */,
+				DA7F767918915E300016B601 /* Supporting Files */,
+			);
+			path = Paginator;
+			sourceTree = "<group>";
+		};
+		DA7F767918915E300016B601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F767A18915E300016B601 /* Paginator-Info.plist */,
+				DA7F767B18915E300016B601 /* InfoPlist.strings */,
+				DA7F767E18915E300016B601 /* main.m */,
+				DA7F768018915E300016B601 /* Paginator-Prefix.pch */,
+				DA7F768118915E300016B601 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7F769618915E300016B601 /* PaginatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F769C18915E300016B601 /* PaginatorTests.m */,
+				DA7F769718915E300016B601 /* Supporting Files */,
+			);
+			path = PaginatorTests;
+			sourceTree = "<group>";
+		};
+		DA7F769718915E300016B601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7F769818915E300016B601 /* PaginatorTests-Info.plist */,
+				DA7F769918915E300016B601 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7F766E18915E300016B601 /* Paginator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7F76A018915E300016B601 /* Build configuration list for PBXNativeTarget "Paginator" */;
+			buildPhases = (
+				DA7F766B18915E300016B601 /* Sources */,
+				DA7F766C18915E300016B601 /* Frameworks */,
+				DA7F766D18915E300016B601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paginator;
+			productName = Paginator;
+			productReference = DA7F766F18915E300016B601 /* Paginator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7F768F18915E300016B601 /* PaginatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7F76A318915E300016B601 /* Build configuration list for PBXNativeTarget "PaginatorTests" */;
+			buildPhases = (
+				DA7F768C18915E300016B601 /* Sources */,
+				DA7F768D18915E300016B601 /* Frameworks */,
+				DA7F768E18915E300016B601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7F769518915E300016B601 /* PBXTargetDependency */,
+			);
+			name = PaginatorTests;
+			productName = PaginatorTests;
+			productReference = DA7F769018915E300016B601 /* PaginatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7F766718915E300016B601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Optisoft;
+				TargetAttributes = {
+					DA7F768F18915E300016B601 = {
+						TestTargetID = DA7F766E18915E300016B601;
+					};
+				};
+			};
+			buildConfigurationList = DA7F766A18915E300016B601 /* Build configuration list for PBXProject "Paginator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7F766618915E300016B601;
+			productRefGroup = DA7F767018915E300016B601 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7F766E18915E300016B601 /* Paginator */,
+				DA7F768F18915E300016B601 /* PaginatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7F766D18915E300016B601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F767D18915E300016B601 /* InfoPlist.strings in Resources */,
+				DA7F768B18915E300016B601 /* Images.xcassets in Resources */,
+				DA7F768318915E300016B601 /* Credits.rtf in Resources */,
+				DA7F768918915E300016B601 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F768E18915E300016B601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F769B18915E300016B601 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7F766B18915E300016B601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F76AB18915F9F0016B601 /* DSPaginator.m in Sources */,
+				DA7F767F18915E300016B601 /* main.m in Sources */,
+				DA7F768618915E300016B601 /* PGAppDelegate.m in Sources */,
+				DA7F76A818915EEA0016B601 /* PGView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7F768C18915E300016B601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F769D18915E300016B601 /* PaginatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7F769518915E300016B601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7F766E18915E300016B601 /* Paginator */;
+			targetProxy = DA7F769418915E300016B601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7F767B18915E300016B601 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F767C18915E300016B601 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA7F768118915E300016B601 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F768218915E300016B601 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DA7F768718915E300016B601 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F768818915E300016B601 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DA7F769918915E300016B601 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7F769A18915E300016B601 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7F769E18915E300016B601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA7F769F18915E300016B601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA7F76A118915E300016B601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paginator/Paginator-Prefix.pch";
+				INFOPLIST_FILE = "Paginator/Paginator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA7F76A218915E300016B601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paginator/Paginator-Prefix.pch";
+				INFOPLIST_FILE = "Paginator/Paginator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA7F76A418915E300016B601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Paginator.app/Contents/MacOS/Paginator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paginator/Paginator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PaginatorTests/PaginatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA7F76A518915E300016B601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Paginator.app/Contents/MacOS/Paginator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paginator/Paginator-Prefix.pch";
+				INFOPLIST_FILE = "PaginatorTests/PaginatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7F766A18915E300016B601 /* Build configuration list for PBXProject "Paginator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F769E18915E300016B601 /* Debug */,
+				DA7F769F18915E300016B601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7F76A018915E300016B601 /* Build configuration list for PBXNativeTarget "Paginator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F76A118915E300016B601 /* Debug */,
+				DA7F76A218915E300016B601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7F76A318915E300016B601 /* Build configuration list for PBXNativeTarget "PaginatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7F76A418915E300016B601 /* Debug */,
+				DA7F76A518915E300016B601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7F766718915E300016B601 /* Project object */;
+}

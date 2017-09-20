@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA4CF2A1182A91BF00DF5D30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2A0182A91BF00DF5D30 /* Foundation.framework */; };
+		DA4CF2A3182A91BF00DF5D30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2A2182A91BF00DF5D30 /* CoreGraphics.framework */; };
+		DA4CF2A5182A91BF00DF5D30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2A4182A91BF00DF5D30 /* UIKit.framework */; };
+		DA4CF2AB182A91BF00DF5D30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4CF2A9182A91BF00DF5D30 /* InfoPlist.strings */; };
+		DA4CF2AD182A91BF00DF5D30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4CF2AC182A91BF00DF5D30 /* main.m */; };
+		DA4CF2B1182A91BF00DF5D30 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4CF2B0182A91BF00DF5D30 /* SCAppDelegate.m */; };
+		DA4CF2B4182A91BF00DF5D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4CF2B2182A91BF00DF5D30 /* Main.storyboard */; };
+		DA4CF2B7182A91BF00DF5D30 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4CF2B6182A91BF00DF5D30 /* SCViewController.m */; };
+		DA4CF2B9182A91BF00DF5D30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4CF2B8182A91BF00DF5D30 /* Images.xcassets */; };
+		DA4CF2C0182A91BF00DF5D30 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2BF182A91BF00DF5D30 /* XCTest.framework */; };
+		DA4CF2C1182A91BF00DF5D30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2A0182A91BF00DF5D30 /* Foundation.framework */; };
+		DA4CF2C2182A91BF00DF5D30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CF2A4182A91BF00DF5D30 /* UIKit.framework */; };
+		DA4CF2CA182A91BF00DF5D30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4CF2C8182A91BF00DF5D30 /* InfoPlist.strings */; };
+		DA4CF2CC182A91BF00DF5D30 /* SadunConstraintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4CF2CB182A91BF00DF5D30 /* SadunConstraintTests.m */; };
+		DA4CF2D6182B8F4600DF5D30 /* AutoSizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4CF2D5182B8F4600DF5D30 /* AutoSizeView.xib */; };
+		DA76F38D182BBC0100D76376 /* NSObject+NameTag.m in Sources */ = {isa = PBXBuildFile; fileRef = DA76F38C182BBC0100D76376 /* NSObject+NameTag.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA4CF2C3182A91BF00DF5D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4CF295182A91BE00DF5D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4CF29C182A91BF00DF5D30;
+			remoteInfo = SadunConstraint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA4CF29D182A91BF00DF5D30 /* SadunConstraint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadunConstraint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4CF2A0182A91BF00DF5D30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA4CF2A2182A91BF00DF5D30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA4CF2A4182A91BF00DF5D30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA4CF2A8182A91BF00DF5D30 /* SadunConstraint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SadunConstraint-Info.plist"; sourceTree = "<group>"; };
+		DA4CF2AA182A91BF00DF5D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA4CF2AC182A91BF00DF5D30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA4CF2AE182A91BF00DF5D30 /* SadunConstraint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SadunConstraint-Prefix.pch"; sourceTree = "<group>"; };
+		DA4CF2AF182A91BF00DF5D30 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		DA4CF2B0182A91BF00DF5D30 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		DA4CF2B3182A91BF00DF5D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA4CF2B5182A91BF00DF5D30 /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		DA4CF2B6182A91BF00DF5D30 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		DA4CF2B8182A91BF00DF5D30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA4CF2BE182A91BF00DF5D30 /* SadunConstraintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadunConstraintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4CF2BF182A91BF00DF5D30 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA4CF2C7182A91BF00DF5D30 /* SadunConstraintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SadunConstraintTests-Info.plist"; sourceTree = "<group>"; };
+		DA4CF2C9182A91BF00DF5D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA4CF2CB182A91BF00DF5D30 /* SadunConstraintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SadunConstraintTests.m; sourceTree = "<group>"; };
+		DA4CF2D5182B8F4600DF5D30 /* AutoSizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoSizeView.xib; sourceTree = "<group>"; };
+		DA76F38B182BBC0100D76376 /* NSObject+NameTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NameTag.h"; sourceTree = "<group>"; };
+		DA76F38C182BBC0100D76376 /* NSObject+NameTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NameTag.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA4CF29A182A91BF00DF5D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2A3182A91BF00DF5D30 /* CoreGraphics.framework in Frameworks */,
+				DA4CF2A5182A91BF00DF5D30 /* UIKit.framework in Frameworks */,
+				DA4CF2A1182A91BF00DF5D30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4CF2BB182A91BF00DF5D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2C0182A91BF00DF5D30 /* XCTest.framework in Frameworks */,
+				DA4CF2C2182A91BF00DF5D30 /* UIKit.framework in Frameworks */,
+				DA4CF2C1182A91BF00DF5D30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA4CF294182A91BE00DF5D30 = {
+			isa = PBXGroup;
+			children = (
+				DA4CF2A6182A91BF00DF5D30 /* SadunConstraint */,
+				DA4CF2C5182A91BF00DF5D30 /* SadunConstraintTests */,
+				DA4CF29F182A91BF00DF5D30 /* Frameworks */,
+				DA4CF29E182A91BF00DF5D30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA4CF29E182A91BF00DF5D30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CF29D182A91BF00DF5D30 /* SadunConstraint.app */,
+				DA4CF2BE182A91BF00DF5D30 /* SadunConstraintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA4CF29F182A91BF00DF5D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CF2A0182A91BF00DF5D30 /* Foundation.framework */,
+				DA4CF2A2182A91BF00DF5D30 /* CoreGraphics.framework */,
+				DA4CF2A4182A91BF00DF5D30 /* UIKit.framework */,
+				DA4CF2BF182A91BF00DF5D30 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4CF2A6182A91BF00DF5D30 /* SadunConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				DA76F38B182BBC0100D76376 /* NSObject+NameTag.h */,
+				DA76F38C182BBC0100D76376 /* NSObject+NameTag.m */,
+				DA4CF2AF182A91BF00DF5D30 /* SCAppDelegate.h */,
+				DA4CF2B0182A91BF00DF5D30 /* SCAppDelegate.m */,
+				DA4CF2B2182A91BF00DF5D30 /* Main.storyboard */,
+				DA4CF2D5182B8F4600DF5D30 /* AutoSizeView.xib */,
+				DA4CF2B5182A91BF00DF5D30 /* SCViewController.h */,
+				DA4CF2B6182A91BF00DF5D30 /* SCViewController.m */,
+				DA4CF2B8182A91BF00DF5D30 /* Images.xcassets */,
+				DA4CF2A7182A91BF00DF5D30 /* Supporting Files */,
+			);
+			path = SadunConstraint;
+			sourceTree = "<group>";
+		};
+		DA4CF2A7182A91BF00DF5D30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CF2A8182A91BF00DF5D30 /* SadunConstraint-Info.plist */,
+				DA4CF2A9182A91BF00DF5D30 /* InfoPlist.strings */,
+				DA4CF2AC182A91BF00DF5D30 /* main.m */,
+				DA4CF2AE182A91BF00DF5D30 /* SadunConstraint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA4CF2C5182A91BF00DF5D30 /* SadunConstraintTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CF2CB182A91BF00DF5D30 /* SadunConstraintTests.m */,
+				DA4CF2C6182A91BF00DF5D30 /* Supporting Files */,
+			);
+			path = SadunConstraintTests;
+			sourceTree = "<group>";
+		};
+		DA4CF2C6182A91BF00DF5D30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CF2C7182A91BF00DF5D30 /* SadunConstraintTests-Info.plist */,
+				DA4CF2C8182A91BF00DF5D30 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA4CF29C182A91BF00DF5D30 /* SadunConstraint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4CF2CF182A91BF00DF5D30 /* Build configuration list for PBXNativeTarget "SadunConstraint" */;
+			buildPhases = (
+				DA4CF299182A91BF00DF5D30 /* Sources */,
+				DA4CF29A182A91BF00DF5D30 /* Frameworks */,
+				DA4CF29B182A91BF00DF5D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SadunConstraint;
+			productName = SadunConstraint;
+			productReference = DA4CF29D182A91BF00DF5D30 /* SadunConstraint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA4CF2BD182A91BF00DF5D30 /* SadunConstraintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4CF2D2182A91BF00DF5D30 /* Build configuration list for PBXNativeTarget "SadunConstraintTests" */;
+			buildPhases = (
+				DA4CF2BA182A91BF00DF5D30 /* Sources */,
+				DA4CF2BB182A91BF00DF5D30 /* Frameworks */,
+				DA4CF2BC182A91BF00DF5D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4CF2C4182A91BF00DF5D30 /* PBXTargetDependency */,
+			);
+			name = SadunConstraintTests;
+			productName = SadunConstraintTests;
+			productReference = DA4CF2BE182A91BF00DF5D30 /* SadunConstraintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA4CF295182A91BE00DF5D30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Optisoft;
+				TargetAttributes = {
+					DA4CF2BD182A91BF00DF5D30 = {
+						TestTargetID = DA4CF29C182A91BF00DF5D30;
+					};
+				};
+			};
+			buildConfigurationList = DA4CF298182A91BE00DF5D30 /* Build configuration list for PBXProject "SadunConstraint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA4CF294182A91BE00DF5D30;
+			productRefGroup = DA4CF29E182A91BF00DF5D30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA4CF29C182A91BF00DF5D30 /* SadunConstraint */,
+				DA4CF2BD182A91BF00DF5D30 /* SadunConstraintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA4CF29B182A91BF00DF5D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2D6182B8F4600DF5D30 /* AutoSizeView.xib in Resources */,
+				DA4CF2B9182A91BF00DF5D30 /* Images.xcassets in Resources */,
+				DA4CF2AB182A91BF00DF5D30 /* InfoPlist.strings in Resources */,
+				DA4CF2B4182A91BF00DF5D30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4CF2BC182A91BF00DF5D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2CA182A91BF00DF5D30 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA4CF299182A91BF00DF5D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2B1182A91BF00DF5D30 /* SCAppDelegate.m in Sources */,
+				DA76F38D182BBC0100D76376 /* NSObject+NameTag.m in Sources */,
+				DA4CF2B7182A91BF00DF5D30 /* SCViewController.m in Sources */,
+				DA4CF2AD182A91BF00DF5D30 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4CF2BA182A91BF00DF5D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4CF2CC182A91BF00DF5D30 /* SadunConstraintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4CF2C4182A91BF00DF5D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4CF29C182A91BF00DF5D30 /* SadunConstraint */;
+			targetProxy = DA4CF2C3182A91BF00DF5D30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA4CF2A9182A91BF00DF5D30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4CF2AA182A91BF00DF5D30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA4CF2B2182A91BF00DF5D30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4CF2B3182A91BF00DF5D30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA4CF2C8182A91BF00DF5D30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4CF2C9182A91BF00DF5D30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA4CF2CD182A91BF00DF5D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA4CF2CE182A91BF00DF5D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA4CF2D0182A91BF00DF5D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SadunConstraint/SadunConstraint-Prefix.pch";
+				INFOPLIST_FILE = "SadunConstraint/SadunConstraint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA4CF2D1182A91BF00DF5D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SadunConstraint/SadunConstraint-Prefix.pch";
+				INFOPLIST_FILE = "SadunConstraint/SadunConstraint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA4CF2D3182A91BF00DF5D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SadunConstraint.app/SadunConstraint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SadunConstraint/SadunConstraint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SadunConstraintTests/SadunConstraintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA4CF2D4182A91BF00DF5D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SadunConstraint.app/SadunConstraint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SadunConstraint/SadunConstraint-Prefix.pch";
+				INFOPLIST_FILE = "SadunConstraintTests/SadunConstraintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA4CF298182A91BE00DF5D30 /* Build configuration list for PBXProject "SadunConstraint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4CF2CD182A91BF00DF5D30 /* Debug */,
+				DA4CF2CE182A91BF00DF5D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4CF2CF182A91BF00DF5D30 /* Build configuration list for PBXNativeTarget "SadunConstraint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4CF2D0182A91BF00DF5D30 /* Debug */,
+				DA4CF2D1182A91BF00DF5D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4CF2D2182A91BF00DF5D30 /* Build configuration list for PBXNativeTarget "SadunConstraintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4CF2D3182A91BF00DF5D30 /* Debug */,
+				DA4CF2D4182A91BF00DF5D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA4CF295182A91BE00DF5D30 /* Project object */;
+}
