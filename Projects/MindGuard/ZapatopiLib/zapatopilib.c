@@ -116,6 +116,7 @@ static GdkPixmap *pixmap_scan = NULL;
 static GdkPixmap *pixmap_depsych = NULL;*/
 
 static int diag_display_clear(void *data);
+static void parse_decipher(int car, int mode);
 
 typedef enum
 {
@@ -208,7 +209,7 @@ int mind_guard_main(int argc, const char *argv[])
 
 	load_prefs();
 
-	for (i = 1; i < argc; i++)
+	for (i = 1; i < argc && !quit; i++)
 		{
 		if (!strcmp(argv[i],"-version"))
 			{ printf("MindGuard X version %s\n", mg_version); quit = true; }
@@ -280,8 +281,13 @@ int mind_guard_main(int argc, const char *argv[])
 			//to_monitor = gtk_timeout_add(5000, jam, GINT_TO_POINTER(2));
 			diag_set_clear_to(15);
 		}
+    
+    for (int i = 0; i < mod_num; i++) {
+        for (int j = 0; j < mod_num; j++) {
 
-    scan();
+        parse_decipher(i, j);
+        }
+    }
 
 	return 0;
 }
@@ -412,99 +418,104 @@ void parse_decipher(int car, int mode)
 
 int decipher_check(int data)
 {
-	static float c = 0.0;
-
-	if ((int)data == 1)
-		{
-//		gtk_timeout_remove(to_scan);
-		diag_display(1, "Deciphering...", 0);
-//		to_scan = gtk_timeout_add (2, decipher_check, GINT_TO_POINTER(2));
-		}
-	else if ((int)data == 2)
-		{
-		scanbox_prog(c);
-		c = c + 0.005;
-		if (c > 1.0)
-			{
-//			gtk_timeout_remove(to_scan);
-			c = 0.0;
-			scanbox_state(SCANBOX_CLEAR);
-			if (gmode == 3)
-				gcar = carrier_identify();
-			if (rs(100) > 20)
-				parse_decipher(gcar, gmode);
-			else
-				{
-				diag_display(2, "Undecipherable", 0);
-				diag_set_clear_to(10);
-				if (state_log)
-					append_log ("", gcar, 0, 0, "", false, gmode);
-				}
-			to_scan = false;
-			scan_controls_sensitive(true);
-//			if (! to_jam) to_monitor = gtk_timeout_add (1000, jam, GINT_TO_POINTER(2));
-			}
-		}
-
-	return true;
+    static float c = 0.0;
+    
+    if ((int)data == 1)
+    {
+        //		gtk_timeout_remove(to_scan);
+        diag_display(1, "Deciphering...", 0);
+        //		to_scan = gtk_timeout_add (2, decipher_check, GINT_TO_POINTER(2));
+        decipher_check(2);
+    }
+    else if ((int)data == 2)
+    {
+        scanbox_prog(c);
+        c = c + 0.005;
+        if (c > 1.0)
+        {
+            //			gtk_timeout_remove(to_scan);
+            c = 0.0;
+            scanbox_state(SCANBOX_CLEAR);
+            if (gmode == 3)
+                gcar = carrier_identify();
+            if (rs(100) > 20)
+                parse_decipher(gcar, gmode);
+            else
+            {
+                diag_display(2, "Undecipherable", 0);
+                diag_set_clear_to(10);
+                if (state_log)
+                    append_log ("", gcar, 0, 0, "", false, gmode);
+            }
+            to_scan = false;
+            scan_controls_sensitive(true);
+            //			if (! to_jam) to_monitor = gtk_timeout_add (1000, jam, GINT_TO_POINTER(2));
+        }
+    }
+    
+    return true;
 }
+
 int scan_for_signal(int data)
 {
-	static int i = 0;
-
-	if ((int)data == 1)
-		{
-		diag_display_clear(NULL);
-		diag_display(0, "Isolating Signal", 0);
-//		gtk_timeout_remove(to_scan);
-//		to_scan = gtk_timeout_add (100, scan_for_signal, GINT_TO_POINTER(3));
-		}
-	if ((int)data == 2)
-		{
-		gmode = 3;
-//		to_scan = gtk_timeout_add (100, scan_for_signal, GINT_TO_POINTER(3));
-		}
-	if ((int)data == 3)
-		{
-//		update_scan();
-		i++;
-		if (i > 50)
-			{
-			i = 0;
-//			gtk_timeout_remove(to_scan);
-			to_scan = false;
-			scanbox_state(SCANBOX_CLEAR);
-			if (gmode == 3)
-				{
-				if (rs(100) > 20)
-					{
-					diag_display_clear(NULL);
-					diag_display(0, "Signal Isolated", 0);
-//					to_scan = gtk_timeout_add (2000, decipher_check, GINT_TO_POINTER(1));
-					}
-				else
-					{
-					diag_display_clear(NULL);
-					scanbox_label("No Signals");
-					scan_controls_sensitive(true);
-//					if (! to_jam) to_monitor = gtk_timeout_add (1000, jam, GINT_TO_POINTER(2));
-					}
-				}
-//			else to_scan = gtk_timeout_add (2000, decipher_check, GINT_TO_POINTER(1));
-			}
-		}
-	return true;
+    static int i = 0;
+    
+    if ((int)data == 1)
+    {
+        diag_display_clear(NULL);
+        diag_display(0, "Isolating Signal", 0);
+        //		gtk_timeout_remove(to_scan);
+        //		to_scan = gtk_timeout_add (100, scan_for_signal, GINT_TO_POINTER(3));
+        scan_for_signal(3);
+    }
+    if ((int)data == 2)
+    {
+        gmode = 3;
+        //		to_scan = gtk_timeout_add (100, scan_for_signal, GINT_TO_POINTER(3));
+        scan_for_signal(3);
+    }
+    if ((int)data == 3)
+    {
+        //		update_scan();
+        i++;
+        if (i > 50)
+        {
+            i = 0;
+            //			gtk_timeout_remove(to_scan);
+            to_scan = false;
+            scanbox_state(SCANBOX_CLEAR);
+            if (gmode == 3)
+            {
+                if (rs(100) > 20)
+                {
+                    diag_display_clear(NULL);
+                    diag_display(0, "Signal Isolated", 0);
+                    //					to_scan = gtk_timeout_add (2000, decipher_check, GINT_TO_POINTER(1));
+                }
+                else
+                {
+                    diag_display_clear(NULL);
+                    scanbox_label("No Signals");
+                    scan_controls_sensitive(true);
+                    //					if (! to_jam) to_monitor = gtk_timeout_add (1000, jam, GINT_TO_POINTER(2));
+                }
+            }
+            //			else to_scan = gtk_timeout_add (2000, decipher_check, GINT_TO_POINTER(1));
+        }
+    }
+    return true;
 }
+
 void scan()
 {
-	if (! to_scan & ! to_jam)
-		{
-		scan_controls_sensitive(false);
-		diag_display_clear(NULL);
-		diag_display(0, "Scanning...", 0);
-//		scan_for_signal(GINT_TO_POINTER(2));
-		}
-	return;
+    if (! to_scan & ! to_jam)
+    {
+        scan_controls_sensitive(false);
+        diag_display_clear(NULL);
+        diag_display(0, "Scanning...", 0);
+        scan_for_signal(2);
+    }
+    return;
 }
 
 
@@ -1065,8 +1076,9 @@ void depsych()
 /**** DIAGNOSTIC BOX ***/
 void diag_display(int n, char *text, int style)
 {
+    char * types[] = {"black", "warn", "OK", "calm"};
     
-    printf("Diagnostic message %d: %s style: %d\n", n, text, style);
+    printf("Diagnostic message %s: %s style: %d\n", types[n], text, style);
     
 //	if (window)
 //		{

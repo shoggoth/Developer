@@ -352,7 +352,7 @@
 				TargetAttributes = {
 					9B68FBC31F58308D00227681 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = QL2HV855H2;
+						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -362,7 +362,7 @@
 					};
 					9B68FBD91F58308D00227681 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = QL2HV855H2;
+						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9B68FBC31F58308D00227681;
 					};
@@ -643,7 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = MindGuard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuard;
@@ -657,7 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = MindGuard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuard;
@@ -672,7 +672,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = MindGuardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuardTests;
@@ -687,7 +687,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				INFOPLIST_FILE = MindGuardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.MindGuardTests;
