@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 4.3">
+    <entity name="Adjustment" representedClassName="Adjustment" syncable="YES">
+        <attribute name="constant" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="multiplier" attributeType="Decimal" defaultValueString="100" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="adjustments" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="DO" representedClassName="DO" parentEntity="Person" syncable="YES">
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="dispensingOpt" inverseEntity="Order" syncable="YES"/>
+        <relationship name="practice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Practice" inverseName="opticians" inverseEntity="Practice" syncable="YES"/>
+    </entity>
+    <entity name="EyePrescription" representedClassName="EyePrescription" syncable="YES">
+        <attribute name="add" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="addCentres" attributeType="Double" defaultValueString="30" syncable="YES"/>
+        <attribute name="axis" attributeType="Double" minValueString="0" maxValueString="180" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="centres" attributeType="Double" defaultValueString="30" syncable="YES"/>
+        <attribute name="cyl" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="direction" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="prism" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="segHeight" attributeType="Double" defaultValueString="25" syncable="YES"/>
+        <attribute name="segSize" attributeType="Double" defaultValueString="30" syncable="YES"/>
+        <attribute name="sph" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="left" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Prescription" inverseName="left" inverseEntity="Prescription" syncable="YES"/>
+        <relationship name="right" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Prescription" inverseName="right" inverseEntity="Prescription" syncable="YES"/>
+    </entity>
+    <entity name="Frame" representedClassName="Frame" parentEntity="Purchase" syncable="YES">
+        <attribute name="measurements" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FrameOrder" inverseName="frame" inverseEntity="FrameOrder" syncable="YES"/>
+    </entity>
+    <entity name="FrameOrder" representedClassName="FrameOrder" syncable="YES">
+        <attribute name="orderType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="frame" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Frame" inverseName="order" inverseEntity="Frame" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="frameOrder" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="Lens" representedClassName="Lens" parentEntity="Purchase" syncable="YES">
+        <attribute name="material" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="visionType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="leftOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensOrder" inverseName="left" inverseEntity="LensOrder" syncable="YES"/>
+        <relationship name="manufacturer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LensManufacturer" inverseName="lenses" inverseEntity="LensManufacturer" syncable="YES"/>
+        <relationship name="rightOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensOrder" inverseName="right" inverseEntity="LensOrder" syncable="YES"/>
+    </entity>
+    <entity name="LensManufacturer" representedClassName="LensManufacturer" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="lenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lens" inverseName="manufacturer" inverseEntity="Lens" syncable="YES"/>
+        <relationship name="treatments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensTreatment" inverseName="manufacturer" inverseEntity="LensTreatment" syncable="YES"/>
+    </entity>
+    <entity name="LensOrder" representedClassName="LensOrder" syncable="YES">
+        <attribute name="leftBlankSize" attributeType="Double" defaultValueString="55" syncable="YES"/>
+        <attribute name="rightBlankSize" attributeType="Double" defaultValueString="55" syncable="YES"/>
+        <relationship name="left" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Lens" inverseName="leftOrders" inverseEntity="Lens" syncable="YES"/>
+        <relationship name="leftTreatments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensTreatment" inverseName="leftOrders" inverseEntity="LensTreatment" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="lensOrder" inverseEntity="Order" syncable="YES"/>
+        <relationship name="right" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lens" inverseName="rightOrders" inverseEntity="Lens" syncable="YES"/>
+        <relationship name="rightTreatments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensTreatment" inverseName="rightOrders" inverseEntity="LensTreatment" syncable="YES"/>
+    </entity>
+    <entity name="LensTreatment" representedClassName="LensTreatment" parentEntity="Purchase" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="leftOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensOrder" inverseName="leftTreatments" inverseEntity="LensOrder" syncable="YES"/>
+        <relationship name="manufacturer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LensManufacturer" inverseName="treatments" inverseEntity="LensManufacturer" syncable="YES"/>
+        <relationship name="rightOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LensOrder" inverseName="rightTreatments" inverseEntity="LensOrder" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="charges" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="chargesDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" attributeType="Date" syncable="YES"/>
+        <attribute name="orderNumber" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="orderPrefix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" defaultValueString="NoUUID/0" syncable="YES"/>
+        <relationship name="adjustments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Adjustment" inverseName="orders" inverseEntity="Adjustment" syncable="YES"/>
+        <relationship name="dispensingOpt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DO" inverseName="orders" inverseEntity="DO" syncable="YES"/>
+        <relationship name="frameOrder" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FrameOrder" inverseName="order" inverseEntity="FrameOrder" syncable="YES"/>
+        <relationship name="lensOrder" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="LensOrder" inverseName="order" inverseEntity="LensOrder" syncable="YES"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Patient" inverseName="orders" inverseEntity="Patient" syncable="YES"/>
+        <relationship name="supplier" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Supplier" inverseName="orders" inverseEntity="Supplier" syncable="YES"/>
+    </entity>
+    <entity name="Patient" representedClassName="Patient" parentEntity="Person" syncable="YES">
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Order" inverseName="patient" inverseEntity="Order" syncable="YES"/>
+        <relationship name="prescriptions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Prescription" inverseName="patient" inverseEntity="Prescription" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Practice" representedClassName="Practice" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="practiceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="opticians" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DO" inverseName="practice" inverseEntity="DO" syncable="YES"/>
+    </entity>
+    <entity name="Prescription" representedClassName="Prescription" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="examDate" attributeType="Date" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" defaultValueString="NoUUID/0" syncable="YES"/>
+        <relationship name="left" maxCount="1" deletionRule="Cascade" destinationEntity="EyePrescription" inverseName="left" inverseEntity="EyePrescription" syncable="YES"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="prescriptions" inverseEntity="Patient" syncable="YES"/>
+        <relationship name="right" maxCount="1" deletionRule="Cascade" destinationEntity="EyePrescription" inverseName="right" inverseEntity="EyePrescription" syncable="YES"/>
+    </entity>
+    <entity name="Purchase" representedClassName="Purchase" syncable="YES">
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="price" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" defaultValueString="NoUUID" syncable="YES"/>
+    </entity>
+    <entity name="Supplier" representedClassName="Supplier" syncable="YES">
+        <attribute name="accountNumber" attributeType="String" defaultValueString="00000" syncable="YES"/>
+        <attribute name="emailAddress" attributeType="String" defaultValueString="supplier@supplier.com" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="Unnamed Supplier" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="supplier" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Adjustment" positionX="-2088" positionY="-109" width="128" height="118"/>
+        <element name="DO" positionX="-2466" positionY="-459" width="117" height="88"/>
+        <element name="EyePrescription" positionX="-2459" positionY="-225" width="137" height="223"/>
+        <element name="Frame" positionX="-2090" positionY="-252" width="128" height="103"/>
+        <element name="FrameOrder" positionX="-2268" positionY="38" width="128" height="88"/>
+        <element name="Lens" positionX="-2079" positionY="-513" width="128" height="118"/>
+        <element name="LensManufacturer" positionX="-1901" positionY="-493" width="128" height="88"/>
+        <element name="LensOrder" positionX="-2268" positionY="-441" width="128" height="148"/>
+        <element name="LensTreatment" positionX="-2090" positionY="-373" width="128" height="103"/>
+        <element name="Order" positionX="-2261" positionY="-270" width="128" height="268"/>
+        <element name="Patient" positionX="-2475" positionY="-333" width="135" height="73"/>
+        <element name="Person" positionX="-2628" positionY="-394" width="128" height="88"/>
+        <element name="Practice" positionX="-2628" positionY="-576" width="117" height="163"/>
+        <element name="Prescription" positionX="-2646" positionY="-279" width="128" height="133"/>
+        <element name="Purchase" positionX="-1901" positionY="-378" width="128" height="133"/>
+        <element name="Supplier" positionX="-2484" positionY="-576" width="117" height="103"/>
+    </elements>
+</model>

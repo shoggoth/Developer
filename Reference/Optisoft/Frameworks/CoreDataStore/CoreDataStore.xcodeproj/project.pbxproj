@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA5086151CD20B1700EFAF55 /* libensembles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5085F61CD20A9A00EFAF55 /* libensembles.a */; };
+		DA5086161CD20B1700EFAF55 /* libSDropboxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA50860D1CD20AC700EFAF55 /* libSDropboxSDK.a */; };
+		DA5086181CD20B2E00EFAF55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5086171CD20B2E00EFAF55 /* libz.tbd */; };
+		DA50861B1CD20BC400EFAF55 /* CDSSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086191CD20BC400EFAF55 /* CDSSyncManager.h */; };
+		DA50861C1CD20BC400EFAF55 /* CDSSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50861A1CD20BC400EFAF55 /* CDSSyncManager.m */; };
+		DA50863B1CD211FA00EFAF55 /* CDSMultipeerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086391CD211FA00EFAF55 /* CDSMultipeerManager.h */; };
+		DA50863C1CD211FA00EFAF55 /* CDSMultipeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50863A1CD211FA00EFAF55 /* CDSMultipeerManager.m */; };
+		DA5086431CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = DA50863D1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.h */; };
+		DA5086441CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50863E1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.m */; };
+		DA5086451CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = DA50863F1CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.h */; };
+		DA5086461CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5086401CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.m */; };
+		DA5086471CD212AA00EFAF55 /* CDENodeCloudFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086411CD212AA00EFAF55 /* CDENodeCloudFileSystem.h */; };
+		DA5086481CD212AA00EFAF55 /* CDENodeCloudFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5086421CD212AA00EFAF55 /* CDENodeCloudFileSystem.m */; };
+		DA50865B1CD221C200EFAF55 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086501CD221C200EFAF55 /* crypt.h */; };
+		DA50865C1CD221C200EFAF55 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5086511CD221C200EFAF55 /* ioapi.c */; };
+		DA50865D1CD221C200EFAF55 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086521CD221C200EFAF55 /* ioapi.h */; };
+		DA50865E1CD221C200EFAF55 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5086531CD221C200EFAF55 /* mztools.c */; };
+		DA50865F1CD221C200EFAF55 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086541CD221C200EFAF55 /* mztools.h */; };
+		DA5086601CD221C200EFAF55 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5086551CD221C200EFAF55 /* unzip.c */; };
+		DA5086611CD221C200EFAF55 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086561CD221C200EFAF55 /* unzip.h */; };
+		DA5086621CD221C200EFAF55 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5086571CD221C200EFAF55 /* zip.c */; };
+		DA5086631CD221C200EFAF55 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086581CD221C200EFAF55 /* zip.h */; };
+		DA5086641CD221C200EFAF55 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5086591CD221C200EFAF55 /* SSZipArchive.h */; };
+		DA5086651CD221C200EFAF55 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DA50865A1CD221C200EFAF55 /* SSZipArchive.m */; };
+		DA50868A1CD2603800EFAF55 /* Ensembles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA5085F81CD20A9A00EFAF55 /* Ensembles.bundle */; };
+		DACA2BE21CC7D40B000E2123 /* CoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = DACA2BE11CC7D40B000E2123 /* CoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DACA2BF61CC7D482000E2123 /* CDSDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = DACA2BF41CC7D482000E2123 /* CDSDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DACA2BF71CC7D482000E2123 /* CDSDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DACA2BF51CC7D482000E2123 /* CDSDataStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA5085F51CD20A9A00EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07BF374517F184DD00C56F64;
+			remoteInfo = "Ensembles iOS";
+		};
+		DA5085F71CD20A9A00EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07571F0F1910EC02008479A9;
+			remoteInfo = "Ensembles Resources iOS";
+		};
+		DA5085F91CD20A9A00EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 070D336118018A960054BA23;
+			remoteInfo = "Tests iOS";
+		};
+		DA50860A1CD20AC700EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3196B831412FE180060E7C6;
+			remoteInfo = DropboxSDK;
+		};
+		DA50860C1CD20AC700EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3933BE5145F12AD00E15FA7;
+			remoteInfo = SDropboxSDK;
+		};
+		DA50860E1CD20AC700EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D36931CC15088350003FBA23;
+			remoteInfo = DropboxOSX;
+		};
+		DA5086111CD20B0200EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 07BF374417F184DD00C56F64;
+			remoteInfo = "Ensembles iOS";
+		};
+		DA5086131CD20B0200EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D3933BE4145F12AD00E15FA7;
+			remoteInfo = SDropboxSDK;
+		};
+		DA50868B1CD2606F00EFAF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 07571F0E1910EC02008479A9;
+			remoteInfo = "Ensembles Resources iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Ensembles iOS.xcodeproj"; path = "../ensembles/Framework/Ensembles iOS.xcodeproj"; sourceTree = "<group>"; };
+		DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DropboxSDK.xcodeproj; path = ../ensembles/Vendor/DropboxSDK/DropboxSDK/DropboxSDK.xcodeproj; sourceTree = "<group>"; };
+		DA5086171CD20B2E00EFAF55 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DA5086191CD20BC400EFAF55 /* CDSSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDSSyncManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DA50861A1CD20BC400EFAF55 /* CDSSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDSSyncManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DA5086391CD211FA00EFAF55 /* CDSMultipeerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDSMultipeerManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DA50863A1CD211FA00EFAF55 /* CDSMultipeerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDSMultipeerManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DA50863D1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEDropboxCloudFileSystem.h; path = ../ensembles/Framework/Extensions/CDEDropboxCloudFileSystem.h; sourceTree = "<group>"; };
+		DA50863E1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEDropboxCloudFileSystem.m; path = ../ensembles/Framework/Extensions/CDEDropboxCloudFileSystem.m; sourceTree = "<group>"; };
+		DA50863F1CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEMultipeerCloudFileSystem.h; path = ../ensembles/Framework/Extensions/CDEMultipeerCloudFileSystem.h; sourceTree = "<group>"; };
+		DA5086401CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEMultipeerCloudFileSystem.m; path = ../ensembles/Framework/Extensions/CDEMultipeerCloudFileSystem.m; sourceTree = "<group>"; };
+		DA5086411CD212AA00EFAF55 /* CDENodeCloudFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDENodeCloudFileSystem.h; path = ../ensembles/Framework/Extensions/CDENodeCloudFileSystem.h; sourceTree = "<group>"; };
+		DA5086421CD212AA00EFAF55 /* CDENodeCloudFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDENodeCloudFileSystem.m; path = ../ensembles/Framework/Extensions/CDENodeCloudFileSystem.m; sourceTree = "<group>"; };
+		DA5086501CD221C200EFAF55 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DA5086511CD221C200EFAF55 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DA5086521CD221C200EFAF55 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DA5086531CD221C200EFAF55 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DA5086541CD221C200EFAF55 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DA5086551CD221C200EFAF55 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DA5086561CD221C200EFAF55 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DA5086571CD221C200EFAF55 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DA5086581CD221C200EFAF55 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DA5086591CD221C200EFAF55 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = ../ensembles/Vendor/SSZipArchive/SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		DA50865A1CD221C200EFAF55 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = ../ensembles/Vendor/SSZipArchive/SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		DACA2BDE1CC7D40B000E2123 /* CoreDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACA2BE11CC7D40B000E2123 /* CoreDataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataStore.h; sourceTree = "<group>"; };
+		DACA2BE31CC7D40B000E2123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACA2BF41CC7D482000E2123 /* CDSDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSDataStore.h; sourceTree = "<group>"; };
+		DACA2BF51CC7D482000E2123 /* CDSDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDSDataStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DACA2BDA1CC7D40B000E2123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5086151CD20B1700EFAF55 /* libensembles.a in Frameworks */,
+				DA5086161CD20B1700EFAF55 /* libSDropboxSDK.a in Frameworks */,
+				DA5086181CD20B2E00EFAF55 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA5085EE1CD20A9900EFAF55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA5085F61CD20A9A00EFAF55 /* libensembles.a */,
+				DA5085F81CD20A9A00EFAF55 /* Ensembles.bundle */,
+				DA5085FA1CD20A9A00EFAF55 /* Tests iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA5086051CD20AC700EFAF55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA50860B1CD20AC700EFAF55 /* DropboxSDK.framework */,
+				DA50860D1CD20AC700EFAF55 /* libSDropboxSDK.a */,
+				DA50860F1CD20AC700EFAF55 /* DropboxOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA5086101CD20ADD00EFAF55 /* Ensembles */ = {
+			isa = PBXGroup;
+			children = (
+				DA50863D1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.h */,
+				DA50863E1CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.m */,
+				DA50863F1CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.h */,
+				DA5086401CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.m */,
+				DA5086411CD212AA00EFAF55 /* CDENodeCloudFileSystem.h */,
+				DA5086421CD212AA00EFAF55 /* CDENodeCloudFileSystem.m */,
+				DA50866E1CD221DD00EFAF55 /* SSZipArchive */,
+				DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */,
+				DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */,
+			);
+			name = Ensembles;
+			sourceTree = "<group>";
+		};
+		DA50864F1CD221C200EFAF55 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DA5086501CD221C200EFAF55 /* crypt.h */,
+				DA5086511CD221C200EFAF55 /* ioapi.c */,
+				DA5086521CD221C200EFAF55 /* ioapi.h */,
+				DA5086531CD221C200EFAF55 /* mztools.c */,
+				DA5086541CD221C200EFAF55 /* mztools.h */,
+				DA5086551CD221C200EFAF55 /* unzip.c */,
+				DA5086561CD221C200EFAF55 /* unzip.h */,
+				DA5086571CD221C200EFAF55 /* zip.c */,
+				DA5086581CD221C200EFAF55 /* zip.h */,
+			);
+			name = minizip;
+			path = ../ensembles/Vendor/SSZipArchive/SSZipArchive/minizip;
+			sourceTree = "<group>";
+		};
+		DA50866E1CD221DD00EFAF55 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DA5086591CD221C200EFAF55 /* SSZipArchive.h */,
+				DA50865A1CD221C200EFAF55 /* SSZipArchive.m */,
+				DA50864F1CD221C200EFAF55 /* minizip */,
+				DA5086171CD20B2E00EFAF55 /* libz.tbd */,
+			);
+			name = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		DACA2BD41CC7D40B000E2123 = {
+			isa = PBXGroup;
+			children = (
+				DACA2BE01CC7D40B000E2123 /* CoreDataStore */,
+				DA5086101CD20ADD00EFAF55 /* Ensembles */,
+				DACA2BDF1CC7D40B000E2123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DACA2BDF1CC7D40B000E2123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACA2BDE1CC7D40B000E2123 /* CoreDataStore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACA2BE01CC7D40B000E2123 /* CoreDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				DACA2BF41CC7D482000E2123 /* CDSDataStore.h */,
+				DACA2BF51CC7D482000E2123 /* CDSDataStore.m */,
+				DA5086191CD20BC400EFAF55 /* CDSSyncManager.h */,
+				DA50861A1CD20BC400EFAF55 /* CDSSyncManager.m */,
+				DA5086391CD211FA00EFAF55 /* CDSMultipeerManager.h */,
+				DA50863A1CD211FA00EFAF55 /* CDSMultipeerManager.m */,
+				DACA2BE11CC7D40B000E2123 /* CoreDataStore.h */,
+				DACA2BE31CC7D40B000E2123 /* Info.plist */,
+			);
+			path = CoreDataStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DACA2BDB1CC7D40B000E2123 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5086431CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.h in Headers */,
+				DACA2BE21CC7D40B000E2123 /* CoreDataStore.h in Headers */,
+				DACA2BF61CC7D482000E2123 /* CDSDataStore.h in Headers */,
+				DA5086641CD221C200EFAF55 /* SSZipArchive.h in Headers */,
+				DA50865D1CD221C200EFAF55 /* ioapi.h in Headers */,
+				DA50861B1CD20BC400EFAF55 /* CDSSyncManager.h in Headers */,
+				DA5086451CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.h in Headers */,
+				DA5086631CD221C200EFAF55 /* zip.h in Headers */,
+				DA5086471CD212AA00EFAF55 /* CDENodeCloudFileSystem.h in Headers */,
+				DA50863B1CD211FA00EFAF55 /* CDSMultipeerManager.h in Headers */,
+				DA5086611CD221C200EFAF55 /* unzip.h in Headers */,
+				DA50865B1CD221C200EFAF55 /* crypt.h in Headers */,
+				DA50865F1CD221C200EFAF55 /* mztools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DACA2BDD1CC7D40B000E2123 /* CoreDataStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACA2BE61CC7D40B000E2123 /* Build configuration list for PBXNativeTarget "CoreDataStore" */;
+			buildPhases = (
+				DACA2BD91CC7D40B000E2123 /* Sources */,
+				DACA2BDA1CC7D40B000E2123 /* Frameworks */,
+				DACA2BDB1CC7D40B000E2123 /* Headers */,
+				DACA2BDC1CC7D40B000E2123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA50868C1CD2606F00EFAF55 /* PBXTargetDependency */,
+				DA5086141CD20B0200EFAF55 /* PBXTargetDependency */,
+				DA5086121CD20B0200EFAF55 /* PBXTargetDependency */,
+			);
+			name = CoreDataStore;
+			productName = CoreDataStore;
+			productReference = DACA2BDE1CC7D40B000E2123 /* CoreDataStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DACA2BD51CC7D40B000E2123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Optisoft Ltd.";
+				TargetAttributes = {
+					DACA2BDD1CC7D40B000E2123 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = DACA2BD81CC7D40B000E2123 /* Build configuration list for PBXProject "CoreDataStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DACA2BD41CC7D40B000E2123;
+			productRefGroup = DACA2BDF1CC7D40B000E2123 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA5086051CD20AC700EFAF55 /* Products */;
+					ProjectRef = DA5086041CD20AC700EFAF55 /* DropboxSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = DA5085EE1CD20A9900EFAF55 /* Products */;
+					ProjectRef = DA5085ED1CD20A9900EFAF55 /* Ensembles iOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DACA2BDD1CC7D40B000E2123 /* CoreDataStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA5085F61CD20A9A00EFAF55 /* libensembles.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libensembles.a;
+			remoteRef = DA5085F51CD20A9A00EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA5085F81CD20A9A00EFAF55 /* Ensembles.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Ensembles.bundle;
+			remoteRef = DA5085F71CD20A9A00EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA5085FA1CD20A9A00EFAF55 /* Tests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests iOS.xctest";
+			remoteRef = DA5085F91CD20A9A00EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA50860B1CD20AC700EFAF55 /* DropboxSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DropboxSDK.framework;
+			remoteRef = DA50860A1CD20AC700EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA50860D1CD20AC700EFAF55 /* libSDropboxSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDropboxSDK.a;
+			remoteRef = DA50860C1CD20AC700EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA50860F1CD20AC700EFAF55 /* DropboxOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DropboxOSX.framework;
+			remoteRef = DA50860E1CD20AC700EFAF55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DACA2BDC1CC7D40B000E2123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA50868A1CD2603800EFAF55 /* Ensembles.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DACA2BD91CC7D40B000E2123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5086601CD221C200EFAF55 /* unzip.c in Sources */,
+				DA5086441CD212AA00EFAF55 /* CDEDropboxCloudFileSystem.m in Sources */,
+				DA5086461CD212AA00EFAF55 /* CDEMultipeerCloudFileSystem.m in Sources */,
+				DA5086621CD221C200EFAF55 /* zip.c in Sources */,
+				DA50865E1CD221C200EFAF55 /* mztools.c in Sources */,
+				DACA2BF71CC7D482000E2123 /* CDSDataStore.m in Sources */,
+				DA5086481CD212AA00EFAF55 /* CDENodeCloudFileSystem.m in Sources */,
+				DA50861C1CD20BC400EFAF55 /* CDSSyncManager.m in Sources */,
+				DA50863C1CD211FA00EFAF55 /* CDSMultipeerManager.m in Sources */,
+				DA50865C1CD221C200EFAF55 /* ioapi.c in Sources */,
+				DA5086651CD221C200EFAF55 /* SSZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA5086121CD20B0200EFAF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Ensembles iOS";
+			targetProxy = DA5086111CD20B0200EFAF55 /* PBXContainerItemProxy */;
+		};
+		DA5086141CD20B0200EFAF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDropboxSDK;
+			targetProxy = DA5086131CD20B0200EFAF55 /* PBXContainerItemProxy */;
+		};
+		DA50868C1CD2606F00EFAF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Ensembles Resources iOS";
+			targetProxy = DA50868B1CD2606F00EFAF55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DACA2BE41CC7D40B000E2123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DACA2BE51CC7D40B000E2123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DACA2BE71CC7D40B000E2123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Ensembles/Vendor/DropboxSDK/DropboxSDK/**",
+					"$(SRCROOT)/Ensembles/Vendor/SSZipArchive/SSZipArchive/**",
+				);
+				INFOPLIST_FILE = CoreDataStore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.optisoft.CoreDataStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DACA2BE81CC7D40B000E2123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Ensembles/Vendor/DropboxSDK/DropboxSDK/**",
+					"$(SRCROOT)/Ensembles/Vendor/SSZipArchive/SSZipArchive/**",
+				);
+				INFOPLIST_FILE = CoreDataStore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.optisoft.CoreDataStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DACA2BD81CC7D40B000E2123 /* Build configuration list for PBXProject "CoreDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACA2BE41CC7D40B000E2123 /* Debug */,
+				DACA2BE51CC7D40B000E2123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACA2BE61CC7D40B000E2123 /* Build configuration list for PBXNativeTarget "CoreDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACA2BE71CC7D40B000E2123 /* Debug */,
+				DACA2BE81CC7D40B000E2123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DACA2BD51CC7D40B000E2123 /* Project object */;
+}

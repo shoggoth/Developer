@@ -1,0 +1,12 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Section-1"; ObjectID = "9D9-uE-Mu8"; */
+"9D9-uE-Mu8.headerTitle" = "Section-1";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-2"; ObjectID = "ClE-oP-WVu"; */
+"ClE-oP-WVu.headerTitle" = "Section-2";
+
+/* Class = "UIBarButtonItem"; title = "⚙"; ObjectID = "sVm-tn-ggQ"; */
+"sVm-tn-ggQ.title" = "⚙";
+
+/* Class = "UITabBarItem"; title = "Watchlist"; ObjectID = "zyR-GM-WFp"; */
+"zyR-GM-WFp.title" = "Watchlist";

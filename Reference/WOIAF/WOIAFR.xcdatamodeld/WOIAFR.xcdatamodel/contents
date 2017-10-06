@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E2620" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Fact" representedClassName="Fact" syncable="YES">
+        <attribute name="book" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapter" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="html" attributeType="String" syncable="YES"/>
+        <attribute name="sortIndex" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ItemBase" syncable="YES"/>
+        <relationship name="personAliases" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personAppearances" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personChildren" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personOrigin" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personParents" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personPlaceOfBirth" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personPlaceOfDeath" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personPlayedBy" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personSiblings" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+        <relationship name="personTitles" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="House" representedClassName="House" parentEntity="ItemBase" syncable="YES">
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="ItemBase" representedClassName="ItemBase" isAbstract="YES" syncable="YES">
+        <attribute name="book" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapter" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="htmlTemplate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="subtitle" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="facts" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Keyword" syncable="YES"/>
+    </entity>
+    <entity name="Keyword" representedClassName="Keyword" syncable="YES">
+        <attribute name="word" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ItemBase" syncable="YES"/>
+    </entity>
+    <entity name="Map" representedClassName="Map" parentEntity="ItemBase" syncable="YES">
+        <relationship name="mapLocations" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="MapLocation" syncable="YES"/>
+    </entity>
+    <entity name="MapLocation" representedClassName="MapLocation" syncable="YES">
+        <attribute name="book" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapter" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="sortIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="subtitle" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="String" syncable="YES"/>
+        <attribute name="x" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="map" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Map" syncable="YES"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Place" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" parentEntity="ItemBase" syncable="YES">
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="aliases" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="appearances" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="House" syncable="YES"/>
+        <relationship name="origin" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="parents" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="placeOfBirth" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="placeOfDeath" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="playedBy" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="siblings" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+        <relationship name="titles" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Fact" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName="Place" parentEntity="ItemBase" syncable="YES">
+        <relationship name="mapLocations" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="MapLocation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fact" positionX="160" positionY="192" width="128" height="285"/>
+        <element name="House" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="ItemBase" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="Keyword" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Map" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="MapLocation" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="Person" positionX="160" positionY="192" width="128" height="225"/>
+        <element name="Place" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDCTableViewController" customModule="iDispense" customModuleProvider="target">
+            <connections>
+                <outlet property="instructionView" destination="iN0-l3-epB" id="cHO-I6-aBN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="343"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-8K-JHD">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="343"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bE-27-DJE">
+                            <rect key="frame" x="8" y="8" width="260" height="327"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroAdd" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-pe-uwi">
+                                    <rect key="frame" x="23" y="23" width="44" height="44"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroDustbin" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-Vp-RXF">
+                                    <rect key="frame" x="23" y="90" width="44" height="44"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new range. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqn-bD-GUD">
+                                    <rect key="frame" x="75" y="34" width="138" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete the last range." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daf-1t-Uci">
+                                    <rect key="frame" x="75" y="101" width="164" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AELLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VvO-ZN-H45">
+                                    <rect key="frame" x="75" y="219" width="110" height="51"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-ZW-lDw">
+                                    <rect key="frame" x="27" y="157" width="206" height="54"/>
+                                    <string key="text">For information about
+Seperately Disclosed Charges
+please contact</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aelmarkhams.co.uk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itX-J3-Nd6">
+                                    <rect key="frame" x="64" y="278" width="133" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="xaY-pe-uwi" firstAttribute="top" secondItem="1bE-27-DJE" secondAttribute="top" constant="23" id="9Kd-TX-WQr"/>
+                                <constraint firstItem="Udg-ZW-lDw" firstAttribute="top" secondItem="4B7-Vp-RXF" secondAttribute="bottom" constant="23" id="RP6-63-0LK"/>
+                                <constraint firstItem="4B7-Vp-RXF" firstAttribute="leading" secondItem="xaY-pe-uwi" secondAttribute="leading" id="TrL-hb-etk"/>
+                                <constraint firstItem="bqn-bD-GUD" firstAttribute="centerY" secondItem="xaY-pe-uwi" secondAttribute="centerY" id="VKt-Xc-Gfr"/>
+                                <constraint firstItem="VvO-ZN-H45" firstAttribute="centerX" secondItem="Udg-ZW-lDw" secondAttribute="centerX" id="WYe-rW-BgD"/>
+                                <constraint firstItem="4B7-Vp-RXF" firstAttribute="top" secondItem="xaY-pe-uwi" secondAttribute="bottom" constant="23" id="WoY-hQ-lHs"/>
+                                <constraint firstItem="itX-J3-Nd6" firstAttribute="centerX" secondItem="VvO-ZN-H45" secondAttribute="centerX" id="X7A-1n-S5P"/>
+                                <constraint firstItem="bqn-bD-GUD" firstAttribute="leading" secondItem="xaY-pe-uwi" secondAttribute="trailing" constant="8" id="aBg-3C-rdf"/>
+                                <constraint firstItem="VvO-ZN-H45" firstAttribute="top" secondItem="Udg-ZW-lDw" secondAttribute="bottom" constant="8" id="bMn-2z-fgP"/>
+                                <constraint firstItem="daf-1t-Uci" firstAttribute="centerY" secondItem="4B7-Vp-RXF" secondAttribute="centerY" id="hYs-02-f0b"/>
+                                <constraint firstItem="daf-1t-Uci" firstAttribute="leading" secondItem="4B7-Vp-RXF" secondAttribute="trailing" constant="8" id="mRo-sl-mua"/>
+                                <constraint firstItem="itX-J3-Nd6" firstAttribute="top" secondItem="VvO-ZN-H45" secondAttribute="bottom" constant="8" id="t2O-Tb-6bY"/>
+                                <constraint firstItem="xaY-pe-uwi" firstAttribute="leading" secondItem="1bE-27-DJE" secondAttribute="leading" constant="23" id="uqS-1p-2KA"/>
+                                <constraint firstItem="Udg-ZW-lDw" firstAttribute="centerX" secondItem="1bE-27-DJE" secondAttribute="centerX" id="ynT-ih-0NA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="343" id="9gj-bM-JmH"/>
+                        <constraint firstAttribute="width" constant="275" id="Aud-PG-YOm"/>
+                        <constraint firstItem="1bE-27-DJE" firstAttribute="trailing" secondItem="j7H-8K-JHD" secondAttribute="trailingMargin" constant="1" id="Xzq-18-vop"/>
+                        <constraint firstItem="1bE-27-DJE" firstAttribute="leading" secondItem="j7H-8K-JHD" secondAttribute="leadingMargin" id="ilj-Nc-7pa"/>
+                        <constraint firstItem="1bE-27-DJE" firstAttribute="bottom" secondItem="j7H-8K-JHD" secondAttribute="bottomMargin" id="pEp-DG-TAa"/>
+                        <constraint firstItem="1bE-27-DJE" firstAttribute="top" secondItem="j7H-8K-JHD" secondAttribute="topMargin" id="wwg-TX-jCj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="j7H-8K-JHD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="47I-iW-7ui"/>
+                <constraint firstAttribute="trailing" secondItem="j7H-8K-JHD" secondAttribute="trailing" id="Xvw-mb-Mwn"/>
+                <constraint firstItem="j7H-8K-JHD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gkZ-LJ-CoP"/>
+                <constraint firstAttribute="bottom" secondItem="j7H-8K-JHD" secondAttribute="bottom" id="wWQ-6X-CIJ"/>
+                <constraint firstItem="j7H-8K-JHD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x1D-t3-p1X"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="309.5" y="546.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AELLogo" width="110" height="51"/>
+        <image name="IntroAdd" width="44" height="44"/>
+        <image name="IntroDustbin" width="44" height="44"/>
+    </resources>
+</document>

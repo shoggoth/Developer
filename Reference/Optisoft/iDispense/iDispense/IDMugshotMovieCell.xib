@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZoB-ai-h6z" customClass="IDMugshotCell">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-gY-Xcp" userLabel="Image">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="500"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed7-UO-suM" userLabel="Overlay">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="500"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LM-gH-CE3">
+                                <rect key="frame" x="307" y="450" width="45" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="delete:" destination="ZoB-ai-h6z" eventType="touchUpInside" id="ItN-v9-kMO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-lP-PSP">
+                                <rect key="frame" x="299" y="20" width="53" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WW">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="28" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="32" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="4"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999994" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CamcorderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-v7-wdb">
+                                <rect key="frame" x="20" y="20" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LU8-Ed-lpj"/>
+                                    <constraint firstAttribute="width" constant="32" id="n1V-1I-HJT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demonstration Only" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb6-rQ-GIJ">
+                                <rect key="frame" x="2" y="225" width="368" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="0.66487068969999996" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0LM-gH-CE3" secondAttribute="trailing" constant="20" id="0ed-yh-l77"/>
+                            <constraint firstItem="dM2-v7-wdb" firstAttribute="leading" secondItem="Ed7-UO-suM" secondAttribute="leading" constant="20" symbolic="YES" id="9Tg-y5-sER"/>
+                            <constraint firstItem="eb6-rQ-GIJ" firstAttribute="centerY" secondItem="Ed7-UO-suM" secondAttribute="centerY" id="HWK-g4-eXa"/>
+                            <constraint firstItem="RtY-lP-PSP" firstAttribute="top" secondItem="Ed7-UO-suM" secondAttribute="top" constant="20" symbolic="YES" id="ND6-9Z-Ntl"/>
+                            <constraint firstAttribute="bottom" secondItem="0LM-gH-CE3" secondAttribute="bottom" constant="20" id="TCZ-FJ-bgM"/>
+                            <constraint firstItem="eb6-rQ-GIJ" firstAttribute="centerX" secondItem="Ed7-UO-suM" secondAttribute="centerX" id="Yrf-h0-Q5e"/>
+                            <constraint firstItem="dM2-v7-wdb" firstAttribute="top" secondItem="Ed7-UO-suM" secondAttribute="top" constant="20" symbolic="YES" id="meh-Za-9cI"/>
+                            <constraint firstAttribute="trailing" secondItem="RtY-lP-PSP" secondAttribute="trailing" constant="20" symbolic="YES" id="nhq-pS-S3X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Ed7-UO-suM" firstAttribute="centerY" secondItem="9aP-gY-Xcp" secondAttribute="centerY" id="5Ve-wT-voH"/>
+                <constraint firstItem="Ed7-UO-suM" firstAttribute="height" secondItem="9aP-gY-Xcp" secondAttribute="height" id="75c-Ce-wha"/>
+                <constraint firstItem="Ed7-UO-suM" firstAttribute="width" secondItem="9aP-gY-Xcp" secondAttribute="width" id="Fgl-ok-o7t"/>
+                <constraint firstAttribute="trailing" secondItem="9aP-gY-Xcp" secondAttribute="trailing" id="LrQ-Wb-FU1"/>
+                <constraint firstItem="9aP-gY-Xcp" firstAttribute="top" secondItem="ZoB-ai-h6z" secondAttribute="top" id="iky-Ev-G7m"/>
+                <constraint firstItem="9aP-gY-Xcp" firstAttribute="leading" secondItem="ZoB-ai-h6z" secondAttribute="leading" id="jVJ-rT-AEx"/>
+                <constraint firstItem="Ed7-UO-suM" firstAttribute="centerX" secondItem="9aP-gY-Xcp" secondAttribute="centerX" id="xHW-3s-8qC"/>
+                <constraint firstAttribute="bottom" secondItem="9aP-gY-Xcp" secondAttribute="bottom" id="yuP-za-XhC"/>
+            </constraints>
+            <size key="customSize" width="210" height="208"/>
+            <connections>
+                <outlet property="demonstrationOnlyLabel" destination="eb6-rQ-GIJ" id="MzG-LF-ucz"/>
+                <outlet property="image" destination="9aP-gY-Xcp" id="Cw5-ul-gct"/>
+                <outlet property="mugshotNumberLabel" destination="RtY-lP-PSP" id="8QA-kr-dUy"/>
+                <outlet property="overlay" destination="Ed7-UO-suM" id="XAM-Nt-Bsv"/>
+            </connections>
+            <point key="canvasLocation" x="428" y="440"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CamcorderIcon" width="72" height="72"/>
+    </resources>
+</document>

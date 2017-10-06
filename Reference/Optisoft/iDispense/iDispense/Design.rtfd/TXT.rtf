@@ -1,0 +1,482 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\froman\fcharset0 Palatino-Roman;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid103\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16260\viewh17980\viewkind1
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs36 \cf0 \ul \ulc0 iDispense design document
+\f1\b0\fs24 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f0 \cf0 Draft\
+Revision 0.0.1d\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-2872\pardirnatural
+
+\b\fs28 \cf0 Abstract\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b0\fs24 \cf0 This document describes an application (app) for the iOS to aid the dispensing optician in her work within the practice.\
+\
+In the development of any piece of software, it is not unusual for an iterative process to take place via a series of refinements and improvements. The initial release of the app must have enough functionality to differentiate it from the other offerings currently for sale in the App Store but there is a limited time frame in which to bring the product on to the market considering the current vogue for mobile apps. A balance therefore needs to be struck between functionality that is to be included and the time it will take for the development of said functionality. It is hoped that we can go some way towards addressing that in this document.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Platform
+\b0\fs24 \
+Hardware: iPad. The iPad's increased screen area will allow for more functionality to be presented on the screen at once. It is a device that is familiar to many users already and the portability of the form factor lends itself well to the environment of the dispensing opticians. The front and rear facing cameras that are built in to the device are of a sufficient quality for the dispensing process and connectivity via WiFi will allow future expansion of the app's scope and better integration with our existing product line in the future.\
+\
+The iPad mini's smaller screen may be an impediment to the functionality of the app and the same goes for the iPhone in an environment where it is likely that some people will not have perfect vision. However, we should probably keep these two platforms in mind as a secondary target just in case it turns out to be not very much work to support and maintain them.\
+\
+OS: iOS 7 and later. This will allow us to take advantage of recent advances in the iOS. The generation 2 iPad / iPhone 4 and later are supported by this release and adoption rates are generally high among users of the iOS. Apple currently recommend that, if iOS 6 is to be supported, it is supported by retrograding the app targeted at the newer OS and promises this to be a relatively pain-free process for the developer.\
+\page \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs36 \cf0 \ul Application definition statement
+\fs28 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b0\fs24 \cf0 The iPad lends itself to many of the day to day operations in the optician's practice but a lot of these operations need auxiliary data that would be impractical to enter into the app and would benefit from a supporting infrastructure that will take a while to put in place. One of the biggest limiting factors as far as dispensing and other operations on a mobile platform is concerned is going to be the availability of data relevant to those operations. The ideal situation would be for the mobile app to share data about customers, lenses, frames and whatever else is pertinent with a central source such as Optisoft's Practice Management System (OPMS). The alternative is to have a separate database on the mobile which is suboptimal for a number of reasons. There is the matter of duplication of data and keeping that duplicated data in sync as well as the difficulties that would be involved in data entry on the mobile platform.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Who are our users?
+\b0\fs24 \
+opticians, especially those working in dispensing for a first version.\
+In later versions of the app or possibly other apps in our suite of applications that complement the existing product line, we may concentrate on other aspects of the optician's trade but in any case, their main concern is to make a sale to the customer. Three ways in which our apps might do this are:\
+\
+By providing a 
+\b cost-effective alternative to the existing video station equipment
+\b0 .\
+Some of these setups carry a hefty price tag as they comprise a desktop PC and specially made video equipment. We can provide a system that will run on commodity tablet hardware that duplicates the most important features at a fraction of the cost.\
+\
+By providing 
+\b a portable aid to the dispensing process.
+\b0 \
+Not only does a tablet take up much less space in a practice that might have a number of bulky desktops in it already but it can be used in place with the customer and obviates the need to pull the customer away to a video station that additionally might already be in use by another customer.\
+\
+By 
+\b streamlining the dispensing process
+\b0  and allowing more time with the customer.\
+As an adjunct to this and a further incentive, there is an elevated possibility of an instant approval and a sale being made because of that that might have been missed with a more traditional sales approach using a video station. For example, the ability to mail a number of captures to a partner for his or her approval and comparison might well result in a more speedy decision being reached.\
+
+\b\fs28 \
+\page Features users might like\'85
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj
+\cf0 Frames on faces\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 Lens simulations and comparisons\
+Social media sharing\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Existing mobile solutions
+\b0\fs24 \
+eyeDispense is a functional app that allows up to four video capture sessions to be displayed on the screen at once to that frames can be compared. It also allows sharing via social media but not MMS. It doesn't keep a record of previous capture sessions or save them in relation to a particular customer. It comes in at a medium price point and has very good reviews from those that have commented.\
+\
+iMirror is a manufacturer-specific app from Silhouette which uses real-time face tracking on the front camera to superimpose a 3D model of a frame onto the captured face. It is a technically impressive app and is likely to 'wow' a customer but we could improve on the concept by adding better clipping to the models. As far as I could see, it did not have the practical functionality of eyeDispense but it is free and has great novelty appeal.\
+\
+IDS (Intelligent Dispensing Software) from (or commissioned by) Kodak contains similar functionality to eyeDispense in that its main functionality appears to be the capturing and sharing of images of customers wearing spectacles. There is a measuring app which is interesting but this requires the unlocking of a separate section of the app and some extra hardware specific to this operation. These functionalities are somewhat disparate and I wonder at Kodak's motivation for not separating them to different apps. The design could be considered heavy on the marketing and having perhaps a little too much eye candy but this is subjective, of course.\
+
+\b\fs28 \
+How can we leapfrog them with USPs
+\b0\fs24 \
+While reviews of the existing products on the App Store are generally positive, the feedback forum there is a good way for us to understand how the end users use the products, whether there are problems and possibly suggestions for improvements that we might not have considered ourselves. For example, an existing app has been criticised for only capturing movies so we should make sure that our app can capture stills as well.\
+Although the iMirror application is a free application and obviously a vehicle for the sales of a particular manufacturer's frames, it does have some merit on a technical level as mentioned before and we should aim to put something similar in one of the more advanced iterations of our app. A problem that I immediately noticed with Silhouette's app is that the 3D models did not clip correctly and this was especially apparent while viewing the superimposed frame model from the side so that the most distant arm was still visible.\
+Although this is quite clearly a result of us only having a 2D image to work with that is captured from the iPad's camera, I feel that more could be done to improve the appearance here and create a USP with enhanced realism. We could first try using a simple face cull on the model and add a depth test in the x axis in the model's local coordinate system. Further shapes and transformations could be tried instead of the simple axis clip, through spheres or platonic solids up to a generic head model.\
+To aid the dispensing optician in gaining the instant approval that might lead to a sale that would otherwise be lost, I feel that we should include the ability to send the captured images by MMS as these types of messages are the most 'intrusive' and tend to notify the recipient immediately and prompt a response more quickly than other methods.\
+It may be considered as a form of cheating but we might consider some form of image enhancement as a sales tool. Red eye reduction, for example is quite a common filter and would probably not be construed as cheating whereas applying a soft focus filter might be. If the lighting conditions inside the office are not as 'flattering' as they might be, the ability to add a hue correction filter to the customer's image could be useful but we should probably allow these filters to be adjusted or disabled in the app's preferences.
+\b\fs36 \ul \page Roadmap
+\b0\fs24 \ulnone \
+Features that we can put into a first version of the app and the features that can come later with further development to the original specification and enhancements that can take place when infrastructure is in place to support them.\
+Some of the existing makers of apps have bundled several functions that they think the optician will like into the same app. I think there is some value in keeping the functionality which relates to the different roles within the practice separate as I imagine that each of the staff who would benefit would be given his of her own iPad. We are, of course, focussing on dispensing at first and the various functions that support that workflow should be kept in the same app. As we expand our portfolio of apps, however, I think it would be more useful to build a stable as opposed to one monolithic offering.\
+\
+
+\b\fs28 Inception release features
+\b0\fs24 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls1\ilvl0\cf0 {\listtext	\'95	}Capture of still and moving images\
+{\listtext	\'95	}Single session\
+{\listtext	\'95	}Simple Core Data model (patients, lenses, frames etc.)\
+{\listtext	\'95	}Ability to superimpose simulated frames and lenses on to still captures\
+{\listtext	\'95	}Arrange multiple captures in the same view so that comparisons can be made\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls1\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}A better arrangement of the captures than the 2 x 2 arrangement in the existing apps\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Ribbon view similar to the one used in Apple's Photo Booth with auto-layout collection view compositing\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls1\ilvl0\cf0 {\listtext	\'95	}Still sharing via social media\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls1\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Facebook, Twitter, local equivalents\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls1\ilvl0\cf0 {\listtext	\'95	}Still sharing via messaging and others\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls1\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Email, MMS, iMessage, Airdrop, iCloud\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Compositing of multiple images to a pleasing frame for comparison\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls1\ilvl0\cf0 {\listtext	\'95	}Basic lens simulation\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls1\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Approximate thicknesses and weights dependant on material\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Generic tints (coloured and photochromic) and coatings\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Future release features
+\b0\fs24 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}Multiple sessions with history related to each patient and integration with OPMS\
+\ls2\ilvl0{\listtext	\'95	}Generic Frames on Faces (frame shapes) in 2D\
+{\listtext	\'95	}Extended Core Data model\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}iCloud sync capability possible\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}Root master-detail controller with list of patient sessions\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Patient search facility\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}Lens catalogues and filters\
+{\listtext	\'95	}Ability to apply differing overlays to the same still capture\
+{\listtext	\'95	}Lens validation with prescription and frame.\
+{\listtext	\'95	}Frame catalogues\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Specific Frames on Faces in 2D\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}3D simple texture mapped models with face culling and depth buffering\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Full 3D generic frame shapes (possibly manufacturer supplied 3D data in the distant future)\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}Advanced lens simulations\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Specific thicknesses and weights dependant on manufacturer's data\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Visual qualities (environment mapping to simulate anti-reflective coatings, refractive distortions, chromatic aberration etc.)\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}User demos (pre-rendered)\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Multifocal lenses\
+{\listtext	
+\f2 \uc0\u8259 
+\f0 	}Progressive lenses\
+\pard\tx1660\tx2160\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li2160\fi-2160\ri-1346\pardirnatural\qj
+\ls2\ilvl2\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}soft vs hard\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}photochromic\
+\pard\tx1660\tx2160\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li2160\fi-2160\ri-1346\pardirnatural\qj
+\ls2\ilvl2\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}inside vs outside\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}polarised\
+\pard\tx1660\tx2160\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li2160\fi-2160\ri-1346\pardirnatural\qj
+\ls2\ilvl2\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}car windscreen / water\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls2\ilvl0\cf0 {\listtext	\'95	}User demos (AR)\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\ls2\ilvl1\cf0 {\listtext	
+\f2 \uc0\u8259 
+\f0 	}Enhancements of the pre-rendered items (above)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs36 \cf0 \ul \page Technical and UX design
+\b0\fs24 \ulnone \
+We should at all times aim for a consistent and intuitive UX and develop software components that can be reused as we progress further into the roadmap.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 User Experience
+\b0\fs24 \
+For the inception version of the app, the top level of the view hierarchy will be a simple container view that contains an initially empty collection of the images that have been captured this session. There should be a mechanism, perhaps on a root level tool bar, to clear the image collection and start a new session (more on this later).\
+Each of the capture views in the collection would have two states. While residing inside its container as part of a collection, the captured image would be shown with a number overlaid on it for the purposes of comparison if there is more than one image in the collection.\
+When viewing the root level of the app (looking at the collection of captures) the most natural orientation is dependant on the number of captures that have been made and exist in the collection so far. When the user transitions to the view of the individual capture and starts to manipulate it by adding frames and defining lens parameters, the natural orientation is of course the portrait orientation. We should make sure that the collection looks pleasing in both orientations and also make sure the child view is usable in landscape orientation although portrait will obviously be the optimal way to view the captures.\
+As we move towards to a more patient centric architecture, this software component could easily be re-used to edit existing or newly captured images and also extended so that the generic frames could be replaced with more realistic data and the simple lens shading in the earlier versions could be replaced with GLSL shaders, for example.
+\b\fs36 \ul \
+
+\fs28 \ulnone \page Main view layout
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f1 \cf0 {{\NeXTGraphic Presentation view layout.png \width8100 \height12440
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f0 \cf0 \page \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Main view user interaction
+\b0\fs24 \
+The main view contains the actual image of the customer's face which could contain at least 3 different things. At the simplest level, the content could just be a still capture of the customer's face wearing a pair of spectacles he or she is trying on in the shop. I imagine there would be a number of these views in the collection so that they could be compared. The main view might also contain a section of motion video in which case editing and overlay functions would be disabled for that view. In the third case, the image portion of the view would contain a capture of the customer's face unadorned with which we could proceed to process the image in some way, typically by overlaying graphics over the top (frame overlay, for example) or by distorting the underlying image (lens overlay).\
+Of course, the app has no way of knowing whether the capture contains a picture of the customer wearing spectacles or not so I suggest that the overlay controls be enabled if the capture is a still image in any case.\
+\
+
+\b\fs28 Suggested tools in the main view
+\b0\fs24 \
+Capture - this will push a standard image capture view and allow us to replace the image already in the main view with either an image from the camera roll or a capture from either the front or the rear camera. The user would be allowed to capture a still or a movie sequence. If the front facing camera is being used, we could display a timer for the capture but I am not convinced this is needed if the forward camera is to be used.\
+Enhance - image enhancement operations (still image only, requires capture) possibly preset with preferences or a pop up with various options such as redeye, soften etc.\
+Frame - pop up an auxiliary view with a selection of frames that can be superimposed on to the customer's face. The selection could include generic frame shapes or 2D or 3D models from a catalogue of frames. This is a non-destructive operation.\
+Lens - pop up an auxiliary view with a selection of lenses that can be superimposed on to the customer's face. Lens parameters could possibly come from the customer's prescription or the data could be entered via a dialogue.This is a non-destructive operation.\
+\
+
+\b\fs28 Main view overlays
+\b0\fs24 \
+There should be an identifying number overlaid on all captures so that the customer knows which they are referring to: "I like number 23 best". Optionally, we could also provide a 'star rating' control on the same overlay so that the customer could indicate which option she prefers before soliciting others' opinions about the various options.\
+If frame and lens data is present, things like the lens material and weight could be added or the frame's catalogue identifier. There are many other data that could be added as we continue development.\
+
+\b\fs28 Customer demos\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b0\fs24 \cf0 Some of the existing mobile apps and full scale apps contain animated demonstrations of the advantages of certain features of the products the optician sell:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b \cf0 Anti-reflective coatings
+\b0  - applications either use  a pre-rendered QTM, provide a pair of images for comparison of a lens with and without the coating or apply a real time environment map to a lens rendering.\
+
+\b Anti-scratch coating
+\b0  - this is a similar situation to the above where an overlay of scratches is applied or removed to the image of the lens.\
+
+\b Photochromic
+\b0  - a simulation of the lens darkening as it moves form the indoors to the outdoors is the usual way for this to be demonstrated.\
+\
+
+\b Multifocal
+\b0  - a still image is presented with objects in the near, mid and far distance. In some demonstrations, the lens simulation can be moved around in front of the scene.\
+
+\b Progressive
+\b0  - this is demonstrated in a similar way to the multifocal.\
+\
+We should ultimately aim for an AR view with the ability for the view to simulate all the coatings and add any of the multifocal or progressive lens options to the AR view as well. An option to split the screen so that comparisons can be made would also be most useful as a demonstration aid.\
+For an early version of the app, it would be enough to present a pre-rendered sequence as a demonstration. This is technically not as challenging but will require someone with an artistic bent.\page \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Main view workflow
+\b0\fs24 \
+First, we add a frame overlay to the captured still image:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic FOF (1) Initial frame placement-halfScale.png \width4240 \height6880
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+\cf0 {{\NeXTGraphic FOF (2) Scaled and rotated frames-halfScale.png \width4240 \height6880
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 Next, we use the familiar iOS gestures to position the frame simulation on the customer's face:\
+\
+The suggested gestures (preformed on the main view but outside the area of the tool bar) are:\
+Drag - move frame and lens layer relative to the capture\
+Pinch - scale frame and lens layers\
+Rotate - rotate  frame and lens layer relative to the capture\
+\
+\page After we are satisfied with the way the frames look, we can bring up a lens menu and apply lens effects to a second layer. As mentioned before, the lens layer and the frame layer both respond to the positioning gestures. Here, a basic tint has been overlaid on the frame layer.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic FOF (4) Grey tinted lenses-halfScale.png \width4240 \height6880
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 \page Collection view auto-layout
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f1 \cf0 {{\NeXTGraphic Layouts with varied numbers of subviews.png \width8500 \height12840
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f0 \cf0 \
+As the iPad is rotated, auto-layout will be used to present the captures in the highest detail possible and the tool bar will be hidden while there is nothing selected. The layouts are purely for accessibility and there should be no situation in the app where the user is required to rotate the iPad to expose some layer of the functionality. In this way, we cater to the user and customer's personal preference.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Collection view workflow
+\b0\fs24 \
+The collection view is a higher level view in the hierarchy of the app and contains zero or greater reduced detail renderings of the session's captures plus a tool bar for manipulating members of the collection:\
+\
+Clear: will clear all the captures this session. It will typically be used when a new session is required in the inception version of the app and may well be replaced with master-detail functionality in a later version of the app which takes a more customer-centric approach.\
+Duplicate: will duplicate the selected capture so that side by side comparison can take place. This will only be enabled for captures of still images and only the image will be duplicated by default, not the frame or lens overlay.\
+Share: will offer a choice of social media and messaging destinations for the selected captures to be shared to. If there are multiple images to share, they will be arranged in a manner optimal for the target media and tagged with numbers so that they can be easily differentiated.\
+
+\b\fs28 \page Frame drawing
+\b0\fs24 \
+In the inception version of the app, I recommend that we include a number of generic frame shapes that can provide a texture to be applied to a simple 3D model consisting of a minimal number of quads rendered in the x plane (i.e. the plane of the captured image that is to be overlaid).\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic Texture (1) minimal.png \width8500 \height5260
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 The figure above shows a minimal generic image that could be stored to represent a round frame shape (obviously, we are assuming that the frame is symettric). The geometry that represents this model lies in the x plane and at its most simple is just one quad with the frame image texture co-ordinates running from either s=0 if the arms are to be included or s=
+\i n
+\i0  where 
+\i n
+\i0  is some small portion of the image section containing the arm.\
+The possibility also exists that we could use a fraction of the t space for each of the images that represent the basic frames and then create multiple spaces within and image in the t direction that would build up a texture atlas of kinds. This would give us the advantage of only using up one texture unit and allow us to switch between the generic frame textures without incurring the overhead of a texture bind but it would have the disadvantage that the texture atlas would be loaded into video RAM for the full duration of the app's run.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic Texture (2) reflected.png \width8500 \height5260
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 Through manipulation of the texture co-ordinates to run from s=
+\i n
+\i0  to s=1 at the centre point and then to s=-
+\i n
+\i0 , we can generate a single textured quad which will adequately represent the generic frame in a single plane. We are still only using 4 vertices, 2 triangles or 1 quad for this representation. Again, the rendering of the arms of the frame is optional depending on the value of 
+\i n
+\i0 .\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic Texture (3) overlay.png \width8500 \height5260
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 The above illustration shows the mask in the texture that we can use to apply graphical simulations to the render, at first via alpha composite and in later versions of the app, by more advanced shader-driven lens simulations.\page \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 Advanced frame drawing
+\b0\fs24 \
+Considering the availability of data representations of the frames, it is suggested that a first enhancement to the 2D textured model we have already described is a 3D textured model consisting of 3 quads arranged in a U shape around the world y axis. We could use the same texture data for the generic frames as we did originally but now the arms come into play and can be more realistically rendered from different aspects.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f1 \cf0 {{\NeXTGraphic Spec models (1) Alternatives.png \width8500 \height11540
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\f0 \cf0 \
+As with full 3D models, it would be possible to use face culling or even depth buffering to remove the portions of the frame that would be occluded by the head in a face tracking system.\
+The use of fully textured, possibly sculpted detailed 3D models is certainly possible as well and would only require a model importer to be written to handle reading of the models in some common format that supports the features we would like to add.\
+For a proof of this concept, perhaps in a later version of the app, we could model the generic frame shapes in a modelling and sculpting package and replace the existing 2D model rendering with these. It would fall to the frame manufacturers to supply actual data for their catalogue unless it became profitable and easy for some third party to produce catalogue items.\
+Because they are such simple models consisting of a small number of triangles, we could obtain a very good degree of realism in the model and still maintain an acceptable performance. Techniques we might consider at this point are:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\ls3\ilvl0\cf0 {\listtext	\'95	}Multi-level texture mapping\
+{\listtext	\'95	}Environment mapping\
+{\listtext	\'95	}Bump mapping\
+{\listtext	\'95	}Normal mapping\
+{\listtext	\'95	}Multi-materials\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 \page Lens shading
+\b0\fs24 \
+In the inception version of the app, I recommend that we include a simple simulation of the lens that is a composited alpha shade rendered in the 2D plane of the generic frame. This will allow us to demonstrate any number of lens tints and we could even introduce an element of animation to simulate the look of photochromic additions.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic Lens geometry and shader.png \width8500 \height5260
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 \
+The figure above shows an optimal topographic flow for rendering a model of a lens.  It would probably benefit us to generate these lens models procedurally so that their parameters could be more easily altered although deformation of a base model would probably work as well. You will notice that the front and back faces of the lens consist of a number of concentric rings that will allow us, via deformation of these vertices, to simulate the concave or convex curves of a real lens in the vertex shader. This will not affect the visual qualities of the model but will allow the shape of the lens to be simulated so that the thickness can be demonstrated to the customer. The visual qualities of the lens will be simulated in the fragment shader thus decoupling the shape of the lens from its visual qualities where required so that different materials with different refractive indices could be compared, for example.\
+Varying the number of 'spokes' in the model could not only increase the detail we have available to us but also allow us to import actual data from a frame scanner should this facility be needed in a later version.\
+\
+By altering vertex shader params, we could simulate weight, thickness and shape of the lens. By altering fragment shader params, we could simulate a number of optical characteristics:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f1 \cf0 {{\NeXTGraphic Chromatic Aberration.png \width8500 \height5280
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qc
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+\cf0 \
+Caustics, chromatic aberration, environment mapping and refraction modelling in a rendering of a torus shaped object using GLSL shaders. This model has also had dirt mapping applied to the render which is something we're unlikely to find useful in our app.\page \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs36 \cf0 \ul OPMS Integration
+\b0\fs24 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs28 \cf0 The lens catalogue
+\b0\fs24 \
+In the current version of the OPMS, there are facilities for not only entering lens data from a number of manufacturers but for creating 'filters' that contain a subset of the entire lens catalogue, possibly spanning a number of manufacturers' products.\
+The entering of said data is a time consuming operation and it is unlikely that a user will be happy to keep another copy up to date on an iPad. This is another area where sharing of data between our systems or possibly from a central source on the internet (such as Hawkstone) would facilitate a smooth workflow and easy setup within the practice.\
+It would be handy if we could keep a centralised database of lens data from all the manufacturers that supply to the UK market. This would not only benefit the users of the mobile app where data entry is a somewhat more time consuming process than it is on a machine with a keyboard but would be of general benefit to users of the OPMS software too.\
+
+\b\fs28 The frame catalogue
+\b0\fs24 \
+A list of the frames that are available to the DO. These could be maintained in the same way as the lenses, dependant on what sort of data the frame makers were prepared  to offer and whether we could process this data into a coherent catalogue.\
+
+\b\fs28 Patient records
+\b0\fs24 \
+As there is limited storage space on the iPad and iCloud, it would be really useful if we could have access to the patient records on the OPMS for two reasons. Firstly, it would give us access to important information such as the patient's prescription which could be used to better facilitate the lens simulation. Secondly, it might be useful to be able to upload information from the iPad and associate it with the existing patient information on the OPMS. This would be especially true when in the future, we expand the functionality outside of dispensing.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b\fs36 \cf0 \ul \page Other matters\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\fs28 \cf0 \ulnone Localisation
+\b0\fs24 \
+The app should be localised into as many different languages as possible given constraints on development. The iOS SDK aids us with this by making it reasonably easy to have different versions of the UX for each language and facilities for localisation of code strings will be inserted as needed.\
+English is the major language of apps and hopefully we are able to find someone what speaks it proper within the company. I feel confident that I could do a reasonable job of French, German and Dutch but we really should have Spanish and Chinese as well.\
+
+\b\fs28 IAP options
+\b0\fs24 \
+If, in the development of functionality that requires integration with the OPMS, we come across some item or items that we feel might be sold via the App Store, then we may want to take advantage of that not only because it will increase awareness of the advantages of having OPMS integration but because it adds value to our mobile product line. I have mentioned that it would be useful to the OPMS and to the mobile apps to have a central database of lens catalogues from multiple manufacturers. This is the sort of data we could sell to users of the mobile apps from the App Store and possibly provide on a subscription basis as maintenance dictates updates at some central source.\
+In the case of updates to the lens catalogue, we would have to make sure that the filters the user has set were not disturbed and that the user was properly notified if any filter became unavailable.\
+
+\b\fs28 Non-dispensing functions
+\b0\fs24 \
+This is not something for the immediate future but something I am rather curious about after seeing the Kodak application. The health of people's eyes is obviously of paramount importance and it seems equally obvious that mis-measuring some aspect of the patient's parameters while preparing the frames could cause problems. Is there some approval mechanism that must be traversed so that an application could be approved for use in this way? What are the risks to us as developers should something go wrong and it was proved that our software was responsible for someone's eyes being damaged? Obviously, this would be a very bad thing for our reputation as well as the patient.\
+If we are to duplicate the functionality of an existing piece of software from our catalogue, we should try our hardest to follow the form and function of said software as much as is possible given the limitations of the target platform such as form factor and screen real-estate. It is lucky that some of our software is already optimised for touch screen devices and should be fairly easily converted.
+\b\fs28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\fs36 \cf0 \ul \page Glossary of technical terms\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ri-1346\pardirnatural\qj
+
+\b0\fs24 \cf0 \ulnone iOS - Apple's mobile operating system
+\b\fs36 \ul \
+
+\b0\fs24 \ulnone AR - Augmented Reality the superimposition of CG imagery onto live video.\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\cf0 Core Data - Apple's data modelling subsystem in iOS and OSX\
+MMS - Multimedia Messaging System (SMS with pictures)\
+iCloud - Apple's cloud storage implementation\
+Texture - an image applied to geometry to increase realism in CG\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ri-1346\pardirnatural\qj
+\cf0 Depth buffering (Z buffering) - rendering of depth information to determine visibility at a pixel level.\
+View - an area in which some image is drawn, usually representing data contained in a model (Model-View-Controller architecture)\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ri-1346\pardirnatural\qj
+\cf0 \
+}
