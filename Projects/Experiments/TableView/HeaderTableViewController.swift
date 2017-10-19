@@ -21,7 +21,7 @@ class HeaderTableViewController: UITableViewController {
 
         Bundle.main.loadNibNamed("Header", owner: self, options: nil)
 
-        headerTitleLabel.text = "Hello, World"
+        headerTitleLabel.text = "class HeaderTableViewController"
 
         tableView.tableHeaderView = headerView
     }
@@ -37,7 +37,7 @@ class IBConstructedHeaderTableViewController: UITableViewController {
 
         super.viewDidLoad()
 
-        headerTitleLabel.text = "Hello, World"
+        headerTitleLabel.text = "class IBConstructedHeaderTableViewController"
     }
 }
 
@@ -51,13 +51,14 @@ class StickyHeaderTableViewController: UIViewController {
 
         super.viewDidLoad()
 
-        headerTitleLabel.text = "Hello, World"
+        headerTitleLabel.text = "class StickyHeaderTableViewController"
     }
 }
 
 class SingleSectionHeaderTableViewController: UITableViewController {
 
     @IBOutlet var sectionHeader: UIView?
+    @IBOutlet var headerTitleLabel: UILabel!
 
     // MARK: Lifecycle
 
@@ -67,7 +68,7 @@ class SingleSectionHeaderTableViewController: UITableViewController {
 
         Bundle.main.loadNibNamed("SectionHeader", owner: self, options: nil)
 
-        //headerTitleLabel.text = "Hello, World"
+        headerTitleLabel.text = "class SingleSectionHeaderTableViewController"
     }
 
     // MARK: UITableViewDataSource
