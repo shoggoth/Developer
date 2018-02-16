@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CALayerMessing
 //
-//  Created by Richard Henry on 16/02/2018.
-//  Copyright © 2018 Dogstar Industries. All rights reserved.
+//  Created by Richard Henry on 06/12/2017.
+//  Copyright © 2017 Dogstar Industries. All rights reserved.
 //
 
 import UIKit
