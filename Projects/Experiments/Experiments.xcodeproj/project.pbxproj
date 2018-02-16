@@ -97,6 +97,11 @@
 		FF2AB5BA1E794FD100BCA69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5B81E794FD100BCA69D /* Main.storyboard */; };
 		FF2AB5BC1E794FD100BCA69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */; };
 		FF2AB5BF1E794FD100BCA69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB5BD1E794FD100BCA69D /* LaunchScreen.storyboard */; };
+		FFB445C31FD7F69B00CEDFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB445C21FD7F69B00CEDFA9 /* AppDelegate.swift */; };
+		FFB445C51FD7F69B00CEDFA9 /* CALayerMessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB445C41FD7F69B00CEDFA9 /* CALayerMessingViewController.swift */; };
+		FFB445C81FD7F69B00CEDFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB445C61FD7F69B00CEDFA9 /* Main.storyboard */; };
+		FFB445CA1FD7F69B00CEDFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB445C91FD7F69B00CEDFA9 /* Assets.xcassets */; };
+		FFB445CD1FD7F69B00CEDFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB445CB1FD7F69B00CEDFA9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -269,6 +274,13 @@
 		FF2AB5BB1E794FD100BCA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2AB5BE1E794FD100BCA69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2AB5C01E794FD100BCA69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB445C01FD7F69B00CEDFA9 /* CALayerMessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayerMessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB445C21FD7F69B00CEDFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB445C41FD7F69B00CEDFA9 /* CALayerMessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerMessingViewController.swift; sourceTree = "<group>"; };
+		FFB445C71FD7F69B00CEDFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB445C91FD7F69B00CEDFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB445CC1FD7F69B00CEDFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB445CE1FD7F69B00CEDFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +345,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FF2AB5A81E794FD100BCA69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB445BD1FD7F69B00CEDFA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -500,6 +519,7 @@
 				9B41647F1F33606B00485937 /* GameControls */,
 				9B4164A71F33639200485937 /* InvaderClone */,
 				9B4164BD1F3363D700485937 /* ScrollPixels */,
+				FFB445C11FD7F69B00CEDFA9 /* CALayerMessing */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
 				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
@@ -517,6 +537,7 @@
 				9B4164A61F33639200485937 /* InvaderClone.app */,
 				9B4164BC1F3363D700485937 /* ScrollPixels.app */,
 				9B51A52D1F3B0D9C006CA6E0 /* CPPopovers.app */,
+				FFB445C01FD7F69B00CEDFA9 /* CALayerMessing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -544,6 +565,19 @@
 				9B4164FD1F33692B00485937 /* GameControls.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFB445C11FD7F69B00CEDFA9 /* CALayerMessing */ = {
+			isa = PBXGroup;
+			children = (
+				FFB445C21FD7F69B00CEDFA9 /* AppDelegate.swift */,
+				FFB445C41FD7F69B00CEDFA9 /* CALayerMessingViewController.swift */,
+				FFB445C61FD7F69B00CEDFA9 /* Main.storyboard */,
+				FFB445C91FD7F69B00CEDFA9 /* Assets.xcassets */,
+				FFB445CB1FD7F69B00CEDFA9 /* LaunchScreen.storyboard */,
+				FFB445CE1FD7F69B00CEDFA9 /* Info.plist */,
+			);
+			path = CALayerMessing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -708,13 +742,30 @@
 			productReference = FF2AB5AB1E794FD100BCA69D /* ShaderSprite.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FFB445BF1FD7F69B00CEDFA9 /* CALayerMessing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB445D11FD7F69B00CEDFA9 /* Build configuration list for PBXNativeTarget "CALayerMessing" */;
+			buildPhases = (
+				FFB445BC1FD7F69B00CEDFA9 /* Sources */,
+				FFB445BD1FD7F69B00CEDFA9 /* Frameworks */,
+				FFB445BE1FD7F69B00CEDFA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CALayerMessing;
+			productName = CALayerMessing;
+			productReference = FFB445C01FD7F69B00CEDFA9 /* CALayerMessing.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FF2AB5A31E794FD100BCA69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dogstar Industries";
 				TargetAttributes = {
@@ -763,6 +814,11 @@
 						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 					};
+					FFB445BF1FD7F69B00CEDFA9 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 5F9CYF5K3F;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FF2AB5A61E794FD100BCA69D /* Build configuration list for PBXProject "Experiments" */;
@@ -787,6 +843,7 @@
 				9B4164A51F33639200485937 /* InvaderClone */,
 				9B4164BB1F3363D700485937 /* ScrollPixels */,
 				9B51A52C1F3B0D9C006CA6E0 /* CPPopovers */,
+				FFB445BF1FD7F69B00CEDFA9 /* CALayerMessing */,
 			);
 		};
 /* End PBXProject section */
@@ -905,6 +962,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFB445BE1FD7F69B00CEDFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB445CD1FD7F69B00CEDFA9 /* LaunchScreen.storyboard in Resources */,
+				FFB445CA1FD7F69B00CEDFA9 /* Assets.xcassets in Resources */,
+				FFB445C81FD7F69B00CEDFA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1000,6 +1067,15 @@
 				FF2AB5B51E794FD100BCA69D /* GameScene.swift in Sources */,
 				FF2AB5B71E794FD100BCA69D /* GameViewController.swift in Sources */,
 				FF2AB5AF1E794FD100BCA69D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB445BC1FD7F69B00CEDFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB445C51FD7F69B00CEDFA9 /* CALayerMessingViewController.swift in Sources */,
+				FFB445C31FD7F69B00CEDFA9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1194,6 +1270,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				FF2AB5BE1E794FD100BCA69D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB445C61FD7F69B00CEDFA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB445C71FD7F69B00CEDFA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB445CB1FD7F69B00CEDFA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB445CC1FD7F69B00CEDFA9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1576,6 +1668,60 @@
 			};
 			name = Release;
 		};
+		FFB445CF1FD7F69B00CEDFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CALayerMessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.CALayerMessing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB445D01FD7F69B00CEDFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CALayerMessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.CALayerMessing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1665,6 +1811,15 @@
 			buildConfigurations = (
 				FF2AB5C41E794FD100BCA69D /* Debug */,
 				FF2AB5C51E794FD100BCA69D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB445D11FD7F69B00CEDFA9 /* Build configuration list for PBXNativeTarget "CALayerMessing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB445CF1FD7F69B00CEDFA9 /* Debug */,
+				FFB445D01FD7F69B00CEDFA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
