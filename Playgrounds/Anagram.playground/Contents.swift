@@ -1,18 +1,25 @@
-//: Playground - noun: a place where people can play
+//
+//  main.swift
+//  test
+//
+//  Created by Richard Henry on 16/10/2018.
+//  Copyright © 2018 Dogstar Industries Ltd. All rights reserved.
+//
 
-import Cocoa
+import Foundation
 
 extension String {
-
-    func isAnagramOf(_ potentialAnagram: String) -> Bool {
-
-        let stripAndSort = { (str: String) in return Array(str.trimmingCharacters(in: .whitespacesAndNewlines).utf16).sorted() }
-        //let stripAndSort = { (str: String) in return (str.lowercaseString).filter { $0 != " " }.sorted { $0 > $1 } }
-
-        return stripAndSort(self) == stripAndSort(potentialAnagram)
+    
+    func isAnagramOf(potentialAnagram other: String) -> Bool {
+        
+        let stripAndSort = { (str: String) in return Array(str.lowercased()).filter { $0 != " "}.sorted { $0 > $1 }}
+        
+        return stripAndSort(self) == stripAndSort(other)
     }
 }
 
-if "Laughable Butane Bob".isAnagramOf("Analogue Bubblebath") { print("An anagram is you!!11!!") }
-if "🌵☺️👨🏻👰🏻👻👽🐮".isAnagramOf("👰🏻🌵🐮☺️👨🏻👽👻") { print("An anagram is you!!22!!") }
-
+if "Laughable Butane Bob".isAnagramOf(potentialAnagram: "Analogue Bubblebath") { print("1: anagram") }
+if "Hangable Auto Bulb".isAnagramOf(potentialAnagram: "Analogue Bubblebath") { print("2: anagram") }
+if "Bucephalus Bouncing Ball".isAnagramOf(potentialAnagram: "Analogue Bubblebath") { print("2.1: anagram") }
+if "🐶🦊🥐🎱🐮".isAnagramOf(potentialAnagram: "🎱🥐 🐮🐶🦊") { print("3: anagram") }
+if "🦊🥐🎱🐶🐮".isAnagramOf(potentialAnagram: "🥐🐮🐶🦊") { print("4: anagram") }
