@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF7BE4EB220350680036EA9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BE4EA220350680036EA9E /* AppDelegate.swift */; };
+		FF7BE4ED220350680036EA9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BE4EC220350680036EA9E /* ViewController.swift */; };
+		FF7BE4EF220350690036EA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7BE4EE220350690036EA9E /* Assets.xcassets */; };
+		FF7BE4F2220350690036EA9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7BE4F0220350690036EA9E /* Main.storyboard */; };
+		FF7BE4FE220350690036EA9E /* HeaderlessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BE4FD220350690036EA9E /* HeaderlessAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7BE4FA220350690036EA9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7BE4DF220350680036EA9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7BE4E6220350680036EA9E;
+			remoteInfo = HeaderlessApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF7BE4E7220350680036EA9E /* HeaderlessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeaderlessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7BE4EA220350680036EA9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF7BE4EC220350680036EA9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF7BE4EE220350690036EA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF7BE4F1220350690036EA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF7BE4F3220350690036EA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7BE4F4220350690036EA9E /* HeaderlessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeaderlessApp.entitlements; sourceTree = "<group>"; };
+		FF7BE4F9220350690036EA9E /* HeaderlessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeaderlessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7BE4FD220350690036EA9E /* HeaderlessAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderlessAppTests.swift; sourceTree = "<group>"; };
+		FF7BE4FF220350690036EA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF7BE4E4220350680036EA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7BE4F6220350690036EA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF7BE4DE220350680036EA9E = {
+			isa = PBXGroup;
+			children = (
+				FF7BE4E9220350680036EA9E /* HeaderlessApp */,
+				FF7BE4FC220350690036EA9E /* HeaderlessAppTests */,
+				FF7BE4E8220350680036EA9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7BE4E8220350680036EA9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BE4E7220350680036EA9E /* HeaderlessApp.app */,
+				FF7BE4F9220350690036EA9E /* HeaderlessAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF7BE4E9220350680036EA9E /* HeaderlessApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BE4EA220350680036EA9E /* AppDelegate.swift */,
+				FF7BE4EC220350680036EA9E /* ViewController.swift */,
+				FF7BE4EE220350690036EA9E /* Assets.xcassets */,
+				FF7BE4F0220350690036EA9E /* Main.storyboard */,
+				FF7BE4F3220350690036EA9E /* Info.plist */,
+				FF7BE4F4220350690036EA9E /* HeaderlessApp.entitlements */,
+			);
+			path = HeaderlessApp;
+			sourceTree = "<group>";
+		};
+		FF7BE4FC220350690036EA9E /* HeaderlessAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BE4FD220350690036EA9E /* HeaderlessAppTests.swift */,
+				FF7BE4FF220350690036EA9E /* Info.plist */,
+			);
+			path = HeaderlessAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF7BE4E6220350680036EA9E /* HeaderlessApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7BE502220350690036EA9E /* Build configuration list for PBXNativeTarget "HeaderlessApp" */;
+			buildPhases = (
+				FF7BE4E3220350680036EA9E /* Sources */,
+				FF7BE4E4220350680036EA9E /* Frameworks */,
+				FF7BE4E5220350680036EA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeaderlessApp;
+			productName = HeaderlessApp;
+			productReference = FF7BE4E7220350680036EA9E /* HeaderlessApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF7BE4F8220350690036EA9E /* HeaderlessAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7BE505220350690036EA9E /* Build configuration list for PBXNativeTarget "HeaderlessAppTests" */;
+			buildPhases = (
+				FF7BE4F5220350690036EA9E /* Sources */,
+				FF7BE4F6220350690036EA9E /* Frameworks */,
+				FF7BE4F7220350690036EA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7BE4FB220350690036EA9E /* PBXTargetDependency */,
+			);
+			name = HeaderlessAppTests;
+			productName = HeaderlessAppTests;
+			productReference = FF7BE4F9220350690036EA9E /* HeaderlessAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF7BE4DF220350680036EA9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dogstar Industries Ltd.";
+				TargetAttributes = {
+					FF7BE4E6220350680036EA9E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FF7BE4F8220350690036EA9E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FF7BE4E6220350680036EA9E;
+					};
+				};
+			};
+			buildConfigurationList = FF7BE4E2220350680036EA9E /* Build configuration list for PBXProject "HeaderlessApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF7BE4DE220350680036EA9E;
+			productRefGroup = FF7BE4E8220350680036EA9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF7BE4E6220350680036EA9E /* HeaderlessApp */,
+				FF7BE4F8220350690036EA9E /* HeaderlessAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7BE4E5220350680036EA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7BE4EF220350690036EA9E /* Assets.xcassets in Resources */,
+				FF7BE4F2220350690036EA9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7BE4F7220350690036EA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF7BE4E3220350680036EA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7BE4ED220350680036EA9E /* ViewController.swift in Sources */,
+				FF7BE4EB220350680036EA9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7BE4F5220350690036EA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7BE4FE220350690036EA9E /* HeaderlessAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7BE4FB220350690036EA9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7BE4E6220350680036EA9E /* HeaderlessApp */;
+			targetProxy = FF7BE4FA220350690036EA9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF7BE4F0220350690036EA9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7BE4F1220350690036EA9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF7BE500220350690036EA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF7BE501220350690036EA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FF7BE503220350690036EA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeaderlessApp/HeaderlessApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = HeaderlessApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.HeaderlessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		FF7BE504220350690036EA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeaderlessApp/HeaderlessApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = HeaderlessApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.HeaderlessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		FF7BE506220350690036EA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = HeaderlessAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.HeaderlessAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeaderlessApp.app/Contents/MacOS/HeaderlessApp";
+			};
+			name = Debug;
+		};
+		FF7BE507220350690036EA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = HeaderlessAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.HeaderlessAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeaderlessApp.app/Contents/MacOS/HeaderlessApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF7BE4E2220350680036EA9E /* Build configuration list for PBXProject "HeaderlessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7BE500220350690036EA9E /* Debug */,
+				FF7BE501220350690036EA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7BE502220350690036EA9E /* Build configuration list for PBXNativeTarget "HeaderlessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7BE503220350690036EA9E /* Debug */,
+				FF7BE504220350690036EA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7BE505220350690036EA9E /* Build configuration list for PBXNativeTarget "HeaderlessAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7BE506220350690036EA9E /* Debug */,
+				FF7BE507220350690036EA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF7BE4DF220350680036EA9E /* Project object */;
+}
