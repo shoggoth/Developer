@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FF36CC5B22045E79004A117C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC5A22045E79004A117C /* main.cpp */; };
+		FF36CC6322047DF5004A117C /* summat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6122047DF5004A117C /* summat.cpp */; };
+		FF36CC6622048044004A117C /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6422048044004A117C /* stack.cpp */; };
+		FF36CC692204823B004A117C /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC672204823B004A117C /* array.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		FF36CC5722045E79004A117C /* CPP14Messing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP14Messing; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF36CC5A22045E79004A117C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF36CC6122047DF5004A117C /* summat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = summat.cpp; sourceTree = "<group>"; };
+		FF36CC6222047DF5004A117C /* summat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = summat.hpp; sourceTree = "<group>"; };
+		FF36CC6422048044004A117C /* stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack.cpp; sourceTree = "<group>"; };
+		FF36CC6522048044004A117C /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
+		FF36CC672204823B004A117C /* array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = array.cpp; sourceTree = "<group>"; };
+		FF36CC682204823B004A117C /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				FF36CC5A22045E79004A117C /* main.cpp */,
+				FF36CC672204823B004A117C /* array.cpp */,
+				FF36CC682204823B004A117C /* array.hpp */,
+				FF36CC6422048044004A117C /* stack.cpp */,
+				FF36CC6522048044004A117C /* stack.hpp */,
+				FF36CC6122047DF5004A117C /* summat.cpp */,
+				FF36CC6222047DF5004A117C /* summat.hpp */,
 			);
 			path = CPP14Messing;
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF36CC6322047DF5004A117C /* summat.cpp in Sources */,
+				FF36CC692204823B004A117C /* array.cpp in Sources */,
+				FF36CC6622048044004A117C /* stack.cpp in Sources */,
 				FF36CC5B22045E79004A117C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

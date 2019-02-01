@@ -8,7 +8,11 @@
 
 #include <iostream>
 
-namespace MyNameSpace {
+#include "summat.hpp"
+#include "array.hpp"
+#include "stack.hpp"
+
+namespace Local {
     
     int twentyThree() { return 23; }
     
@@ -22,16 +26,45 @@ namespace MyNameSpace {
     };
 }
 
-int main(int argc, const char * argv[]) {
+static void arrayMess() {
     
-    MyNameSpace::Nowt nowt;
-    MyNameSpace::Nowt *nowtDynamic = new MyNameSpace::Nowt();
+    int rawInts[] = { 1, 2, 3, 4, 5 };
+    Summat rawSummats[] = { Summat(1) };
+    
+    DataStructures::Array<int> intArray(rawInts, 10);
+    DataStructures::Array<Summat> summatArray(rawSummats, 1);
 
+    intArray.print();
+    summatArray.print();
+}
+
+static void stackMess() {
+    
+}
+
+static int localMess() {
+    
+    Local::Nowt nowt;
+    Local::Nowt *nowtDynamic = new Local::Nowt();
+    
+    Summat summat(42);
+    Summat *summatDynamic = new Summat(43);
+    
     auto autoInt = nowtDynamic->gibNumber();
     
     delete nowtDynamic;
+    delete summatDynamic;
+    return autoInt;
+}
+
+int main(int argc, const char * argv[]) {
+    
+    int autoInt = localMess();
+    
+    arrayMess();
     
     std::cout << "Hello, World!\n" << autoInt << std::endl;
     
     return 0;
 }
+
