@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FF38B8E4220353F5004AAE66 /* Resources.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FF38B8E3220353F5004AAE66 /* Resources.rtf */; };
+		FF38B8EC220355FC004AAE66 /* CPPMessingLib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FF38B8EB220355FC004AAE66 /* CPPMessingLib.hpp */; };
+		FF38B8EE220355FC004AAE66 /* CPPMessingLibPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FF38B8ED220355FC004AAE66 /* CPPMessingLibPriv.hpp */; };
+		FF38B8F0220355FC004AAE66 /* CPPMessingLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF38B8EF220355FC004AAE66 /* CPPMessingLib.cpp */; };
+		FF38B8F422035635004AAE66 /* libCPPMessingLib.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = FF38B8E9220355FC004AAE66 /* libCPPMessingLib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FF7BE4EB220350680036EA9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BE4EA220350680036EA9E /* AppDelegate.swift */; };
 		FF7BE4ED220350680036EA9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BE4EC220350680036EA9E /* ViewController.swift */; };
 		FF7BE4EF220350690036EA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7BE4EE220350690036EA9E /* Assets.xcassets */; };
@@ -16,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FF38B8F522035635004AAE66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7BE4DF220350680036EA9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF38B8E8220355FC004AAE66;
+			remoteInfo = CPPMessingLib;
+		};
 		FF7BE4FA220350690036EA9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF7BE4DF220350680036EA9E /* Project object */;
@@ -25,8 +36,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FF38B8F722035635004AAE66 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF38B8F422035635004AAE66 /* libCPPMessingLib.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FF38B8E3220353F5004AAE66 /* Resources.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Resources.rtf; sourceTree = "<group>"; };
+		FF38B8E9220355FC004AAE66 /* libCPPMessingLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCPPMessingLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF38B8EB220355FC004AAE66 /* CPPMessingLib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPMessingLib.hpp; sourceTree = "<group>"; };
+		FF38B8ED220355FC004AAE66 /* CPPMessingLibPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPMessingLibPriv.hpp; sourceTree = "<group>"; };
+		FF38B8EF220355FC004AAE66 /* CPPMessingLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPPMessingLib.cpp; sourceTree = "<group>"; };
 		FF7BE4E7220350680036EA9E /* HeaderlessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeaderlessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7BE4EA220350680036EA9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7BE4EC220350680036EA9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF38B8E7220355FC004AAE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF7BE4E4220350680036EA9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF38B8EA220355FC004AAE66 /* CPPMessingLib */ = {
+			isa = PBXGroup;
+			children = (
+				FF38B8EB220355FC004AAE66 /* CPPMessingLib.hpp */,
+				FF38B8ED220355FC004AAE66 /* CPPMessingLibPriv.hpp */,
+				FF38B8EF220355FC004AAE66 /* CPPMessingLib.cpp */,
+			);
+			path = CPPMessingLib;
+			sourceTree = "<group>";
+		};
 		FF7BE4DE220350680036EA9E = {
 			isa = PBXGroup;
 			children = (
 				FF7BE4E9220350680036EA9E /* HeaderlessApp */,
 				FF7BE4FC220350690036EA9E /* HeaderlessAppTests */,
+				FF38B8EA220355FC004AAE66 /* CPPMessingLib */,
 				FF7BE4E8220350680036EA9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +118,7 @@
 			children = (
 				FF7BE4E7220350680036EA9E /* HeaderlessApp.app */,
 				FF7BE4F9220350690036EA9E /* HeaderlessAppTests.xctest */,
+				FF38B8E9220355FC004AAE66 /* libCPPMessingLib.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +148,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FF38B8E5220355FC004AAE66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF38B8EE220355FC004AAE66 /* CPPMessingLibPriv.hpp in Headers */,
+				FF38B8EC220355FC004AAE66 /* CPPMessingLib.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		FF38B8E8220355FC004AAE66 /* CPPMessingLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF38B8F1220355FC004AAE66 /* Build configuration list for PBXNativeTarget "CPPMessingLib" */;
+			buildPhases = (
+				FF38B8E5220355FC004AAE66 /* Headers */,
+				FF38B8E6220355FC004AAE66 /* Sources */,
+				FF38B8E7220355FC004AAE66 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPPMessingLib;
+			productName = CPPMessingLib;
+			productReference = FF38B8E9220355FC004AAE66 /* libCPPMessingLib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		FF7BE4E6220350680036EA9E /* HeaderlessApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF7BE502220350690036EA9E /* Build configuration list for PBXNativeTarget "HeaderlessApp" */;
@@ -108,10 +185,12 @@
 				FF7BE4E3220350680036EA9E /* Sources */,
 				FF7BE4E4220350680036EA9E /* Frameworks */,
 				FF7BE4E5220350680036EA9E /* Resources */,
+				FF38B8F722035635004AAE66 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF38B8F622035635004AAE66 /* PBXTargetDependency */,
 			);
 			name = HeaderlessApp;
 			productName = HeaderlessApp;
@@ -146,6 +225,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Dogstar Industries Ltd.";
 				TargetAttributes = {
+					FF38B8E8220355FC004AAE66 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					FF7BE4E6220350680036EA9E = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -170,6 +252,7 @@
 			targets = (
 				FF7BE4E6220350680036EA9E /* HeaderlessApp */,
 				FF7BE4F8220350690036EA9E /* HeaderlessAppTests */,
+				FF38B8E8220355FC004AAE66 /* CPPMessingLib */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +278,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF38B8E6220355FC004AAE66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF38B8F0220355FC004AAE66 /* CPPMessingLib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF7BE4E3220350680036EA9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +306,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FF38B8F622035635004AAE66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF38B8E8220355FC004AAE66 /* CPPMessingLib */;
+			targetProxy = FF38B8F522035635004AAE66 /* PBXContainerItemProxy */;
+		};
 		FF7BE4FB220350690036EA9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FF7BE4E6220350680036EA9E /* HeaderlessApp */;
@@ -234,13 +330,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF38B8F2220355FC004AAE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF38B8F3220355FC004AAE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		FF7BE500220350690036EA9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -301,7 +429,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -432,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF38B8F1220355FC004AAE66 /* Build configuration list for PBXNativeTarget "CPPMessingLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF38B8F2220355FC004AAE66 /* Debug */,
+				FF38B8F3220355FC004AAE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF7BE4E2220350680036EA9E /* Build configuration list for PBXProject "HeaderlessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
