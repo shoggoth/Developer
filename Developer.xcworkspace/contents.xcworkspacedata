@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Messing/CPP14Messing/CPP14Messing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Projects/HeaderlessApp/HeaderlessApp.xcodeproj">
    </FileRef>
    <FileRef

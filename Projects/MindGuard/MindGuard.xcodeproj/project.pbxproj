@@ -373,7 +373,6 @@
 					};
 					9B68FC211F595C4400227681 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = QL2HV855H2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -741,7 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -752,7 +751,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
-				DEVELOPMENT_TEAM = QL2HV855H2;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
