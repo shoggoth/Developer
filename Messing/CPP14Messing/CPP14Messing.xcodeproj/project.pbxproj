@@ -11,6 +11,10 @@
 		FF36CC6322047DF5004A117C /* summat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6122047DF5004A117C /* summat.cpp */; };
 		FF36CC6622048044004A117C /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6422048044004A117C /* stack.cpp */; };
 		FF36CC692204823B004A117C /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC672204823B004A117C /* array.cpp */; };
+		FF36CC6C220492F3004A117C /* local.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6A220492F3004A117C /* local.cpp */; };
+		FF36CC6F22085BFC004A117C /* move_semantics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC6D22085BFC004A117C /* move_semantics.cpp */; };
+		FF36CC7222087BA1004A117C /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC7022087BA1004A117C /* iterator.cpp */; };
+		FF36CC7522087D5C004A117C /* type_deduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF36CC7322087D5C004A117C /* type_deduct.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +38,14 @@
 		FF36CC6522048044004A117C /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
 		FF36CC672204823B004A117C /* array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = array.cpp; sourceTree = "<group>"; };
 		FF36CC682204823B004A117C /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
+		FF36CC6A220492F3004A117C /* local.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = local.cpp; sourceTree = "<group>"; };
+		FF36CC6B220492F3004A117C /* local.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = local.hpp; sourceTree = "<group>"; };
+		FF36CC6D22085BFC004A117C /* move_semantics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = move_semantics.cpp; sourceTree = "<group>"; };
+		FF36CC6E22085BFC004A117C /* move_semantics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = move_semantics.hpp; sourceTree = "<group>"; };
+		FF36CC7022087BA1004A117C /* iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iterator.cpp; sourceTree = "<group>"; };
+		FF36CC7122087BA1004A117C /* iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = iterator.hpp; sourceTree = "<group>"; };
+		FF36CC7322087D5C004A117C /* type_deduct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = type_deduct.cpp; sourceTree = "<group>"; };
+		FF36CC7422087D5C004A117C /* type_deduct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = type_deduct.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,14 @@
 				FF36CC6522048044004A117C /* stack.hpp */,
 				FF36CC6122047DF5004A117C /* summat.cpp */,
 				FF36CC6222047DF5004A117C /* summat.hpp */,
+				FF36CC6A220492F3004A117C /* local.cpp */,
+				FF36CC6B220492F3004A117C /* local.hpp */,
+				FF36CC6D22085BFC004A117C /* move_semantics.cpp */,
+				FF36CC6E22085BFC004A117C /* move_semantics.hpp */,
+				FF36CC7022087BA1004A117C /* iterator.cpp */,
+				FF36CC7122087BA1004A117C /* iterator.hpp */,
+				FF36CC7322087D5C004A117C /* type_deduct.cpp */,
+				FF36CC7422087D5C004A117C /* type_deduct.hpp */,
 			);
 			path = CPP14Messing;
 			sourceTree = "<group>";
@@ -135,7 +155,11 @@
 			files = (
 				FF36CC6322047DF5004A117C /* summat.cpp in Sources */,
 				FF36CC692204823B004A117C /* array.cpp in Sources */,
+				FF36CC7522087D5C004A117C /* type_deduct.cpp in Sources */,
+				FF36CC6F22085BFC004A117C /* move_semantics.cpp in Sources */,
 				FF36CC6622048044004A117C /* stack.cpp in Sources */,
+				FF36CC7222087BA1004A117C /* iterator.cpp in Sources */,
+				FF36CC6C220492F3004A117C /* local.cpp in Sources */,
 				FF36CC5B22045E79004A117C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

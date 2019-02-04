@@ -9,11 +9,11 @@
 #ifndef array_hpp
 #define array_hpp
 
-#include <stdio.h>
+#include "local.hpp"
 
 namespace DataStructures {
     
-    template <typename T> class Array {
+    template <typename T> class Array : Local::Printable {
         
         T       *ptr;
         int     size;
@@ -21,6 +21,7 @@ namespace DataStructures {
     public:
         Array(T arr[], int s);
         ~Array();
+        
         void print();
     };
     

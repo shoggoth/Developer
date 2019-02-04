@@ -11,6 +11,10 @@
 #include "summat.hpp"
 #include "array.hpp"
 #include "stack.hpp"
+#include "local.hpp"
+#include "iterator.hpp"
+#include "move_semantics.hpp"
+#include "type_deduct.hpp"
 
 namespace Local {
     
@@ -40,6 +44,16 @@ static void arrayMess() {
 
 static void stackMess() {
     
+    DataStructures::Stack<int> stack;
+    
+    stack.push(3);
+    stack.push(1);
+    stack.push(2);
+
+    stack.print();
+    stack.sort();
+    
+    for (int i = 0; i < 3; i++) std::cout << "stack val = " << stack.pop() << std::endl;
 }
 
 static int localMess() {
@@ -59,12 +73,13 @@ static int localMess() {
 
 int main(int argc, const char * argv[]) {
     
-    int autoInt = localMess();
-    
-    arrayMess();
-    
-    std::cout << "Hello, World!\n" << autoInt << std::endl;
-    
+//    int autoInt = localMess(); std::cout << "Hello, World!\n" << autoInt << std::endl;
+//    arrayMess();
+//    stackMess();
+//    moveSemanticMess();
+//    iteratorMess();
+    typeDeductMess();
+
     return 0;
 }
 
