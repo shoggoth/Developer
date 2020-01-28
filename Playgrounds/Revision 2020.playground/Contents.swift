@@ -4,8 +4,13 @@ import Foundation
 // caseExperiments()
 
 // Things in Classes.swift
-classExperiments()
+// classExperiments()
 
 // Things in Brol.swift
 // experimentOne()
 
+// Things in Shapes.swift
+//shapeExperiments()
+
+// Things in PatternMatiching.swift
+patternExperiments()
