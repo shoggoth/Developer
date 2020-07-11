@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF637987249CAF6B004D4047 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF637986249CAF6B004D4047 /* main.cpp */; };
 		FF637994249CD87E004D4047 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF637993249CD87E004D4047 /* main.cpp */; };
-		FF63799A249E494D004D4047 /* foo.c in Sources */ = {isa = PBXBuildFile; fileRef = FF637999249E494D004D4047 /* foo.c */; };
+		FF63799A249E494D004D4047 /* cfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = FF637999249E494D004D4047 /* cfuncs.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +38,8 @@
 		FF637986249CAF6B004D4047 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FF637991249CD87E004D4047 /* ThreadID */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThreadID; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF637993249CD87E004D4047 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FF637998249E494D004D4047 /* foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foo.h; sourceTree = "<group>"; };
-		FF637999249E494D004D4047 /* foo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = foo.c; sourceTree = "<group>"; };
+		FF637998249E494D004D4047 /* cfuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cfuncs.h; sourceTree = "<group>"; };
+		FF637999249E494D004D4047 /* cfuncs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cfuncs.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				FF637986249CAF6B004D4047 /* main.cpp */,
-				FF637998249E494D004D4047 /* foo.h */,
-				FF637999249E494D004D4047 /* foo.c */,
+				FF637998249E494D004D4047 /* cfuncs.h */,
+				FF637999249E494D004D4047 /* cfuncs.c */,
 			);
 			path = CPPRevision;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF63799A249E494D004D4047 /* foo.c in Sources */,
+				FF63799A249E494D004D4047 /* cfuncs.c in Sources */,
 				FF637987249CAF6B004D4047 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

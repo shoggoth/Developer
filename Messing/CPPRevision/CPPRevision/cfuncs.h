@@ -1,13 +1,13 @@
 //
-//  foo.h
+//  cfuncs.h
 //  CPPRevision
 //
 //  Created by Richard Henry on 20/06/2020.
 //  Copyright © 2020 Dogstar Industries Ltd. All rights reserved.
 //
 
-#ifndef foo_h
-#define foo_h
+#ifndef cfuncs_h
+#define cfuncs_h
 
 #ifdef __cplusplus
 extern "C" {
@@ -19,4 +19,4 @@ int add(int x, int y);
 }
 #endif
 
-#endif /* foo_h */
+#endif /* cfuncs_h */

@@ -9,7 +9,7 @@
 #include <iostream>
 #include <functional>
 
-#include "foo.h"
+#include "cfuncs.h"
 
 static void np_example();
 static void iter_example();
@@ -21,7 +21,7 @@ int main(int argc, const char ** argv) {
     const auto arg = argv[1];
     const char *helloWorld = "Hello, World!";
     
-    std::cout << helloWorld << " arg = " << arg << std::endl;
+    if (arg) std::cout << helloWorld << " arg = " << arg << std::endl;
     
     [out = std::ref(std::cout << "Result from C func : " << add(1, 2))]() { out.get() << "." << std::endl; }();
     
