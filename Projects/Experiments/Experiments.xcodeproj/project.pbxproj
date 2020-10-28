@@ -89,6 +89,10 @@
 		9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73301EFA8E3200467808 /* Assets.xcassets */; };
 		9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73321EFA8E3200467808 /* LaunchScreen.storyboard */; };
 		9BFF73441EFABF8600467808 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF73431EFABF8600467808 /* StarField.sks */; };
+		FF073D7F25497BA2002B6726 /* NeumorphApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF073D7E25497BA2002B6726 /* NeumorphApp.swift */; };
+		FF073D8125497BA2002B6726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF073D8025497BA2002B6726 /* ContentView.swift */; };
+		FF073D8325497BA3002B6726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF073D8225497BA3002B6726 /* Assets.xcassets */; };
+		FF073D8625497BA3002B6726 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF073D8525497BA3002B6726 /* Preview Assets.xcassets */; };
 		FF1863F9203743160087B07F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1863F8203743160087B07F /* AppDelegate.swift */; };
 		FF1863FE203743160087B07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1863FC203743160087B07F /* Main.storyboard */; };
 		FF186400203743160087B07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1863FF203743160087B07F /* Assets.xcassets */; };
@@ -269,6 +273,12 @@
 		9BFF73331EFA8E3200467808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BFF73351EFA8E3200467808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFF73431EFABF8600467808 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		FF073D7C25497BA2002B6726 /* Neumorph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neumorph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF073D7E25497BA2002B6726 /* NeumorphApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphApp.swift; sourceTree = "<group>"; };
+		FF073D8025497BA2002B6726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF073D8225497BA3002B6726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF073D8525497BA3002B6726 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF073D8725497BA3002B6726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF1863F6203743160087B07F /* CALayerMessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayerMessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1863F8203743160087B07F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1863FD203743160087B07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -350,6 +360,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9BFF731E1EFA8E3200467808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF073D7925497BA2002B6726 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -526,6 +543,26 @@
 			path = Grid;
 			sourceTree = "<group>";
 		};
+		FF073D7D25497BA2002B6726 /* Neumorph */ = {
+			isa = PBXGroup;
+			children = (
+				FF073D7E25497BA2002B6726 /* NeumorphApp.swift */,
+				FF073D8025497BA2002B6726 /* ContentView.swift */,
+				FF073D8225497BA3002B6726 /* Assets.xcassets */,
+				FF073D8725497BA3002B6726 /* Info.plist */,
+				FF073D8425497BA3002B6726 /* Preview Content */,
+			);
+			path = Neumorph;
+			sourceTree = "<group>";
+		};
+		FF073D8425497BA3002B6726 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF073D8525497BA3002B6726 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		FF1863F7203743160087B07F /* CALayerMessing */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +590,7 @@
 				9B4164BD1F3363D700485937 /* ScrollPixels */,
 				FFAF5B461FB45B2700DFBB12 /* UniversalLink */,
 				FF1863F7203743160087B07F /* CALayerMessing */,
+				FF073D7D25497BA2002B6726 /* Neumorph */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
 				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
@@ -572,6 +610,7 @@
 				9B51A52D1F3B0D9C006CA6E0 /* CPPopovers.app */,
 				FFAF5B451FB45B2700DFBB12 /* UniversalLink.app */,
 				FF1863F6203743160087B07F /* CALayerMessing.app */,
+				FF073D7C25497BA2002B6726 /* Neumorph.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -759,6 +798,23 @@
 			productReference = 9BFF73211EFA8E3200467808 /* Grid.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FF073D7B25497BA2002B6726 /* Neumorph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF073D8A25497BA3002B6726 /* Build configuration list for PBXNativeTarget "Neumorph" */;
+			buildPhases = (
+				FF073D7825497BA2002B6726 /* Sources */,
+				FF073D7925497BA2002B6726 /* Frameworks */,
+				FF073D7A25497BA2002B6726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neumorph;
+			productName = Neumorph;
+			productReference = FF073D7C25497BA2002B6726 /* Neumorph.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FF1863F5203743160087B07F /* CALayerMessing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF186407203743160087B07F /* Build configuration list for PBXNativeTarget "CALayerMessing" */;
@@ -816,7 +872,7 @@
 		FF2AB5A31E794FD100BCA69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Dogstar Industries";
 				TargetAttributes = {
@@ -860,6 +916,11 @@
 						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 					};
+					FF073D7B25497BA2002B6726 = {
+						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = 5F9CYF5K3F;
+						ProvisioningStyle = Automatic;
+					};
 					FF1863F5203743160087B07F = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = 5F9CYF5K3F;
@@ -882,6 +943,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -890,12 +952,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				FF073D7B25497BA2002B6726 /* Neumorph */,
+				9B41647D1F33606B00485937 /* GameControllers */,
 				FF2AB5AA1E794FD100BCA69D /* ShaderSprite */,
 				9BFF73201EFA8E3200467808 /* Grid */,
 				9BA4064B1F209CCB005F1271 /* CollectionView */,
 				9BCE3C741F33161100B3A5D1 /* ColumnView */,
 				9BCE3C901F33250200B3A5D1 /* TableView */,
-				9B41647D1F33606B00485937 /* GameControllers */,
 				9B4164A51F33639200485937 /* InvaderClone */,
 				9B4164BB1F3363D700485937 /* ScrollPixels */,
 				9B51A52C1F3B0D9C006CA6E0 /* CPPopovers */,
@@ -1004,6 +1067,15 @@
 				9BFF73261EFA8E3200467808 /* GameScene.sks in Resources */,
 				9BFF73311EFA8E3200467808 /* Assets.xcassets in Resources */,
 				9BFF73341EFA8E3200467808 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF073D7A25497BA2002B6726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF073D8625497BA3002B6726 /* Preview Assets.xcassets in Resources */,
+				FF073D8325497BA3002B6726 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,6 +1196,15 @@
 				9BFF732A1EFA8E3200467808 /* GameScene.swift in Sources */,
 				9BFF732C1EFA8E3200467808 /* GameViewController.swift in Sources */,
 				9BFF73241EFA8E3200467808 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF073D7825497BA2002B6726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF073D8125497BA2002B6726 /* ContentView.swift in Sources */,
+				FF073D7F25497BA2002B6726 /* NeumorphApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1639,6 +1720,59 @@
 			};
 			name = Release;
 		};
+		FF073D8825497BA3002B6726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Neumorph/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Neumorph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.Neumorph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF073D8925497BA3002B6726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Neumorph/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Neumorph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.Neumorph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FF186405203743160087B07F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1955,6 +2089,15 @@
 			buildConfigurations = (
 				9BFF73361EFA8E3200467808 /* Debug */,
 				9BFF73371EFA8E3200467808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF073D8A25497BA3002B6726 /* Build configuration list for PBXNativeTarget "Neumorph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF073D8825497BA3002B6726 /* Debug */,
+				FF073D8925497BA3002B6726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
