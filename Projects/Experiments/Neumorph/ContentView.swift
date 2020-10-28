@@ -9,11 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let coolWhite = Color("CoolWhite")
+    private let shadow = Color.black.opacity(0.2)
+    private let hilite = Color.white.opacity(0.7)
+
     var body: some View {
         ZStack {
-            Color("CoolWhite")
+            coolWhite
             RoundedRectangle(cornerRadius: 25)
+                .fill(coolWhite)
                 .frame(width: 300, height: 300)
+                .shadow(color: shadow, radius: 10, x: 10, y: 10)
+                .shadow(color: hilite, radius: 10, x: -5, y: -5)
         }.edgesIgnoringSafeArea(.all)
     }
 }
