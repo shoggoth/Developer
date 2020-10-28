@@ -5,15 +5,6 @@
       location = "group:Projects/Experiments/Experiments.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Messing/CPP14Messing/CPP14Messing.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Projects/HeaderlessApp/HeaderlessApp.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Projects/MindGuard/MindGuard.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Frameworks/Frameworks.xcodeproj">
    </FileRef>
 </Workspace>

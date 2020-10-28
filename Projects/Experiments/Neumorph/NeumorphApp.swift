@@ -8,8 +8,7 @@
 
 import SwiftUI
 
-@main
-struct NeumorphApp: App {
+@main struct NeumorphApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
