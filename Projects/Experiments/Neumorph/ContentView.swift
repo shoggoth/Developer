@@ -22,6 +22,10 @@ struct ContentView: View {
                 .frame(width: 300, height: 300)
                 .shadow(color: shadow, radius: 10, x: 10, y: 10)
                 .shadow(color: hilite, radius: 10, x: -5, y: -5)
+            Text("Here's a card then")
+                .font(.title)
+                .foregroundColor(.gray)
+                
         }.edgesIgnoringSafeArea(.all)
     }
 }
