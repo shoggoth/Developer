@@ -111,6 +111,7 @@
 		FFAF5B4D1FB45B2700DFBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B4B1FB45B2700DFBB12 /* Main.storyboard */; };
 		FFAF5B4F1FB45B2700DFBB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B4E1FB45B2700DFBB12 /* Assets.xcassets */; };
 		FFAF5B521FB45B2700DFBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B501FB45B2700DFBB12 /* LaunchScreen.storyboard */; };
+		FFAF9D6F2549CB7700063E42 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAF9D6E2549CB7700063E42 /* Colours.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -303,6 +304,7 @@
 		FFAF5B4E1FB45B2700DFBB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFAF5B511FB45B2700DFBB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFAF5B531FB45B2700DFBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFAF9D6E2549CB7700063E42 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +551,7 @@
 				FF073D7E25497BA2002B6726 /* NeumorphApp.swift */,
 				FF073D8025497BA2002B6726 /* ContentView.swift */,
 				FF073D8225497BA3002B6726 /* Assets.xcassets */,
+				FFAF9D6E2549CB7700063E42 /* Colours.xcassets */,
 				FF073D8725497BA3002B6726 /* Info.plist */,
 				FF073D8425497BA3002B6726 /* Preview Content */,
 			);
@@ -1075,6 +1078,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF073D8625497BA3002B6726 /* Preview Assets.xcassets in Resources */,
+				FFAF9D6F2549CB7700063E42 /* Colours.xcassets in Resources */,
 				FF073D8325497BA3002B6726 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

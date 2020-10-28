@@ -10,12 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        ZStack {
+            Color("CoolWhite")
+            RoundedRectangle(cornerRadius: 25)
+                .frame(width: 300, height: 300)
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone SE (1st generation)")
     }
 }
