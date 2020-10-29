@@ -10,6 +10,13 @@ import SwiftUI
 
 private let coolWhite = Color("CoolWhite")
 
+private extension LinearGradient {
+    
+    init(_ colours: Color ...) {
+        
+        self.init(gradient: Gradient(colors: colours), startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
+}
 struct NeuButtonStyle: ButtonStyle {
     
     private let shadow = Color("Shadow")
@@ -24,8 +31,13 @@ struct NeuButtonStyle: ButtonStyle {
                     if configuration.isPressed {
                         Circle()
                             .fill(coolWhite)
-                            .shadow(color: shadow, radius: 10, x: -5, y: -5)
-                            .shadow(color: hilite, radius: 10, x: 10, y: 10)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.gray, lineWidth: 4)
+                                    .blur(radius: 4)
+                                    .offset(x: 2, y: 2)
+                                    .mask(Circle().fill(LinearGradient(Color.black, Color.clear)))
+                            )
                     } else {
                         Circle()
                             .fill(coolWhite)
