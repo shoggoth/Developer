@@ -8,24 +8,44 @@
 
 import SwiftUI
 
+private let coolWhite = Color("CoolWhite")
+
+struct NeuButtonStyle: ButtonStyle {
+    
+    private let shadow = Color("Shadow")
+    private let hilite = Color("Hilite")
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(23)
+            .contentShape(Circle())
+            .background(
+                Group {
+                    if configuration.isPressed {
+                        Circle()
+                            .fill(coolWhite)
+                            .shadow(color: shadow, radius: 10, x: -5, y: -5)
+                            .shadow(color: hilite, radius: 10, x: 10, y: 10)
+                    } else {
+                        Circle()
+                            .fill(coolWhite)
+                            .shadow(color: shadow, radius: 10, x: 10, y: 10)
+                            .shadow(color: hilite, radius: 10, x: -5, y: -5)
+                    }
+                }
+            )
+    }
+}
+
 struct ContentView: View {
     
-    private let coolWhite = Color("CoolWhite")
-    private let shadow = Color.black.opacity(0.2)
-    private let hilite = Color.white.opacity(0.7)
-
     var body: some View {
         ZStack {
             coolWhite
-            RoundedRectangle(cornerRadius: 25)
-                .fill(coolWhite)
-                .frame(width: 300, height: 300)
-                .shadow(color: shadow, radius: 10, x: 10, y: 10)
-                .shadow(color: hilite, radius: 10, x: -5, y: -5)
-            Text("Here's a card then")
-                .font(.title)
-                .foregroundColor(.gray)
-                
+            Button(action: { print("button") }, label: {
+                Image(systemName: "heart.fill")
+                    .foregroundColor(.gray)
+            }).buttonStyle(NeuButtonStyle())
         }.edgesIgnoringSafeArea(.all)
     }
 }
