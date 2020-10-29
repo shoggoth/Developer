@@ -38,6 +38,13 @@ struct NeuButtonStyle: ButtonStyle {
                                     .offset(x: 2, y: 2)
                                     .mask(Circle().fill(LinearGradient(Color.black, Color.clear)))
                             )
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 8)
+                                    .blur(radius: 4)
+                                    .offset(x: -2, y: -2)
+                                    .mask(Circle().fill(LinearGradient(Color.clear, Color.black)))
+                            )
                     } else {
                         Circle()
                             .fill(coolWhite)
