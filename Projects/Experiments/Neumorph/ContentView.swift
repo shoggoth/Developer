@@ -17,6 +17,7 @@ private extension LinearGradient {
         self.init(gradient: Gradient(colors: colours), startPoint: .topLeading, endPoint: .bottomTrailing)
     }
 }
+
 struct NeuButtonStyle: ButtonStyle {
     
     private let shadow = Color("Shadow")
