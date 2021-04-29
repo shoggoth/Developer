@@ -33,4 +33,4 @@ let yProj = yAxis.dot(vec)
 let dProj = dAxis.dot(vec)
 
 
-let skv = Vector2(
+//let skv = Vector2(
