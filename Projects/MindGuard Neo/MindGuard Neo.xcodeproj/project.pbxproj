@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
+		FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
+		FFE28A912652AC4C00383D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7D2652AC4B00383D87 /* ContentView.swift */; };
+		FFE28A922652AC4C00383D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7D2652AC4B00383D87 /* ContentView.swift */; };
+		FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
+		FFE28A942652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
+		FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A9D2652AD0200383D87 /* HomeView.swift */; };
+		FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A9D2652AD0200383D87 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuard_Neo_App.swift; sourceTree = "<group>"; };
+		FFE28A7D2652AC4B00383D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFE28A7E2652AC4C00383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE28A832652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE28A862652AC4C00383D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE28A8B2652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE28A8D2652AC4C00383D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE28A8E2652AC4C00383D87 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FFE28A9D2652AD0200383D87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFE28A802652AC4C00383D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE28A882652AC4C00383D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFE28A762652AC4B00383D87 = {
+			isa = PBXGroup;
+			children = (
+				FFE28A7B2652AC4B00383D87 /* Shared */,
+				FFE28A852652AC4C00383D87 /* iOS */,
+				FFE28A8C2652AC4C00383D87 /* macOS */,
+				FFE28A842652AC4C00383D87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFE28A7B2652AC4B00383D87 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */,
+				FFE28A9D2652AD0200383D87 /* HomeView.swift */,
+				FFE28A7D2652AC4B00383D87 /* ContentView.swift */,
+				FFE28A7E2652AC4C00383D87 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FFE28A842652AC4C00383D87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28A832652AC4C00383D87 /* MindGuard Neo.app */,
+				FFE28A8B2652AC4C00383D87 /* MindGuard Neo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFE28A852652AC4C00383D87 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28A862652AC4C00383D87 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FFE28A8C2652AC4C00383D87 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28A8D2652AC4C00383D87 /* Info.plist */,
+				FFE28A8E2652AC4C00383D87 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFE28A822652AC4C00383D87 /* MindGuard Neo (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE28A972652AC4C00383D87 /* Build configuration list for PBXNativeTarget "MindGuard Neo (iOS)" */;
+			buildPhases = (
+				FFE28A7F2652AC4C00383D87 /* Sources */,
+				FFE28A802652AC4C00383D87 /* Frameworks */,
+				FFE28A812652AC4C00383D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MindGuard Neo (iOS)";
+			productName = "MindGuard Neo (iOS)";
+			productReference = FFE28A832652AC4C00383D87 /* MindGuard Neo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFE28A8A2652AC4C00383D87 /* MindGuard Neo (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE28A9A2652AC4C00383D87 /* Build configuration list for PBXNativeTarget "MindGuard Neo (macOS)" */;
+			buildPhases = (
+				FFE28A872652AC4C00383D87 /* Sources */,
+				FFE28A882652AC4C00383D87 /* Frameworks */,
+				FFE28A892652AC4C00383D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MindGuard Neo (macOS)";
+			productName = "MindGuard Neo (macOS)";
+			productReference = FFE28A8B2652AC4C00383D87 /* MindGuard Neo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFE28A772652AC4B00383D87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FFE28A822652AC4C00383D87 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FFE28A8A2652AC4C00383D87 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = FFE28A7A2652AC4B00383D87 /* Build configuration list for PBXProject "MindGuard Neo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFE28A762652AC4B00383D87;
+			productRefGroup = FFE28A842652AC4C00383D87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE28A822652AC4C00383D87 /* MindGuard Neo (iOS) */,
+				FFE28A8A2652AC4C00383D87 /* MindGuard Neo (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFE28A812652AC4C00383D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE28A892652AC4C00383D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28A942652AC4C00383D87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFE28A7F2652AC4C00383D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */,
+				FFE28A912652AC4C00383D87 /* ContentView.swift in Sources */,
+				FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE28A872652AC4C00383D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */,
+				FFE28A922652AC4C00383D87 /* ContentView.swift in Sources */,
+				FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFE28A952652AC4C00383D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFE28A962652AC4C00383D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FFE28A982652AC4C00383D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.dogstar.MindGuard-Neo";
+				PRODUCT_NAME = "MindGuard Neo";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFE28A992652AC4C00383D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.dogstar.MindGuard-Neo";
+				PRODUCT_NAME = "MindGuard Neo";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE28A9B2652AC4C00383D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.dogstar.MindGuard-Neo";
+				PRODUCT_NAME = "MindGuard Neo";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FFE28A9C2652AC4C00383D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.dogstar.MindGuard-Neo";
+				PRODUCT_NAME = "MindGuard Neo";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFE28A7A2652AC4B00383D87 /* Build configuration list for PBXProject "MindGuard Neo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE28A952652AC4C00383D87 /* Debug */,
+				FFE28A962652AC4C00383D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE28A972652AC4C00383D87 /* Build configuration list for PBXNativeTarget "MindGuard Neo (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE28A982652AC4C00383D87 /* Debug */,
+				FFE28A992652AC4C00383D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE28A9A2652AC4C00383D87 /* Build configuration list for PBXNativeTarget "MindGuard Neo (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE28A9B2652AC4C00383D87 /* Debug */,
+				FFE28A9C2652AC4C00383D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFE28A772652AC4B00383D87 /* Project object */;
+}
