@@ -112,6 +112,15 @@
 		FFAF5B4F1FB45B2700DFBB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B4E1FB45B2700DFBB12 /* Assets.xcassets */; };
 		FFAF5B521FB45B2700DFBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B501FB45B2700DFBB12 /* LaunchScreen.storyboard */; };
 		FFAF9D6F2549CB7700063E42 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAF9D6E2549CB7700063E42 /* Colours.xcassets */; };
+		FFBBA1BE2652C48300E70299 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA1BD2652C48300E70299 /* ItemRow.swift */; };
+		FFE28AC72652BC3700383D87 /* StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28AC62652BC3700383D87 /* StarterApp.swift */; };
+		FFE28AC92652BC3700383D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28AC82652BC3700383D87 /* ContentView.swift */; };
+		FFE28ACB2652BC3800383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28ACA2652BC3800383D87 /* Assets.xcassets */; };
+		FFE28ACE2652BC3800383D87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28ACD2652BC3800383D87 /* Preview Assets.xcassets */; };
+		FFE28AD42652BCBD00383D87 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28AD32652BCBD00383D87 /* Helper.swift */; };
+		FFE28AD82652BCF200383D87 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28AD62652BCF200383D87 /* Menu.swift */; };
+		FFE28AD92652BCF200383D87 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28AD72652BCF200383D87 /* Order.swift */; };
+		FFE28ADB2652BD1100383D87 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = FFE28ADA2652BD1100383D87 /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -305,6 +314,17 @@
 		FFAF5B511FB45B2700DFBB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFAF5B531FB45B2700DFBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFAF9D6E2549CB7700063E42 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		FFBBA1BD2652C48300E70299 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		FFE28AC42652BC3700383D87 /* Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE28AC62652BC3700383D87 /* StarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterApp.swift; sourceTree = "<group>"; };
+		FFE28AC82652BC3700383D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFE28ACA2652BC3800383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE28ACD2652BC3800383D87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFE28ACF2652BC3800383D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE28AD32652BCBD00383D87 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FFE28AD62652BCF200383D87 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FFE28AD72652BCF200383D87 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FFE28ADA2652BD1100383D87 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +410,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FFAF5B421FB45B2700DFBB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE28AC12652BC3700383D87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -594,6 +621,7 @@
 				9B4164BD1F3363D700485937 /* ScrollPixels */,
 				FFAF5B461FB45B2700DFBB12 /* UniversalLink */,
 				FF1863F7203743160087B07F /* CALayerMessing */,
+				FFE28AC52652BC3700383D87 /* Starter */,
 				FF2AB5AC1E794FD100BCA69D /* Products */,
 				FF2AB5C81E797B0200BCA69D /* Frameworks */,
 			);
@@ -614,6 +642,7 @@
 				FFAF5B451FB45B2700DFBB12 /* UniversalLink.app */,
 				FF1863F6203743160087B07F /* CALayerMessing.app */,
 				FF073D7C25497BA2002B6726 /* Neumorph.app */,
+				FFE28AC42652BC3700383D87 /* Starter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -654,6 +683,39 @@
 				FFAF5B531FB45B2700DFBB12 /* Info.plist */,
 			);
 			path = UniversalLink;
+			sourceTree = "<group>";
+		};
+		FFE28AC52652BC3700383D87 /* Starter */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28AC62652BC3700383D87 /* StarterApp.swift */,
+				FFE28AC82652BC3700383D87 /* ContentView.swift */,
+				FFBBA1BD2652C48300E70299 /* ItemRow.swift */,
+				FFE28AD62652BCF200383D87 /* Menu.swift */,
+				FFE28AD72652BCF200383D87 /* Order.swift */,
+				FFE28ACA2652BC3800383D87 /* Assets.xcassets */,
+				FFE28ACF2652BC3800383D87 /* Info.plist */,
+				FFE28ACC2652BC3800383D87 /* Preview Content */,
+				FFE28AD52652BCC400383D87 /* Extras */,
+			);
+			path = Starter;
+			sourceTree = "<group>";
+		};
+		FFE28ACC2652BC3800383D87 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28ACD2652BC3800383D87 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFE28AD52652BCC400383D87 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28ADA2652BD1100383D87 /* menu.json */,
+				FFE28AD32652BCBD00383D87 /* Helper.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -869,13 +931,30 @@
 			productReference = FFAF5B451FB45B2700DFBB12 /* UniversalLink.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FFE28AC32652BC3700383D87 /* Starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE28AD22652BC3800383D87 /* Build configuration list for PBXNativeTarget "Starter" */;
+			buildPhases = (
+				FFE28AC02652BC3700383D87 /* Sources */,
+				FFE28AC12652BC3700383D87 /* Frameworks */,
+				FFE28AC22652BC3700383D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starter;
+			productName = Starter;
+			productReference = FFE28AC42652BC3700383D87 /* Starter.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FF2AB5A31E794FD100BCA69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Dogstar Industries";
 				TargetAttributes = {
@@ -939,6 +1018,11 @@
 						DevelopmentTeam = 5F9CYF5K3F;
 						ProvisioningStyle = Automatic;
 					};
+					FFE28AC32652BC3700383D87 = {
+						CreatedOnToolsVersion = 12.5;
+						DevelopmentTeam = 5F9CYF5K3F;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FF2AB5A61E794FD100BCA69D /* Build configuration list for PBXProject "Experiments" */;
@@ -966,6 +1050,7 @@
 				9B51A52C1F3B0D9C006CA6E0 /* CPPopovers */,
 				FFAF5B441FB45B2700DFBB12 /* UniversalLink */,
 				FF1863F5203743160087B07F /* CALayerMessing */,
+				FFE28AC32652BC3700383D87 /* Starter */,
 			);
 		};
 /* End PBXProject section */
@@ -1114,6 +1199,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFE28AC22652BC3700383D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28ADB2652BD1100383D87 /* menu.json in Resources */,
+				FFE28ACE2652BC3800383D87 /* Preview Assets.xcassets in Resources */,
+				FFE28ACB2652BC3800383D87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1236,6 +1331,19 @@
 			files = (
 				FFAF5B4A1FB45B2700DFBB12 /* ViewController.swift in Sources */,
 				FFAF5B481FB45B2700DFBB12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE28AC02652BC3700383D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE28AC92652BC3700383D87 /* ContentView.swift in Sources */,
+				FFBBA1BE2652C48300E70299 /* ItemRow.swift in Sources */,
+				FFE28AC72652BC3700383D87 /* StarterApp.swift in Sources */,
+				FFE28AD92652BCF200383D87 /* Order.swift in Sources */,
+				FFE28AD82652BCF200383D87 /* Menu.swift in Sources */,
+				FFE28AD42652BCBD00383D87 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2025,6 +2133,57 @@
 			};
 			name = Release;
 		};
+		FFE28AD02652BC3800383D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Starter/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.Starter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFE28AD12652BC3800383D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Starter/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Starter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.dogstar.Starter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2141,6 +2300,15 @@
 			buildConfigurations = (
 				FFAF5B5F1FB45B2700DFBB12 /* Debug */,
 				FFAF5B601FB45B2700DFBB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE28AD22652BC3800383D87 /* Build configuration list for PBXNativeTarget "Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE28AD02652BC3800383D87 /* Debug */,
+				FFE28AD12652BC3800383D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
