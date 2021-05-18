@@ -14,8 +14,7 @@ import SwiftUI
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(order)
+            MainView().environmentObject(order)
         }
     }
 }
