@@ -12,7 +12,7 @@ class Order: ObservableObject {
     
     @Published var items = [MenuItem]()
 
-    var total: Int { items.count > 0 ? items.reduce(0) { $0 + $1.price } : 0 }
+    var total: Decimal { items.count > 0 ? items.reduce(0) { $0 + $1.price } : 0 }
 
     func add(item: MenuItem) { items.append(item) }
 

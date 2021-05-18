@@ -7,7 +7,7 @@
                 "id": "EDCD038C-036F-4C40-826F-61C88CD84DDD",
 				"name": "Maple French Toast",
 				"photoCredit": "Joseph Gonzalez",
-				"price": 6,
+				"price": 6.99,
 				"restrictions": ["G", "V"],
 				"description": "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…"
 			},
@@ -15,7 +15,7 @@
                 "id": "36A7CC40-18C1-48E5-BCD8-3B42D43BEAEE",
 				"name": "Stack-o-Pancakes",
 				"photoCredit": "Joseph Gonzalez",
-				"price": 8,
+				"price": 8.99,
 				"restrictions": ["D", "G", "V"],
 				"description": "What do you get? Pancakes! How many do you get? One metric stack! That's equivalent to 1000 millistacks, or a tenth of a kilostack. In short, you get a lot of pancakes."
 			},
@@ -23,7 +23,7 @@
                 "id": "CFB8C2DB-3478-4A10-92FA-3D2A2D5324FB",
 				"name": "Power Muesli",
 				"photoCredit": "Hanny Naibaho",
-				"price": 5,
+				"price": 5.99,
 				"restrictions": ["D", "N"],
 				"description": "Is normal muesli too boring? Of course it is. That's why we serve power muesli – it's like regular muesli, except we put the word \"power\" in front of it so we can charge more."
 			},
@@ -31,7 +31,7 @@
                 "id": "8903A204-F5C1-4D5C-A0A1-5C0ECD27FDD7",
 				"name": "Fresh-baked Croissant",
 				"photoCredit": "Kavita Joshi Rai",
-				"price": 3,
+				"price": 3.95,
 				"restrictions": ["D", "G"],
 				"description": "This is just a regular croissant that we buy in bulk from a frozen foods supermarket, but we needed some sort of adjective to justify our price. So, it was either \"fresh-baked\" or \"authentic Parisian\", and our legal team thinks the latter is probably going to land us in hot water."
 			},
@@ -61,7 +61,7 @@
                 "id": "D44AAEBC-BF4F-42CD-8C37-0FEF772A5B69",
 				"name": "Penne Carbonara",
 				"photoCredit": "Brooke Lark",
-				"price": 15,
+				"price": 15.99,
 				"restrictions": ["D", "G"],
                 "description": "What's better than a creamy artisinal[1] pasta that has been hand-made[2] by our chefs[3]? All that with bacon, of course! ([1] Shop bought; [2] Hand-purchased; [3] wait staff)"
 			},
@@ -85,7 +85,7 @@
                 "id": "AD419CE6-50CC-4132-BE8E-B92B9DFE4D02",
 				"name": "Thai Red Curry",
 				"photoCredit": "Elli O.",
-				"price": 12,
+				"price": 12.99,
 				"restrictions": ["S"],
 				"description": "This dish errs more towards \"scorching\" than \"spicy\", so let us know ahead of time if you want it so we can put a few fire engines on standby."
 			},
@@ -101,7 +101,7 @@
                 "id": "024763B6-2577-4D04-9A4F-321F3EB19EA6",
 				"name": "Superfood Salad",
 				"photoCredit": "Mgg Vitchakorn",
-				"price": 9,
+				"price": 9.99,
 				"restrictions": ["N", "V"],
                 "description": "Many people believe that kale, spinach, and other such things can detox their body, and if that's you we're happy to take your money from you with this salad."
 			},
@@ -125,7 +125,7 @@
                 "id": "44FBAFC0-BEE0-4A02-9C57-B8ECDC1CE5E1",
 				"name": "Fillet Steak",
 				"photoCredit": "Alex Munsell",
-				"price": 20,
+				"price": 19.99,
 				"restrictions": [],
                 "description": "It's a steak. It's not aged, it's not rubbed in kosher salt, it's not \"hand-cut\" or some other gibberish – it's just a slab of cow on a plate. Might come with sweet potato fries if you ask nicely."
 			},
@@ -141,7 +141,7 @@
                 "id": "FD3BACF7-01AE-449D-8929-26C6F8EC90D5",
 				"name": "Pepperoni Pizza",
 				"photoCredit": "Thomas Tucker",
-				"price": 14,
+				"price": 13.99,
 				"restrictions": ["D", "G"],
 				"description": "Our chef spent years trying out various authentic Neapolitan recipes for pizza, but in the end we found this really good frozen thing from Waitrose and we can't tell the difference. If you buy this you'll be in an A/B test where you'll get one of the two served to you."
 			},

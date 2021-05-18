@@ -11,7 +11,7 @@ import SwiftUI
 struct ItemRow: View {
     
     let item: MenuItem
-    
+
     var body: some View {
         HStack {
             Image(item.thumbnailImage)
@@ -20,7 +20,7 @@ struct ItemRow: View {
             VStack(alignment: .leading) {
                 Text(item.name)
                     .font(.headline)
-                Text("$\(item.price)")
+                Text(item.price.currencyString ?? "???")
             }
             Spacer()
             ForEach(item.restrictions, id: \.self) { restriction in

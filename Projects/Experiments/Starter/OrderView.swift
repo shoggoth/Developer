@@ -20,13 +20,13 @@ struct OrderView: View {
                         HStack {
                             Text(item.name)
                             Spacer()
-                            Text("$\(item.price)")
+                            Text(item.price.currencyString ?? "???")
                         }
                     }
                 }
                 
                 Section {
-                    NavigationLink(destination: Text("Check out")) {
+                    NavigationLink(destination: CheckoutView()) {
                         Text("Place Order")
                     }
                 }
@@ -34,7 +34,8 @@ struct OrderView: View {
             .navigationTitle("Order")
             .listStyle(InsetGroupedListStyle())
         }
-    }}
+    }
+}
 
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {
