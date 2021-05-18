@@ -43,6 +43,7 @@ struct RestrictionBullet: ViewModifier {
             .background(colors[restriction, default: .black])
             .clipShape(Circle())
             .foregroundColor(.white)
+            .overlay(Circle().stroke(Color.white, lineWidth: 1))
     }
 }
 
