@@ -61,10 +61,10 @@ struct Home: View {
                         }
                     }
                 }))
-                .offset(x: 15, y: 84)
+                .offset(x: 5, y: 105)
                 .opacity(offset == .zero ? 1 : 0)
             , alignment: .topTrailing
-        )
+        ).ignoresSafeArea()
         
         if showHome {
             Text("Welcome to home")
