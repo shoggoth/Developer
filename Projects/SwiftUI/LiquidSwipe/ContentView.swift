@@ -61,14 +61,13 @@ struct Home: View {
                         }
                     }
                 }))
-                .offset(x: 15, y: 58)
+                .offset(x: 15, y: 84)
                 .opacity(offset == .zero ? 1 : 0)
             , alignment: .topTrailing
         )
-        .padding(.trailing)
         
         if showHome {
-            Text("Welcom to home")
+            Text("Welcome to home")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .onTapGesture {
@@ -95,6 +94,8 @@ struct LiquidSwipe: Shape {
         
         return Path { path in
             
+            let width = rect.width + (-offset.width > 0 ? offset.width : 0)
+            
             path.move(to: CGPoint.zero)
             path.addLine(to: CGPoint(x: rect.width, y: 0))
             path.addLine(to: CGPoint(x: rect.width, y: rect.height))
@@ -110,9 +111,9 @@ struct LiquidSwipe: Shape {
             path.move(to: CGPoint(x: rect.width, y: from > foo ? foo : from))
             
             let mid = foo + (to - foo) * 0.5
-            let width = rect.width + (-offset.width > 0 ? offset.width : 0)
+            let control = CGPoint(x: width - 50, y: mid)
             
-            path.addCurve(to: CGPoint(x: rect.width, y: to), control1: CGPoint(x: width - 50, y: mid), control2: CGPoint(x: width - 50, y: mid))
+            path.addCurve(to: CGPoint(x: rect.width, y: to), control1: control, control2: control)
         }
     }
 }
