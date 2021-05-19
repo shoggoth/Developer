@@ -21,6 +21,18 @@ struct Home: View {
     @State private var showHome = false
     
     var body: some View {
+        if showHome {
+            Text("Welcome to home")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        offset = .zero
+                        showHome.toggle()
+                    }
+                }
+        } else {
+        
         ZStack {
             Color("Background")
                 .overlay(
@@ -65,18 +77,7 @@ struct Home: View {
                 .opacity(offset == .zero ? 1 : 0)
             , alignment: .topTrailing
         ).ignoresSafeArea()
-        
-        if showHome {
-            Text("Welcome to home")
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .onTapGesture {
-                    withAnimation(.spring()) {
-                        offset = .zero
-                        showHome.toggle()
-                    }
-                }
-        }
+    }
     }
 }
 
