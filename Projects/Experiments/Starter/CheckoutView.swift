@@ -16,6 +16,7 @@ struct CheckoutView: View {
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber: String = ""
     @State private var tipAmount = 15
+    @State private var alertIsPresented = false
     
     var totalPrice: String {
         
@@ -46,14 +47,15 @@ struct CheckoutView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
-            Section(header: Text("TOTAL: \(totalPrice)")) {
+            Section(header: Text("TOTAL: \(totalPrice)").font(.largeTitle)) {
                 Button("Confirm order") {
-                    // place the order
+                    alertIsPresented.toggle()
                 }
             }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $alertIsPresented) { Alert(title: Text("Order placed tbh.")) }
     }
 }
 

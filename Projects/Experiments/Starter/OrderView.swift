@@ -23,6 +23,7 @@ struct OrderView: View {
                             Text(item.price.currencyString ?? "???")
                         }
                     }
+                    .onDelete(perform: { offsets in order.items.remove(atOffsets: offsets) })
                 }
                 
                 Section {
@@ -30,9 +31,11 @@ struct OrderView: View {
                         Text("Place Order")
                     }
                 }
+                .disabled(order.items.isEmpty)
             }
             .navigationTitle("Order")
             .listStyle(InsetGroupedListStyle())
+            .toolbar { EditButton() }
         }
     }
 }
