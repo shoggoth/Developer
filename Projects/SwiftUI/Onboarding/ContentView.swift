@@ -41,13 +41,13 @@ struct WalkThroughScreen: View {
             // TODO: See if switch can be used with transitions
             
             if currentPage == 1 {
-                ScreenView(imageName: "Image1", title: "Step 1", detail: "", backgroundColour: Color("color1")).transition(.scale)
+                ScreenView(imageName: "Image1", title: "Step 1", detail: "", backgroundColour: Color("Colour1")).transition(.scale)
             }
             else if currentPage == 2 {
-                ScreenView(imageName: "Image2", title: "Step 2", detail: "", backgroundColour: Color("color2")).transition(.scale)
+                ScreenView(imageName: "Image2", title: "Step 2", detail: "", backgroundColour: Color("Colour2")).transition(.scale)
             }
             else if currentPage == 3 {
-                ScreenView(imageName: "Image3", title: "Step 3", detail: "", backgroundColour: Color("color3")).transition(.scale)
+                ScreenView(imageName: "Image3", title: "Step 3", detail: "", backgroundColour: Color("Colour3")).transition(.scale)
             }
         }
         .overlay(
