@@ -34,7 +34,7 @@ struct Home: View {
                     }
                     .padding(.horizontal, 30.0)
                     .foregroundColor(.primary)
-                    .offset(x: /*@START_MENU_TOKEN@*/-15.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                    .offset(x: -15, y: 0)
                 )
         }
         .clipShape(LiquidSwipe(offset: offset))
