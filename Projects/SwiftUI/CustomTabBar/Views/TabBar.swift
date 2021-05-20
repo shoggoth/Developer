@@ -18,7 +18,7 @@ struct TabBar: View {
             TabBarButton(systemImageName: "house", selectedTab: $selectedTab, tabPoints: $tabPoints)
             TabBarButton(systemImageName: "bookmark", selectedTab: $selectedTab, tabPoints: $tabPoints)
             TabBarButton(systemImageName: "message", selectedTab: $selectedTab, tabPoints: $tabPoints)
-            TabBarButton(systemImageName: "person", selectedTab: $selectedTab, tabPoints: $tabPoints)
+            TabBarButton(systemImageName: "heart", selectedTab: $selectedTab, tabPoints: $tabPoints)
         }
         .padding()
         .background(
@@ -33,7 +33,7 @@ struct TabBar: View {
             
             ,alignment: .bottomLeading
         )
-        .cornerRadius(30)
+        .cornerRadius(23)
         .padding(.horizontal)
     }
     
