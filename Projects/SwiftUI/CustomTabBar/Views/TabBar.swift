@@ -9,16 +9,18 @@ import SwiftUI
 
 struct TabBar: View {
     
+    let buttons: [String]
+    
     @State private var tabPoints = [CGFloat]()
+    @State private var scale: CGFloat = 1.0
     
     @Binding var selectedTab: String
     
     var body: some View {
         HStack(spacing: 0) {
-            TabBarButton(systemImageName: "house", selectedTab: $selectedTab, tabPoints: $tabPoints)
-            TabBarButton(systemImageName: "bookmark", selectedTab: $selectedTab, tabPoints: $tabPoints)
-            TabBarButton(systemImageName: "message", selectedTab: $selectedTab, tabPoints: $tabPoints)
-            TabBarButton(systemImageName: "heart", selectedTab: $selectedTab, tabPoints: $tabPoints)
+            ForEach(buttons, id: \.self) { s in
+                TabBarButton(systemImageName: s, selectedTab: $selectedTab, tabPoints: $tabPoints)
+            }
         }
         .padding()
         .background(
@@ -29,7 +31,11 @@ struct TabBar: View {
             Circle()
                 .fill(Color.white)
                 .frame(width: 10, height: 10)
-                .offset(x: getCurvePoint() - 20)
+                .scaleEffect(scale)
+                .offset(x: getCurvePoint() - 20, y: -3)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.3).repeatForever()) { scale = 1.23 }
+                }
             
             ,alignment: .bottomLeading
         )
@@ -38,22 +44,10 @@ struct TabBar: View {
     }
     
     private func getCurvePoint() -> CGFloat {
+
+        guard !tabPoints.isEmpty, let i = buttons.firstIndex(of: selectedTab) else { return 10 }
         
-        // TODO: Lame. Replace this
-        if tabPoints.isEmpty { return 10 }
-        
-        else {
-            switch selectedTab {
-            case "house":
-                return tabPoints[0]
-            case "bookmark":
-                return tabPoints[1]
-            case "message":
-                return tabPoints[2]
-            default:
-                return tabPoints[3]
-            }
-        }
+        return tabPoints[i]
     }
 }
 

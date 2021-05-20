@@ -9,13 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var selectedTab = "house"
+    let buttons = ["house", "bookmark", "message", "person", "heart"]
+    
+    @State var selectedTab = "bookmark"
     
     var body: some View {
         ZStack(alignment: .bottom) {
             Color("TabBG")
                 .ignoresSafeArea()
-            TabBar(selectedTab: $selectedTab)
+            TabBar(buttons: buttons, selectedTab: $selectedTab)
                 .padding(.bottom)
         }
     }
