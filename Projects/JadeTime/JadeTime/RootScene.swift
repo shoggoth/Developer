@@ -9,9 +9,26 @@ import SpriteKit
 
 class RootScene: SKScene {
     
-    private lazy var rttNode = { self.childNode(withName: "//RTT_Node") as! SKSpriteNode }()
+    private var feedbackNode = SKSpriteNode()
+    private lazy var jadeNode = { self.childNode(withName: "//JadeNode") as! SKSpriteNode }()
+    private lazy var rttRoot = { self.childNode(withName: "//RTT_Root")! }()
 
     private var lastUpdateTime = TimeInterval.zero
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        feedbackNode = SKSpriteNode()
+        feedbackNode.size = UIScreen.main.bounds.size
+        feedbackNode.color = .red
+        feedbackNode.setScale(1.1)
+        
+        super.init(coder: aDecoder)
+    }
+    
+    override func didMove(to view: SKView) {
+        
+        rttRoot.addChild(feedbackNode)
+    }
     
     override func update(_ currentTime: TimeInterval) {
         
@@ -21,8 +38,7 @@ class RootScene: SKScene {
         let delta = currentTime - lastUpdateTime
         lastUpdateTime = currentTime
         
-        if let texture = self.view?.texture(from: scene!) { print(texture) }
-        //renderTexture(to: rttNode)
+        renderTexture(to: feedbackNode)
     }
     
     // MARK: RTT
@@ -32,7 +48,7 @@ class RootScene: SKScene {
         if let texture = self.view?.texture(from: scene!) {
             
             //rttNode.texture = texture
-            rttNode.run(.setTexture(texture, resize: true)) // https://www.hackingwithswift.com/example-code/games/how-to-change-a-sprites-texture-using-sktexture
+            feedbackNode.run(.setTexture(texture, resize: true)) // https://www.hackingwithswift.com/example-code/games/how-to-change-a-sprites-texture-using-sktexture
         }
     }
 }
