@@ -25,10 +25,18 @@ enum PointPattern {
     }
 }
 
-let s = "BumSex"
-let g: (CGPoint) -> Void = { p in print("\(s) \(p)") }
+func wave(s: String) {
+    
+    let f: (CGPoint) -> Void = { p in print("\(s) \(p)") }
+    PointPattern.circle(divs: 4).trace(size: 1, with: f)
+}
 
-PointPattern.circle(divs: 4).trace(size: 1) { p in g(p) }
+let f: (CGPoint) -> Void = { p in print("f Func \(p)") }
+PointPattern.circle(divs: 4).trace(size: 1) { p in f(p) }
+
+wave(s: "Belming")
+wave(s: "Mong")
+
 //PointPattern.rectangle(w: 2, h: 3).trace(size: 1) { p in print("Rect 1 \(p)") }
 //PointPattern.rectangle(w: 2, h: 2).trace(size: 2) { p in print("Rect 2 \(p)") }
 //PointPattern.rectangle(w: 2, h: 2).trace(size: 4) { p1 in
