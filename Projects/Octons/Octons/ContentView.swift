@@ -14,11 +14,7 @@ struct ContentView: View {
     
     private func makeOctonView(geometry: GeometryProxy) -> some View {
         
-        print(geometry.size.width, geometry.size.height)
         DispatchQueue.main.async { self.octonFrame = geometry.size }
-        
-        let scene = OctonScene()
-        scene.scaleMode = .fill
         
         return SpriteView(scene: SKScene(fileNamed: "OctonScene")!)
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
