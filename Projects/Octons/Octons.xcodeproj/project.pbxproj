@@ -12,6 +12,8 @@
 		FF4A4BFA2678AB6B00869B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A4BF92678AB6B00869B25 /* Assets.xcassets */; };
 		FF4A4BFD2678AB6B00869B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A4BFC2678AB6B00869B25 /* Preview Assets.xcassets */; };
 		FF4A4C052678AC0400869B25 /* OctonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A4C042678AC0400869B25 /* OctonScene.swift */; };
+		FF4A4C092678BE2100869B25 /* OctonScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF4A4C082678BE2100869B25 /* OctonScene.sks */; };
+		FF4A4C0A2678DBB500869B25 /* Octon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A4C062678B1E400869B25 /* Octon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FF4A4BFC2678AB6B00869B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF4A4BFE2678AB6B00869B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4A4C042678AC0400869B25 /* OctonScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctonScene.swift; sourceTree = "<group>"; };
+		FF4A4C062678B1E400869B25 /* Octon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octon.swift; sourceTree = "<group>"; };
+		FF4A4C082678BE2100869B25 /* OctonScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OctonScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				FF4A4BF52678AB6900869B25 /* OctonsApp.swift */,
 				FF4A4BF72678AB6900869B25 /* ContentView.swift */,
 				FF4A4C042678AC0400869B25 /* OctonScene.swift */,
+				FF4A4C082678BE2100869B25 /* OctonScene.sks */,
+				FF4A4C062678B1E400869B25 /* Octon.swift */,
 				FF4A4BF92678AB6B00869B25 /* Assets.xcassets */,
 				FF4A4BFE2678AB6B00869B25 /* Info.plist */,
 				FF4A4BFB2678AB6B00869B25 /* Preview Content */,
@@ -129,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4A4C092678BE2100869B25 /* OctonScene.sks in Resources */,
 				FF4A4BFD2678AB6B00869B25 /* Preview Assets.xcassets in Resources */,
 				FF4A4BFA2678AB6B00869B25 /* Assets.xcassets in Resources */,
 			);
@@ -142,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4A4C052678AC0400869B25 /* OctonScene.swift in Sources */,
+				FF4A4C0A2678DBB500869B25 /* Octon.swift in Sources */,
 				FF4A4BF82678AB6900869B25 /* ContentView.swift in Sources */,
 				FF4A4BF62678AB6900869B25 /* OctonsApp.swift in Sources */,
 			);
@@ -276,7 +284,7 @@
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Octons/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +306,7 @@
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Octons/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

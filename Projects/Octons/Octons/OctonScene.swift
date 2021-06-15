@@ -9,9 +9,14 @@ import SpriteKit
 
 class OctonScene: SKScene {
     
-    private var lastUpdateTime = TimeInterval.zero
+    private var feedbackNode = SKSpriteNode()
+    private lazy var feedbackRoot = { childNode(withName: "FeedbackRoot") }()
+    private lazy var sceneRoot = { childNode(withName: "SceneRoot") }()
 
     override func didMove(to view: SKView) {
+        
+        let octonNode = SKSpriteNode(texture: UInt32.random(in: UInt32.min...UInt32.max).texture())
+        sceneRoot?.addChild(octonNode)
         
         // Set up the view
         view.preferredFramesPerSecond = 120
@@ -22,6 +27,11 @@ class OctonScene: SKScene {
         view.showsNodeCount = true
         #endif
 
+        // Set up feedback
+        feedbackRoot?.addChild(feedbackNode)
+        feedbackNode.color = .red
+        feedbackNode.setScale(1.1)
+
         // Register for notifications
         NotificationCenter.default.addObserver(self, selector: #selector(updateActiveStatus(withNotification:)), name: UIApplication.didBecomeActiveNotification,  object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateActiveStatus(withNotification:)), name: UIApplication.willResignActiveNotification, object: nil)
@@ -31,13 +41,19 @@ class OctonScene: SKScene {
         
         super.update(currentTime)
         
-        if lastUpdateTime == .zero { lastUpdateTime = currentTime }
-        let delta = currentTime - lastUpdateTime
-        lastUpdateTime = currentTime
-        
-        print(delta)
+        rtt()
     }
     
+    // MARK: RTT
+    
+    func rtt() {
+        
+        if let scene = scene, let texture = view?.texture(from: scene) {
+            
+            feedbackNode.run(.setTexture(texture, resize: true))
+        }
+    }
+
     // MARK: Touch handling
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -10,14 +10,34 @@ import SpriteKit
 
 struct ContentView: View {
     
-    private var scene: OctonScene {
+    @State var octonFrame: CGSize = .zero
+    
+    private func makeOctonView(geometry: GeometryProxy) -> some View {
         
-        OctonScene()
+        print(geometry.size.width, geometry.size.height)
+        DispatchQueue.main.async { self.octonFrame = geometry.size }
+        
+        let scene = OctonScene()
+        scene.scaleMode = .fill
+        
+        return SpriteView(scene: SKScene(fileNamed: "OctonScene")!)
+            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
     }
     
     var body: some View {
-        SpriteView(scene: scene)
+        VStack {
+            GeometryReader { geometry in
+                makeOctonView(geometry: geometry)
+            }
             .ignoresSafeArea()
+            ZStack {
+                //Color.red
+                Text("Hello, world")
+                    .font(.headline)
+                    .padding()
+            }
+        }
+        .statusBar(hidden: true)
     }
 }
 
