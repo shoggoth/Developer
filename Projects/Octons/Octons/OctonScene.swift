@@ -28,9 +28,14 @@ class OctonScene: SKScene {
         #endif
 
         // Set up feedback
-        feedbackRoot?.addChild(feedbackNode)
-        feedbackNode.color = .red
-        feedbackNode.setScale(1.1)
+        if let feedbackRoot = feedbackRoot {
+            
+            let runge = CGFloat(0.5)
+            feedbackNode.setScale(1.0 + runge)
+            
+            feedbackRoot.alpha = 1.0 - runge
+            feedbackRoot.addChild(feedbackNode)
+        }
 
         // Register for notifications
         NotificationCenter.default.addObserver(self, selector: #selector(updateActiveStatus(withNotification:)), name: UIApplication.didBecomeActiveNotification,  object: nil)

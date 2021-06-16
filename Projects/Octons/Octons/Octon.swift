@@ -10,9 +10,9 @@ import SpriteKit
 extension UInt32 {
     
     func texture() -> SKTexture {
-        
+
         SKTexture(data: Data(stride(from: 0, to: 64, by: 1).flatMap { i in
-            
+
             [
                 UInt8(drand48() * 255),
                 UInt8(drand48() * 255),
