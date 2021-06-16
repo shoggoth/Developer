@@ -15,6 +15,8 @@
 		FF514BFC267A277E00FF96DB /* DepsychView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF5267A277E00FF96DB /* DepsychView.swift */; };
 		FF514BFD267A277E00FF96DB /* HitmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF6267A277E00FF96DB /* HitmapView.swift */; };
 		FF514BFE267A277E00FF96DB /* HitmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF6267A277E00FF96DB /* HitmapView.swift */; };
+		FF514C00267A2FA000FF96DB /* PsidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BFF267A2FA000FF96DB /* PsidentView.swift */; };
+		FF514C01267A2FA000FF96DB /* PsidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BFF267A2FA000FF96DB /* PsidentView.swift */; };
 		FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
@@ -29,6 +31,7 @@
 		FF514BF4267A277E00FF96DB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FF514BF5267A277E00FF96DB /* DepsychView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychView.swift; sourceTree = "<group>"; };
 		FF514BF6267A277E00FF96DB /* HitmapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapView.swift; sourceTree = "<group>"; };
+		FF514BFF267A2FA000FF96DB /* PsidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsidentView.swift; sourceTree = "<group>"; };
 		FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuard_Neo_App.swift; sourceTree = "<group>"; };
 		FFE28A7E2652AC4C00383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE28A832652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,7 @@
 				FFE28A9D2652AD0200383D87 /* HomeView.swift */,
 				FF514BF5267A277E00FF96DB /* DepsychView.swift */,
 				FF514BF6267A277E00FF96DB /* HitmapView.swift */,
+				FF514BFF267A2FA000FF96DB /* PsidentView.swift */,
 				FF514BF3267A277E00FF96DB /* ScanView.swift */,
 				FF514BF4267A277E00FF96DB /* SettingsView.swift */,
 				FFE28A7E2652AC4C00383D87 /* Assets.xcassets */,
@@ -206,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF514BF9267A277E00FF96DB /* SettingsView.swift in Sources */,
+				FF514C00267A2FA000FF96DB /* PsidentView.swift in Sources */,
 				FF514BFB267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */,
 				FF514BF7267A277E00FF96DB /* ScanView.swift in Sources */,
@@ -219,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF514BFA267A277E00FF96DB /* SettingsView.swift in Sources */,
+				FF514C01267A2FA000FF96DB /* PsidentView.swift in Sources */,
 				FF514BFC267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */,
 				FF514BF8267A277E00FF96DB /* ScanView.swift in Sources */,
@@ -350,7 +356,7 @@
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +378,7 @@
 				DEVELOPMENT_TEAM = 5F9CYF5K3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

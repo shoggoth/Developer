@@ -11,13 +11,15 @@ struct HomeView: View {
     var body: some View {
         TabView {
             ScanView()
-                .tabItem { Label("Scan", systemImage: "square.and.pencil") }
+                .tabItem { Label("Scan", systemImage: "viewfinder") }
             HitmapView()
-                .tabItem { Label("Hitmap", systemImage: "square.and.pencil") }
+                .tabItem { Label("Hitmap", systemImage: "map") }
+            PsidentView()
+                .tabItem { Label("Psident", systemImage: "calendar") }
             DepsychView()
-                .tabItem { Label("Depsych", systemImage: "list.dash") }
+                .tabItem { Label("Depsych", systemImage: "umbrella") }
             SettingsView()
-                .tabItem { Label("Settings", systemImage: "list.dash") }
+                .tabItem { Label("Settings", systemImage: "gear") }
         }
     }
 }
