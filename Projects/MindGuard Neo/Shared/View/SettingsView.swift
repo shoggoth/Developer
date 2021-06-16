@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+#if os(macOS)
+typealias PlatformListStyle = PlainListStyle
+#else
+typealias PlatformListStyle = GroupedListStyle
+#endif
+
 struct SettingsView: View {
     var body: some View {
         NavigationView {
@@ -30,8 +36,8 @@ struct SettingsView: View {
                     SettingsCell(title: "Settings Cell", image: Image(systemName: "house"), colour: .primary)
                 }
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle("Settings")
+            .listStyle(PlatformListStyle())
         }
     }
 }

@@ -17,6 +17,8 @@
 		FF514BFE267A277E00FF96DB /* HitmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF6267A277E00FF96DB /* HitmapView.swift */; };
 		FF514C00267A2FA000FF96DB /* PsidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BFF267A2FA000FF96DB /* PsidentView.swift */; };
 		FF514C01267A2FA000FF96DB /* PsidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BFF267A2FA000FF96DB /* PsidentView.swift */; };
+		FF514C05267A3FA900FF96DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514C04267A3FA900FF96DB /* Location.swift */; };
+		FF514C06267A3FA900FF96DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514C04267A3FA900FF96DB /* Location.swift */; };
 		FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 		FF514BF5267A277E00FF96DB /* DepsychView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychView.swift; sourceTree = "<group>"; };
 		FF514BF6267A277E00FF96DB /* HitmapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapView.swift; sourceTree = "<group>"; };
 		FF514BFF267A2FA000FF96DB /* PsidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsidentView.swift; sourceTree = "<group>"; };
+		FF514C04267A3FA900FF96DB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuard_Neo_App.swift; sourceTree = "<group>"; };
 		FFE28A7E2652AC4C00383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE28A832652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +63,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF514C03267A3F5600FF96DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFE28A9D2652AD0200383D87 /* HomeView.swift */,
+				FF514BF5267A277E00FF96DB /* DepsychView.swift */,
+				FF514BF6267A277E00FF96DB /* HitmapView.swift */,
+				FF514BFF267A2FA000FF96DB /* PsidentView.swift */,
+				FF514BF3267A277E00FF96DB /* ScanView.swift */,
+				FF514BF4267A277E00FF96DB /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF514C07267A3FAF00FF96DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF514C04267A3FA900FF96DB /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFE28A762652AC4B00383D87 = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +98,9 @@
 		FFE28A7B2652AC4B00383D87 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FF514C07267A3FAF00FF96DB /* Model */,
+				FF514C03267A3F5600FF96DB /* View */,
 				FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */,
-				FFE28A9D2652AD0200383D87 /* HomeView.swift */,
-				FF514BF5267A277E00FF96DB /* DepsychView.swift */,
-				FF514BF6267A277E00FF96DB /* HitmapView.swift */,
-				FF514BFF267A2FA000FF96DB /* PsidentView.swift */,
-				FF514BF3267A277E00FF96DB /* ScanView.swift */,
-				FF514BF4267A277E00FF96DB /* SettingsView.swift */,
 				FFE28A7E2652AC4C00383D87 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -211,6 +231,7 @@
 			files = (
 				FF514BF9267A277E00FF96DB /* SettingsView.swift in Sources */,
 				FF514C00267A2FA000FF96DB /* PsidentView.swift in Sources */,
+				FF514C05267A3FA900FF96DB /* Location.swift in Sources */,
 				FF514BFB267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */,
 				FF514BF7267A277E00FF96DB /* ScanView.swift in Sources */,
@@ -225,6 +246,7 @@
 			files = (
 				FF514BFA267A277E00FF96DB /* SettingsView.swift in Sources */,
 				FF514C01267A2FA000FF96DB /* PsidentView.swift in Sources */,
+				FF514C06267A3FA900FF96DB /* Location.swift in Sources */,
 				FF514BFC267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */,
 				FF514BF8267A277E00FF96DB /* ScanView.swift in Sources */,

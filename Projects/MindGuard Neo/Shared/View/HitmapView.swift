@@ -11,11 +11,14 @@ import MapKit
 struct HitmapView: View {
     
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.96, longitude: -1.07), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+
+    @StateObject var lm = LocationModel()
     
     var body: some View {
         VStack {
             Map(coordinateRegion: $region)
             Button("Zoom") {
+                region.center = lm.location ?? CLLocationCoordinate2D(latitude: 53.96, longitude: -1.07)
                 region.span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             }
             .padding()
