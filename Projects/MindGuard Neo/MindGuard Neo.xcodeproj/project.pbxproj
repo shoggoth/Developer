@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF514BF7267A277E00FF96DB /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF3267A277E00FF96DB /* ScanView.swift */; };
+		FF514BF8267A277E00FF96DB /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF3267A277E00FF96DB /* ScanView.swift */; };
+		FF514BF9267A277E00FF96DB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF4267A277E00FF96DB /* SettingsView.swift */; };
+		FF514BFA267A277E00FF96DB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF4267A277E00FF96DB /* SettingsView.swift */; };
+		FF514BFB267A277E00FF96DB /* DepsychView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF5267A277E00FF96DB /* DepsychView.swift */; };
+		FF514BFC267A277E00FF96DB /* DepsychView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF5267A277E00FF96DB /* DepsychView.swift */; };
+		FF514BFD267A277E00FF96DB /* HitmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF6267A277E00FF96DB /* HitmapView.swift */; };
+		FF514BFE267A277E00FF96DB /* HitmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF6267A277E00FF96DB /* HitmapView.swift */; };
 		FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
-		FFE28A912652AC4C00383D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7D2652AC4B00383D87 /* ContentView.swift */; };
-		FFE28A922652AC4C00383D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7D2652AC4B00383D87 /* ContentView.swift */; };
 		FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
 		FFE28A942652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
 		FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A9D2652AD0200383D87 /* HomeView.swift */; };
@@ -18,8 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF514BF2267A260400FF96DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FF514BF3267A277E00FF96DB /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		FF514BF4267A277E00FF96DB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF514BF5267A277E00FF96DB /* DepsychView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepsychView.swift; sourceTree = "<group>"; };
+		FF514BF6267A277E00FF96DB /* HitmapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapView.swift; sourceTree = "<group>"; };
 		FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuard_Neo_App.swift; sourceTree = "<group>"; };
-		FFE28A7D2652AC4B00383D87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFE28A7E2652AC4C00383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE28A832652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE28A862652AC4C00383D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +60,7 @@
 		FFE28A762652AC4B00383D87 = {
 			isa = PBXGroup;
 			children = (
+				FF514BF2267A260400FF96DB /* README.md */,
 				FFE28A7B2652AC4B00383D87 /* Shared */,
 				FFE28A852652AC4C00383D87 /* iOS */,
 				FFE28A8C2652AC4C00383D87 /* macOS */,
@@ -62,7 +73,10 @@
 			children = (
 				FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */,
 				FFE28A9D2652AD0200383D87 /* HomeView.swift */,
-				FFE28A7D2652AC4B00383D87 /* ContentView.swift */,
+				FF514BF5267A277E00FF96DB /* DepsychView.swift */,
+				FF514BF6267A277E00FF96DB /* HitmapView.swift */,
+				FF514BF3267A277E00FF96DB /* ScanView.swift */,
+				FF514BF4267A277E00FF96DB /* SettingsView.swift */,
 				FFE28A7E2652AC4C00383D87 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -191,9 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF514BF9267A277E00FF96DB /* SettingsView.swift in Sources */,
+				FF514BFB267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */,
-				FFE28A912652AC4C00383D87 /* ContentView.swift in Sources */,
+				FF514BF7267A277E00FF96DB /* ScanView.swift in Sources */,
 				FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */,
+				FF514BFD267A277E00FF96DB /* HitmapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,9 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF514BFA267A277E00FF96DB /* SettingsView.swift in Sources */,
+				FF514BFC267A277E00FF96DB /* DepsychView.swift in Sources */,
 				FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */,
-				FFE28A922652AC4C00383D87 /* ContentView.swift in Sources */,
+				FF514BF8267A277E00FF96DB /* ScanView.swift in Sources */,
 				FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */,
+				FF514BFE267A277E00FF96DB /* HitmapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

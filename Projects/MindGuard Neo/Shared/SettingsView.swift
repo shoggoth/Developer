@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SettingsView.swift
 //  Shared
 //
 //  Created by Richard Henry on 17/05/2021.
@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SettingsView: View {
     var body: some View {
         ZStack {
             Color.red
                 .ignoresSafeArea(edges: .top)
-            Text("Hello, world!")
+            Text("Settings, world!")
                 .padding()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            ContentView()
+            SettingsView()
         }
         .colorScheme(.light)
         TabView {
-            ContentView()
+            SettingsView()
         }
         .colorScheme(.dark)
     }
