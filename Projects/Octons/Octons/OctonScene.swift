@@ -15,9 +15,12 @@ class OctonScene: SKScene {
 
     override func didMove(to view: SKView) {
         
-        let octonNode = SKSpriteNode(texture: UInt32.random(in: UInt32.min...UInt32.max).texture())
+        let octonNode = SKSpriteNode(texture: UInt32.random(in: UInt32.min...UInt32.max).texture(width: 8, height: 8))
         sceneRoot?.addChild(octonNode)
         
+        // TEMP
+        octonNode.run(.colorize(with: .red, colorBlendFactor: 1, duration: 5))
+
         // Set up the view
         view.preferredFramesPerSecond = 120
         view.ignoresSiblingOrder = true
@@ -30,7 +33,7 @@ class OctonScene: SKScene {
         // Set up feedback
         if let feedbackRoot = feedbackRoot {
             
-            let runge = CGFloat(0.5)
+            let runge = CGFloat(0.05)
             feedbackNode.setScale(1.0 + runge)
             
             feedbackRoot.alpha = 1.0 - runge
