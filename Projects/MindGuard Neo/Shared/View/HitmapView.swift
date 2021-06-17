@@ -17,13 +17,13 @@ struct HitmapView: View {
     var body: some View {
         VStack {
             Map(coordinateRegion: $region)
+                .ignoresSafeArea()
             Button("Zoom") {
                 region.center = lm.location ?? CLLocationCoordinate2D(latitude: 53.96, longitude: -1.07)
                 region.span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             }
             .padding()
         }
-        .ignoresSafeArea(edges: .top)
     }
 }
 

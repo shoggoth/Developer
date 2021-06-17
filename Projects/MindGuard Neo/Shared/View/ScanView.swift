@@ -11,7 +11,7 @@ struct ScanView: View {
     var body: some View {
         ZStack {
             Color.red
-                .ignoresSafeArea(edges: .top)
+                .ignoresSafeArea()
             Text("Scan, world!")
                 .padding()
         }

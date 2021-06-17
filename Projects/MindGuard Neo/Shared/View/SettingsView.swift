@@ -39,6 +39,7 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .listStyle(PlatformListStyle())
         }
+        .ignoresSafeArea()
     }
 }
 

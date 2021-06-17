@@ -11,7 +11,7 @@ struct DepsychView: View {
     var body: some View {
         ZStack {
             Color.red
-                .ignoresSafeArea(edges: .top)
+                .ignoresSafeArea()
             Text("Depsych, world!")
                 .padding()
         }
