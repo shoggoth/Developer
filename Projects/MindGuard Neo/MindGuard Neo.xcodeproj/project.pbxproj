@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4EE2EE267C96FD008B724B /* carriers in Resources */ = {isa = PBXBuildFile; fileRef = FF4EE2ED267C96E9008B724B /* carriers */; };
 		FF514BF7267A277E00FF96DB /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF3267A277E00FF96DB /* ScanView.swift */; };
 		FF514BF8267A277E00FF96DB /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF3267A277E00FF96DB /* ScanView.swift */; };
 		FF514BF9267A277E00FF96DB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BF4267A277E00FF96DB /* SettingsView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF4EE2ED267C96E9008B724B /* carriers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = carriers; sourceTree = "<group>"; };
 		FF514BF2267A260400FF96DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FF514BF3267A277E00FF96DB /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		FF514BF4267A277E00FF96DB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				FFD73E99267BA9A400C052BD /* mindguard.c */,
 				FFD73E9C267BAA0200C052BD /* lz.xpm */,
 				FFD73E9D267BAA0200C052BD /* mg.xpm */,
+				FF4EE2ED267C96E9008B724B /* carriers */,
 			);
 			path = MGModule;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4EE2EE267C96FD008B724B /* carriers in Resources */,
 				FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
