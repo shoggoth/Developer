@@ -38,6 +38,7 @@ struct carmod
     int phase;
 };
 
+extern void scan(void);
 extern int parse_mod(char *path, int num);
 extern void sort_mods(void);
 extern void add_mods_to_clist(void);
@@ -84,6 +85,9 @@ void init_mods(const char *bundle_path) {
                        "Please consult the documentation for help.",
                        0, 0, 0, "No Info", 0, 0);
             break;
+            
+        default:
+            scan();
     }
 }
 
