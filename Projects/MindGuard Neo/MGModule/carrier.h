@@ -8,6 +8,6 @@
 #ifndef carrier_h
 #define carrier_h
 
-extern void init_mods(void);
+extern void init_mods(const char *bundle_path);
 
 #endif /* carrier_h */

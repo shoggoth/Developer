@@ -215,7 +215,6 @@ int mg_main (int argc, char *argv[])
 	int i, quit = FALSE;
 
 	/* DEFAULTS */
-	strcpy(car_path, "./carriers/");
 	strcpy(user_name_data, "");
 	bday = 1; bmonth = 1; byear = 1900;
 	algo = 0; scan_mode = 0; scan_depth = 50;

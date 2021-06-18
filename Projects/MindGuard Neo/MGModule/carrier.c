@@ -55,9 +55,9 @@ static int              mod_num = 0;
 static char             car_path[256];
 static bool             state_auto = true;
 
-void init_mods(void) {
+void init_mods(const char *bundle_path) {
     
-    strcpy(car_path, "./carriers/");
+    sprintf(car_path, "%s/carriers/", bundle_path);
 
     switch (load_mods()) {
             
@@ -138,10 +138,10 @@ int load_mods(void) {
                     strcpy(car_path, "./carriers/");
                     break;
                 case 1:
-                    sprintf(car_path, "%s/MindGuard/carriers/", getenv("HOME"));
+                    sprintf(car_path, "%s/carriers/", getenv("HOME"));
                     break;
                 case 2:
-                    strcpy(car_path, "/usr/local/share/MindGuard/carriers/");
+                    sprintf(car_path, "%s/Mindguard Neo.app/carriers/", getenv("HOME"));
                     break;
                 default:
                     break;
@@ -160,54 +160,50 @@ int load_mods(void) {
 
 void append_log(char *text, int car, int context, int source, char *infotext, int deciphered, int mode) {
     
-    FILE    *log;
+    FILE    *log = stdout;
     char    buffer[256], log_path[256];
     
     check_for_mg_home_dir();
     
     sprintf(log_path, "%s/MindGuard/mindguard.log", getenv("HOME"));
-    if ((log = fopen(log_path, "a")))
+    time_string (buffer);
+    fprintf(log, "---------------------------\nTime:     %s\n", buffer);
+    strcpy (buffer, module[car].name);
+    fprintf(log, "Carrier:  %s\n", buffer);
+    if (((mode == 1 || mode == 2) && state_auto) || mode == 3)
     {
-        time_string (buffer);
-        fprintf(log, "---------------------------\nTime:     %s\n", buffer);
-        strcpy (buffer, module[car].name);
-        fprintf(log, "Carrier:  %s\n", buffer);
-        if (((mode == 1 || mode == 2) && state_auto) || mode == 3)
+        if (deciphered)
         {
-            if (deciphered)
-            {
-                strcpy (buffer, "");
-                context_name (buffer, context);
-                fprintf(log, "Context:  %s\n", buffer);
-                
-                fprintf(log, "Info:     %s\n", infotext);
-                
-                strcpy (buffer, "");
-                source_name(buffer, source);
-                fprintf(log, "Source:   %s\n", buffer);
-                
-                fprintf(log, "Contents:\n%s\n", text);
-            }
-            else
-                fprintf(log, "Contents: Undecipherable\n");
+            strcpy (buffer, "");
+            context_name (buffer, context);
+            fprintf(log, "Context:  %s\n", buffer);
+            
+            fprintf(log, "Info:     %s\n", infotext);
+            
+            strcpy (buffer, "");
+            source_name(buffer, source);
+            fprintf(log, "Source:   %s\n", buffer);
+            
+            fprintf(log, "Contents:\n%s\n", text);
         }
-        fprintf(log, "Action:   ");
-        switch (mode)
-        {
-            case 0:
-                fprintf(log, "FAILURE! DANGER!!\n");
-                break;
-            case 1:
-                fprintf(log, "SUCCESSFULLY JAMMED\n");
-                break;
-            case 2:
-                fprintf(log, "SUCCESSFULLY SCRAMBLED\n");
-                break;
-            case 3:
-                fprintf(log, "SCAN FILTERED\n");
-                break;
-        }
-        fclose(log);
+        else
+            fprintf(log, "Contents: Undecipherable\n");
+    }
+    fprintf(log, "Action:   ");
+    switch (mode)
+    {
+        case 0:
+            fprintf(log, "FAILURE! DANGER!!\n");
+            break;
+        case 1:
+            fprintf(log, "SUCCESSFULLY JAMMED\n");
+            break;
+        case 2:
+            fprintf(log, "SUCCESSFULLY SCRAMBLED\n");
+            break;
+        case 3:
+            fprintf(log, "SCAN FILTERED\n");
+            break;
     }
     return;
 }
