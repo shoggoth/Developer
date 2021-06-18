@@ -19,6 +19,11 @@
 		FF514C01267A2FA000FF96DB /* PsidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514BFF267A2FA000FF96DB /* PsidentView.swift */; };
 		FF514C05267A3FA900FF96DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514C04267A3FA900FF96DB /* Location.swift */; };
 		FF514C06267A3FA900FF96DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF514C04267A3FA900FF96DB /* Location.swift */; };
+		FFD73E8F267BA55000C052BD /* MGModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFD73E8C267BA55000C052BD /* MGModule.h */; };
+		FFD73E95267BA5D100C052BD /* carrier.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD73E94267BA5D100C052BD /* carrier.c */; };
+		FFD73E97267BA73300C052BD /* libMGModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD73E8A267BA55000C052BD /* libMGModule.a */; };
+		FFD73E98267BA73B00C052BD /* libMGModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD73E8A267BA55000C052BD /* libMGModule.a */; };
+		FFD73E9A267BA9A400C052BD /* mindguard.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD73E99267BA9A400C052BD /* mindguard.c */; };
 		FFE28A8F2652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A902652AC4C00383D87 /* MindGuard_Neo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */; };
 		FFE28A932652AC4C00383D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE28A7E2652AC4C00383D87 /* Assets.xcassets */; };
@@ -26,6 +31,19 @@
 		FFE28A9E2652AD0200383D87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A9D2652AD0200383D87 /* HomeView.swift */; };
 		FFE28A9F2652AD0200383D87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28A9D2652AD0200383D87 /* HomeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFD73E88267BA55000C052BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FFD73E8F267BA55000C052BD /* MGModule.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF514BF2267A260400FF96DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -35,6 +53,14 @@
 		FF514BF6267A277E00FF96DB /* HitmapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitmapView.swift; sourceTree = "<group>"; };
 		FF514BFF267A2FA000FF96DB /* PsidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsidentView.swift; sourceTree = "<group>"; };
 		FF514C04267A3FA900FF96DB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FFD73E8A267BA55000C052BD /* libMGModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD73E8C267BA55000C052BD /* MGModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGModule.h; sourceTree = "<group>"; };
+		FFD73E93267BA5D100C052BD /* carrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = carrier.h; sourceTree = "<group>"; };
+		FFD73E94267BA5D100C052BD /* carrier.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = carrier.c; sourceTree = "<group>"; };
+		FFD73E99267BA9A400C052BD /* mindguard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mindguard.c; sourceTree = "<group>"; };
+		FFD73E9B267BA9D000C052BD /* mindguard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mindguard.h; sourceTree = "<group>"; };
+		FFD73E9C267BAA0200C052BD /* lz.xpm */ = {isa = PBXFileReference; lastKnownFileType = text; path = lz.xpm; sourceTree = "<group>"; };
+		FFD73E9D267BAA0200C052BD /* mg.xpm */ = {isa = PBXFileReference; lastKnownFileType = text; path = mg.xpm; sourceTree = "<group>"; };
 		FFE28A7C2652AC4B00383D87 /* MindGuard_Neo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGuard_Neo_App.swift; sourceTree = "<group>"; };
 		FFE28A7E2652AC4C00383D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE28A832652AC4C00383D87 /* MindGuard Neo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindGuard Neo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +72,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FFD73E87267BA55000C052BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFE28A802652AC4C00383D87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD73E97267BA73300C052BD /* libMGModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD73E98267BA73B00C052BD /* libMGModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +119,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FFD73E8B267BA55000C052BD /* MGModule */ = {
+			isa = PBXGroup;
+			children = (
+				FFD73E8C267BA55000C052BD /* MGModule.h */,
+				FFD73E93267BA5D100C052BD /* carrier.h */,
+				FFD73E94267BA5D100C052BD /* carrier.c */,
+				FFD73E9B267BA9D000C052BD /* mindguard.h */,
+				FFD73E99267BA9A400C052BD /* mindguard.c */,
+				FFD73E9C267BAA0200C052BD /* lz.xpm */,
+				FFD73E9D267BAA0200C052BD /* mg.xpm */,
+			);
+			path = MGModule;
+			sourceTree = "<group>";
+		};
+		FFD73E96267BA73300C052BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFE28A762652AC4B00383D87 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +147,9 @@
 				FFE28A7B2652AC4B00383D87 /* Shared */,
 				FFE28A852652AC4C00383D87 /* iOS */,
 				FFE28A8C2652AC4C00383D87 /* macOS */,
+				FFD73E8B267BA55000C052BD /* MGModule */,
 				FFE28A842652AC4C00383D87 /* Products */,
+				FFD73E96267BA73300C052BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +169,7 @@
 			children = (
 				FFE28A832652AC4C00383D87 /* MindGuard Neo.app */,
 				FFE28A8B2652AC4C00383D87 /* MindGuard Neo.app */,
+				FFD73E8A267BA55000C052BD /* libMGModule.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +194,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FFD73E89267BA55000C052BD /* MGModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD73E92267BA55000C052BD /* Build configuration list for PBXNativeTarget "MGModule" */;
+			buildPhases = (
+				FFD73E86267BA55000C052BD /* Sources */,
+				FFD73E87267BA55000C052BD /* Frameworks */,
+				FFD73E88267BA55000C052BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGModule;
+			productName = MGModule;
+			productReference = FFD73E8A267BA55000C052BD /* libMGModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		FFE28A822652AC4C00383D87 /* MindGuard Neo (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFE28A972652AC4C00383D87 /* Build configuration list for PBXNativeTarget "MindGuard Neo (iOS)" */;
@@ -178,6 +254,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					FFD73E89267BA55000C052BD = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					FFE28A822652AC4C00383D87 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -201,6 +280,7 @@
 			targets = (
 				FFE28A822652AC4C00383D87 /* MindGuard Neo (iOS) */,
 				FFE28A8A2652AC4C00383D87 /* MindGuard Neo (macOS) */,
+				FFD73E89267BA55000C052BD /* MGModule */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +305,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FFD73E86267BA55000C052BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD73E95267BA5D100C052BD /* carrier.c in Sources */,
+				FFD73E9A267BA9A400C052BD /* mindguard.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFE28A7F2652AC4C00383D87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +347,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FFD73E90267BA55000C052BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFD73E91267BA55000C052BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		FFE28A952652AC4C00383D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +431,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = MGModule/MGModule.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -365,6 +484,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = MGModule/MGModule.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -465,6 +585,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FFD73E92267BA55000C052BD /* Build configuration list for PBXNativeTarget "MGModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD73E90267BA55000C052BD /* Debug */,
+				FFD73E91267BA55000C052BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFE28A7A2652AC4B00383D87 /* Build configuration list for PBXProject "MindGuard Neo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

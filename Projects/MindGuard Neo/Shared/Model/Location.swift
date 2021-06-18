@@ -18,6 +18,8 @@ class LocationModel: NSObject, ObservableObject {
         
         super.init()
         
+        hello_world()
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
