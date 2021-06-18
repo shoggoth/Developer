@@ -15,7 +15,6 @@
 void reload_mods(void);
 void initialize_jam(void);
 void time_string (char *);
-void set_up_colors(void);
 void context_name(char *, int);
 void source_name(char *, int);
 void context_name_label(char *, int);
@@ -24,14 +23,12 @@ int rs(int);
 int dir_exists(char *);
 int quit (void);
 void quit_2 (void);
-void open_main_window(void);
 void open_psident_window(void);
 void close_psident_window(void);
 void open_about_window(void);
 void close_about_window(void);
 void open_depsych_window(void);
 void close_depsych_window(void);
-void popup_dialog(char *, char *, char *, void (*) (void), void (*) (void), int);
 void load_prefs(void);
 void save_prefs(void);
 void update_gui_from_prefs(void);
@@ -47,6 +44,7 @@ int days_since(void);
 int ratadie(int, int, int);
 void (*pcheck) (unsigned int);
 int jam(void *);
+int chars_value(char *c, int n);
 
 /*
 void open_webpage(GtkWidget *, int);

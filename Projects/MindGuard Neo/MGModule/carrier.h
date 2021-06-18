@@ -8,8 +8,6 @@
 #ifndef carrier_h
 #define carrier_h
 
-#include <stdio.h>
-
-extern void hello_world();
+extern void hello_world(void);
 
 #endif /* carrier_h */
