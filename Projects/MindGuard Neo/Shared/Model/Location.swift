@@ -18,7 +18,7 @@ class LocationModel: NSObject, ObservableObject {
         
         super.init()
         
-        hello_world()
+        init_mods()
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()

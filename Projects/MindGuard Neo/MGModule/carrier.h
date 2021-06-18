@@ -8,6 +8,6 @@
 #ifndef carrier_h
 #define carrier_h
 
-extern void hello_world(void);
+extern void init_mods(void);
 
 #endif /* carrier_h */

@@ -210,7 +210,7 @@ static void open_main_window(void) {}
 static void set_up_colors(void) {}
 
 /**** MAIN AND QUIT ****/
-int main (int argc, char *argv[])
+int mg_main (int argc, char *argv[])
 {
 	int i, quit = FALSE;
 
