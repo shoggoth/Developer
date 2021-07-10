@@ -12,7 +12,7 @@ extension String {
     
     func isAnagramOf(potentialAnagram other: String) -> Bool {
         
-        let stripAndSort = { (str: String) in return Array(str.lowercased()).filter { $0 != " "}.sorted { $0 > $1 }}
+        let stripAndSort = { (str: String) in Array(str.lowercased()).filter { $0 != " "}.sorted { $0 > $1 }}
         
         return stripAndSort(self) == stripAndSort(other)
     }
