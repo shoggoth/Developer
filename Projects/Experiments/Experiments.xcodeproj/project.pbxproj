@@ -115,6 +115,7 @@
 		FF954FDE277F1C80001F2EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF954FDD277F1C80001F2EDC /* Assets.xcassets */; };
 		FF954FE1277F1C80001F2EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF954FDF277F1C80001F2EDC /* LaunchScreen.storyboard */; };
 		FF954FE6277F1EB1001F2EDC /* DebugComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF954FE5277F1EB1001F2EDC /* DebugComponent.swift */; };
+		FF954FE8277F3CAA001F2EDC /* Sprites.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF954FE7277F3CAA001F2EDC /* Sprites.xcassets */; };
 		FFAF5B481FB45B2700DFBB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF5B471FB45B2700DFBB12 /* AppDelegate.swift */; };
 		FFAF5B4A1FB45B2700DFBB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF5B491FB45B2700DFBB12 /* ViewController.swift */; };
 		FFAF5B4D1FB45B2700DFBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAF5B4B1FB45B2700DFBB12 /* Main.storyboard */; };
@@ -329,6 +330,7 @@
 		FF954FDD277F1C80001F2EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF954FE0277F1C80001F2EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF954FE5277F1EB1001F2EDC /* DebugComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugComponent.swift; sourceTree = "<group>"; };
+		FF954FE7277F3CAA001F2EDC /* Sprites.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sprites.xcassets; sourceTree = "<group>"; };
 		FFAF5B451FB45B2700DFBB12 /* UniversalLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAF5B471FB45B2700DFBB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFAF5B491FB45B2700DFBB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -718,6 +720,7 @@
 				FF954FD2277F1C80001F2EDC /* GameScene.sks */,
 				FF954FD4277F1C80001F2EDC /* Actions.sks */,
 				FF954FDA277F1C80001F2EDC /* Main.storyboard */,
+				FF954FE7277F3CAA001F2EDC /* Sprites.xcassets */,
 				FF954FDD277F1C80001F2EDC /* Assets.xcassets */,
 				FF954FDF277F1C80001F2EDC /* LaunchScreen.storyboard */,
 			);
@@ -1272,6 +1275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF954FE8277F3CAA001F2EDC /* Sprites.xcassets in Resources */,
 				FF954FDC277F1C80001F2EDC /* Main.storyboard in Resources */,
 				FF954FD3277F1C80001F2EDC /* GameScene.sks in Resources */,
 				FF954FDE277F1C80001F2EDC /* Assets.xcassets in Resources */,
