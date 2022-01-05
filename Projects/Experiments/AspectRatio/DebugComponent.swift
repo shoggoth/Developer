@@ -12,7 +12,10 @@ public class DebugComponent: GKComponent {
     
     @GKInspectable var identifier: String = UUID().uuidString
     @GKInspectable var dumpTiming: Bool = false
-    
+    @GKInspectable var nearest: Bool = false
+
+    var spriteComponent : GKSKNodeComponent? { entity?.component(ofType: GKSKNodeComponent.self) }
+
     deinit { print(" \(self.identifier) \(self) deinits") }
     
     // MARK: Update
@@ -27,7 +30,9 @@ public class DebugComponent: GKComponent {
     public override func didAddToEntity() {
         
         print("DebugComponent '\(self.identifier)' (\(self)) added to entity: \(String(describing: entity))")
-        //print("Sprite component on add: \(String(describing: entity?.spriteComponent))")
+        print("Sprite component on add: \(String(describing: spriteComponent))")
+        
+        if nearest { (spriteComponent?.node as? SKSpriteNode)?.texture?.filteringMode = .nearest }
     }
     
     public override func willRemoveFromEntity() {
