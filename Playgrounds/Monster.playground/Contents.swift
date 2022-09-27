@@ -55,11 +55,17 @@ dmt3.describe()
 
 struct DefenderMonster {
     
+    var name = "Jogger"
     let type: DefenderMonsterType
 }
 
-let dm1 = DefenderMonster(type: .bomber)
-let dm2 = DefenderMonster(type: .lander(1))
+var dmtc = DefenderMonster(type: .lander(23))
+dmtc.name = "Gonna Jog"
+//dmtc.type = .bomber
 
-dm1.type.describe()
-dm2.type.describe()
+var dm = [DefenderMonster]()
+dm.append(DefenderMonster(type: .bomber))
+dm.append(DefenderMonster(type: .lander(1)))
+dm.append(DefenderMonster(type: .pod { "PodNigger" }))
+
+dm.forEach { $0.type.describe() }
