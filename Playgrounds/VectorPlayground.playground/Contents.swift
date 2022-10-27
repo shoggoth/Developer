@@ -34,3 +34,9 @@ let dProj = dAxis.dot(vec)
 
 
 //let skv = Vector2(
+
+import CoreGraphics
+
+let cgv = CGVector(dx: 1, dy: 0)
+let aft = CGAffineTransform(rotationAngle: .pi)
+let cgt = CGPoint(cgv)?.applying(aft)
