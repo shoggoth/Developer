@@ -10,6 +10,11 @@ public struct MonsterStruct {
         // 'tarded.
         // Both the struct and the init have to be public or nothing works in a playground.
         // https://stackoverflow.com/questions/29637444
-        name = "Nogger"
+        self.init(name: "Nogger")
+    }
+    
+    public init(name: String) {
+        
+        self.name = name
     }
 }

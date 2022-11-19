@@ -16,7 +16,7 @@ enum DefenderMonsterType {
     case baiter
     case bomber
     case pod(() -> String)
-    case swarmer
+    case swarmer(MonsterStruct)
     
     func describe() {
         switch self {
@@ -28,6 +28,8 @@ enum DefenderMonsterType {
             f()
         case .pod(let f):
             print("Pods gonna \(f())")
+        case .swarmer(let ms):
+            print("Swarmin all ovah \(ms)")
         default:
             print("Huh, who knows")
         }
@@ -41,7 +43,7 @@ var dmt3 = dmt2
 
 dmt1.describe()
 
-dmt1 = .swarmer
+dmt1 = .swarmer(ms)
 dmt1 = dmt2
 dmt3 = .bomber
 dmt3 = .lander(23)
@@ -57,6 +59,8 @@ struct DefenderMonster {
     
     var name = "Jogger"
     let type: DefenderMonsterType
+    
+    func describe() { type.describe() }
 }
 
 var dmtc = DefenderMonster(type: .lander(23))
@@ -66,6 +70,9 @@ dmtc.name = "Gonna Jog"
 var dm = [DefenderMonster]()
 dm.append(DefenderMonster(type: .bomber))
 dm.append(DefenderMonster(type: .lander(1)))
-dm.append(DefenderMonster(type: .pod { "PodNigger" }))
+dm.append(DefenderMonster(type: .pod { "PodNogger" }))
+dm.append(DefenderMonster(type: .swarmer(MonsterStruct())))
+dm.append(DefenderMonster(type: .swarmer(MonsterStruct(name: "Blue Swarmer"))))
+dm.append(DefenderMonster(type: .swarmer(MonsterStruct(name: "Red Swarmer"))))
 
-dm.forEach { $0.type.describe() }
+dm.forEach { $0.describe() }
