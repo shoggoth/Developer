@@ -1,13 +1,6 @@
 import Foundation
 import GameplayKit
 
-class GKState {
-    
-    func didEnter(from previousState: GKState?) {}
-    func willExit(to nextState: GKState) {}
-    func update(deltaTime: TimeInterval) {}
-}
-
 protocol LambdaCallable {
     
     associatedtype U
@@ -20,9 +13,10 @@ protocol LambdaCallable {
 class LambdaState<T: LambdaCallable>: GKState {
     
     var lambdas: T
-    
+    var validFunc: ((AnyClass) -> Bool)? = nil
+
     public init(l: T) { lambdas = l }
-        
+    
     open override func didEnter(from previousState: GKState?) { lambdas.enterFunc?(previousState, lambdas as? T.U) }
     
     open override func willExit(to nextState: GKState) { lambdas.leaveFunc?(nextState, lambdas as? T.U) }
@@ -33,6 +27,8 @@ class LambdaState<T: LambdaCallable>: GKState {
         
         lambdas.deltaFunc?(deltaTime, lambdas as? T.U)
     }
+    
+    open override func isValidNextState(_ stateClass: AnyClass) -> Bool { validFunc?(stateClass) ?? false }
 }
 
 class LS1Subclass : LambdaState<PlayState> {
