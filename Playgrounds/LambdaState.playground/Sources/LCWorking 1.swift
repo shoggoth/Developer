@@ -1,11 +1,5 @@
+/*
 import Foundation
-
-class GKState {
-    
-    func didEnter(from previousState: GKState?) {}
-    func willExit(to nextState: GKState) {}
-    func update(deltaTime: TimeInterval) {}
-}
 
 protocol LambdaCallable {
     
@@ -95,4 +89,4 @@ fop.didEnter(from: nil)
 fop.willExit(to: GKState())
 fop.update(deltaTime: 0.23)
 
-
+*/

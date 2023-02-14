@@ -3,12 +3,12 @@ import GameKit
 
 struct Statistics {
     
-    let str: UInt   // How hard you hit something, how much you can carry, and how well you tend to do with strength based skill checks.
-    let dex: UInt   // How fast you are, as well as how successful you are with ranged attacks.
-    let con: UInt   // Has a direct effect on your hit points, as well as your resistance to poisoning, how fast you sober up, and the likes.
-    let wis: UInt   // Knowing about the world around you as well as how perceptive you are. It determines what you naturally notice.
-    let int: UInt   // How smart you are. It’s that simple really: Intelligence is usually academic intelligence – so how much you know about things.
-    let cha: UInt   // How good you are with people. It is how good you are at persuading people you are a good guy or how well you get on with NPCs.
+    let str: Int   // How hard you hit something, how much you can carry, and how well you tend to do with strength based skill checks.
+    let dex: Int   // How fast you are, as well as how successful you are with ranged attacks.
+    let con: Int   // Has a direct effect on your hit points, as well as your resistance to poisoning, how fast you sober up, and the likes.
+    let wis: Int   // Knowing about the world around you as well as how perceptive you are. It determines what you naturally notice.
+    let int: Int   // How smart you are. It’s that simple really: Intelligence is usually academic intelligence – so how much you know about things.
+    let cha: Int   // How good you are with people. It is how good you are at persuading people you are a good guy or how well you get on with NPCs.
 
     func getModifier(stat: Int) -> Int { (stat / 2) - 5 }
 }
