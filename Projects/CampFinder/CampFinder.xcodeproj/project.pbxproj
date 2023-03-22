@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFFD564C23707AEC00F1136F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD564B23707AEC00F1136F /* AppDelegate.swift */; };
+		FFFD564E23707AEC00F1136F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD564D23707AEC00F1136F /* SceneDelegate.swift */; };
+		FFFD565123707AEC00F1136F /* CampFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFFD564F23707AEC00F1136F /* CampFinder.xcdatamodeld */; };
+		FFFD565323707AEC00F1136F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD565223707AEC00F1136F /* ContentView.swift */; };
+		FFFD565523707AEE00F1136F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFD565423707AEE00F1136F /* Assets.xcassets */; };
+		FFFD565823707AEE00F1136F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFD565723707AEE00F1136F /* Preview Assets.xcassets */; };
+		FFFD565B23707AEE00F1136F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFD565923707AEE00F1136F /* LaunchScreen.storyboard */; };
+		FFFD566623707AEE00F1136F /* CampFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD566523707AEE00F1136F /* CampFinderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFFD566223707AEE00F1136F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFD564023707AEC00F1136F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFD564723707AEC00F1136F;
+			remoteInfo = CampFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFFD564823707AEC00F1136F /* CampFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFD564B23707AEC00F1136F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFFD564D23707AEC00F1136F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFFD565023707AEC00F1136F /* CampFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CampFinder.xcdatamodel; sourceTree = "<group>"; };
+		FFFD565223707AEC00F1136F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFFD565423707AEE00F1136F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFFD565723707AEE00F1136F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFFD565A23707AEE00F1136F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFFD565C23707AEE00F1136F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFD566123707AEE00F1136F /* CampFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFD566523707AEE00F1136F /* CampFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampFinderTests.swift; sourceTree = "<group>"; };
+		FFFD566723707AEE00F1136F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFFD564523707AEC00F1136F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFD565E23707AEE00F1136F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFFD563F23707AEC00F1136F = {
+			isa = PBXGroup;
+			children = (
+				FFFD564A23707AEC00F1136F /* CampFinder */,
+				FFFD566423707AEE00F1136F /* CampFinderTests */,
+				FFFD564923707AEC00F1136F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFFD564923707AEC00F1136F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD564823707AEC00F1136F /* CampFinder.app */,
+				FFFD566123707AEE00F1136F /* CampFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFD564A23707AEC00F1136F /* CampFinder */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD564B23707AEC00F1136F /* AppDelegate.swift */,
+				FFFD564D23707AEC00F1136F /* SceneDelegate.swift */,
+				FFFD565223707AEC00F1136F /* ContentView.swift */,
+				FFFD565423707AEE00F1136F /* Assets.xcassets */,
+				FFFD565923707AEE00F1136F /* LaunchScreen.storyboard */,
+				FFFD565C23707AEE00F1136F /* Info.plist */,
+				FFFD564F23707AEC00F1136F /* CampFinder.xcdatamodeld */,
+				FFFD565623707AEE00F1136F /* Preview Content */,
+			);
+			path = CampFinder;
+			sourceTree = "<group>";
+		};
+		FFFD565623707AEE00F1136F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD565723707AEE00F1136F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFFD566423707AEE00F1136F /* CampFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD566523707AEE00F1136F /* CampFinderTests.swift */,
+				FFFD566723707AEE00F1136F /* Info.plist */,
+			);
+			path = CampFinderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFFD564723707AEC00F1136F /* CampFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFD566A23707AEE00F1136F /* Build configuration list for PBXNativeTarget "CampFinder" */;
+			buildPhases = (
+				FFFD564423707AEC00F1136F /* Sources */,
+				FFFD564523707AEC00F1136F /* Frameworks */,
+				FFFD564623707AEC00F1136F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampFinder;
+			productName = CampFinder;
+			productReference = FFFD564823707AEC00F1136F /* CampFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFFD566023707AEE00F1136F /* CampFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFD566D23707AEE00F1136F /* Build configuration list for PBXNativeTarget "CampFinderTests" */;
+			buildPhases = (
+				FFFD565D23707AEE00F1136F /* Sources */,
+				FFFD565E23707AEE00F1136F /* Frameworks */,
+				FFFD565F23707AEE00F1136F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFFD566323707AEE00F1136F /* PBXTargetDependency */,
+			);
+			name = CampFinderTests;
+			productName = CampFinderTests;
+			productReference = FFFD566123707AEE00F1136F /* CampFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFFD564023707AEC00F1136F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Dogstar Industries Ltd.";
+				TargetAttributes = {
+					FFFD564723707AEC00F1136F = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					FFFD566023707AEE00F1136F = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = FFFD564723707AEC00F1136F;
+					};
+				};
+			};
+			buildConfigurationList = FFFD564323707AEC00F1136F /* Build configuration list for PBXProject "CampFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFFD563F23707AEC00F1136F;
+			productRefGroup = FFFD564923707AEC00F1136F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFFD564723707AEC00F1136F /* CampFinder */,
+				FFFD566023707AEE00F1136F /* CampFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFFD564623707AEC00F1136F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFD565B23707AEE00F1136F /* LaunchScreen.storyboard in Resources */,
+				FFFD565823707AEE00F1136F /* Preview Assets.xcassets in Resources */,
+				FFFD565523707AEE00F1136F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFD565F23707AEE00F1136F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFFD564423707AEC00F1136F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFD564C23707AEC00F1136F /* AppDelegate.swift in Sources */,
+				FFFD564E23707AEC00F1136F /* SceneDelegate.swift in Sources */,
+				FFFD565323707AEC00F1136F /* ContentView.swift in Sources */,
+				FFFD565123707AEC00F1136F /* CampFinder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFD565D23707AEE00F1136F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFD566623707AEE00F1136F /* CampFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFFD566323707AEE00F1136F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFFD564723707AEC00F1136F /* CampFinder */;
+			targetProxy = FFFD566223707AEE00F1136F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFFD565923707AEE00F1136F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFFD565A23707AEE00F1136F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFFD566823707AEE00F1136F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFFD566923707AEE00F1136F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFFD566B23707AEE00F1136F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CampFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CampFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.dogstar.CampFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFFD566C23707AEE00F1136F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CampFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CampFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.dogstar.CampFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFFD566E23707AEE00F1136F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = CampFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.dogstar.CampFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampFinder.app/CampFinder";
+			};
+			name = Debug;
+		};
+		FFFD566F23707AEE00F1136F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F9CYF5K3F;
+				INFOPLIST_FILE = CampFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.dogstar.CampFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampFinder.app/CampFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFFD564323707AEC00F1136F /* Build configuration list for PBXProject "CampFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFD566823707AEE00F1136F /* Debug */,
+				FFFD566923707AEE00F1136F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFD566A23707AEE00F1136F /* Build configuration list for PBXNativeTarget "CampFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFD566B23707AEE00F1136F /* Debug */,
+				FFFD566C23707AEE00F1136F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFD566D23707AEE00F1136F /* Build configuration list for PBXNativeTarget "CampFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFD566E23707AEE00F1136F /* Debug */,
+				FFFD566F23707AEE00F1136F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFFD564F23707AEC00F1136F /* CampFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFFD565023707AEC00F1136F /* CampFinder.xcdatamodel */,
+			);
+			currentVersion = FFFD565023707AEC00F1136F /* CampFinder.xcdatamodel */;
+			path = CampFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFFD564023707AEC00F1136F /* Project object */;
+}
