@@ -1,51 +1,6 @@
+/*
 import Foundation
 import GameplayKit
-
-protocol MyProtocol {
-    
-    typealias MyFunc = ((GKState?, MyProtocol?) -> ())?
-    
-    var enterFunc: MyFunc { get }
-}
-
-struct MyStruct: MyProtocol {
-    
-    let enterFunc: MyFunc
-}
-
-struct OtherStruct: MyProtocol {
-    
-    let enterFunc: MyFunc
-}
-
-class MyClass: MyProtocol {
-    
-    var enterFunc: MyFunc = nil
-    
-    func myClassFunc() { print("also: myclass")}
-}
-
-class MyState: GKState {
-    
-    let ms: MyProtocol
-    
-    init(ms: MyProtocol) { self.ms = ms }
-    
-    open override func didEnter(from previousState: GKState?) { ms.enterFunc?(previousState, ms) }
-}
-
-let h = "Hello"
-let f: MyProtocol.MyFunc = { i, j in
-    print("\(h) - \(String(describing: i)) - \(String(describing: j)) ")
-    (j as? MyClass)?.myClassFunc()
-}
-let c = MyClass(); c.enterFunc = f
-
-MyState(ms: MyStruct(enterFunc: nil)).didEnter(from: nil)
-MyState(ms: MyStruct(enterFunc: { _,_ in print(h) })).didEnter(from: nil)
-MyState(ms: MyStruct(enterFunc: { i, j in print("\(h) - \(String(describing: i)) - \(String(describing: j)) ") })).didEnter(from: nil)
-MyState(ms: OtherStruct(enterFunc: f)).didEnter(from: nil)
-MyState(ms: c).didEnter(from: nil)
 
 protocol LambdaCallable {
     
@@ -146,4 +101,5 @@ fop.didEnter(from: nil)
 fop.willExit(to: GKState())
 fop.update(deltaTime: 0.23)
 
+ */
 

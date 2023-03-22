@@ -1,3 +1,4 @@
+/*
 import Foundation
 
 class GKState {
@@ -56,3 +57,4 @@ let foo = PlayState(
 
 //foo.didEnter(from: nil)
 //foo.willExit(to: GKState())
+ */
