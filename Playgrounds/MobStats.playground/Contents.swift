@@ -27,3 +27,19 @@ print(fd6)
 let t = Array(0...3).map { _ in d6.nextInt() }.sorted().dropFirst()
 print(t)
 
+enum EnemyMob {
+    case fighter
+    case thief
+    
+    func stats() -> Statistics {
+        switch self {
+        case .fighter:
+            Statistics(str: 7, dex: 7, con: 7, wis: 7, int: 7, cha: 7)
+        case .thief:
+            Statistics(str: 7, dex: 7, con: 7, wis: 7, int: 7, cha: 7)
+        }
+        return Statistics(str: 7, dex: 7, con: 7, wis: 7, int: 7, cha: 7)
+    }
+}
+
+let enemy: EnemyMob = .fighter
