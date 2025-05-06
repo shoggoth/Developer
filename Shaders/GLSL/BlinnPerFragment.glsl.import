@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://cup2dhlp3py28"
+path="res://.godot/imported/BlinnPerFragment.glsl-3d58280a2e4cc7e642dc7b7ea2ed5215.res"
+
+[deps]
+
+source_file="res://Developer/Shaders/GLSL/BlinnPerFragment.glsl"
+dest_files=["res://.godot/imported/BlinnPerFragment.glsl-3d58280a2e4cc7e642dc7b7ea2ed5215.res"]
+
+[params]
+

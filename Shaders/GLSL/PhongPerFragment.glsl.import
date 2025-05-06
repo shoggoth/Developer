@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://cxx8rlbqste1k"
+path="res://.godot/imported/PhongPerFragment.glsl-116959baa39eb108013758cdf3c8436c.res"
+
+[deps]
+
+source_file="res://Developer/Shaders/GLSL/PhongPerFragment.glsl"
+dest_files=["res://.godot/imported/PhongPerFragment.glsl-116959baa39eb108013758cdf3c8436c.res"]
+
+[params]
+

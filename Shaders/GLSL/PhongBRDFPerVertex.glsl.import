@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bna8dxe6eov4w"
+path="res://.godot/imported/PhongBRDFPerVertex.glsl-fe18cf7e8abb6579d2a2ac950acefa53.res"
+
+[deps]
+
+source_file="res://Developer/Shaders/GLSL/PhongBRDFPerVertex.glsl"
+dest_files=["res://.godot/imported/PhongBRDFPerVertex.glsl-fe18cf7e8abb6579d2a2ac950acefa53.res"]
+
+[params]
+

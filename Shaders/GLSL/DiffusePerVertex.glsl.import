@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://cuyih11sjvj8k"
+path="res://.godot/imported/DiffusePerVertex.glsl-3f3dbab640bc15e7a4e7865e1718d9d7.res"
+
+[deps]
+
+source_file="res://Developer/Shaders/GLSL/DiffusePerVertex.glsl"
+dest_files=["res://.godot/imported/DiffusePerVertex.glsl-3f3dbab640bc15e7a4e7865e1718d9d7.res"]
+
+[params]
+

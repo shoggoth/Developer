@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnl1pa5glltrr"
+path="res://.godot/imported/ShipBullet.wav-3e5bd627213457bc21b8526a30ad43ec.sample"
+
+[deps]
+
+source_file="res://Developer/Projects/Experiments/InvaderClone/Sound Effects/ShipBullet.wav"
+dest_files=["res://.godot/imported/ShipBullet.wav-3e5bd627213457bc21b8526a30ad43ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
